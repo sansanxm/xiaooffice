@@ -27,8 +27,32 @@
  */
 
 const { execFileSync } = require('node:child_process')
-const { existsSync, readFileSync, rmSync } = require('node:fs')
+const { existsSync, readFileSync, rmSync, copyFileSync, mkdirSync } = require('node:fs')
 const { join } = require('node:path')
+
+function ensureWindowsSidecar() {
+  if (process.platform === 'win32') {
+    const candidates = [
+      join(__dirname, '../sheets/native/xlsx-engine/target/release/xlsx-sidecar.exe'),
+      join(__dirname, '../sheets/native/xlsx-engine/target/x86_64-pc-windows-msvc/release/xlsx-sidecar.exe'),
+      join(__dirname, '../sheets/native/xlsx-engine/target/x86_64-pc-windows-gnu/release/xlsx-sidecar.exe'),
+      join(__dirname, '../sheets/native/xlsx-engine/target/aarch64-pc-windows-msvc/release/xlsx-sidecar.exe'),
+    ]
+    const found = candidates.find((p) => existsSync(p))
+    if (found) {
+      for (const dest of [
+        join(__dirname, '../sheets/native/xlsx-engine/target/x86_64-pc-windows-gnu/release/xlsx-sidecar.exe'),
+        join(__dirname, '../sheets/native/xlsx-engine/target/release/xlsx-sidecar.exe'),
+      ]) {
+        if (found !== dest && !existsSync(dest)) {
+          mkdirSync(join(dest, '..'), { recursive: true })
+          copyFileSync(found, dest)
+        }
+      }
+    }
+  }
+}
+ensureWindowsSidecar()
 
 function normalizeHttpsBaseUrl(name, value) {
   if (!value || !value.trim()) return null
