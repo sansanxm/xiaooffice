@@ -1,0 +1,22 @@
+[
+  {
+    "key": "formFieldProgress",
+    "en": "{current} / {total}",
+    "vi": "{current} / {total}"
+  },
+  {
+    "key": "searchCount",
+    "en": "{current} / {total}",
+    "vi": "{current} / {total}"
+  },
+  {
+    "key": "ok",
+    "en": "OK",
+    "vi": "OK"
+  },
+  {
+    "key": "ribbonAiAssistant",
+    "en": "Genspark",
+    "vi": "Genspark"
+  }
+]

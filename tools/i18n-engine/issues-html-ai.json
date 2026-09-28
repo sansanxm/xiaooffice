@@ -1,0 +1,22 @@
+[
+  {
+    "key": "aiRestylePrompt",
+    "type": "HYBRID",
+    "en": "Refine the whole page: read every <style> first, then unify spacing, alignment, the type scale, colors and responsive breakpoints in one apply_ops batch. Do not change any text or add/remove elements; if the page structure has to change, propose it with plan_page first.",
+    "vi": "Tinh chỉnh lại toàn bộ trang: đọc mọi thẻ <style> trước, sau đó đồng nhất khoảng cách, căn lề, tỷ lệ chữ, màu sắc và các điểm ngắt thích ứng trong một đợt thao tác. Không thay đổi văn bản hay thêm/xóa phần tử; nếu cấu trúc trang cần thay đổi, hãy đề xuất bằng plan_page trước.",
+    "matches": [
+      "to",
+      "page"
+    ]
+  },
+  {
+    "key": "aiThemePrompt",
+    "type": "HYBRID",
+    "en": "Give the whole page a \"{direction}\" look: propose the new style with plan_page first (keep the existing sections); after confirmation update only the --brief-* variables and related CSS rules, leaving content and section order untouched.",
+    "vi": "Tạo cho toàn bộ trang giao diện \"{direction}\": đề xuất phong cách mới bằng plan_page trước (giữ nguyên các phần hiện có); sau khi xác nhận chỉ cập nhật các biến --brief-* và quy tắc CSS liên quan, giữ nguyên nội dung và thứ tự các phần.",
+    "matches": [
+      "to",
+      "page"
+    ]
+  }
+]

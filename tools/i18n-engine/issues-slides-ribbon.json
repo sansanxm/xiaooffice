@@ -1,0 +1,90 @@
+[
+  {
+    "key": "ribbonAiAssistant",
+    "type": "UNTRANSLATED",
+    "en": "Genspark",
+    "vi": "Genspark"
+  },
+  {
+    "key": "ribbonWordArtPreviewChar",
+    "type": "UNTRANSLATED",
+    "en": "A",
+    "vi": "A"
+  },
+  {
+    "key": "ribbonVideo",
+    "type": "UNTRANSLATED",
+    "en": "Video",
+    "vi": "Video"
+  },
+  {
+    "key": "ribbonInkWidthTip",
+    "type": "UNTRANSLATED",
+    "en": "{w} px",
+    "vi": "{w} px"
+  },
+  {
+    "key": "ribbonThemeOffice",
+    "type": "UNTRANSLATED",
+    "en": "Office",
+    "vi": "Office"
+  },
+  {
+    "key": "ribbonThemeEmber",
+    "type": "UNTRANSLATED",
+    "en": "Ember",
+    "vi": "Ember"
+  },
+  {
+    "key": "ribbonThemeIndigo",
+    "type": "UNTRANSLATED",
+    "en": "Indigo",
+    "vi": "Indigo"
+  },
+  {
+    "key": "ribbonThemeForest",
+    "type": "UNTRANSLATED",
+    "en": "Forest",
+    "vi": "Forest"
+  },
+  {
+    "key": "ribbonThemeCream",
+    "type": "UNTRANSLATED",
+    "en": "Cream",
+    "vi": "Cream"
+  },
+  {
+    "key": "ribbonThemeRose",
+    "type": "UNTRANSLATED",
+    "en": "Rose",
+    "vi": "Rose"
+  },
+  {
+    "key": "ribbonThemeGraphite",
+    "type": "UNTRANSLATED",
+    "en": "Graphite",
+    "vi": "Graphite"
+  },
+  {
+    "key": "ribbonThemeMidnight",
+    "type": "UNTRANSLATED",
+    "en": "Midnight",
+    "vi": "Midnight"
+  },
+  {
+    "key": "ribbonCountSuffix",
+    "type": "UNTRANSLATED",
+    "en": " ({n})",
+    "vi": " ({n})"
+  },
+  {
+    "key": "ribbonDlgEquationLabel",
+    "type": "HYBRID",
+    "en": "Equation text (Unicode math symbols, inserted as a math-font text box)",
+    "vi": "Nội dung công thức (ký hiệu toán Unicode, chèn dưới dạng hộp văn bản phông toán học)",
+    "matches": [
+      "to",
+      "to"
+    ]
+  }
+]

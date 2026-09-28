@@ -1,0 +1,777 @@
+[
+  {
+    "shard": "i18n/panes",
+    "key": "paneMoveUp",
+    "text": "Move Up"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneMoveDown",
+    "text": "Move Down"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneAnimEffFlipIn",
+    "text": "Flip In"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneChartEditTitle",
+    "text": "Edit Chart Data"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneChartDelSeries",
+    "text": "Remove this series"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneChartAddSeries",
+    "text": "Add series"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneChartDelCategory",
+    "text": "Remove this category"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneChartAddCategory",
+    "text": "Add category"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCommentsTitle",
+    "text": "Comments · Slide {n}"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCommentsCollapse",
+    "text": "Collapse Comments Pane"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCommentsEmpty",
+    "text": "No comments on this slide"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCommentsEmptySub",
+    "text": "Type below — comments are written into the pptx and visible in PowerPoint too."
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCommentsDelete",
+    "text": "Delete comment"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCommentsPlaceholder",
+    "text": "New comment… (⌘/Ctrl+Enter to post)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCommentsPost",
+    "text": "Post"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdTitle",
+    "text": "Custom Shows"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdDefaultName",
+    "text": "Custom Show {n}"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrTitle",
+    "text": "Find and Replace"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrFind",
+    "text": "Find what"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrReplaceWith",
+    "text": "Replace with"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrFindNext",
+    "text": "Find Next"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrReplaceAll",
+    "text": "Replace All"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrMatchCase",
+    "text": "Match case"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrNotFound",
+    "text": "No matches found"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrReplaced",
+    "text": "Replaced {n}"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFrMatchPos",
+    "text": "{i} of {n}"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatGradient",
+    "text": "Gradient"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatGradientFrom",
+    "text": "Start color"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatGradientTo",
+    "text": "End color"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatTextAnchor",
+    "text": "Text Alignment"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatAnchorMiddle",
+    "text": "Middle"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdEmpty",
+    "text": "No custom shows yet"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdPageCount",
+    "text": "{n} slides"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdDelete",
+    "text": "Remove"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdName",
+    "text": "Slide show name"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdNamePlaceholder",
+    "text": "Custom show name"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdAllSlides",
+    "text": "Slides in presentation"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdOrder",
+    "text": "Slides in custom show"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdOrderEmpty",
+    "text": "Check slides on the left to add them"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCsdCreateHint",
+    "text": "Click \"New\" to create a custom show"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCutoutDecodeFail",
+    "text": "Failed to decode image"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneCutoutApplyFail",
+    "text": "Background removal failed"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatTitle",
+    "text": "Format"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatTitleTyped",
+    "text": "Format {type}"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatTabShape",
+    "text": "Shape Options"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneSubFillLine",
+    "text": "Fill & Line"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneSubTextFill",
+    "text": "Fill & Outline"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneSubNone",
+    "text": "No options available yet"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineNone",
+    "text": "No line"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineWidthMax",
+    "text": "This entry must be less than or equal to {max}"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineCompoundSng",
+    "text": "Single"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineCompoundDbl",
+    "text": "Double"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineCompoundThickThin",
+    "text": "Thick-thin"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineCompoundThinThick",
+    "text": "Thin-thick"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineCompoundTri",
+    "text": "Triple"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineCapFlat",
+    "text": "Flat"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineCapRound",
+    "text": "Round"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineCapSquare",
+    "text": "Square"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineJoinRound",
+    "text": "Round"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneLineJoinMiter",
+    "text": "Miter"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneGradientStyle",
+    "text": "Gradient style"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneGradientLinear",
+    "text": "Linear"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneGradientDir",
+    "text": "Direction"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneGradientPresets",
+    "text": "Preset gradients"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneGradientStops",
+    "text": "Gradient stops"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneGradientRect",
+    "text": "Rectangular"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneGradientPath",
+    "text": "Path"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatClose",
+    "text": "Close Format Pane"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgEmpty",
+    "text": "Open a presentation to set the slide background"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgSolid",
+    "text": "Solid Fill"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgGradient",
+    "text": "Gradient Fill"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgImage",
+    "text": "Picture Fill"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgPickImage",
+    "text": "Choose Picture…"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgStretch",
+    "text": "Stretch"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgTile",
+    "text": "Tile"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgHideGraphics",
+    "text": "Hide Background Graphics"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgReset",
+    "text": "Reset Background"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneBgResetTip",
+    "text": "Remove this slide's own background, restoring the layout/master background"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatEmpty",
+    "text": "Select an element on the canvas to edit its position, size, and fill."
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatGroup",
+    "text": "Group"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatShape",
+    "text": "Shape"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneSizeRotation",
+    "text": "Rotation"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneSizeScaleH",
+    "text": "Scale Height"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneSizeScaleW",
+    "text": "Scale Width"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneSizeRelOriginal",
+    "text": "Relative to original picture size"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneSizeCm",
+    "text": "cm"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePosH",
+    "text": "Horizontal position"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePosV",
+    "text": "Vertical position"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePosFrom",
+    "text": "From"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePosFromTL",
+    "text": "Top-left corner"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatCrop",
+    "text": "Crop Picture"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatCutoutTip",
+    "text": "Remove the picture background by color tolerance (replaced with a transparent PNG)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatCutoutNA",
+    "text": "Background removal is not available for this picture"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatOutlineColor",
+    "text": "Outline color"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatDashStyle",
+    "text": "Dash style"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatPt",
+    "text": "pt"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatActions",
+    "text": "Actions"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneFormatChartPoints",
+    "text": "Data Point Colors"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneVAlignMiddle",
+    "text": "Middle"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneTextDirV",
+    "text": "Vertical"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneTextDirStacked",
+    "text": "Stacked"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffDirBR",
+    "text": "Bottom right"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffDirBL",
+    "text": "Bottom left"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffDirTL",
+    "text": "Top left"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffDirTR",
+    "text": "Top right"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffNoShadow",
+    "text": "No Shadow"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffOuter",
+    "text": "Outer"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffInner",
+    "text": "Inner"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffPerspective",
+    "text": "Perspective"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffNoReflection",
+    "text": "No Reflection"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffReflTight",
+    "text": "Tight Reflection"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffReflHalf",
+    "text": "Half Reflection"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffReflFull",
+    "text": "Full Reflection"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneEffReflTouch",
+    "text": "Touching"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneAutofitNone",
+    "text": "Do not autofit"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneAutofitShrink",
+    "text": "Shrink text on overflow"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneAutofitResize",
+    "text": "Resize shape to fit text"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterEndShow",
+    "text": "End Show"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterEndTip",
+    "text": "End show (Esc)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterSwap",
+    "text": "Swap Displays"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterSwapTip",
+    "text": "Swap the displays showing Presenter View and the slide show"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterNoSecond",
+    "text": "No second display detected"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterUseShow",
+    "text": "Use Slide Show"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterUseShowTip",
+    "text": "Switch to a normal slide show on this display"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterSingleHint",
+    "text": "Single display mode (connect a second display to show full screen automatically)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterElapsed",
+    "text": "Elapsed time"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterPause",
+    "text": "Pause timer"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterResume",
+    "text": "Resume timer"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterRestart",
+    "text": "Restart timer"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterClock",
+    "text": "Current time"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterEnded",
+    "text": "End of slide show. Press Esc or End Show to exit."
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterBlackOn",
+    "text": "Screen is black (press B to resume)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterPen",
+    "text": "Pen (draw on the slide; the audience sees it live)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterLaser",
+    "text": "Laser pointer (visible to the audience)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterEraseInk",
+    "text": "Erase all ink on this slide"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterBlackTip",
+    "text": "Black screen on/off (B)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterPrevTip",
+    "text": "Previous (←/PgUp)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterNextTip",
+    "text": "Next (→/Space/PgDn)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterSlideOf",
+    "text": "Slide {cur} of {total}"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterNextSlide",
+    "text": "Next Slide"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterLastSlide",
+    "text": "(Last slide)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterNoNotes",
+    "text": "(No notes)"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterNotesBigger",
+    "text": "Make notes text larger"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterNotesSmaller",
+    "text": "Make notes text smaller"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowEndedClick",
+    "text": "End of slide show. Click to exit."
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowEnded",
+    "text": "End of slide show."
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowRehearseTip",
+    "text": "Rehearse Timings: time on this slide / total time"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowRehearseTotal",
+    "text": "Total {time}"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowMenuLastViewed",
+    "text": "Last Viewed"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowMenuSeeAll",
+    "text": "See All Slides"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowMenuScreen",
+    "text": "Screen"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowMenuBlack",
+    "text": "Black Screen"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowMenuWhite",
+    "text": "White Screen"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "paneShowMenuEnd",
+    "text": "End Show"
+  },
+  {
+    "shard": "i18n/panes",
+    "key": "panePresenterWhiteOn",
+    "text": "White screen (press W to resume)"
+  }
+]

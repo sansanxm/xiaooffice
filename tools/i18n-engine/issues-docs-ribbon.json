@@ -1,0 +1,102 @@
+[
+  {
+    "key": "ribbonStylePreview",
+    "type": "UNTRANSLATED",
+    "en": "AaBb",
+    "vi": "AaBb"
+  },
+  {
+    "key": "ribbonAiAssistant",
+    "type": "UNTRANSLATED",
+    "en": "Genspark",
+    "vi": "Genspark"
+  },
+  {
+    "key": "ribbonPtValue",
+    "type": "UNTRANSLATED",
+    "en": "{n} pt",
+    "vi": "{n} pt"
+  },
+  {
+    "key": "ribbonWordArtLabel",
+    "type": "UNTRANSLATED",
+    "en": "WordArt ({name})",
+    "vi": "WordArt ({name})"
+  },
+  {
+    "key": "ribbonWordArtPreviewChar",
+    "type": "UNTRANSLATED",
+    "en": "A",
+    "vi": "A"
+  },
+  {
+    "key": "ribbonThemeOffice",
+    "type": "UNTRANSLATED",
+    "en": "Office",
+    "vi": "Office"
+  },
+  {
+    "key": "ribbonThemeFacet",
+    "type": "UNTRANSLATED",
+    "en": "Facet",
+    "vi": "Facet"
+  },
+  {
+    "key": "ribbonThemeIon",
+    "type": "UNTRANSLATED",
+    "en": "Ion",
+    "vi": "Ion"
+  },
+  {
+    "key": "ribbonThemeRetrospect",
+    "type": "UNTRANSLATED",
+    "en": "Retrospect",
+    "vi": "Retrospect"
+  },
+  {
+    "key": "ribbonThemeFontSongti",
+    "type": "UNTRANSLATED",
+    "en": "SimSun",
+    "vi": "SimSun"
+  },
+  {
+    "key": "ribbonThemeFontYahei",
+    "type": "UNTRANSLATED",
+    "en": "Microsoft YaHei",
+    "vi": "Microsoft YaHei"
+  },
+  {
+    "key": "ribbonThemeFontKaiti",
+    "type": "UNTRANSLATED",
+    "en": "KaiTi",
+    "vi": "KaiTi"
+  },
+  {
+    "key": "ribbonThemeFontTimes",
+    "type": "UNTRANSLATED",
+    "en": "Times New Roman",
+    "vi": "Times New Roman"
+  },
+  {
+    "key": "ribbonThemeFontArial",
+    "type": "UNTRANSLATED",
+    "en": "Arial",
+    "vi": "Arial"
+  },
+  {
+    "key": "ribbonCompareTip",
+    "type": "HYBRID",
+    "en": "Compare: pick another document and diff it by paragraph",
+    "vi": "So sánh: chọn một tài liệu khác và so sánh điểm khác biệt theo từng đoạn",
+    "matches": [
+      "so",
+      "so"
+    ]
+  },
+  {
+    "key": "ribbonPixels",
+    "type": "UNTRANSLATED",
+    "en": "{w} px",
+    "vi": "{w} px"
+  }
+]

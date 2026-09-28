@@ -1,0 +1,2036 @@
+[
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appThemeFontsChanged",
+    "vi": "Theme fonts changed; sẽ được ghi vào tài liệu khi lưu (styles that reference theme fonts take effect in Word)",
+    "en": "Theme fonts changed; written to the document on save (styles that reference theme fonts take effect in Word)"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appAutoSaveTip",
+    "vi": "AutoSave (every 30 seconds and when the window loses focus)",
+    "en": "AutoSave (every 30 seconds and when the window loses focus)"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appDocPwdUnsupported",
+    "vi": "This document can't be decrypted: its encryption scheme chưa được hỗ trợ (e.g. WPS account encryption). Remove the encryption in the original app and retry.",
+    "en": "This document can't be decrypted: its encryption scheme is not supported (e.g. WPS account encryption). Remove the encryption in the original app and retry."
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appSynonymsPrompt",
+    "vi": "What are better synonyms or near-synonym expressions for \"{text}\"? List 3-5 with brief notes on the differences; do not modify the document.",
+    "en": "What are better synonyms or near-synonym expressions for \"{text}\"? List 3-5 with brief notes on the differences; do not modify the document."
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appTranslateSelectionPrompt",
+    "vi": "Translate the currently selected passage into {lang}, replace the original with the translation, and keep the formatting unchanged: \"{text}\"",
+    "en": "Translate the currently selected passage into {lang}, replace the original with the translation, and keep the formatting unchanged: \"{text}\""
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appKerningPointsAbove",
+    "vi": "points and above",
+    "en": "points and above"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appParaTabIndents",
+    "vi": "Indents and Spacing",
+    "en": "Indents and Spacing"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appParaTabBreaks",
+    "vi": "Line and Page Breaks",
+    "en": "Line and Page Breaks"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appParaKeepWithNext",
+    "vi": "Keep with next",
+    "en": "Keep with next"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appParaNoSpaceSameStyle",
+    "vi": "Don't add space between paragraphs of the same style",
+    "en": "Don't add space between paragraphs of the same style"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appInlineEquationToggle",
+    "vi": "Inline equation (inserted at the cursor, flows with text)",
+    "en": "Inline equation (inserted at the cursor, flows with text)"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appReplacePlaceholder",
+    "vi": "Replace with",
+    "en": "Replace with"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appFindResultsCapped",
+    "vi": "Showing the first {shown} of {total}",
+    "en": "Showing the first {shown} of {total}"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appGoToRelativeHint",
+    "vi": "Enter + or - to move relative to the current location",
+    "en": "Enter + or - to move relative to the current location"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appPvExportTip",
+    "vi": "Exports page by page as previewed; headers, footers, and page numbers match what you see",
+    "en": "Exports page by page as previewed; headers, footers, and page numbers match what you see"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appUpdateStyleTip",
+    "vi": "Update this style from the current selection (written back to styles.xml)",
+    "en": "Update this style from the current selection (written back to styles.xml)"
+  },
+  {
+    "file": "apps/docs/src/renderer/i18n/app/vi.ts",
+    "key": "appNewStyleFromSelection",
+    "vi": "New style from the current selection",
+    "en": "New style from the current selection"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "loadFailed",
+    "vi": "Could not open the file",
+    "en": "Could not open the file"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "replacePlaceholder",
+    "vi": "Replace with",
+    "en": "Replace with"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "findTip",
+    "vi": "Find and Replace (⌘F)",
+    "en": "Find and Replace (⌘F)"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "autoSaveTip",
+    "vi": "Saves every 30 seconds and when the window loses focus",
+    "en": "Saves every 30 seconds and when the window loses focus"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "previewNeedsSave",
+    "vi": "Relative images and styles show in the preview once the file is saved",
+    "en": "Relative images and styles show in the preview once the file is saved"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "inspectHint",
+    "vi": "Click an element in the preview to select it, double-click to edit text",
+    "en": "Click an element in the preview to select it, double-click to edit text"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "nodeDynamic",
+    "vi": "This element was created by the page script and has no source; edit through the source or AI",
+    "en": "This element was created by the page script and has no source; edit through the source or AI"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "nodeDirty",
+    "vi": "The page script has changed this element; edits written to the source may be overridden by the script",
+    "en": "The page script has changed this element; edits written to the source may be overridden by the script"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "openExternal",
+    "vi": "Link opened in your browser",
+    "en": "Link opened in your browser"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "imageNeedsSave",
+    "vi": "Save the file before replacing or editing images",
+    "en": "Save the file before replacing or editing images"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "insertPlaceholderParagraph",
+    "vi": "Type your text here.",
+    "en": "Type your text here."
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "insertNoBody",
+    "vi": "The page has no <body> to insert into",
+    "en": "The page has no <body> to insert into"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "insertImageUrl",
+    "vi": "Image from URL…",
+    "en": "Image from URL…"
+  },
+  {
+    "file": "apps/html/src/renderer/i18n/app/vi.ts",
+    "key": "presentInTab",
+    "vi": "In this tab",
+    "en": "In this tab"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotChartHintIn",
+    "vi": "Create a PivotChart from the current PivotTable",
+    "en": "Create a PivotChart from the current PivotTable"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSlicerHintIn",
+    "vi": "Insert a slicer for the current PivotTable",
+    "en": "Insert a slicer for the current PivotTable"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTooManyImages",
+    "vi": "At most {max} images per message; the extras were ignored",
+    "en": "At most {max} images per message; the extras were ignored"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTableNotDeletable",
+    "vi": "Table \"{name}\" không tồn tại or was not created this session — tables already in the file không thể xóa yet.",
+    "en": "Table \"{name}\" does not exist or was not created this session — tables already in the file cannot be deleted yet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appImageNotLoaded",
+    "vi": "The image failed to load: {path}",
+    "en": "The image failed to load: {path}"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotChartInsertedTruncated",
+    "vi": "PivotChart inserted (too many data points, truncated) — lưu (⌘S) để ghi it into the file.",
+    "en": "PivotChart inserted (too many data points, truncated) — save (⌘S) to write it into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotChartInserted",
+    "vi": "PivotChart inserted — it follows PivotTable refreshes; lưu (⌘S) để ghi it into the file.",
+    "en": "PivotChart inserted — it follows PivotTable refreshes; save (⌘S) to write it into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotLayoutMismatch",
+    "vi": "The PivotTable layout does not match its output range — refresh it in Excel before recalculating.",
+    "en": "The PivotTable layout does not match its output range — refresh it in Excel before recalculating."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotGrowUnsupported",
+    "vi": "This PivotTable layout (compact/multi-row headers) does not support automatic growth yet — refresh it in Excel.",
+    "en": "This PivotTable layout (compact/multi-row headers) does not support automatic growth yet — refresh it in Excel."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotGrowConflict",
+    "vi": "The grown PivotTable area conflicts with existing content — clear the target area, then refresh.",
+    "en": "The grown PivotTable area conflicts with existing content — clear the target area, then refresh."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appShapeNotEditable",
+    "vi": "No editable shape \"{id}\" (only shapes added this session can be edited).",
+    "en": "No editable shape \"{id}\" (only shapes added this session can be edited)."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCalcFieldNameClash",
+    "vi": "The calculated field \"{name}\" cannot share a name with a source header.",
+    "en": "The calculated field \"{name}\" cannot share a name with a source header."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appValueFilterFieldMissing",
+    "vi": "The value filter references value field {index}, which không tồn tại.",
+    "en": "The value filter references value field {index}, which does not exist."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotRelayoutOverlap",
+    "vi": "The new PivotTable layout would overwrite existing content — clear the target area first.",
+    "en": "The new PivotTable layout would overwrite existing content — clear the target area first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotDefNotLoadedSave",
+    "vi": "The PivotTable definition is not loaded yet — if you edited it this session, save (⌘S) first.",
+    "en": "The PivotTable definition is not loaded yet — if you edited it this session, save (⌘S) first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotEditUnsupported",
+    "vi": "This PivotTable cannot be edited yet: {reasons}",
+    "en": "This PivotTable cannot be edited yet: {reasons}"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotEditHasFeatures",
+    "vi": "PivotTables with grouping, filters, report filters, or calculated fields do not support layout editing yet — adjust them in Excel.",
+    "en": "PivotTables with grouping, filters, report filters, or calculated fields do not support layout editing yet — adjust them in Excel."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotEditValuesOnRows",
+    "vi": "PivotTables with value fields on the row axis do not support layout editing yet.",
+    "en": "PivotTables with value fields on the row axis do not support layout editing yet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotEditAggUnsupported",
+    "vi": "This PivotTable's aggregation (e.g. Product or Count Numbers) does not support layout editing yet.",
+    "en": "This PivotTable's aggregation (e.g. Product or Count Numbers) does not support layout editing yet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotSourceSheetNotFound",
+    "vi": "Cannot find the PivotTable source sheet \"{name}\".",
+    "en": "Cannot find the PivotTable source sheet \"{name}\"."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSlicerPivotStale",
+    "vi": "The slicer's target PivotTable is no longer valid.",
+    "en": "The slicer's target PivotTable is no longer valid."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSlicerNeedsFullLoad",
+    "vi": "Slicer filtering needs full-load mode — this workbook is too large and was stream-loaded.",
+    "en": "Slicer filtering needs full-load mode — this workbook is too large and was stream-loaded."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSlicerPivotMissing",
+    "vi": "The PivotTable bound to this slicer no longer exists.",
+    "en": "The PivotTable bound to this slicer no longer exists."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSlicerSheetMissing",
+    "vi": "The sheet bound to this slicer no longer exists.",
+    "en": "The sheet bound to this slicer no longer exists."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSlicerKeepOne",
+    "vi": "Keep at least one member selected in the slicer.",
+    "en": "Keep at least one member selected in the slicer."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSlicerApplied",
+    "vi": "Slicer \"{name}\" applied — lưu (⌘S) để ghi the filtered PivotTable.",
+    "en": "Slicer \"{name}\" applied — save (⌘S) to write the filtered PivotTable."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTimelineHintIn",
+    "vi": "Insert a timeline for a date field of the current PivotTable",
+    "en": "Insert a timeline for a date field of the current PivotTable"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTimelineNoDateFields",
+    "vi": "This PivotTable has no usable date fields — a timeline needs an ungrouped field whose values are all dates.",
+    "en": "This PivotTable has no usable date fields — a timeline needs an ungrouped field whose values are all dates."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTimelineCreated",
+    "vi": "Timeline \"{name}\" created — click months to filter the PivotTable.",
+    "en": "Timeline \"{name}\" created — click months to filter the PivotTable."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTimelineApplied",
+    "vi": "Timeline \"{name}\" applied — lưu (⌘S) để ghi the filtered PivotTable.",
+    "en": "Timeline \"{name}\" applied — save (⌘S) to write the filtered PivotTable."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTimelineEmptyRange",
+    "vi": "No members within the selected month range.",
+    "en": "No members within the selected month range."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFieldFilterTaken",
+    "vi": "Every qualifying field already has a slicer or timeline — remove the existing one first.",
+    "en": "Every qualifying field already has a slicer or timeline — remove the existing one first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appGoToNotReady",
+    "vi": "The workbook is not ready yet — cannot go to a reference.",
+    "en": "The workbook is not ready yet — cannot go to a reference."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appGoToOutOfBounds",
+    "vi": "Cannot go to \"{ref}\": outside the sheet bounds.",
+    "en": "Cannot go to \"{ref}\": outside the sheet bounds."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appGoToSheetNotFound",
+    "vi": "Cannot go to \"{ref}\": that sheet was not found.",
+    "en": "Cannot go to \"{ref}\": that sheet was not found."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appGoToInvalidAddress",
+    "vi": "Cannot go to \"{ref}\": the address không hợp lệ.",
+    "en": "Cannot go to \"{ref}\": the address is invalid."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSymbolNeedsCell",
+    "vi": "Open a workbook and Chọn một ô first, then insert a symbol.",
+    "en": "Open a workbook and select a cell first, then insert a symbol."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSymbolInsertFailed",
+    "vi": "Unable to insert the symbol.",
+    "en": "Unable to insert the symbol."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSymbolInserted",
+    "vi": "Inserted {char} into {cell}.",
+    "en": "Inserted {char} into {cell}."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAdvFilterNeedsFilter",
+    "vi": "Advanced Filter needs an AutoFilter range — select the data and click Filter first.",
+    "en": "Advanced Filter needs an AutoFilter range — select the data and click Filter first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAdvFilterGone",
+    "vi": "The current sheet has no AutoFilter — turn it on again and retry.",
+    "en": "The current sheet has no AutoFilter — turn it on again and retry."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAdvFilterFailed",
+    "vi": "Failed to apply the advanced filter.",
+    "en": "Failed to apply the advanced filter."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAdvFilterApplied",
+    "vi": "Advanced filter criteria applied — ⌘S saves to the file.",
+    "en": "Advanced filter criteria applied — ⌘S saves to the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFlashFillNeedsLeft",
+    "vi": "Flash Fill needs data columns to the left of the target column.",
+    "en": "Flash Fill needs data columns to the left of the target column."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFlashFillNeedsExamples",
+    "vi": "Fill in 1-2 examples in the target column first, then click Flash Fill.",
+    "en": "Fill in 1-2 examples in the target column first, then click Flash Fill."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFlashFillNoPattern",
+    "vi": "No pattern recognized from the examples — target values must be derivable from the columns on the left; try adding another example.",
+    "en": "No pattern recognized from the examples — target values must be derivable from the columns on the left; try adding another example."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFlashFillDone",
+    "vi": "⚡ Flash Fill filled {count} row(s) from your examples.",
+    "en": "⚡ Flash Fill filled {count} row(s) from your examples."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSparklineNeedsCols",
+    "vi": "Select at least two columns of data — one sparkline per row, placed in the column right of the Vùng chọn.",
+    "en": "Select at least two columns of data — one sparkline per row, placed in the column right of the selection."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSparklineNoSpace",
+    "vi": "No room for sparklines to the right of the Vùng chọn.",
+    "en": "No room for sparklines to the right of the selection."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSparklinesInserted",
+    "vi": "Inserted {count} sparkline(s) in the column right of the Vùng chọn — ⌘S saves to the file.",
+    "en": "Inserted {count} sparkline(s) in the column right of the selection — ⌘S saves to the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveHeldStranded",
+    "vi": "PivotTables/tables cannot be saved together with new sheets plus row/column changes — save the structure first, then add the PivotTables/tables.",
+    "en": "PivotTables/tables cannot be saved together with new sheets plus row/column changes — save the structure first, then add the PivotTables/tables."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveSecondCanceled",
+    "vi": "The second save phase was canceled — the structure is saved; PivotTables/tables/defined names are not written yet.",
+    "en": "The second save phase was canceled — the structure is saved; PivotTables/tables/defined names are not written yet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveSecondFailed",
+    "vi": "The structure is saved, but the second phase (PivotTables/tables/defined names) failed: {reason}",
+    "en": "The structure is saved, but the second phase (PivotTables/tables/defined names) failed: {reason}"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAiTurnLimit",
+    "vi": "(Reached the tool-call turn limit for this request; the answer above is based on what was read so far and may be incomplete.)",
+    "en": "(Reached the tool-call turn limit for this request; the answer above is based on what was read so far and may be incomplete.)"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAiTruncatedNote",
+    "vi": "(The reply was cut off by the length limit and may be incomplete.)",
+    "en": "(The reply was cut off by the length limit and may be incomplete.)"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAiNoSummary",
+    "vi": "AI finished with no summary.",
+    "en": "AI finished with no summary."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAiNoAction",
+    "vi": "The AI made no changes and gave no reply. Try again or rephrase.",
+    "en": "The AI made no changes and gave no reply. Try again or rephrase."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAreaStreaming",
+    "vi": "That area is still streaming in — try editing it again in a moment.",
+    "en": "That area is still streaming in — try editing it again in a moment."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFormulaRecordedPartial",
+    "vi": "Formula recorded — it saves to the file, but the on-screen result may be incomplete because this large workbook streams partially.",
+    "en": "Formula recorded — it saves to the file, but the on-screen result may be incomplete because this large workbook streams partially."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFormulaTooExpensive",
+    "vi": "This formula evaluates a large range once per element — the computation would freeze the app, so it was cancelled. Narrow the referenced range and try again.",
+    "en": "This formula evaluates a large range once per element — the computation would freeze the app, so it was cancelled. Narrow the referenced range and try again."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotSheetNoStructural",
+    "vi": "This sheet contains a PivotTable — structural changes are not supported yet.",
+    "en": "This sheet contains a PivotTable — structural changes are not supported yet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appDeleteSpanFormulas",
+    "vi": "A formula references only the deleted rows/columns — update or remove it first.",
+    "en": "A formula references only the deleted rows/columns — update or remove it first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appIconSetUnsupported",
+    "vi": "This icon combination cannot be saved to xlsx — please choose a different icon set.",
+    "en": "This icon combination cannot be saved to xlsx — please choose a different icon set."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNeedFullLoadSort",
+    "vi": "Sorting, filtering, moving ranges, and splitting text need the fully-loaded mode — this workbook is too large and streams partially.",
+    "en": "Sorting, filtering, moving ranges, and splitting text need the fully-loaded mode — this workbook is too large and streams partially."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFullLoadFilterTitle",
+    "vi": "Filtering needs the full workbook",
+    "en": "Filtering needs the full workbook"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFullLoadFilterBody",
+    "vi": "This workbook is large and only partially streamed in. Filtering (including value counts) needs the complete data to be correct. Load the entire workbook now?",
+    "en": "This workbook is large and only partially streamed in. Filtering (including value counts) needs the complete data to be correct. Load the entire workbook now?"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFullLoadRunning",
+    "vi": "Loading the entire workbook — filtering unlocks when it finishes…",
+    "en": "Loading the entire workbook — filtering unlocks when it finishes…"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFullLoadTooLarge",
+    "vi": "This workbook is too large to load fully into memory; filtering is unavailable for this file.",
+    "en": "This workbook is too large to load fully into memory; filtering is unavailable for this file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTableFilterNoEdit",
+    "vi": "This sheet's filter belongs to an Excel table — editing it cannot be saved yet.",
+    "en": "This sheet's filter belongs to an Excel table — editing it cannot be saved yet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAutofillStreaming",
+    "vi": "Autofill into an area that is still streaming in is not allowed yet.",
+    "en": "Autofill into an area that is still streaming in is not allowed yet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appDvNeedsIndexed",
+    "vi": "Editing data validation needs this sheet fully indexed first — try again in a moment.",
+    "en": "Editing data validation needs this sheet fully indexed first — try again in a moment."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appDvListFromRange",
+    "vi": "List (from range {range})",
+    "en": "List (from range {range})"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRuleBrokenRef",
+    "vi": "Broken reference (#REF!) — this rule can never apply",
+    "en": "Broken reference (#REF!) — this rule can never apply"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCellStreaming",
+    "vi": "That cell is still streaming in — try again in a moment.",
+    "en": "That cell is still streaming in — try again in a moment."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appApplyTxFailed",
+    "vi": "Unable to apply the transaction.",
+    "en": "Unable to apply the transaction."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPreviewOtherWorkbook",
+    "vi": "The preview belonged to a different workbook — create a new one.",
+    "en": "The preview belonged to a different workbook — create a new one."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPreviewSheetGone",
+    "vi": "The previewed sheet no longer exists — create a new preview.",
+    "en": "The previewed sheet no longer exists — create a new preview."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appWorkbookChangedSincePreview",
+    "vi": "The workbook changed since the preview — create a new preview.",
+    "en": "The workbook changed since the preview — create a new preview."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAppliedJournaled",
+    "vi": "Applied — the changes are journaled; save with ⌘S.",
+    "en": "Applied — the changes are journaled; save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAutoFilterCreateFailed",
+    "vi": "Unable to create the auto-filter.",
+    "en": "Unable to create the auto-filter."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAutoFilterRemoveFailed",
+    "vi": "Unable to remove the auto-filter.",
+    "en": "Unable to remove the auto-filter."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSelectDataRangeFirst",
+    "vi": "Select the data range first.",
+    "en": "Select the data range first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appChartInsertFailed",
+    "vi": "Unable to insert the chart.",
+    "en": "Unable to insert the chart."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appChartNeedsNumericColumn",
+    "vi": "Select a range with at least one numeric column (headers optional).",
+    "en": "Select a range with at least one numeric column (headers optional)."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appChartInserted",
+    "vi": "Chart inserted — select it to edit, ⌘S writes it into the file.",
+    "en": "Chart inserted — select it to edit, ⌘S writes it into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appShapeNeedsFile",
+    "vi": "Mở tệp XLSX trước — inserted shapes are written into the file.",
+    "en": "Open an XLSX file first — inserted shapes are written into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPictureNeedsFile",
+    "vi": "Mở tệp XLSX trước — inserted pictures are written into the file.",
+    "en": "Open an XLSX file first — inserted pictures are written into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTableNameUsed",
+    "vi": "Table name \"{name}\" was already used this session.",
+    "en": "Table name \"{name}\" was already used this session."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTableOverlapsSession",
+    "vi": "The range overlaps table \"{name}\" created this session.",
+    "en": "The range overlaps table \"{name}\" created this session."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTablesNeedFile",
+    "vi": "Mở tệp XLSX trước — tables are written into the file.",
+    "en": "Open an XLSX file first — tables are written into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTableSelectRange",
+    "vi": "Select the data range first — headers in its first row.",
+    "en": "Select the data range first — headers in its first row."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTableCreated",
+    "vi": "Table created — save with ⌘S.",
+    "en": "Table created — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTableCreateFailed",
+    "vi": "Unable to create the table.",
+    "en": "Unable to create the table."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotOnAddedSheet",
+    "vi": "Pivots on sheets added this session are not supported yet — save first.",
+    "en": "Pivots on sheets added this session are not supported yet — save first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotSourceNeedsRows",
+    "vi": "The pivot source needs a header row plus data rows.",
+    "en": "The pivot source needs a header row plus data rows."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotSourceRowLimit",
+    "vi": "The pivot source is limited to 10,000 data rows.",
+    "en": "The pivot source is limited to 10,000 data rows."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotSourceColLimit",
+    "vi": "The pivot source is limited to 200 columns.",
+    "en": "The pivot source is limited to 200 columns."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotTooManyRowItems",
+    "vi": "The pivot has more than 10,000 row items.",
+    "en": "The pivot has more than 10,000 row items."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotTooManyColItems",
+    "vi": "The pivot has more than 1,000 column items.",
+    "en": "The pivot has more than 1,000 column items."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotTooManyColLines",
+    "vi": "The pivot has more than 1,000 column lines.",
+    "en": "The pivot has more than 1,000 column lines."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotNeedsValues",
+    "vi": "The pivot needs one values entry.",
+    "en": "The pivot needs one values entry."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotTooManyRowLines",
+    "vi": "The pivot has more than 20,000 row lines.",
+    "en": "The pivot has more than 20,000 row lines."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotOverlapSource",
+    "vi": "The pivot output would overlap its source range — pick another targetCell.",
+    "en": "The pivot output would overlap its source range — pick another targetCell."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotOverlapExisting",
+    "vi": "The pivot output would overlap an existing pivot on the target sheet.",
+    "en": "The pivot output would overlap an existing pivot on the target sheet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotOverlapSession",
+    "vi": "The pivot output would overlap pivot \"{name}\" created this session.",
+    "en": "The pivot output would overlap pivot \"{name}\" created this session."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPivotNameUsed",
+    "vi": "Pivot name \"{name}\" was already used this session.",
+    "en": "Pivot name \"{name}\" was already used this session."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appActiveCellFallback",
+    "vi": "the active cell",
+    "en": "the active cell"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFormulaStartsEquals",
+    "vi": "A formula starts with \"=\".",
+    "en": "A formula starts with \"=\"."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appUnbalancedParens",
+    "vi": "Unbalanced parentheses — finish the arguments.",
+    "en": "Unbalanced parentheses — finish the arguments."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSetFormulaFailed",
+    "vi": "Unable to set the formula.",
+    "en": "Unable to set the formula."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSelectSourceRangeFirst",
+    "vi": "Select the source data range first.",
+    "en": "Select the source data range first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSelectRangeWithHeader",
+    "vi": "Select a data range with a header row.",
+    "en": "Select a data range with a header row."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSubtotalSameColumns",
+    "vi": "Pick different group and value columns.",
+    "en": "Pick different group and value columns."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRangeNoDataRows",
+    "vi": "The selected range has no data rows.",
+    "en": "The selected range has no data rows."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSubtotalTooManyGroups",
+    "vi": "Too many groups (max 200) — sort by the group column first.",
+    "en": "Too many groups (max 200) — sort by the group column first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSubtotalInsertFailed",
+    "vi": "Unable to insert the subtotal rows.",
+    "en": "Unable to insert the subtotal rows."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSelectTargetCellFirst",
+    "vi": "Select the target cell first.",
+    "en": "Select the target cell first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appConsolidateEmptySources",
+    "vi": "The source areas are empty.",
+    "en": "The source areas are empty."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appConsolidateOverlap",
+    "vi": "The output area overlaps a source area — pick another target cell.",
+    "en": "The output area overlaps a source area — pick another target cell."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appConsolidateWriteFailed",
+    "vi": "Unable to write the consolidation.",
+    "en": "Unable to write the consolidation."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appConsolidateMaxMinLabels",
+    "vi": "Max and Min are not supported with left-column labels — use by-position instead.",
+    "en": "Max and Min are not supported with left-column labels — use by-position instead."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appConsolidateNoLabels",
+    "vi": "No labels found in the left column of the source areas.",
+    "en": "No labels found in the left column of the source areas."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appOutlineNeedsFile",
+    "vi": "Mở tệp XLSX trước — outline groups are written into the file.",
+    "en": "Open an XLSX file first — outline groups are written into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appOutlineSelectFirst",
+    "vi": "Select the rows or columns to group first.",
+    "en": "Select the rows or columns to group first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appDetailHidden",
+    "vi": "Detail hidden — save with ⌘S.",
+    "en": "Detail hidden — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appDetailShown",
+    "vi": "Detail shown — save with ⌘S.",
+    "en": "Detail shown — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appOutlineMaxLevel",
+    "vi": "Already at the deepest outline level (7).",
+    "en": "Already at the deepest outline level (7)."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNothingToUngroup",
+    "vi": "Nothing to ungroup in the Vùng chọn.",
+    "en": "Nothing to ungroup in the selection."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRowsGrouped",
+    "vi": "Rows grouped — save with ⌘S. Collapse them with Hide Detail.",
+    "en": "Rows grouped — save with ⌘S. Collapse them with Hide Detail."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appColsGrouped",
+    "vi": "Columns grouped — save with ⌘S. Collapse them with Hide Detail.",
+    "en": "Columns grouped — save with ⌘S. Collapse them with Hide Detail."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRowsUngrouped",
+    "vi": "Rows ungrouped — save with ⌘S.",
+    "en": "Rows ungrouped — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appColsUngrouped",
+    "vi": "Columns ungrouped — save with ⌘S.",
+    "en": "Columns ungrouped — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFormatCopied",
+    "vi": "Format copied — select the target cells to apply it.",
+    "en": "Format copied — select the target cells to apply it."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appProtectionNeedsFile",
+    "vi": "Mở tệp XLSX trước — protection saves into the file.",
+    "en": "Open an XLSX file first — protection saves into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appProtectionNeedsIndexed",
+    "vi": "Protection needs this sheet fully indexed first — try again in a moment.",
+    "en": "Protection needs this sheet fully indexed first — try again in a moment."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTopRowFrozen",
+    "vi": "Top row frozen — saves with ⌘S.",
+    "en": "Top row frozen — saves with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFirstColFrozen",
+    "vi": "First column frozen — saves with ⌘S.",
+    "en": "First column frozen — saves with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appReplaceNeedsFullLoad",
+    "vi": "Replace needs the fully-loaded mode — use Find instead.",
+    "en": "Replace needs the fully-loaded mode — use Find instead."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appGridlinesHiddenSave",
+    "vi": "Gridlines hidden — saves with ⌘S.",
+    "en": "Gridlines hidden — saves with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appGridlinesShownSave",
+    "vi": "Gridlines shown — saves with ⌘S.",
+    "en": "Gridlines shown — saves with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTraceNoFormula",
+    "vi": "Trace Precedents: the active cell has no formula.",
+    "en": "Trace Precedents: the active cell has no formula."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTraceNoRefs",
+    "vi": "Trace Precedents: this formula has no cell references.",
+    "en": "Trace Precedents: this formula has no cell references."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTraceNoDependents",
+    "vi": "Trace Dependents: no formulas read the active cell{note}.",
+    "en": "Trace Dependents: no formulas read the active cell{note}."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appWorkbookStats",
+    "vi": "Workbook statistics: {sheets} sheets · {cells} cells with data · {formulas} formulas{note}.",
+    "en": "Workbook statistics: {sheets} sheets · {cells} cells with data · {formulas} formulas{note}."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFrozenAtSelection",
+    "vi": "Frozen at the Vùng chọn — saves with ⌘S.",
+    "en": "Frozen at the selection — saves with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSelectCellsFirst",
+    "vi": "Select the cells first.",
+    "en": "Select the cells first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSettingNeedsFile",
+    "vi": "Mở tệp XLSX trước — this setting saves to the file only.",
+    "en": "Open an XLSX file first — this setting saves to the file only."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTooManyCellsForSetting",
+    "vi": "Select fewer than 10,000 cells for this setting.",
+    "en": "Select fewer than 10,000 cells for this setting."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appProtectionFlagsRecorded",
+    "vi": "Protection flags recorded — they apply when the sheet is protected.",
+    "en": "Protection flags recorded — they apply when the sheet is protected."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSortSelectRows",
+    "vi": "Select the rows to sort first — include every column that belongs together.",
+    "en": "Select the rows to sort first — include every column that belongs together."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSortedAsc",
+    "vi": "Sorted A → Z by the first selected column.",
+    "en": "Sorted A → Z by the first selected column."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSortedDesc",
+    "vi": "Sorted Z → A by the first selected column.",
+    "en": "Sorted Z → A by the first selected column."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAutofnSelectCells",
+    "vi": "Select the cells to aggregate — {fn} goes in the row below.",
+    "en": "Select the cells to aggregate — {fn} goes in the row below."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRowBelowStreaming",
+    "vi": "The row below is still streaming in — try again in a moment.",
+    "en": "The row below is still streaming in — try again in a moment."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAutofnInserted",
+    "vi": "{fn} inserted below the Vùng chọn.",
+    "en": "{fn} inserted below the selection."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSortedCustom",
+    "vi": "Sorted by your custom levels.",
+    "en": "Sorted by your custom levels."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appDedupeNeedsFullLoad",
+    "vi": "Removing duplicates needs the fully-loaded mode — this workbook is too large and streams partially.",
+    "en": "Removing duplicates needs the fully-loaded mode — this workbook is too large and streams partially."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appDedupeSelectRows",
+    "vi": "Select the rows to check for duplicates first.",
+    "en": "Select the rows to check for duplicates first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNoDuplicates",
+    "vi": "No duplicate rows found in the Vùng chọn.",
+    "en": "No duplicate rows found in the selection."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appLinkSaved",
+    "vi": "Link saved — click the cell to follow it.",
+    "en": "Link saved — click the cell to follow it."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSplitIntoColumns",
+    "vi": "Split into columns.",
+    "en": "Split into columns."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAppliedToSelection",
+    "vi": "Applied to the current Vùng chọn.",
+    "en": "Applied to the current selection."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCommandFailed",
+    "vi": "Unable to apply the command.",
+    "en": "Unable to apply the command."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appBridgeUnavailable",
+    "vi": "Desktop file bridge is unavailable. Restart the Electron app.",
+    "en": "Desktop file bridge is unavailable. Restart the Electron app."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appOpened",
+    "vi": "Opened {name} — cell edits save back with ⌘S.",
+    "en": "Opened {name} — cell edits save back with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appOpenFailed",
+    "vi": "Unable to open the workbook.",
+    "en": "Unable to open the workbook."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPageSetupNeedsFile",
+    "vi": "Mở tệp XLSX trước — page setup saves into the file.",
+    "en": "Open an XLSX file first — page setup saves into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPageSetupRecorded",
+    "vi": "{note} — save with ⌘S.",
+    "en": "{note} — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appHeadingsWillPrint",
+    "vi": "Row and column headings will print",
+    "en": "Row and column headings will print"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSelectPrintRange",
+    "vi": "Select the print range first.",
+    "en": "Select the print range first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSelectRepeatRows",
+    "vi": "Select the rows to repeat first.",
+    "en": "Select the rows to repeat first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appHfNeedsFile",
+    "vi": "Mở tệp XLSX trước — headers and footers save into the file.",
+    "en": "Open an XLSX file first — headers and footers save into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appActiveSheetUnavailable",
+    "vi": "The active sheet is unavailable.",
+    "en": "The active sheet is unavailable."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appHfUpdated",
+    "vi": "Header & footer updated — save with ⌘S.",
+    "en": "Header & footer updated — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPdfNeedsFullLoad",
+    "vi": "PDF export needs the fully loaded workbook — wait for loading to finish.",
+    "en": "PDF export needs the fully loaded workbook — wait for loading to finish."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPdfRendering",
+    "vi": "Rendering the PDF…",
+    "en": "Rendering the PDF…"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPdfExportFailed",
+    "vi": "Unable to export the PDF.",
+    "en": "Unable to export the PDF."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPrintSent",
+    "vi": "Sent to the printer.",
+    "en": "Sent to the printer."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPrintNeedsFullLoad",
+    "vi": "Printing needs the whole workbook loaded — please wait for loading to finish.",
+    "en": "Printing needs the whole workbook loaded — please wait for loading to finish."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCsvExportNeedsFullLoad",
+    "vi": "CSV export needs the fully loaded workbook — wait for loading to finish.",
+    "en": "CSV export needs the fully loaded workbook — wait for loading to finish."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCsvExportTooLarge",
+    "vi": "The sheet is too large to export as CSV.",
+    "en": "The sheet is too large to export as CSV."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCsvExportedActiveOnly",
+    "vi": "CSV holds a single sheet — exported the active sheet \"{name}\" to {path}.",
+    "en": "CSV holds a single sheet — exported the active sheet \"{name}\" to {path}."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCsvExportFailed",
+    "vi": "Unable to export the CSV.",
+    "en": "Unable to export the CSV."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFilterSnapshotFailed",
+    "vi": "Unable to snapshot the filters.",
+    "en": "Unable to snapshot the filters."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSheetOrderReadFailed",
+    "vi": "Unable to read the sheet order — try again.",
+    "en": "Unable to read the sheet order — try again."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveFailed",
+    "vi": "Unable to save the workbook.",
+    "en": "Unable to save the workbook."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCfRuleUnsaveable",
+    "vi": "This conditional formatting rule cannot be saved to xlsx — switch to another rule type.",
+    "en": "This conditional formatting rule cannot be saved to xlsx — switch to another rule type."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrMultiSelectList",
+    "vi": "Multi-select list validation cannot be saved to xlsx — delete the rule before saving.",
+    "en": "Multi-select list validation cannot be saved to xlsx — delete the rule before saving."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrX14Cf",
+    "vi": "This range has extended (x14) conditional formatting and cannot be modified yet.",
+    "en": "This range has extended (x14) conditional formatting and cannot be modified yet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrPivotWithSheetOps",
+    "vi": "A newly created PivotTable cannot be saved together with sheet-management changes — save the PivotTable first.",
+    "en": "A newly created PivotTable cannot be saved together with sheet-management changes — save the PivotTable first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrPivotWithRowCol",
+    "vi": "A newly created PivotTable cannot be saved together with row/column changes on its sheet — save the PivotTable first.",
+    "en": "A newly created PivotTable cannot be saved together with row/column changes on its sheet — save the PivotTable first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrTableWithRowCol",
+    "vi": "A newly created table cannot be saved together with row/column changes on its sheet — save the table first.",
+    "en": "A newly created table cannot be saved together with row/column changes on its sheet — save the table first."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrNamesWithStructural",
+    "vi": "Defined-name changes cannot be saved together with row/column or sheet-structure changes — save them separately.",
+    "en": "Defined-name changes cannot be saved together with row/column or sheet-structure changes — save them separately."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrChangedOnDisk",
+    "vi": "The file was changed on disk by another program — save aborted; reopen the file and try again.",
+    "en": "The file was changed on disk by another program — save aborted; reopen the file and try again."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrTargetLocked",
+    "vi": "The file could not be replaced — it looks locked by another program (open in Excel, or being scanned/synced). Close it there and save again.",
+    "en": "The file could not be replaced — it looks locked by another program (open in Excel, or being scanned/synced). Close it there and save again."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrStylesheetLimited",
+    "vi": "This workbook's stylesheet is missing basic structure, so style changes cannot be saved.",
+    "en": "This workbook's stylesheet is missing basic structure, so style changes cannot be saved."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrPackageGuard",
+    "vi": "Saving would change the workbook's package structure — aborted to protect the file.",
+    "en": "Saving would change the workbook's package structure — aborted to protect the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrChartUnsupported",
+    "vi": "This chart type does not support that edit; save aborted — undo the chart change.",
+    "en": "This chart type does not support that edit; save aborted — undo the chart change."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSaveErrMoveOverlap",
+    "vi": "A formula, formatted range, drawing, or table spans the moved rows; save aborted — undo the move.",
+    "en": "A formula, formatted range, drawing, or table spans the moved rows; save aborted — undo the move."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFromTextCsvTitle",
+    "vi": "Import a CSV/text file into the current Vùng chọn",
+    "en": "Import a CSV/text file into the current selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCsvImported",
+    "vi": "Imported {rows} rows × {columns} columns from the file into {cell}.",
+    "en": "Imported {rows} rows × {columns} columns from the file into {cell}."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCsvEmpty",
+    "vi": "The CSV file has no data.",
+    "en": "The CSV file has no data."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNoNotesOnSheet",
+    "vi": "No comments on this sheet.",
+    "en": "No comments on this sheet."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNotePrevTitle",
+    "vi": "Jump to the previous comment",
+    "en": "Jump to the previous comment"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNoteNextTitle",
+    "vi": "Jump to the next comment",
+    "en": "Jump to the next comment"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appShowCommentsTitle",
+    "vi": "Pin/unpin the selected cell's comment bubble",
+    "en": "Pin/unpin the selected cell's comment bubble"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appStructuralShiftBlocked",
+    "vi": "A chart or table on this sheet is anchored to the affected rows/columns, so they can't shift; the structural change was not saved. Undo it (Cmd+Z) and save again.",
+    "en": "A chart or table on this sheet is anchored to the affected rows/columns, so they can't shift; the structural change was not saved. Undo it (Cmd+Z) and save again."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAiChangesNotSaved",
+    "vi": "AI changes applied (not saved). Undo with Cmd+Z; save to the file with Cmd+S.",
+    "en": "AI changes applied (not saved). Undo with Cmd+Z; save to the file with Cmd+S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appChartNotEditable",
+    "vi": "This chart is not editable.",
+    "en": "This chart is not editable."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appChartEditRecorded",
+    "vi": "Chart edit recorded — save with ⌘S.",
+    "en": "Chart edit recorded — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appVisualNotEditable",
+    "vi": "This visual is not editable.",
+    "en": "This visual is not editable."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appVisualNoDelete",
+    "vi": "This visual không thể xóa — its drawing shape is not editable.",
+    "en": "This visual cannot be deleted — its drawing shape is not editable."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFileVisualMoveDeleteOnly",
+    "vi": "Only moving or deleting is supported for visuals already in the file.",
+    "en": "Only moving or deleting is supported for visuals already in the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appVisualNoMove",
+    "vi": "This visual cannot be moved — its drawing shape is not editable.",
+    "en": "This visual cannot be moved — its drawing shape is not editable."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appVisualDeleted",
+    "vi": "Visual deleted — save with ⌘S.",
+    "en": "Visual deleted — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appShapeTextUpdated",
+    "vi": "Shape text updated — save with ⌘S.",
+    "en": "Shape text updated — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appShapeMoved",
+    "vi": "Shape moved — save with ⌘S.",
+    "en": "Shape moved — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNamesNeedFile",
+    "vi": "Mở tệp XLSX trước — defined names save into the file.",
+    "en": "Open an XLSX file first — defined names save into the file."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNameGone",
+    "vi": "That name no longer exists.",
+    "en": "That name no longer exists."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNameApplyFailed",
+    "vi": "The name could not be applied.",
+    "en": "The name could not be applied."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appNamesUpdated",
+    "vi": "Defined names updated — save with ⌘S.",
+    "en": "Defined names updated — save with ⌘S."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appLinkInternal",
+    "vi": "Link points inside the workbook: {location}",
+    "en": "Link points inside the workbook: {location}"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appClosureActive",
+    "vi": "{count} formulas recalculate live (closure mode); the rest of the workbook streams on demand.",
+    "en": "{count} formulas recalculate live (closure mode); the rest of the workbook streams on demand."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRecalcPartial",
+    "vi": "Formulas recalculated from your edits — {count} kept cached values (functions the fallback engine lacks).",
+    "en": "Formulas recalculated from your edits — {count} kept cached values (functions the fallback engine lacks)."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRecalcDone",
+    "vi": "Formulas recalculated from your edits ({count} cells, engine fallback).",
+    "en": "Formulas recalculated from your edits ({count} cells, engine fallback)."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appLoadRangeFailed",
+    "vi": "Unable to load the visible range.",
+    "en": "Unable to load the visible range."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSheetStillIndexing",
+    "vi": "The sheet is still indexing — try again in a moment.",
+    "en": "The sheet is still indexing — try again in a moment."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPrintNothing",
+    "vi": "The sheet has nothing to print.",
+    "en": "The sheet has nothing to print."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPrintTooLarge",
+    "vi": "The print range is too large — set a smaller print area on the Page Layout tab.",
+    "en": "The print range is too large — set a smaller print area on the Page Layout tab."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appDeleteVisualTitle",
+    "vi": "Delete this visual",
+    "en": "Delete this visual"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appReadRangeFailed",
+    "vi": "Unable to read the range.",
+    "en": "Unable to read the range."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appAutoSaveTip",
+    "vi": "AutoSave (every 30 seconds and when the window loses focus)",
+    "en": "AutoSave (every 30 seconds and when the window loses focus)"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRemoveDuplicatesNote",
+    "vi": "Rows in the Vùng chọn that duplicate an earlier row (comparing every column, ignoring letter case) are removed; the rest shift up.",
+    "en": "Rows in the selection that duplicate an earlier row (comparing every column, ignoring letter case) are removed; the rest shift up."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSeriesNamesRanges",
+    "vi": "Series names and ranges",
+    "en": "Series names and ranges"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appRemoveFromSheet",
+    "vi": "Remove from sheet",
+    "en": "Remove from sheet"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFromSelection",
+    "vi": "From Vùng chọn",
+    "en": "From selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appInsertShapeTitle",
+    "vi": "Insert a shape at the Vùng chọn",
+    "en": "Insert a shape at the selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appChartGridTitle",
+    "vi": "{type} chart — from Vùng chọn",
+    "en": "{type} chart — from selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSparklinesTitle",
+    "vi": "In-cell minicharts, one per selected row (placed right of the Vùng chọn)",
+    "en": "In-cell minicharts, one per selected row (placed right of the selection)"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPrintAreaFromSelection",
+    "vi": "Print area — from Vùng chọn",
+    "en": "Print area — from selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPrintTitlesHint",
+    "vi": "Rows repeated at the top of every printed page",
+    "en": "Rows repeated at the top of every printed page"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appPrintHeadingsTitle",
+    "vi": "Print row and column headings",
+    "en": "Print row and column headings"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appBrowseCatalog",
+    "vi": "Browse the catalog",
+    "en": "Browse the catalog"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appBrowseCatalogFiltered",
+    "vi": "Browse this category",
+    "en": "Browse this category"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appUseInFormulaTitle",
+    "vi": "Insert a defined name into the formula",
+    "en": "Insert a defined name into the formula"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appUseInFormulaNeedsEmptyCell",
+    "vi": "Select an empty cell first — inserting the name would replace this cell's contents",
+    "en": "Select an empty cell first — inserting the name would replace this cell's contents"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCreateFromSelectionTitle",
+    "vi": "Create names from the Vùng chọn labels",
+    "en": "Create names from the selection labels"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCreateNamesTopRow",
+    "vi": "From top row",
+    "en": "From top row"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCreateNamesLeftCol",
+    "vi": "From left column",
+    "en": "From left column"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCreateNamesNeedsData",
+    "vi": "Select labels plus the data they name.",
+    "en": "Select labels plus the data they name."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCalculateNowTitle",
+    "vi": "Recalculate the whole workbook",
+    "en": "Recalculate the whole workbook"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCalculateSheetTitle",
+    "vi": "Recalculate the active sheet only",
+    "en": "Recalculate the active sheet only"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFromTextCsv",
+    "vi": "From Text/CSV",
+    "en": "From Text/CSV"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appWorkbookNoPivot",
+    "vi": "No pivot tables in this workbook.",
+    "en": "No pivot tables in this workbook."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appErrorCheckingDetail",
+    "vi": "Scan the sheet for error values",
+    "en": "Scan the sheet for error values"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCheckingErrors",
+    "vi": "Scanning the whole sheet for errors…",
+    "en": "Scanning the whole sheet for errors…"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appSortSelectionTitle",
+    "vi": "Sort the Vùng chọn",
+    "en": "Sort the selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appClearFilterTitle",
+    "vi": "Clear the filter criteria",
+    "en": "Clear the filter criteria"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appReapplyTitle",
+    "vi": "Reapply the current filter",
+    "en": "Reapply the current filter"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFlashFillDetail",
+    "vi": "Fill from 1-2 examples",
+    "en": "Fill from 1-2 examples"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appInSelection",
+    "vi": "In the Vùng chọn",
+    "en": "In the selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appOutlineGroupTitle",
+    "vi": "Group the selected rows or columns into an outline",
+    "en": "Group the selected rows or columns into an outline"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appOutlineUngroupTitle",
+    "vi": "Remove one outline level from the Vùng chọn",
+    "en": "Remove one outline level from the selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appZoomSheetTitle",
+    "vi": "Zoom the sheet",
+    "en": "Zoom the sheet"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appZoomToSelectionDetail",
+    "vi": "Fit the Vùng chọn",
+    "en": "Fit the selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFreezeTitle",
+    "vi": "Freeze rows and columns",
+    "en": "Freeze rows and columns"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTranslateTitle",
+    "vi": "Translate the Vùng chọn with AI",
+    "en": "Translate the selection with AI"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appTranslatePrompt",
+    "vi": "Translate the text in the selected range into {language} and write the translations back to the same cells.",
+    "en": "Translate the text in the selected range into {language} and write the translations back to the same cells."
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appFormatAsTableTitle",
+    "vi": "Create a real Excel table over the Vùng chọn (headers in its first row)",
+    "en": "Create a real Excel table over the selection (headers in its first row)"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/app/vi.ts",
+    "key": "appCellStylesTitle",
+    "vi": "Apply one of Excel's built-in cell styles to the Vùng chọn",
+    "en": "Apply one of Excel's built-in cell styles to the selection"
+  },
+  {
+    "file": "apps/sheets/src/renderer/i18n/dialogs/vi.ts",
+    "key": "dlgAdvFilterAnd",
+    "vi": "Và (And)",
+    "en": "And"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusBrushOnce",
+    "vi": "Click a target element to apply the format; double-click the button for continuous mode",
+    "en": "Click a target element to apply the format; double-click the button for continuous mode"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusChartInserted",
+    "vi": "Chart inserted (sample data; you can edit the data in PowerPoint)",
+    "en": "Chart inserted (sample data; you can edit the data in PowerPoint)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusDateInserted",
+    "vi": "Date and time inserted (updates automatically when opened in PowerPoint)",
+    "en": "Date and time inserted (updates automatically when opened in PowerPoint)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusHfApplied",
+    "vi": "Header and footer applied to all slides",
+    "en": "Header and footer applied to all slides"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusHfUnchanged",
+    "vi": "No changes to header and footer",
+    "en": "No changes to header and footer"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusVideoInserted",
+    "vi": "Video inserted (embedded in the .pptx; plays in PowerPoint)",
+    "en": "Video inserted (embedded in the .pptx; plays in PowerPoint)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusAudioInserted",
+    "vi": "Audio inserted (embedded in the .pptx)",
+    "en": "Audio inserted (embedded in the .pptx)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusModel3dInserted",
+    "vi": "3D model embedded (canvas shows a placeholder; the model file is stored in the .pptx)",
+    "en": "3D model embedded (canvas shows a placeholder; the model file is stored in the .pptx)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusRecordingInserted",
+    "vi": "Screen recording inserted on the current slide (embedded webm)",
+    "en": "Screen recording inserted on the current slide (embedded webm)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusRecording",
+    "vi": "Recording… click \"Screen Recording\" again to stop and insert",
+    "en": "Recording… click \"Screen Recording\" again to stop and insert"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusAnimRemoved",
+    "vi": "Animations removed from the selected shapes",
+    "en": "Animations removed from the selected shapes"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusMotionPathAdded",
+    "vi": "Motion path animation added (moves along the path during slide shows; also works in PowerPoint)",
+    "en": "Motion path animation added (moves along the path during slide shows; also works in PowerPoint)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusCustomShowEmpty",
+    "vi": "This custom show contains no valid slides",
+    "en": "This custom show contains no valid slides"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusRehearseSaved",
+    "vi": "Rehearsal timings saved for {count} slides (the saved .pptx advances slides automatically in PowerPoint)",
+    "en": "Rehearsal timings saved for {count} slides (the saved .pptx advances slides automatically in PowerPoint)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusCutoutNoData",
+    "vi": "Could not read image data; cannot remove the background",
+    "en": "Could not read image data; cannot remove the background"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusCutoutEncodeFailed",
+    "vi": "Background removal failed: could not encode the result image",
+    "en": "Background removal failed: could not encode the result image"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusCutoutInsertFailed",
+    "vi": "Background removal failed: could not insert the result image",
+    "en": "Background removal failed: could not insert the result image"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusCutoutDone",
+    "vi": "Background removed (original image replaced with a transparent PNG)",
+    "en": "Background removed (original image replaced with a transparent PNG)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusSlideCopied",
+    "vi": "Slide copied — paste it into any open deck",
+    "en": "Slide copied — paste it into any open deck"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusSlideCopyFailed",
+    "vi": "Could not copy the slide",
+    "en": "Could not copy the slide"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusSlideCut",
+    "vi": "Slide cut — paste it into any open deck",
+    "en": "Slide cut — paste it into any open deck"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusSlidePasteFailed",
+    "vi": "Could not paste the slide",
+    "en": "Could not paste the slide"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusSectionSlidesRemoved",
+    "vi": "Section and its slides removed",
+    "en": "Section and its slides removed"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusTableDeleteLimit",
+    "vi": "At least one row and one column must remain (tables with merged cells are not supported yet)",
+    "en": "At least one row and one column must remain (tables with merged cells are not supported yet)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusTableMergedUnsupported",
+    "vi": "Inserting or deleting rows/columns chưa được hỗ trợ for tables with merged cells yet",
+    "en": "Inserting or deleting rows/columns is not supported for tables with merged cells yet"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusInkCleared",
+    "vi": "Ink cleared on the current slide",
+    "en": "Ink cleared on the current slide"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusPasteTruncated",
+    "vi": "Pasted text was too long and has been truncated",
+    "en": "Pasted text was too long and has been truncated"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appCtxAddSectionBefore",
+    "vi": "Add Section (before this slide)",
+    "en": "Add Section (before this slide)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appCtxInsertColLeft",
+    "vi": "Insert Column to the Left",
+    "en": "Insert Column to the Left"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appCtxInsertColRight",
+    "vi": "Insert Column to the Right",
+    "en": "Insert Column to the Right"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusMergeFailed",
+    "vi": "Cannot merge/split this cell",
+    "en": "Cannot merge/split this cell"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appCtxSizePosition",
+    "vi": "Size and Position…",
+    "en": "Size and Position…"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appReadingSlideTitle",
+    "vi": "Click to go to the next slide (Esc to exit Reading View)",
+    "en": "Click to go to the next slide (Esc to exit Reading View)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appSectionHeaderTitle",
+    "vi": "Click to collapse/expand; right-click to manage the section",
+    "en": "Click to collapse/expand; right-click to manage the section"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appNotesPlaceholder",
+    "vi": "Click to add speaker notes (saved into the .pptx)",
+    "en": "Click to add speaker notes (saved into the .pptx)"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appRehearseSummary",
+    "vi": "The total time for the slide show was {duration}. Do you want to save the slide timings for automatic slide advance?",
+    "en": "The total time for the slide show was {duration}. Do you want to save the slide timings for automatic slide advance?"
+  },
+  {
+    "file": "apps/slides/src/renderer/i18n/app/vi.ts",
+    "key": "appStatusSummaryZoomInserted",
+    "vi": "Summary Zoom slide inserted with {count} tiles",
+    "en": "Summary Zoom slide inserted with {count} tiles"
+  }
+]

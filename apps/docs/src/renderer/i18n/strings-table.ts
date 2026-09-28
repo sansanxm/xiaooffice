@@ -1,0 +1,58 @@
+import { defineStrings } from '@genoffice/i18n'
+
+const en = {
+  ribbonTableStyleOptions: 'Table Style Options',
+  ribbonTableFirstRow: 'Header Row',
+  ribbonTableLastRow: 'Total Row',
+  ribbonTableBandedRows: 'Banded Rows',
+  ribbonTableFirstColumn: 'First Column',
+  ribbonTableLastColumn: 'Last Column',
+  ribbonTableBandedColumns: 'Banded Columns',
+  ribbonTablePresetGrid: 'Plain Grid',
+  ribbonTablePresetBlueHeader: 'Blue Header',
+  ribbonTablePresetBlueBanded: 'Blue Banded',
+  ribbonTablePresetGrayBanded: 'Gray Banded',
+  ribbonTablePresetGreenHeader: 'Green Header',
+  ribbonAutoFit: 'AutoFit',
+  ribbonAutoFitContents: 'AutoFit Contents',
+  ribbonAutoFitWindow: 'AutoFit Window',
+  ribbonFixedColumnWidth: 'Fixed Column Width',
+  ribbonRepeatHeaderRows: 'Repeat Header Rows',
+  ribbonTableProperties: 'Table Properties',
+  ribbonTableData: 'Table',
+  ribbonHorizontalPosition: 'Horizontal position',
+  ribbonVerticalPosition: 'Vertical position',
+  ribbonDistanceFromText: 'Distance from text',
+  ribbonCellMargins: 'Default cell margins',
+}
+
+const vi: Record<keyof typeof en, string> = {
+  ribbonTableStyleOptions: 'Tùy chọn kiểu bảng',
+  ribbonTableFirstRow: 'Hàng tiêu đề',
+  ribbonTableLastRow: 'Hàng tổng cộng',
+  ribbonTableBandedRows: 'Hàng xen kẽ màu',
+  ribbonTableFirstColumn: 'Cột đầu tiên',
+  ribbonTableLastColumn: 'Cột cuối cùng',
+  ribbonTableBandedColumns: 'Cột xen kẽ màu',
+  ribbonTablePresetGrid: 'Lưới đơn giản',
+  ribbonTablePresetBlueHeader: 'Tiêu đề xanh dương',
+  ribbonTablePresetBlueBanded: 'Xen kẽ xanh dương',
+  ribbonTablePresetGrayBanded: 'Xen kẽ xám',
+  ribbonTablePresetGreenHeader: 'Tiêu đề xanh lá',
+  ribbonAutoFit: 'Tự động vừa vặn',
+  ribbonAutoFitContents: 'Tự động vừa nội dung',
+  ribbonAutoFitWindow: 'Tự động vừa cửa sổ',
+  ribbonFixedColumnWidth: 'Độ rộng cột cố định',
+  ribbonRepeatHeaderRows: 'Lặp lại hàng tiêu đề',
+  ribbonTableProperties: 'Thuộc tính bảng',
+  ribbonTableData: 'Bảng',
+  ribbonHorizontalPosition: 'Vị trí theo chiều ngang',
+  ribbonVerticalPosition: 'Vị trí theo chiều dọc',
+  ribbonDistanceFromText: 'Khoảng cách từ văn bản',
+  ribbonCellMargins: 'Căn lề ô mặc định',
+}
+
+export const tableStrings = defineStrings({
+  en,
+  vi,
+})

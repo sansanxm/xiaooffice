@@ -1,0 +1,469 @@
+[
+  {
+    "name": "docs/app",
+    "untranslated": 1,
+    "hybrid": 1,
+    "totalKeys": 487,
+    "issues": [
+      {
+        "key": "appUnitPiAbbr",
+        "type": "UNTRANSLATED",
+        "en": "pi",
+        "vi": "pi"
+      },
+      {
+        "key": "appAllCaps",
+        "type": "HYBRID",
+        "en": "All caps",
+        "vi": "Chữ in hoa toàn bộ",
+        "matches": [
+          "in",
+          "to"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "docs/ribbon",
+    "untranslated": 15,
+    "hybrid": 1,
+    "totalKeys": 877,
+    "issues": [
+      {
+        "key": "ribbonStylePreview",
+        "type": "UNTRANSLATED",
+        "en": "AaBb",
+        "vi": "AaBb"
+      },
+      {
+        "key": "ribbonAiAssistant",
+        "type": "UNTRANSLATED",
+        "en": "Genspark",
+        "vi": "Genspark"
+      },
+      {
+        "key": "ribbonPtValue",
+        "type": "UNTRANSLATED",
+        "en": "{n} pt",
+        "vi": "{n} pt"
+      },
+      {
+        "key": "ribbonWordArtLabel",
+        "type": "UNTRANSLATED",
+        "en": "WordArt ({name})",
+        "vi": "WordArt ({name})"
+      },
+      {
+        "key": "ribbonWordArtPreviewChar",
+        "type": "UNTRANSLATED",
+        "en": "A",
+        "vi": "A"
+      },
+      {
+        "key": "ribbonThemeOffice",
+        "type": "UNTRANSLATED",
+        "en": "Office",
+        "vi": "Office"
+      },
+      {
+        "key": "ribbonThemeFacet",
+        "type": "UNTRANSLATED",
+        "en": "Facet",
+        "vi": "Facet"
+      },
+      {
+        "key": "ribbonThemeIon",
+        "type": "UNTRANSLATED",
+        "en": "Ion",
+        "vi": "Ion"
+      },
+      {
+        "key": "ribbonThemeRetrospect",
+        "type": "UNTRANSLATED",
+        "en": "Retrospect",
+        "vi": "Retrospect"
+      },
+      {
+        "key": "ribbonThemeFontSongti",
+        "type": "UNTRANSLATED",
+        "en": "SimSun",
+        "vi": "SimSun"
+      },
+      {
+        "key": "ribbonThemeFontYahei",
+        "type": "UNTRANSLATED",
+        "en": "Microsoft YaHei",
+        "vi": "Microsoft YaHei"
+      },
+      {
+        "key": "ribbonThemeFontKaiti",
+        "type": "UNTRANSLATED",
+        "en": "KaiTi",
+        "vi": "KaiTi"
+      },
+      {
+        "key": "ribbonThemeFontTimes",
+        "type": "UNTRANSLATED",
+        "en": "Times New Roman",
+        "vi": "Times New Roman"
+      },
+      {
+        "key": "ribbonThemeFontArial",
+        "type": "UNTRANSLATED",
+        "en": "Arial",
+        "vi": "Arial"
+      },
+      {
+        "key": "ribbonCompareTip",
+        "type": "HYBRID",
+        "en": "Compare: pick another document and diff it by paragraph",
+        "vi": "So sánh: chọn một tài liệu khác và so sánh điểm khác biệt theo từng đoạn",
+        "matches": [
+          "so",
+          "so"
+        ]
+      },
+      {
+        "key": "ribbonPixels",
+        "type": "UNTRANSLATED",
+        "en": "{w} px",
+        "vi": "{w} px"
+      }
+    ]
+  },
+  {
+    "name": "docs/ai",
+    "untranslated": 1,
+    "hybrid": 0,
+    "totalKeys": 170,
+    "issues": [
+      {
+        "key": "aiPanelTitle",
+        "type": "UNTRANSLATED",
+        "en": "Genspark",
+        "vi": "Genspark"
+      }
+    ]
+  },
+  {
+    "name": "sheets/app",
+    "untranslated": 4,
+    "hybrid": 2,
+    "totalKeys": 1231,
+    "issues": [
+      {
+        "key": "appPrintNeedsFullLoad",
+        "type": "HYBRID",
+        "en": "Printing needs the whole workbook loaded — please wait for loading to finish.",
+        "vi": "In ấn cần toàn bộ sổ làm việc được tải — vui lòng chờ tải xong.",
+        "matches": [
+          "in",
+          "to"
+        ]
+      },
+      {
+        "key": "appPrintTooLarge",
+        "type": "HYBRID",
+        "en": "The print range is too large — set a smaller print area on the Page Layout tab.",
+        "vi": "Vùng in quá lớn — hãy đặt vùng in nhỏ hơn trong thẻ Bố trí trang (Page Layout).",
+        "matches": [
+          "in",
+          "in",
+          "page"
+        ]
+      },
+      {
+        "key": "appSortAsc",
+        "type": "UNTRANSLATED",
+        "en": "A → Z",
+        "vi": "A → Z"
+      },
+      {
+        "key": "appSortDesc",
+        "type": "UNTRANSLATED",
+        "en": "Z → A",
+        "vi": "Z → A"
+      },
+      {
+        "key": "appColorsOffice",
+        "type": "UNTRANSLATED",
+        "en": "Office",
+        "vi": "Office"
+      },
+      {
+        "key": "appPictureTypes",
+        "type": "UNTRANSLATED",
+        "en": "PNG, JPEG, GIF",
+        "vi": "PNG, JPEG, GIF"
+      }
+    ]
+  },
+  {
+    "name": "sheets/dialogs",
+    "untranslated": 1,
+    "hybrid": 2,
+    "totalKeys": 374,
+    "issues": [
+      {
+        "key": "dlgFnDescUpper",
+        "type": "HYBRID",
+        "en": "Converts text to uppercase.",
+        "vi": "Chuyển đổi toàn bộ văn bản thành chữ in hoa.",
+        "matches": [
+          "to",
+          "in"
+        ]
+      },
+      {
+        "key": "dlgFnDescLower",
+        "type": "HYBRID",
+        "en": "Converts text to lowercase.",
+        "vi": "Chuyển đổi toàn bộ văn bản thành chữ in thường.",
+        "matches": [
+          "to",
+          "in"
+        ]
+      },
+      {
+        "key": "dlgFnCatWeb",
+        "type": "UNTRANSLATED",
+        "en": "Web",
+        "vi": "Web"
+      }
+    ]
+  },
+  {
+    "name": "sheets/ai",
+    "untranslated": 0,
+    "hybrid": 0,
+    "totalKeys": 99,
+    "issues": []
+  },
+  {
+    "name": "slides/app",
+    "untranslated": 13,
+    "hybrid": 1,
+    "totalKeys": 237,
+    "issues": [
+      {
+        "key": "appSectionDefault",
+        "type": "UNTRANSLATED",
+        "en": "Default Section",
+        "vi": "Default Section"
+      },
+      {
+        "key": "appStatusSectionAdded",
+        "type": "UNTRANSLATED",
+        "en": "Section added",
+        "vi": "Section added"
+      },
+      {
+        "key": "appStatusSectionRemoved",
+        "type": "UNTRANSLATED",
+        "en": "Section removed (slides kept)",
+        "vi": "Section removed (slides kept)"
+      },
+      {
+        "key": "appStatusSectionsRemoved",
+        "type": "UNTRANSLATED",
+        "en": "All sections removed (slides kept)",
+        "vi": "All sections removed (slides kept)"
+      },
+      {
+        "key": "appStatusSectionSlidesRemoved",
+        "type": "UNTRANSLATED",
+        "en": "Section and its slides removed",
+        "vi": "Section and its slides removed"
+      },
+      {
+        "key": "appStatusSectionMovedUp",
+        "type": "UNTRANSLATED",
+        "en": "Section moved up",
+        "vi": "Section moved up"
+      },
+      {
+        "key": "appStatusSectionMovedDown",
+        "type": "UNTRANSLATED",
+        "en": "Section moved down",
+        "vi": "Section moved down"
+      },
+      {
+        "key": "appStatusSlideMoved",
+        "type": "UNTRANSLATED",
+        "en": "Moved to slide {page}",
+        "vi": "Moved to slide {page}"
+      },
+      {
+        "key": "appStatusTableDeleteLimit",
+        "type": "UNTRANSLATED",
+        "en": "At least one row and one column must remain (tables with merged cells are not supported yet)",
+        "vi": "At least one row and one column must remain (tables with merged cells are not supported yet)"
+      },
+      {
+        "key": "appStatusTableMergedUnsupported",
+        "type": "HYBRID",
+        "en": "Inserting or deleting rows/columns is not supported for tables with merged cells yet",
+        "vi": "Inserting or deleting rows/columns chưa được hỗ trợ for tables with merged cells yet",
+        "matches": [
+          "for",
+          "with"
+        ]
+      },
+      {
+        "key": "appStatusInkCleared",
+        "type": "UNTRANSLATED",
+        "en": "Ink cleared on the current slide",
+        "vi": "Ink cleared on the current slide"
+      },
+      {
+        "key": "appCtxDuplicateSlide",
+        "type": "UNTRANSLATED",
+        "en": "Duplicate Slide",
+        "vi": "Duplicate Slide"
+      },
+      {
+        "key": "appCtxCutSlide",
+        "type": "UNTRANSLATED",
+        "en": "Cut Slide",
+        "vi": "Cut Slide"
+      },
+      {
+        "key": "appCtxCopySlide",
+        "type": "UNTRANSLATED",
+        "en": "Copy Slide",
+        "vi": "Copy Slide"
+      }
+    ]
+  },
+  {
+    "name": "slides/ribbon",
+    "untranslated": 13,
+    "hybrid": 1,
+    "totalKeys": 721,
+    "issues": [
+      {
+        "key": "ribbonAiAssistant",
+        "type": "UNTRANSLATED",
+        "en": "Genspark",
+        "vi": "Genspark"
+      },
+      {
+        "key": "ribbonWordArtPreviewChar",
+        "type": "UNTRANSLATED",
+        "en": "A",
+        "vi": "A"
+      },
+      {
+        "key": "ribbonVideo",
+        "type": "UNTRANSLATED",
+        "en": "Video",
+        "vi": "Video"
+      },
+      {
+        "key": "ribbonInkWidthTip",
+        "type": "UNTRANSLATED",
+        "en": "{w} px",
+        "vi": "{w} px"
+      },
+      {
+        "key": "ribbonThemeOffice",
+        "type": "UNTRANSLATED",
+        "en": "Office",
+        "vi": "Office"
+      },
+      {
+        "key": "ribbonThemeEmber",
+        "type": "UNTRANSLATED",
+        "en": "Ember",
+        "vi": "Ember"
+      },
+      {
+        "key": "ribbonThemeIndigo",
+        "type": "UNTRANSLATED",
+        "en": "Indigo",
+        "vi": "Indigo"
+      },
+      {
+        "key": "ribbonThemeForest",
+        "type": "UNTRANSLATED",
+        "en": "Forest",
+        "vi": "Forest"
+      },
+      {
+        "key": "ribbonThemeCream",
+        "type": "UNTRANSLATED",
+        "en": "Cream",
+        "vi": "Cream"
+      },
+      {
+        "key": "ribbonThemeRose",
+        "type": "UNTRANSLATED",
+        "en": "Rose",
+        "vi": "Rose"
+      },
+      {
+        "key": "ribbonThemeGraphite",
+        "type": "UNTRANSLATED",
+        "en": "Graphite",
+        "vi": "Graphite"
+      },
+      {
+        "key": "ribbonThemeMidnight",
+        "type": "UNTRANSLATED",
+        "en": "Midnight",
+        "vi": "Midnight"
+      },
+      {
+        "key": "ribbonCountSuffix",
+        "type": "UNTRANSLATED",
+        "en": " ({n})",
+        "vi": " ({n})"
+      },
+      {
+        "key": "ribbonDlgEquationLabel",
+        "type": "HYBRID",
+        "en": "Equation text (Unicode math symbols, inserted as a math-font text box)",
+        "vi": "Nội dung công thức (ký hiệu toán Unicode, chèn dưới dạng hộp văn bản phông toán học)",
+        "matches": [
+          "to",
+          "to"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "slides/panes",
+    "untranslated": 0,
+    "hybrid": 0,
+    "totalKeys": 275,
+    "issues": []
+  },
+  {
+    "name": "slides/ai",
+    "untranslated": 1,
+    "hybrid": 0,
+    "totalKeys": 216,
+    "issues": [
+      {
+        "key": "aiPanelTitle",
+        "type": "UNTRANSLATED",
+        "en": "Genspark",
+        "vi": "Genspark"
+      }
+    ]
+  },
+  {
+    "name": "html/app",
+    "untranslated": 0,
+    "hybrid": 0,
+    "totalKeys": 138,
+    "issues": []
+  },
+  {
+    "name": "html/ai",
+    "untranslated": 0,
+    "hybrid": 0,
+    "totalKeys": 162,
+    "issues": []
+  }
+]

@@ -1,0 +1,1718 @@
+[
+  {
+    "k": "dlgGoalSeekToValue",
+    "v": "Giá trị mong muốn (To value)"
+  },
+  {
+    "k": "dlgAdvFilterAnd",
+    "v": "Và (And)"
+  },
+  {
+    "k": "dlgGoToTitle",
+    "v": "Đi đến ô (Go To)"
+  },
+  {
+    "k": "dlgHfNote",
+    "v": "Hiển thị ở đầu và cuối mỗi trang in/PDF. Mã trường: &P số trang, &N tổng số trang, &D ngày, &T giờ, &F tên tệp, &A tên trang tính; nhập && để lấy ký tự &. Để trống cả 6 phần để xóa đầu trang và chân trang."
+  },
+  {
+    "k": "dlgPivotShowAsNormal",
+    "v": "Không tính toán"
+  },
+  {
+    "k": "dlgPivotShowAsPctTotal",
+    "v": "% của Tổng toàn bộ"
+  },
+  {
+    "k": "dlgPivotAddCalc",
+    "v": "+ Thêm trường tính toán"
+  },
+  {
+    "k": "dlgPivotErrCalcFieldIncomplete",
+    "v": "Trường tính toán cần cả tên và công thức."
+  },
+  {
+    "k": "dlgSymbolCatMath",
+    "v": "Toán học"
+  },
+  {
+    "k": "dlgFnCatMath",
+    "v": "Toán học"
+  },
+  {
+    "k": "appMergeWorkbooksReading",
+    "v": "Đang nhập {sheet} từ {file}…"
+  },
+  {
+    "k": "appMergeWorkbooksInsertFailed",
+    "v": "Không thể tạo trang tính {sheet}."
+  },
+  {
+    "k": "appBreaksNeedCell",
+    "v": "Chọn một ô below row 1 or right of column A first."
+  },
+  {
+    "k": "appWorkbookProtectionWillWrite",
+    "v": "Workbook structure protection sẽ được ghi khi lưu (no password)."
+  },
+  {
+    "k": "appWorkbookProtectedWithPassword",
+    "v": "The workbook structure is được bảo vệ bằng mật khẩu — it cannot be changed here."
+  },
+  {
+    "k": "appRangesPasswordBlocked",
+    "v": "This sheet has được bảo vệ bằng mật khẩu edit ranges — editing them chưa được hỗ trợ."
+  },
+  {
+    "k": "appNumFmtAccounting",
+    "v": "Kế toán"
+  },
+  {
+    "k": "appComboNoSelectData",
+    "v": "Changing the data source of a combo chart chưa được hỗ trợ yet."
+  },
+  {
+    "k": "appPivotChartHintOut",
+    "v": "Chọn một ô inside the PivotTable output first, then pick a chart type"
+  },
+  {
+    "k": "appSlicerHintOut",
+    "v": "Chọn một ô inside the PivotTable output first, then insert a slicer"
+  },
+  {
+    "k": "appTimelineHintOut",
+    "v": "Chọn một ô inside the PivotTable output first, then insert a timeline"
+  },
+  {
+    "k": "appPivotCellNoEdit",
+    "v": "This cell is part of a PivotTable — editing it chưa được hỗ trợ yet."
+  },
+  {
+    "k": "appPivotSheetNoMove",
+    "v": "This sheet contains a PivotTable — moving ranges chưa được hỗ trợ yet."
+  },
+  {
+    "k": "appMergeOverTable",
+    "v": "The selection overlaps an Excel table — merging cells inside a table chưa được hỗ trợ yet."
+  },
+  {
+    "k": "appPivotSheetNoDuplicate",
+    "v": "This sheet contains a PivotTable — duplicating it chưa được hỗ trợ yet."
+  },
+  {
+    "k": "appDuplicateScopedNames",
+    "v": "This sheet has sheet-scoped defined names — duplicating it chưa được hỗ trợ yet."
+  },
+  {
+    "k": "appSelectCellFirst",
+    "v": "Chọn một ô first."
+  },
+  {
+    "k": "appProtectedWithPassword",
+    "v": "This sheet is protected with a password — removing its protection chưa được hỗ trợ."
+  },
+  {
+    "k": "appProtectionWillWrite",
+    "v": "Sheet protection sẽ được ghi khi lưu (no password). The editor itself does not enforce it."
+  },
+  {
+    "k": "appProtectionWillRemove",
+    "v": "Sheet protection sẽ được gỡ bỏ khi lưu."
+  },
+  {
+    "k": "appSelectRangeFirst",
+    "v": "Chọn một ô range first."
+  },
+  {
+    "k": "appSaveErrX14Dv",
+    "v": "This sheet has extended (x14) data validation; editing its validation rules chưa được hỗ trợ yet."
+  },
+  {
+    "k": "appPrintArea",
+    "v": "Vùng in"
+  },
+  {
+    "k": "appSetPrintArea",
+    "v": "Đặt vùng in"
+  },
+  {
+    "k": "appClearPrintArea",
+    "v": "Xóa vùng in"
+  },
+  {
+    "k": "appPrintTitlesLabel",
+    "v": "Tiêu đề in"
+  },
+  {
+    "k": "appFnCatMathTrig",
+    "v": "Toán & Lượng giác"
+  },
+  {
+    "k": "appCalculationOptions",
+    "v": "Tùy chọn tính toán"
+  },
+  {
+    "k": "appCalculateNow",
+    "v": "Tính toán ngay (F9)"
+  },
+  {
+    "k": "appCalculateSheet",
+    "v": "Tính toán trang tính (Shift+F9)"
+  },
+  {
+    "k": "dlgFnDescRand",
+    "v": "Trả về một số ngẫu nhiên giữa 0 và 1 (tính toán lại khi thay đổi)."
+  },
+  {
+    "k": "dlgFnDescUpper",
+    "v": "Chuyển đổi toàn bộ văn bản thành chữ in hoa."
+  },
+  {
+    "k": "dlgFnDescLower",
+    "v": "Chuyển đổi toàn bộ văn bản thành chữ in thường."
+  },
+  {
+    "k": "dlgFnDescToday",
+    "v": "Trả về ngày hiện tại của hệ thống (tính toán lại)."
+  },
+  {
+    "k": "dlgFnDescNow",
+    "v": "Trả về ngày và giờ hiện tại của hệ thống (tính toán lại)."
+  },
+  {
+    "k": "dlgFnDescPmt",
+    "v": "Tính khoản thanh toán định kỳ cho một khoản vay với lãi suất không đổi."
+  },
+  {
+    "k": "dlgFnDescNper",
+    "v": "Tính số kỳ hạn thanh toán cho một khoản đầu tư hoặc vay vốn."
+  },
+  {
+    "k": "appMoreSeries",
+    "v": "+{count} more series…"
+  },
+  {
+    "k": "appMoreItems",
+    "v": "+{count} more…"
+  },
+  {
+    "k": "appGoToButtonTitle",
+    "v": "Go To (⌘G)"
+  },
+  {
+    "k": "appPivotChartHintIn",
+    "v": "Create a PivotChart from the current PivotTable"
+  },
+  {
+    "k": "appSlicerHintIn",
+    "v": "Insert a slicer for the current PivotTable"
+  },
+  {
+    "k": "appRefreshHintIn",
+    "v": "Tính toán lại PivotTable hiện tại"
+  },
+  {
+    "k": "appTooManyImages",
+    "v": "At most {max} images per message; the extras were ignored"
+  },
+  {
+    "k": "appTableNotDeletable",
+    "v": "Table \"{name}\" không tồn tại or was not created this session — tables already in the file không thể xóa yet."
+  },
+  {
+    "k": "appImageNotLoaded",
+    "v": "The image failed to load: {path}"
+  },
+  {
+    "k": "appPivotChartInsertedTruncated",
+    "v": "PivotChart inserted (too many data points, truncated) — lưu (⌘S) để ghi it into the file."
+  },
+  {
+    "k": "appPivotChartInserted",
+    "v": "PivotChart inserted — it follows PivotTable refreshes; lưu (⌘S) để ghi it into the file."
+  },
+  {
+    "k": "appPivotNeedsFullLoad",
+    "v": "Làm mới PivotTable cần chế độ tải toàn bộ — sổ làm việc này quá lớn nên đã được tải theo luồng."
+  },
+  {
+    "k": "appPivotLayoutMismatch",
+    "v": "The PivotTable layout does not match its output range — refresh it in Excel before recalculating."
+  },
+  {
+    "k": "appPivotGrowUnsupported",
+    "v": "This PivotTable layout (compact/multi-row headers) does not support automatic growth yet — refresh it in Excel."
+  },
+  {
+    "k": "appPivotGrowConflict",
+    "v": "The grown PivotTable area conflicts with existing content — clear the target area, then refresh."
+  },
+  {
+    "k": "appShapeNotEditable",
+    "v": "No editable shape \"{id}\" (only shapes added this session can be edited)."
+  },
+  {
+    "k": "appCalcFieldNameClash",
+    "v": "The calculated field \"{name}\" cannot share a name with a source header."
+  },
+  {
+    "k": "appValueFilterFieldMissing",
+    "v": "The value filter references value field {index}, which không tồn tại."
+  },
+  {
+    "k": "appPivotRelayoutOverlap",
+    "v": "The new PivotTable layout would overwrite existing content — clear the target area first."
+  },
+  {
+    "k": "appPivotDefNotLoadedSave",
+    "v": "The PivotTable definition is not loaded yet — if you edited it this session, save (⌘S) first."
+  },
+  {
+    "k": "appPivotEditUnsupported",
+    "v": "This PivotTable cannot be edited yet: {reasons}"
+  },
+  {
+    "k": "appPivotEditHasFeatures",
+    "v": "PivotTables with grouping, filters, report filters, or calculated fields do not support layout editing yet — adjust them in Excel."
+  },
+  {
+    "k": "appPivotEditValuesOnRows",
+    "v": "PivotTables with value fields on the row axis do not support layout editing yet."
+  },
+  {
+    "k": "appPivotEditAggUnsupported",
+    "v": "This PivotTable's aggregation (e.g. Product or Count Numbers) does not support layout editing yet."
+  },
+  {
+    "k": "appPivotSourceSheetNotFound",
+    "v": "Cannot find the PivotTable source sheet \"{name}\"."
+  },
+  {
+    "k": "appSlicerPivotStale",
+    "v": "The slicer's target PivotTable is no longer valid."
+  },
+  {
+    "k": "appSlicerNeedsFullLoad",
+    "v": "Slicer filtering needs full-load mode — this workbook is too large and was stream-loaded."
+  },
+  {
+    "k": "appSlicerPivotMissing",
+    "v": "The PivotTable bound to this slicer no longer exists."
+  },
+  {
+    "k": "appSlicerSheetMissing",
+    "v": "The sheet bound to this slicer no longer exists."
+  },
+  {
+    "k": "appSlicerKeepOne",
+    "v": "Keep at least one member selected in the slicer."
+  },
+  {
+    "k": "appSlicerApplied",
+    "v": "Slicer \"{name}\" applied — lưu (⌘S) để ghi the filtered PivotTable."
+  },
+  {
+    "k": "appSlicerRemoved",
+    "v": "Slicer \"{name}\" removed; all members restored."
+  },
+  {
+    "k": "appTimelineHintIn",
+    "v": "Insert a timeline for a date field of the current PivotTable"
+  },
+  {
+    "k": "appTimelineNoDateFields",
+    "v": "This PivotTable has no usable date fields — a timeline needs an ungrouped field whose values are all dates."
+  },
+  {
+    "k": "appTimelineCreated",
+    "v": "Timeline \"{name}\" created — click months to filter the PivotTable."
+  },
+  {
+    "k": "appTimelineApplied",
+    "v": "Timeline \"{name}\" applied — lưu (⌘S) để ghi the filtered PivotTable."
+  },
+  {
+    "k": "appTimelineRemoved",
+    "v": "Timeline \"{name}\" removed; all members restored."
+  },
+  {
+    "k": "appTimelineEmptyRange",
+    "v": "No members within the selected month range."
+  },
+  {
+    "k": "appFieldFilterTaken",
+    "v": "Every qualifying field already has a slicer or timeline — remove the existing one first."
+  },
+  {
+    "k": "appGoToNotReady",
+    "v": "The workbook is not ready yet — cannot go to a reference."
+  },
+  {
+    "k": "appGoToUnresolved",
+    "v": "Cannot go to \"{ref}\": not a valid address or a navigable defined name."
+  },
+  {
+    "k": "appGoToOutOfBounds",
+    "v": "Cannot go to \"{ref}\": outside the sheet bounds."
+  },
+  {
+    "k": "appGoToSheetNotFound",
+    "v": "Cannot go to \"{ref}\": that sheet was not found."
+  },
+  {
+    "k": "appGoToInvalidAddress",
+    "v": "Cannot go to \"{ref}\": the address không hợp lệ."
+  },
+  {
+    "k": "appGoToFailed",
+    "v": "Cannot go to \"{ref}\": {detail}"
+  },
+  {
+    "k": "appSymbolNeedsCell",
+    "v": "Open a workbook and Chọn một ô first, then insert a symbol."
+  },
+  {
+    "k": "appSymbolInsertFailed",
+    "v": "Unable to insert the symbol."
+  },
+  {
+    "k": "appSymbolInserted",
+    "v": "Inserted {char} into {cell}."
+  },
+  {
+    "k": "appAdvFilterNeedsFilter",
+    "v": "Advanced Filter needs an AutoFilter range — select the data and click Filter first."
+  },
+  {
+    "k": "appAdvFilterGone",
+    "v": "The current sheet has no AutoFilter — turn it on again and retry."
+  },
+  {
+    "k": "appAdvFilterFailed",
+    "v": "Failed to apply the advanced filter."
+  },
+  {
+    "k": "appAdvFilterApplied",
+    "v": "Advanced filter criteria applied — ⌘S saves to the file."
+  },
+  {
+    "k": "appFlashFillNeedsLeft",
+    "v": "Flash Fill needs data columns to the left of the target column."
+  },
+  {
+    "k": "appFlashFillNeedsRows",
+    "v": "Flash Fill needs at least two rows of data."
+  },
+  {
+    "k": "appFlashFillNeedsExamples",
+    "v": "Fill in 1-2 examples in the target column first, then click Flash Fill."
+  },
+  {
+    "k": "appFlashFillNoPattern",
+    "v": "No pattern recognized from the examples — target values must be derivable from the columns on the left; try adding another example."
+  },
+  {
+    "k": "appFlashFillNothingToFill",
+    "v": "No empty rows to fill."
+  },
+  {
+    "k": "appFlashFillDone",
+    "v": "⚡ Flash Fill filled {count} row(s) from your examples."
+  },
+  {
+    "k": "appSparklineNeedsCols",
+    "v": "Select at least two columns of data — one sparkline per row, placed in the column right of the Vùng chọn."
+  },
+  {
+    "k": "appSparklineNoSpace",
+    "v": "No room for sparklines to the right of the Vùng chọn."
+  },
+  {
+    "k": "appSparklinesInserted",
+    "v": "Inserted {count} sparkline(s) in the column right of the Vùng chọn — ⌘S saves to the file."
+  },
+  {
+    "k": "appSaveHeldStranded",
+    "v": "PivotTables/tables cannot be saved together with new sheets plus row/column changes — save the structure first, then add the PivotTables/tables."
+  },
+  {
+    "k": "appSaveSecondCanceled",
+    "v": "The second save phase was canceled — the structure is saved; PivotTables/tables/defined names are not written yet."
+  },
+  {
+    "k": "appSaveSecondFailed",
+    "v": "The structure is saved, but the second phase (PivotTables/tables/defined names) failed: {reason}"
+  },
+  {
+    "k": "appReadyInitial",
+    "v": "Ready for a local, deterministic AI command."
+  },
+  {
+    "k": "appAiThinking",
+    "v": "AI is thinking…"
+  },
+  {
+    "k": "appAiTurnLimit",
+    "v": "(Reached the tool-call turn limit for this request; the answer above is based on what was read so far and may be incomplete.)"
+  },
+  {
+    "k": "appAiTruncatedNote",
+    "v": "(The reply was cut off by the length limit and may be incomplete.)"
+  },
+  {
+    "k": "appAiNoSummary",
+    "v": "AI finished with no summary."
+  },
+  {
+    "k": "appAiNoAction",
+    "v": "The AI made no changes and gave no reply. Try again or rephrase."
+  },
+  {
+    "k": "appAreaStreaming",
+    "v": "That area is still streaming in — try editing it again in a moment."
+  },
+  {
+    "k": "appFormulaRecordedPartial",
+    "v": "Formula recorded — it saves to the file, but the on-screen result may be incomplete because this large workbook streams partially."
+  },
+  {
+    "k": "appFormulaTooExpensive",
+    "v": "This formula evaluates a large range once per element — the computation would freeze the app, so it was cancelled. Narrow the referenced range and try again."
+  },
+  {
+    "k": "appPivotSheetNoStructural",
+    "v": "This sheet contains a PivotTable — structural changes are not supported yet."
+  },
+  {
+    "k": "appDeleteSpanFormulas",
+    "v": "A formula references only the deleted rows/columns — update or remove it first."
+  },
+  {
+    "k": "appIconSetUnsupported",
+    "v": "This icon combination cannot be saved to xlsx — please choose a different icon set."
+  },
+  {
+    "k": "appNeedFullLoadSort",
+    "v": "Sorting, filtering, moving ranges, and splitting text need the fully-loaded mode — this workbook is too large and streams partially."
+  },
+  {
+    "k": "appFullLoadFilterTitle",
+    "v": "Filtering needs the full workbook"
+  },
+  {
+    "k": "appFullLoadFilterBody",
+    "v": "This workbook is large and only partially streamed in. Filtering (including value counts) needs the complete data to be correct. Load the entire workbook now?"
+  },
+  {
+    "k": "appFullLoadStart",
+    "v": "Load all"
+  },
+  {
+    "k": "appFullLoadRunning",
+    "v": "Loading the entire workbook — filtering unlocks when it finishes…"
+  },
+  {
+    "k": "appFullLoadTooLarge",
+    "v": "This workbook is too large to load fully into memory; filtering is unavailable for this file."
+  },
+  {
+    "k": "appTableFilterNoEdit",
+    "v": "This sheet's filter belongs to an Excel table — editing it cannot be saved yet."
+  },
+  {
+    "k": "appAutofillStreaming",
+    "v": "Autofill into an area that is still streaming in is not allowed yet."
+  },
+  {
+    "k": "appDvNeedsIndexed",
+    "v": "Editing data validation needs this sheet fully indexed first — try again in a moment."
+  },
+  {
+    "k": "appMoveRowsColsUnsaved",
+    "v": "Moving whole columns cannot be saved to imported workbooks yet — moving whole rows is supported."
+  },
+  {
+    "k": "appNoWorkbookOpen",
+    "v": "No workbook is open."
+  },
+  {
+    "k": "appDvListFromRange",
+    "v": "List (from range {range})"
+  },
+  {
+    "k": "appRuleBrokenRef",
+    "v": "Broken reference (#REF!) — this rule can never apply"
+  },
+  {
+    "k": "appCellStreaming",
+    "v": "That cell is still streaming in — try again in a moment."
+  },
+  {
+    "k": "appPreviewCreatedDemo",
+    "v": "Preview created. No workbook state has changed."
+  },
+  {
+    "k": "appPreviewFailed",
+    "v": "Unable to create a preview."
+  },
+  {
+    "k": "appApplyTxFailed",
+    "v": "Unable to apply the transaction."
+  },
+  {
+    "k": "appPreviewOtherWorkbook",
+    "v": "The preview belonged to a different workbook — create a new one."
+  },
+  {
+    "k": "appPreviewSheetGone",
+    "v": "The previewed sheet no longer exists — create a new preview."
+  },
+  {
+    "k": "appWorkbookChangedSincePreview",
+    "v": "The workbook changed since the preview — create a new preview."
+  },
+  {
+    "k": "appAppliedJournaled",
+    "v": "Applied — the changes are journaled; save with ⌘S."
+  },
+  {
+    "k": "appUndoFailed",
+    "v": "Unable to undo."
+  },
+  {
+    "k": "appAutoFilterCreateFailed",
+    "v": "Unable to create the auto-filter."
+  },
+  {
+    "k": "appAutoFilterRemoveFailed",
+    "v": "Unable to remove the auto-filter."
+  },
+  {
+    "k": "appSelectDataRangeFirst",
+    "v": "Select the data range first."
+  },
+  {
+    "k": "appUnsupportedChartType",
+    "v": "Unsupported chart type: {kind}."
+  },
+  {
+    "k": "appChartInsertedDemo",
+    "v": "Chart inserted — demo edits stay in memory; open an XLSX file to save to disk."
+  },
+  {
+    "k": "appChartInsertFailed",
+    "v": "Unable to insert the chart."
+  },
+  {
+    "k": "appChartNeedsNumericColumn",
+    "v": "Select a range with at least one numeric column (headers optional)."
+  },
+  {
+    "k": "appChartInserted",
+    "v": "Chart inserted — select it to edit, ⌘S writes it into the file."
+  },
+  {
+    "k": "appShapeNeedsFile",
+    "v": "Mở tệp XLSX trước — inserted shapes are written into the file."
+  },
+  {
+    "k": "appPictureNeedsFile",
+    "v": "Mở tệp XLSX trước — inserted pictures are written into the file."
+  },
+  {
+    "k": "appPictureTooLarge",
+    "v": "Pictures over 20MB are not supported."
+  },
+  {
+    "k": "appPictureBadType",
+    "v": "Only PNG, JPEG, or GIF pictures are supported."
+  },
+  {
+    "k": "appTableNeedsRows",
+    "v": "A table needs a header row plus at least one data row."
+  },
+  {
+    "k": "appTableTooWide",
+    "v": "A table can span at most 1,000 columns."
+  },
+  {
+    "k": "appTableNameUsed",
+    "v": "Table name \"{name}\" was already used this session."
+  },
+  {
+    "k": "appTableOverlapsSession",
+    "v": "The range overlaps table \"{name}\" created this session."
+  },
+  {
+    "k": "appTablesNeedFile",
+    "v": "Mở tệp XLSX trước — tables are written into the file."
+  },
+  {
+    "k": "appTableSelectRange",
+    "v": "Select the data range first — headers in its first row."
+  },
+  {
+    "k": "appTableCreated",
+    "v": "Table created — save with ⌘S."
+  },
+  {
+    "k": "appTableCreateFailed",
+    "v": "Unable to create the table."
+  },
+  {
+    "k": "appPivotOnAddedSheet",
+    "v": "Pivots on sheets added this session are not supported yet — save first."
+  },
+  {
+    "k": "appPivotSourceNeedsRows",
+    "v": "The pivot source needs a header row plus data rows."
+  },
+  {
+    "k": "appPivotSourceRowLimit",
+    "v": "The pivot source is limited to 10,000 data rows."
+  },
+  {
+    "k": "appPivotSourceColLimit",
+    "v": "The pivot source is limited to 200 columns."
+  },
+  {
+    "k": "appPivotHeaderBlank",
+    "v": "Every source header cell must be non-blank."
+  },
+  {
+    "k": "appPivotFieldNotHeader",
+    "v": "Field \"{label}\" is not a source header."
+  },
+  {
+    "k": "appPivotTooManyRowItems",
+    "v": "The pivot has more than 10,000 row items."
+  },
+  {
+    "k": "appPivotTooManyColItems",
+    "v": "The pivot has more than 1,000 column items."
+  },
+  {
+    "k": "appPivotTooManyColLines",
+    "v": "The pivot has more than 1,000 column lines."
+  },
+  {
+    "k": "appPivotNeedsValues",
+    "v": "The pivot needs one values entry."
+  },
+  {
+    "k": "appPivotTooManyRowLines",
+    "v": "The pivot has more than 20,000 row lines."
+  },
+  {
+    "k": "appPivotOverlapSource",
+    "v": "The pivot output would overlap its source range — pick another targetCell."
+  },
+  {
+    "k": "appPivotOverlapExisting",
+    "v": "The pivot output would overlap an existing pivot on the target sheet."
+  },
+  {
+    "k": "appPivotOverlapSession",
+    "v": "The pivot output would overlap pivot \"{name}\" created this session."
+  },
+  {
+    "k": "appPivotNameUsed",
+    "v": "Pivot name \"{name}\" was already used this session."
+  },
+  {
+    "k": "appActiveCellFallback",
+    "v": "the active cell"
+  },
+  {
+    "k": "appFormulaStartsEquals",
+    "v": "A formula starts with \"=\"."
+  },
+  {
+    "k": "appUnbalancedParens",
+    "v": "Unbalanced parentheses — finish the arguments."
+  },
+  {
+    "k": "appSetFormulaFailed",
+    "v": "Unable to set the formula."
+  },
+  {
+    "k": "appFormulaSet",
+    "v": "Formula set in {cell}."
+  },
+  {
+    "k": "appSelectSourceRangeFirst",
+    "v": "Select the source data range first."
+  },
+  {
+    "k": "appSelectRangeWithHeader",
+    "v": "Select a data range with a header row."
+  },
+  {
+    "k": "appSubtotalSameColumns",
+    "v": "Pick different group and value columns."
+  },
+  {
+    "k": "appRangeNoDataRows",
+    "v": "The selected range has no data rows."
+  },
+  {
+    "k": "appSubtotalTooManyGroups",
+    "v": "Too many groups (max 200) — sort by the group column first."
+  },
+  {
+    "k": "appSubtotalInsertFailed",
+    "v": "Unable to insert the subtotal rows."
+  },
+  {
+    "k": "appSelectTargetCellFirst",
+    "v": "Select the target cell first."
+  },
+  {
+    "k": "appConsolidateBadRef",
+    "v": "Not a valid reference: {ref}."
+  },
+  {
+    "k": "appNoSheetNamed",
+    "v": "No sheet named \"{name}\"."
+  },
+  {
+    "k": "appConsolidateEmptySources",
+    "v": "The source areas are empty."
+  },
+  {
+    "k": "appConsolidateOverlap",
+    "v": "The output area overlaps a source area — pick another target cell."
+  },
+  {
+    "k": "appConsolidateWriteFailed",
+    "v": "Unable to write the consolidation."
+  },
+  {
+    "k": "appConsolidateMaxMinLabels",
+    "v": "Max and Min are not supported with left-column labels — use by-position instead."
+  },
+  {
+    "k": "appConsolidateNoLabels",
+    "v": "No labels found in the left column of the source areas."
+  },
+  {
+    "k": "appOutlineNeedsFile",
+    "v": "Mở tệp XLSX trước — outline groups are written into the file."
+  },
+  {
+    "k": "appOutlineSelectFirst",
+    "v": "Select the rows or columns to group first."
+  },
+  {
+    "k": "appDetailHidden",
+    "v": "Detail hidden — save with ⌘S."
+  },
+  {
+    "k": "appDetailShown",
+    "v": "Detail shown — save with ⌘S."
+  },
+  {
+    "k": "appOutlineMaxLevel",
+    "v": "Already at the deepest outline level (7)."
+  },
+  {
+    "k": "appNothingToUngroup",
+    "v": "Nothing to ungroup in the Vùng chọn."
+  },
+  {
+    "k": "appRowsGrouped",
+    "v": "Rows grouped — save with ⌘S. Collapse them with Hide Detail."
+  },
+  {
+    "k": "appColsGrouped",
+    "v": "Columns grouped — save with ⌘S. Collapse them with Hide Detail."
+  },
+  {
+    "k": "appRowsUngrouped",
+    "v": "Rows ungrouped — save with ⌘S."
+  },
+  {
+    "k": "appColsUngrouped",
+    "v": "Columns ungrouped — save with ⌘S."
+  },
+  {
+    "k": "appSheetAdded",
+    "v": "Sheet added — double-click its tab to rename it."
+  },
+  {
+    "k": "appSheetAddFailed",
+    "v": "Unable to add a sheet."
+  },
+  {
+    "k": "appFormatCopied",
+    "v": "Format copied — select the target cells to apply it."
+  },
+  {
+    "k": "appProtectionNeedsFile",
+    "v": "Mở tệp XLSX trước — protection saves into the file."
+  },
+  {
+    "k": "appProtectionNeedsIndexed",
+    "v": "Protection needs this sheet fully indexed first — try again in a moment."
+  },
+  {
+    "k": "appTopRowFrozen",
+    "v": "Top row frozen — saves with ⌘S."
+  },
+  {
+    "k": "appFirstColFrozen",
+    "v": "First column frozen — saves with ⌘S."
+  },
+  {
+    "k": "appFindScanTruncated",
+    "v": "Large sheet: search stopped after {cells} cells — results may be incomplete."
+  },
+  {
+    "k": "appReplaceNeedsFullLoad",
+    "v": "Replace needs the fully-loaded mode — use Find instead."
+  },
+  {
+    "k": "appGridlinesHiddenSave",
+    "v": "Gridlines hidden — saves with ⌘S."
+  },
+  {
+    "k": "appGridlinesShownSave",
+    "v": "Gridlines shown — saves with ⌘S."
+  },
+  {
+    "k": "appShowingFormulas",
+    "v": "Showing formulas — toggle again for values."
+  },
+  {
+    "k": "appTraceNoFormula",
+    "v": "Trace Precedents: the active cell has no formula."
+  },
+  {
+    "k": "appTraceNoRefs",
+    "v": "Trace Precedents: this formula has no cell references."
+  },
+  {
+    "k": "appTraceOffSheetRefs",
+    "v": "{count} reference(s) on other sheets not drawn."
+  },
+  {
+    "k": "appTraceNoDependents",
+    "v": "Trace Dependents: no formulas read the active cell{note}."
+  },
+  {
+    "k": "appTraceOffSheetDeps",
+    "v": "{count} dependent(s) on other sheets not drawn."
+  },
+  {
+    "k": "appNoTraceArrows",
+    "v": "No trace arrows to remove."
+  },
+  {
+    "k": "appWorkbookStats",
+    "v": "Workbook statistics: {sheets} sheets · {cells} cells with data · {formulas} formulas{note}."
+  },
+  {
+    "k": "appFrozenAtSelection",
+    "v": "Frozen at the Vùng chọn — saves with ⌘S."
+  },
+  {
+    "k": "appSelectCellsFirst",
+    "v": "Select the cells first."
+  },
+  {
+    "k": "appCellStyleApplied",
+    "v": "Cell style applied — it journals like any format edit (⌘S to save)."
+  },
+  {
+    "k": "appSettingNeedsFile",
+    "v": "Mở tệp XLSX trước — this setting saves to the file only."
+  },
+  {
+    "k": "appTooManyCellsForSetting",
+    "v": "Select fewer than 10,000 cells for this setting."
+  },
+  {
+    "k": "appProtectionFlagsRecorded",
+    "v": "Protection flags recorded — they apply when the sheet is protected."
+  },
+  {
+    "k": "appSortSelectRows",
+    "v": "Select the rows to sort first — include every column that belongs together."
+  },
+  {
+    "k": "appSortedAsc",
+    "v": "Sorted A → Z by the first selected column."
+  },
+  {
+    "k": "appSortedDesc",
+    "v": "Sorted Z → A by the first selected column."
+  },
+  {
+    "k": "appAutofnSelectCells",
+    "v": "Select the cells to aggregate — {fn} goes in the row below."
+  },
+  {
+    "k": "appRowBelowStreaming",
+    "v": "The row below is still streaming in — try again in a moment."
+  },
+  {
+    "k": "appAutofnInserted",
+    "v": "{fn} inserted below the Vùng chọn."
+  },
+  {
+    "k": "appDedupeNeedsFullLoad",
+    "v": "Removing duplicates needs the fully-loaded mode — this workbook is too large and streams partially."
+  },
+  {
+    "k": "appDedupeSelectRows",
+    "v": "Select the rows to check for duplicates first."
+  },
+  {
+    "k": "appNoDuplicates",
+    "v": "No duplicate rows found in the Vùng chọn."
+  },
+  {
+    "k": "appLinksNeedFile",
+    "v": "Open an XLSX file to edit links."
+  },
+  {
+    "k": "appLinkInvalid",
+    "v": "Enter a web address (https://…) or a sheet reference like Sheet1!A1."
+  },
+  {
+    "k": "appLinkSaved",
+    "v": "Link saved — click the cell to follow it."
+  },
+  {
+    "k": "appTextToColsSelectOne",
+    "v": "Select a single column of text to split."
+  },
+  {
+    "k": "appSplitIntoColumns",
+    "v": "Split into columns."
+  },
+  {
+    "k": "appAppliedToSelection",
+    "v": "Applied to the current Vùng chọn."
+  },
+  {
+    "k": "appCommandFailed",
+    "v": "Unable to apply the command."
+  },
+  {
+    "k": "appBridgeUnavailable",
+    "v": "Desktop file bridge is unavailable. Restart the Electron app."
+  },
+  {
+    "k": "appOpened",
+    "v": "Opened {name} — cell edits save back with ⌘S."
+  },
+  {
+    "k": "appOpenFailed",
+    "v": "Unable to open the workbook."
+  },
+  {
+    "k": "appPageSetupNeedsFile",
+    "v": "Mở tệp XLSX trước — page setup saves into the file."
+  },
+  {
+    "k": "appPageSetupRecorded",
+    "v": "{note} — save with ⌘S."
+  },
+  {
+    "k": "appGridlinesWillPrint",
+    "v": "Gridlines will print"
+  },
+  {
+    "k": "appGridlinesWontPrint",
+    "v": "Gridlines will not print"
+  },
+  {
+    "k": "appHeadingsWillPrint",
+    "v": "Row and column headings will print"
+  },
+  {
+    "k": "appHeadingsWontPrint",
+    "v": "Headings will not print"
+  },
+  {
+    "k": "appSelectPrintRange",
+    "v": "Select the print range first."
+  },
+  {
+    "k": "appRow1Repeats",
+    "v": "Row 1 repeats on every printed page"
+  },
+  {
+    "k": "appSelectRepeatRows",
+    "v": "Select the rows to repeat first."
+  },
+  {
+    "k": "appRowsRepeat",
+    "v": "Rows {rows} repeat on every printed page"
+  },
+  {
+    "k": "appHfNeedsFile",
+    "v": "Mở tệp XLSX trước — headers and footers save into the file."
+  },
+  {
+    "k": "appActiveSheetUnavailable",
+    "v": "The active sheet is unavailable."
+  },
+  {
+    "k": "appHfUpdated",
+    "v": "Header & footer updated — save with ⌘S."
+  },
+  {
+    "k": "appPdfNeedsFullLoad",
+    "v": "PDF export needs the fully loaded workbook — wait for loading to finish."
+  },
+  {
+    "k": "appPdfRendering",
+    "v": "Rendering the PDF…"
+  },
+  {
+    "k": "appPdfExportFailed",
+    "v": "Unable to export the PDF."
+  },
+  {
+    "k": "appPrintPreparing",
+    "v": "Preparing to print…"
+  },
+  {
+    "k": "appPrintSent",
+    "v": "Sent to the printer."
+  },
+  {
+    "k": "appPrintFailed",
+    "v": "Unable to print."
+  },
+  {
+    "k": "appPrintNeedsFullLoad",
+    "v": "Printing needs the whole workbook loaded — please wait for loading to finish."
+  },
+  {
+    "k": "appCsvExportNeedsFullLoad",
+    "v": "CSV export needs the fully loaded workbook — wait for loading to finish."
+  },
+  {
+    "k": "appCsvExportTooLarge",
+    "v": "The sheet is too large to export as CSV."
+  },
+  {
+    "k": "appCsvExportedActiveOnly",
+    "v": "CSV holds a single sheet — exported the active sheet \"{name}\" to {path}."
+  },
+  {
+    "k": "appCsvExportFailed",
+    "v": "Unable to export the CSV."
+  },
+  {
+    "k": "appDemoNoSave",
+    "v": "Demo edits stay in memory — open an XLSX file to save to disk."
+  },
+  {
+    "k": "appFilterSnapshotFailed",
+    "v": "Unable to snapshot the filters."
+  },
+  {
+    "k": "appColorFiltersUnsaveable",
+    "v": "Color filters cannot be saved as XLSX yet — clear them before saving."
+  },
+  {
+    "k": "appNoEditsToSave",
+    "v": "No edits to save yet."
+  },
+  {
+    "k": "appSheetOrderReadFailed",
+    "v": "Unable to read the sheet order — try again."
+  },
+  {
+    "k": "appSaveCanceled",
+    "v": "Save canceled."
+  },
+  {
+    "k": "appSaveFailed",
+    "v": "Unable to save the workbook."
+  },
+  {
+    "k": "appCfRuleUnsaveable",
+    "v": "This conditional formatting rule cannot be saved to xlsx — switch to another rule type."
+  },
+  {
+    "k": "appSaveErrMultiSelectList",
+    "v": "Multi-select list validation cannot be saved to xlsx — delete the rule before saving."
+  },
+  {
+    "k": "appSaveErrX14Cf",
+    "v": "This range has extended (x14) conditional formatting and cannot be modified yet."
+  },
+  {
+    "k": "appSaveErrPivotWithSheetOps",
+    "v": "A newly created PivotTable cannot be saved together with sheet-management changes — save the PivotTable first."
+  },
+  {
+    "k": "appSaveErrPivotWithRowCol",
+    "v": "A newly created PivotTable cannot be saved together with row/column changes on its sheet — save the PivotTable first."
+  },
+  {
+    "k": "appSaveErrTableWithRowCol",
+    "v": "A newly created table cannot be saved together with row/column changes on its sheet — save the table first."
+  },
+  {
+    "k": "appSaveErrNamesWithStructural",
+    "v": "Defined-name changes cannot be saved together with row/column or sheet-structure changes — save them separately."
+  },
+  {
+    "k": "appSaveErrChangedOnDisk",
+    "v": "The file was changed on disk by another program — save aborted; reopen the file and try again."
+  },
+  {
+    "k": "appSaveErrTargetLocked",
+    "v": "The file could not be replaced — it looks locked by another program (open in Excel, or being scanned/synced). Close it there and save again."
+  },
+  {
+    "k": "appSaveErrStylesheetLimited",
+    "v": "This workbook's stylesheet is missing basic structure, so style changes cannot be saved."
+  },
+  {
+    "k": "appSaveErrPackageGuard",
+    "v": "Saving would change the workbook's package structure — aborted to protect the file."
+  },
+  {
+    "k": "appSaveErrChartUnsupported",
+    "v": "This chart type does not support that edit; save aborted — undo the chart change."
+  },
+  {
+    "k": "appSaveErrMoveOverlap",
+    "v": "A formula, formatted range, drawing, or table spans the moved rows; save aborted — undo the move."
+  },
+  {
+    "k": "appFromTextCsvTitle",
+    "v": "Import a CSV/text file into the current Vùng chọn"
+  },
+  {
+    "k": "appCsvImported",
+    "v": "Imported {rows} rows × {columns} columns from the file into {cell}."
+  },
+  {
+    "k": "appCsvEmpty",
+    "v": "The CSV file has no data."
+  },
+  {
+    "k": "appCsvTooLarge",
+    "v": "CSV is too large — over 50,000 cells; use Open to load it as a new workbook."
+  },
+  {
+    "k": "appNoNotesOnSheet",
+    "v": "No comments on this sheet."
+  },
+  {
+    "k": "appNotePrevTitle",
+    "v": "Jump to the previous comment"
+  },
+  {
+    "k": "appNoteNextTitle",
+    "v": "Jump to the next comment"
+  },
+  {
+    "k": "appShowCommentsTitle",
+    "v": "Pin/unpin the selected cell's comment bubble"
+  },
+  {
+    "k": "appStructuralShiftBlocked",
+    "v": "A chart or table on this sheet is anchored to the affected rows/columns, so they can't shift; the structural change was not saved. Undo it (Cmd+Z) and save again."
+  },
+  {
+    "k": "appAiChangesNotSaved",
+    "v": "AI changes applied (not saved). Undo with Cmd+Z; save to the file with Cmd+S."
+  },
+  {
+    "k": "appChartUpdated",
+    "v": "Chart updated."
+  },
+  {
+    "k": "appChartNotEditable",
+    "v": "This chart is not editable."
+  },
+  {
+    "k": "appChartEditRecorded",
+    "v": "Chart edit recorded — save with ⌘S."
+  },
+  {
+    "k": "appChartDeleted",
+    "v": "Chart deleted."
+  },
+  {
+    "k": "appChartMoved",
+    "v": "Chart moved."
+  },
+  {
+    "k": "appVisualNotEditable",
+    "v": "This visual is not editable."
+  },
+  {
+    "k": "appVisualNoDelete",
+    "v": "This visual không thể xóa — its drawing shape is not editable."
+  },
+  {
+    "k": "appFileVisualMoveDeleteOnly",
+    "v": "Only moving or deleting is supported for visuals already in the file."
+  },
+  {
+    "k": "appVisualNoMove",
+    "v": "This visual cannot be moved — its drawing shape is not editable."
+  },
+  {
+    "k": "appVisualDeleted",
+    "v": "Visual deleted — save with ⌘S."
+  },
+  {
+    "k": "appShapeTextUpdated",
+    "v": "Shape text updated — save with ⌘S."
+  },
+  {
+    "k": "appShapeMoved",
+    "v": "Shape moved — save with ⌘S."
+  },
+  {
+    "k": "appNamesNeedFile",
+    "v": "Mở tệp XLSX trước — defined names save into the file."
+  },
+  {
+    "k": "appNameGone",
+    "v": "That name no longer exists."
+  },
+  {
+    "k": "appNameApplyFailed",
+    "v": "The name could not be applied."
+  },
+  {
+    "k": "appNamesUpdated",
+    "v": "Defined names updated — save with ⌘S."
+  },
+  {
+    "k": "appLinkInternal",
+    "v": "Link points inside the workbook: {location}"
+  },
+  {
+    "k": "appLinkSheetNotFound",
+    "v": "Sheet \"{name}\" was not found."
+  },
+  {
+    "k": "appLinkJumpFailed",
+    "v": "Unable to jump to {location}."
+  },
+  {
+    "k": "appClosureActive",
+    "v": "{count} formulas recalculate live (closure mode); the rest of the workbook streams on demand."
+  },
+  {
+    "k": "appRecalcPartial",
+    "v": "Formulas recalculated from your edits — {count} kept cached values (functions the fallback engine lacks)."
+  },
+  {
+    "k": "appRecalcDone",
+    "v": "Formulas recalculated from your edits ({count} cells, engine fallback)."
+  },
+  {
+    "k": "appLoadRangeFailed",
+    "v": "Unable to load the visible range."
+  },
+  {
+    "k": "appRangeMustBeVector",
+    "v": "{range} must be a single row or a single column of cells."
+  },
+  {
+    "k": "appRangeTooManyCells",
+    "v": "{range} covers more than {max} cells."
+  },
+  {
+    "k": "appCopyLoadingRange",
+    "v": "Loading {range} for copy…"
+  },
+  {
+    "k": "appCopyValuesOnly",
+    "v": "{range} copied as values only ({cells} cells): styles are kept only up to {max} cells."
+  },
+  {
+    "k": "appSheetStillIndexing",
+    "v": "The sheet is still indexing — try again in a moment."
+  },
+  {
+    "k": "appPrintNothing",
+    "v": "The sheet has nothing to print."
+  },
+  {
+    "k": "appPrintTooLarge",
+    "v": "The print range is too large — set a smaller print area on the Page Layout tab."
+  },
+  {
+    "k": "appVisualHintText",
+    "v": "Drag to move · handles to resize · double-click to edit text"
+  },
+  {
+    "k": "appVisualHintEdit",
+    "v": "Drag to move · handles to resize · double-click to edit"
+  },
+  {
+    "k": "appVisualHint",
+    "v": "Drag to move · handles to resize"
+  },
+  {
+    "k": "appDeleteVisualTitle",
+    "v": "Delete this visual"
+  },
+  {
+    "k": "appImageLoadFailed",
+    "v": "Unable to load image."
+  },
+  {
+    "k": "appEditChartTitle",
+    "v": "Edit chart"
+  },
+  {
+    "k": "appReadRangeFailed",
+    "v": "Unable to read the range."
+  },
+  {
+    "k": "appValuesRangeTitle",
+    "v": "Values range for {name} — a single row or column, e.g. B2:B13"
+  },
+  {
+    "k": "appCategoriesRangeTitle",
+    "v": "Category labels range for {name} — a single row or column, e.g. A2:A13"
+  },
+  {
+    "k": "appAutoSaveTitle",
+    "v": "AutoSave is available for cloud files only"
+  },
+  {
+    "k": "appAutoSaveTip",
+    "v": "AutoSave (every 30 seconds and when the window loses focus)"
+  },
+  {
+    "k": "appSaveAs",
+    "v": "Save As"
+  },
+  {
+    "k": "appOpenWorkbookTitle",
+    "v": "Open Workbook (⌘O)"
+  },
+  {
+    "k": "appOpenXlsx",
+    "v": "Open XLSX"
+  },
+  {
+    "k": "appMyDataHasHeaders",
+    "v": "My data has headers"
+  },
+  {
+    "k": "appThenBy",
+    "v": "Then by"
+  },
+  {
+    "k": "appRemoveDuplicatesNote",
+    "v": "Rows in the Vùng chọn that duplicate an earlier row (comparing every column, ignoring letter case) are removed; the rest shift up."
+  },
+  {
+    "k": "appLinkAddressLabel",
+    "v": "Address — a web page (https://…) or a sheet reference (Sheet1!A1)"
+  },
+  {
+    "k": "appNotAvailableYet",
+    "v": "Not available yet"
+  },
+  {
+    "k": "appGroupChartLayouts",
+    "v": "Chart layouts"
+  },
+  {
+    "k": "appRecolorSlices",
+    "v": "Recolor every slice"
+  },
+  {
+    "k": "appRecolorSeries",
+    "v": "Recolor every series"
+  },
+  {
+    "k": "appSelectEditableChart",
+    "v": "Select an editable chart"
+  },
+  {
+    "k": "appChartElTitle",
+    "v": "Chart Title…"
+  },
+  {
+    "k": "appLayout3",
+    "v": "Layout 3 — Legend bottom, no labels"
+  },
+  {
+    "k": "appLayout4",
+    "v": "Layout 4 — No legend, {labels}"
+  },
+  {
+    "k": "appChangeChartType",
+    "v": "Change chart type"
+  },
+  {
+    "k": "appSeriesNamesRanges",
+    "v": "Series names and ranges"
+  },
+  {
+    "k": "appGroupChartActions",
+    "v": "Chart actions"
+  },
+  {
+    "k": "appRemoveFromSheet",
+    "v": "Remove from sheet"
+  },
+  {
+    "k": "appAiStarterDetail",
+    "v": "Send to AI panel"
+  },
+  {
+    "k": "appFromSelection",
+    "v": "From Vùng chọn"
+  },
+  {
+    "k": "appRealExcelTable",
+    "v": "Real Excel table"
+  },
+  {
+    "k": "appInsertShapeTitle",
+    "v": "Insert a shape at the Vùng chọn"
+  },
+  {
+    "k": "appChartGridTitle",
+    "v": "{type} chart — from Vùng chọn"
+  },
+  {
+    "k": "appSparklinesTitle",
+    "v": "In-cell minicharts, one per selected row (placed right of the Vùng chọn)"
+  },
+  {
+    "k": "appAsSavedInFile",
+    "v": "as saved in file"
+  },
+  {
+    "k": "appPrintAreaFromSelection",
+    "v": "Print area — from Vùng chọn"
+  },
+  {
+    "k": "appPrintTitlesTitle",
+    "v": "Print titles — rows {rows} repeat on every page"
+  },
+  {
+    "k": "appPrintTitlesHint",
+    "v": "Rows repeated at the top of every printed page"
+  },
+  {
+    "k": "appPrintHeadingsTitle",
+    "v": "Print row and column headings"
+  },
+  {
+    "k": "appBrowseCatalog",
+    "v": "Browse the catalog"
+  },
+  {
+    "k": "appBrowseCatalogFiltered",
+    "v": "Browse this category"
+  },
+  {
+    "k": "appAutoSumTitle",
+    "v": "AutoSum — below Vùng chọn"
+  },
+  {
+    "k": "appFnCatMore",
+    "v": "More Functions"
+  },
+  {
+    "k": "appUseInFormulaTitle",
+    "v": "Insert a defined name into the formula"
+  },
+  {
+    "k": "appUseInFormulaNeedsEmptyCell",
+    "v": "Select an empty cell first — inserting the name would replace this cell's contents"
+  },
+  {
+    "k": "appCreateFromSelectionTitle",
+    "v": "Create names from the Vùng chọn labels"
+  },
+  {
+    "k": "appNoNamesYet",
+    "v": "No defined names yet"
+  },
+  {
+    "k": "appCreateNamesTopRow",
+    "v": "From top row"
+  },
+  {
+    "k": "appCreateNamesLeftCol",
+    "v": "From left column"
+  },
+  {
+    "k": "appCreateNamesNeedsData",
+    "v": "Select labels plus the data they name."
+  },
+  {
+    "k": "appRemoveArrowsTitle",
+    "v": "Clear all traces"
+  },
+  {
+    "k": "appWatchEmpty",
+    "v": "Select cells, then click Add watch."
+  },
+  {
+    "k": "appWatchSheet",
+    "v": "Sheet"
+  },
+  {
+    "k": "appCalcManualOn",
+    "v": "Manual calculation on — use Calculate Now to update."
+  },
+  {
+    "k": "appCalculateNowTitle",
+    "v": "Recalculate the whole workbook"
+  },
+  {
+    "k": "appCalculateSheetTitle",
+    "v": "Recalculate the active sheet only"
+  },
+  {
+    "k": "appFromTextCsv",
+    "v": "From Text/CSV"
+  },
+  {
+    "k": "appRefreshAll",
+    "v": "Refresh All"
+  },
+  {
+    "k": "appWorkbookNoPivot",
+    "v": "No pivot tables in this workbook."
+  },
+  {
+    "k": "appRefreshAllTitle",
+    "v": "Refresh every pivot table"
+  },
+  {
+    "k": "appErrorCheckingDetail",
+    "v": "Scan the sheet for error values"
+  },
+  {
+    "k": "appCheckingErrors",
+    "v": "Scanning the whole sheet for errors…"
+  },
+  {
+    "k": "appNoErrorsFound",
+    "v": "No error values found."
+  },
+  {
+    "k": "appSortSelectionTitle",
+    "v": "Sort the Vùng chọn"
+  },
+  {
+    "k": "appClearFilterTitle",
+    "v": "Clear the filter criteria"
+  },
+  {
+    "k": "appReapplyTitle",
+    "v": "Reapply the current filter"
+  },
+  {
+    "k": "appTextToColumnsTitle",
+    "v": "Split a single column of text (fully-loaded workbooks)"
+  },
+  {
+    "k": "appFlashFillDetail",
+    "v": "Fill from 1-2 examples"
+  },
+  {
+    "k": "appInSelection",
+    "v": "In the Vùng chọn"
+  },
+  {
+    "k": "appWhatIfTitle",
+    "v": "Solve an input for a target value"
+  },
+  {
+    "k": "appGoalSeekTargetNotNumber",
+    "v": "Set cell did not produce a number."
+  },
+  {
+    "k": "appOutlineGroupTitle",
+    "v": "Group the selected rows or columns into an outline"
+  },
+  {
+    "k": "appOutlineUngroupTitle",
+    "v": "Remove one outline level from the Vùng chọn"
+  },
+  {
+    "k": "appZoomIn",
+    "v": "Zoom in"
+  },
+  {
+    "k": "appZoomOut",
+    "v": "Zoom out"
+  },
+  {
+    "k": "appZoomSheetTitle",
+    "v": "Zoom the sheet"
+  },
+  {
+    "k": "appZoomToSelection",
+    "v": "Zoom to Vùng chọn"
+  },
+  {
+    "k": "appZoomToSelectionDetail",
+    "v": "Fit the Vùng chọn"
+  },
+  {
+    "k": "appFreezeTitle",
+    "v": "Freeze rows and columns"
+  },
+  {
+    "k": "appTranslateTitle",
+    "v": "Translate the Vùng chọn with AI"
+  },
+  {
+    "k": "appTranslatePrompt",
+    "v": "Translate the text in the selected range into {language} and write the translations back to the same cells."
+  },
+  {
+    "k": "appOpenFileFirst",
+    "v": "Open a file first"
+  },
+  {
+    "k": "appNoPassword",
+    "v": "No password"
+  },
+  {
+    "k": "appPasteExceptBorders",
+    "v": "All Except Borders"
+  },
+  {
+    "k": "appBorderAll",
+    "v": "All borders"
+  },
+  {
+    "k": "appBorderNone",
+    "v": "No border"
+  },
+  {
+    "k": "appFormatAsTable",
+    "v": "Format as Table"
+  },
+  {
+    "k": "appFormatAsTableTitle",
+    "v": "Create a real Excel table over the Vùng chọn (headers in its first row)"
+  },
+  {
+    "k": "appCellStylesTitle",
+    "v": "Apply one of Excel's built-in cell styles to the Vùng chọn"
+  },
+  {
+    "k": "appGoTo",
+    "v": "Go To"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "key": "dlgGoalSeekByCell",
+    "type": "HYBRID",
+    "en": "By changing cell",
+    "vi": "Bằng cách thay đổi ô (By changing cell)",
+    "matches": [
+      "by",
+      "cell"
+    ]
+  },
+  {
+    "key": "dlgPivotFilterTopN",
+    "type": "UNTRANSLATED",
+    "en": "Top N",
+    "vi": "Top N"
+  },
+  {
+    "key": "dlgFnDescUpper",
+    "type": "HYBRID",
+    "en": "Converts text to uppercase.",
+    "vi": "Chuyển đổi toàn bộ văn bản thành chữ in hoa.",
+    "matches": [
+      "to",
+      "in"
+    ]
+  },
+  {
+    "key": "dlgFnDescLower",
+    "type": "HYBRID",
+    "en": "Converts text to lowercase.",
+    "vi": "Chuyển đổi toàn bộ văn bản thành chữ in thường.",
+    "matches": [
+      "to",
+      "in"
+    ]
+  },
+  {
+    "key": "dlgFnCatWeb",
+    "type": "UNTRANSLATED",
+    "en": "Web",
+    "vi": "Web"
+  }
+]

@@ -1,0 +1,1694 @@
+[
+  {
+    "k": "aiWorkedSteps",
+    "v": "Worked · {n} steps"
+  },
+  {
+    "k": "aiGroupWorking",
+    "v": "Working…"
+  },
+  {
+    "k": "aiWorking",
+    "v": "Working"
+  },
+  {
+    "k": "aiErrorPrefix",
+    "v": "Error: {error}"
+  },
+  {
+    "k": "aiCopyReplyTitle",
+    "v": "Copy reply"
+  },
+  {
+    "k": "aiRegenerateTitle",
+    "v": "Regenerate"
+  },
+  {
+    "k": "aiSnapshotsTitle",
+    "v": "Snapshots"
+  },
+  {
+    "k": "aiRollback",
+    "v": "Rollback"
+  },
+  {
+    "k": "aiScopeSelected",
+    "v": "Selected {count} paragraph(s)"
+  },
+  {
+    "k": "aiScopeEmptyDoc",
+    "v": "Blank document"
+  },
+  {
+    "k": "aiScopeCursor",
+    "v": "At cursor"
+  },
+  {
+    "k": "aiInputPlaceholder",
+    "v": "Describe an edit, or ask anything"
+  },
+  {
+    "k": "aiHintIdle",
+    "v": "Enter to send, Shift+Enter for a new line"
+  },
+  {
+    "k": "aiHintBusy",
+    "v": "Replying…"
+  },
+  {
+    "k": "aiHintIdleTitle",
+    "v": "Enter to send · Shift+Enter for newline"
+  },
+  {
+    "k": "aiContinue",
+    "v": "Continue"
+  },
+  {
+    "k": "aiAttachTitle",
+    "v": "Attach local files (or drag them onto the panel)"
+  },
+  {
+    "k": "aiRemoveAttachmentTitle",
+    "v": "Remove attachment"
+  },
+  {
+    "k": "aiTrackChanges",
+    "v": "Track changes"
+  },
+  {
+    "k": "aiTrackOnTitle",
+    "v": "Track changes on: AI content edits are marked as revisions (insertions underlined, deletions struck through); accept or reject in Review"
+  },
+  {
+    "k": "aiTrackOffTitle",
+    "v": "Track changes off: AI edits apply immediately (you can still roll back via snapshots)"
+  },
+  {
+    "k": "aiTurnLimit",
+    "v": "Reached the per-run step limit — send another instruction to continue."
+  },
+  {
+    "k": "aiNoReply",
+    "v": "(no reply)"
+  },
+  {
+    "k": "aiTruncatedNote",
+    "v": "(The reply was cut off by the length limit and may be incomplete.)"
+  },
+  {
+    "k": "aiImagesSendFailed",
+    "v": "Image attachments could not be read; this message was sent without images"
+  },
+  {
+    "k": "aiImageReadFail",
+    "v": "{name}: failed to read"
+  },
+  {
+    "k": "aiTooManyImages",
+    "v": "At most {max} images per message; extras were ignored"
+  },
+  {
+    "k": "aiUnknownError",
+    "v": "AI request failed, please retry"
+  },
+  {
+    "k": "aiTimeoutError",
+    "v": "AI response timed out"
+  },
+  {
+    "k": "aiOverloadedError",
+    "v": "The AI service is busy right now — please try again in a moment"
+  },
+  {
+    "k": "aiCreditsExhausted",
+    "v": "Out of credits — top up at genspark.ai"
+  },
+  {
+    "k": "aiSumReadAttachment",
+    "v": "Read attachment"
+  },
+  {
+    "k": "aiSumImageAttachment",
+    "v": "Image attachment {name}"
+  },
+  {
+    "k": "aiSumRead",
+    "v": "Read {name}"
+  },
+  {
+    "k": "aiSumReadAttachmentName",
+    "v": "Read attachment {name}"
+  },
+  {
+    "k": "aiSumWebSearch",
+    "v": "Searched \"{query}\" ({count} results)"
+  },
+  {
+    "k": "aiSumWebSearchDone",
+    "v": "Searched \"{query}\" ({count} results)"
+  },
+  {
+    "k": "aiSumImageSearch",
+    "v": "Image search \"{query}\" ({count} images)"
+  },
+  {
+    "k": "aiSumImageSearchDone",
+    "v": "Image search \"{query}\" ({count} images)"
+  },
+  {
+    "k": "aiSumAnalyzeMedia",
+    "v": "Analyze media"
+  },
+  {
+    "k": "aiSumAnalyzeMediaDone",
+    "v": "Analyzed media"
+  },
+  {
+    "k": "aiSumInsertImage",
+    "v": "Inserted image on slide {n}"
+  },
+  {
+    "k": "aiSumInsertWebImage",
+    "v": "Inserted web image"
+  },
+  {
+    "k": "aiSumGenerateImage",
+    "v": "Generate image"
+  },
+  {
+    "k": "aiSumInsertedGenImage",
+    "v": "Inserted AI-generated image"
+  },
+  {
+    "k": "aiSumUnknownTool",
+    "v": "Unknown tool"
+  },
+  {
+    "k": "aiSumReadDocContext",
+    "v": "Read document structure"
+  },
+  {
+    "k": "aiSumReadBlocks",
+    "v": "Read blocks"
+  },
+  {
+    "k": "aiSumReadBlocksRange",
+    "v": "Read blocks {start}-{end}"
+  },
+  {
+    "k": "aiSumInsertContent",
+    "v": "Insert content"
+  },
+  {
+    "k": "aiSumWriteDocument",
+    "v": "Wrote the content"
+  },
+  {
+    "k": "aiSumWriteDocumentFailed",
+    "v": "Writing failed"
+  },
+  {
+    "k": "aiSumWriteDocumentPartial",
+    "v": "Wrote part of the content"
+  },
+  {
+    "k": "aiPartialTitle",
+    "v": "Only part of the page was generated"
+  },
+  {
+    "k": "aiPartialBody",
+    "v": "{lines} lines arrived before the generation stopped. Keep this part or discard it?"
+  },
+  {
+    "k": "aiPartialAdopt",
+    "v": "Keep"
+  },
+  {
+    "k": "aiPartialDiscard",
+    "v": "Discard"
+  },
+  {
+    "k": "aiSumInsertedBlocks",
+    "v": "Inserted {count} block(s)"
+  },
+  {
+    "k": "aiSumCreateDocument",
+    "v": "Create new document"
+  },
+  {
+    "k": "aiSumCreatedDocument",
+    "v": "Created {name}"
+  },
+  {
+    "k": "aiSumReplaceContent",
+    "v": "Replace content"
+  },
+  {
+    "k": "aiSumReplaceSelection",
+    "v": "Replace selected text"
+  },
+  {
+    "k": "aiSumReplacedBlocks",
+    "v": "Replaced blocks {start}-{end}"
+  },
+  {
+    "k": "aiSumInsertChart",
+    "v": "Insert chart"
+  },
+  {
+    "k": "aiSumDefineStyle",
+    "v": "Define style"
+  },
+  {
+    "k": "aiSumSetWatermark",
+    "v": "Set watermark"
+  },
+  {
+    "k": "aiSumInsertTextBox",
+    "v": "Insert text box"
+  },
+  {
+    "k": "aiSumInsertPicture",
+    "v": "Insert picture"
+  },
+  {
+    "k": "aiSumListStyles",
+    "v": "List styles"
+  },
+  {
+    "k": "aiSumInsertedChart",
+    "v": "Inserted chart \"{title}\""
+  },
+  {
+    "k": "aiSumEditChart",
+    "v": "Edit chart"
+  },
+  {
+    "k": "aiSumEditedChart",
+    "v": "Edited chart data (block {index})"
+  },
+  {
+    "k": "aiSumSetHeader",
+    "v": "Updated header"
+  },
+  {
+    "k": "aiSumSetFooter",
+    "v": "Updated footer"
+  },
+  {
+    "k": "aiSumSetPageSetup",
+    "v": "Updated page setup"
+  },
+  {
+    "k": "aiSumInsertSectionBreak",
+    "v": "Inserted section break"
+  },
+  {
+    "k": "aiSumApplyCommands",
+    "v": "Apply formatting commands"
+  },
+  {
+    "k": "aiCmdNone",
+    "v": "No matching blocks; the document was not changed."
+  },
+  {
+    "k": "aiCmdNoneSkipped",
+    "v": "No editable blocks; the document was not changed ({count} protected blocks skipped — tables/images cannot be changed by style commands)."
+  },
+  {
+    "k": "aiCmdNoneUnchanged",
+    "v": "{count} matching block(s) were left unchanged; the document was not changed."
+  },
+  {
+    "k": "aiCmdTextStyle",
+    "v": "Updated text style on {count} block(s)"
+  },
+  {
+    "k": "aiCmdMatchedStyle",
+    "v": "Styled {count} match(es) across {blocks} block(s)"
+  },
+  {
+    "k": "aiCmdParaStyle",
+    "v": "Updated paragraph format on {count} block(s)"
+  },
+  {
+    "k": "aiCmdHeading",
+    "v": "Adjusted heading level on {count} block(s)"
+  },
+  {
+    "k": "aiCmdReplaceAll",
+    "v": "{detail} across {count} block(s)"
+  },
+  {
+    "k": "aiCmdReplacedCount",
+    "v": "Replaced {count} occurrence(s)"
+  },
+  {
+    "k": "aiCmdReplaceFallback",
+    "v": "Replaced text"
+  },
+  {
+    "k": "aiCmdDeleted",
+    "v": "Deleted {count} block(s)"
+  },
+  {
+    "k": "aiCmdMoved",
+    "v": "Moved {count} block(s)"
+  },
+  {
+    "k": "aiCmdToList",
+    "v": "Converted {count} block(s) to a list"
+  },
+  {
+    "k": "aiCmdToBody",
+    "v": "Converted {count} list item(s) back to body text"
+  },
+  {
+    "k": "aiCmdImages",
+    "v": "Updated {count} image(s)"
+  },
+  {
+    "k": "aiCmdToc",
+    "v": "Inserted a table of contents ({count} entries)"
+  },
+  {
+    "k": "aiCmdSkipped",
+    "v": " ({count} protected block(s) skipped)"
+  },
+  {
+    "k": "aiInputPlaceholderGen",
+    "v": "Describe the deck to generate, or ask anything"
+  },
+  {
+    "k": "aiEmptyGenTitle",
+    "v": "Let AI generate your presentation"
+  },
+  {
+    "k": "aiEmptyGenBody1",
+    "v": "Describe the topic, audience, and rough page count;"
+  },
+  {
+    "k": "aiEmptyGenBody2",
+    "v": "AI generates the whole deck onto the canvas."
+  },
+  {
+    "k": "aiStarterGenReport",
+    "v": "Build a quarterly project review deck for me"
+  },
+  {
+    "k": "aiStarterGenLaunch",
+    "v": "Create a product launch presentation"
+  },
+  {
+    "k": "aiStarterGenTraining",
+    "v": "Make an onboarding training deck"
+  },
+  {
+    "k": "aiQcStart",
+    "v": "Generation done — checking the layout of {count} page(s)…"
+  },
+  {
+    "k": "aiQcPageOk",
+    "v": "Page {n}: layout OK"
+  },
+  {
+    "k": "aiQcPageFixed",
+    "v": "Page {n}: {summary}"
+  },
+  {
+    "k": "aiQcPageFixedDefault",
+    "v": "fixed layout issues"
+  },
+  {
+    "k": "aiQcPageReverted",
+    "v": "Page {n}: the automatic fix made things worse — rolled back"
+  },
+  {
+    "k": "aiQcPageFailed",
+    "v": "Page {n}: check failed ({error})"
+  },
+  {
+    "k": "aiQcPageSkipped",
+    "v": "Page {n}: automatic layout check skipped"
+  },
+  {
+    "k": "aiQcStopped",
+    "v": "Layout check stopped"
+  },
+  {
+    "k": "aiQcCapped",
+    "v": "{count} more page(s) not checked (per-run cap)"
+  },
+  {
+    "k": "aiFactCheckBtn",
+    "v": "AI Fact Check"
+  },
+  {
+    "k": "aiFactCheckPrompt",
+    "v": "Fact-check this deck: verify the figures, dates, names, and claims, then point out and correct any errors"
+  },
+  {
+    "k": "aiImageBtn",
+    "v": "AI Image"
+  },
+  {
+    "k": "aiImagePrompt",
+    "v": "Generate an image that matches this slide's content and insert it in a suitable spot on the slide"
+  },
+  {
+    "k": "aiBeautifyBtn",
+    "v": "AI Beautify"
+  },
+  {
+    "k": "aiBeautifyPrompt",
+    "v": "Beautify this slide: improve the layout, colors, and typography to make it look more professional"
+  },
+  {
+    "k": "aiSwitchModel",
+    "v": "Switch AI model"
+  },
+  {
+    "k": "aiNewChat",
+    "v": "New chat"
+  },
+  {
+    "k": "aiCollapsePanel",
+    "v": "Collapse panel"
+  },
+  {
+    "k": "aiContinuing",
+    "v": "Still working"
+  },
+  {
+    "k": "aiMsgError",
+    "v": "Error: {error}"
+  },
+  {
+    "k": "aiCopyReply",
+    "v": "Copy reply"
+  },
+  {
+    "k": "aiScopeSlide",
+    "v": "Slide {n}"
+  },
+  {
+    "k": "aiAskTitleMulti",
+    "v": "What should change about these {count} elements?"
+  },
+  {
+    "k": "aiAskConfirm",
+    "v": "Add to edit queue"
+  },
+  {
+    "k": "aiAskQueueFull",
+    "v": "The edit queue is full ({max} max) — send it first"
+  },
+  {
+    "k": "aiElText",
+    "v": "text box"
+  },
+  {
+    "k": "aiElShape",
+    "v": "shape"
+  },
+  {
+    "k": "aiElPicture",
+    "v": "picture"
+  },
+  {
+    "k": "aiElTable",
+    "v": "table"
+  },
+  {
+    "k": "aiElChart",
+    "v": "chart"
+  },
+  {
+    "k": "aiElGroup",
+    "v": "group"
+  },
+  {
+    "k": "aiChipVerify",
+    "v": "Fact-check"
+  },
+  {
+    "k": "aiChipRemoveBg",
+    "v": "Remove background"
+  },
+  {
+    "k": "aiChipRecolor",
+    "v": "Restyle colors"
+  },
+  {
+    "k": "aiChipChartType",
+    "v": "Change chart type"
+  },
+  {
+    "k": "aiChipUnify",
+    "v": "Unify styling"
+  },
+  {
+    "k": "aiQueueCount",
+    "v": "Edits: {count}"
+  },
+  {
+    "k": "aiQueuePending",
+    "v": "Unsent edits: {count}"
+  },
+  {
+    "k": "aiQueueSkipDeleted",
+    "v": "element was deleted — skipped"
+  },
+  {
+    "k": "aiQueueSkipAmbiguous",
+    "v": "element is gone or can no longer be identified — skipped"
+  },
+  {
+    "k": "aiQueueSkipNested",
+    "v": "element is nested too deep to edit — skipped"
+  },
+  {
+    "k": "aiQueueSkippedNote",
+    "v": "Skipped edits: {count}"
+  },
+  {
+    "k": "aiRemoveAttachment",
+    "v": "Remove attachment"
+  },
+  {
+    "k": "aiInputHint",
+    "v": "Enter to send · Shift+Enter for newline"
+  },
+  {
+    "k": "aiEscStop",
+    "v": "Esc to stop"
+  },
+  {
+    "k": "aiEnterSend",
+    "v": "Enter to send"
+  },
+  {
+    "k": "aiStopGeneration",
+    "v": "Stop generating"
+  },
+  {
+    "k": "aiStarterPolishTitle",
+    "v": "Improve this slide's title and copy"
+  },
+  {
+    "k": "aiStarterTighten",
+    "v": "Make this slide's bullets more concise"
+  },
+  {
+    "k": "aiStarterProofread",
+    "v": "Check the whole deck for typos and fix them"
+  },
+  {
+    "k": "aiStoppedNote",
+    "v": "(stopped)"
+  },
+  {
+    "k": "aiNoResponse",
+    "v": "The AI returned no content."
+  },
+  {
+    "k": "aiReadFailed",
+    "v": "{name}: failed to read"
+  },
+  {
+    "k": "aiErrStopped",
+    "v": "Stopped"
+  },
+  {
+    "k": "aiErrTimeout",
+    "v": "Timed out ({ms}ms)"
+  },
+  {
+    "k": "aiErrEmptyOutput",
+    "v": "Empty output"
+  },
+  {
+    "k": "aiErrUnknown",
+    "v": "Unknown error"
+  },
+  {
+    "k": "aiErrStreamTimeout",
+    "v": "AI request timed out: no response from the network, so the run was stopped. Check your connection and try again"
+  },
+  {
+    "k": "aiErrOverloaded",
+    "v": "The AI service is busy right now — please try again in a moment"
+  },
+  {
+    "k": "aiErrNetwork",
+    "v": "Network problem: could not reach the AI service. Check your connection and try again"
+  },
+  {
+    "k": "aiErrRequestFailed",
+    "v": "Failed to send request: {msg}"
+  },
+  {
+    "k": "aiErrGenerateFailed",
+    "v": "Generation failed"
+  },
+  {
+    "k": "aiErrRegenFailed",
+    "v": "Slide redo failed"
+  },
+  {
+    "k": "aiErrHtmlTruncated",
+    "v": "Incomplete HTML (output likely truncated)"
+  },
+  {
+    "k": "aiErrLandFailed",
+    "v": "Conversion failed: {err}"
+  },
+  {
+    "k": "aiErrReinsertFailed",
+    "v": "Re-insert failed: {err}"
+  },
+  {
+    "k": "aiProgressTitle",
+    "v": "Generating presentation…"
+  },
+  {
+    "k": "aiProgressDone",
+    "v": "Done — generated {n} slides"
+  },
+  {
+    "k": "aiProgressFailed",
+    "v": "Generation failed"
+  },
+  {
+    "k": "aiPagesSuffix",
+    "v": " ({n} pages)"
+  },
+  {
+    "k": "aiPageN",
+    "v": "Page {n}"
+  },
+  {
+    "k": "aiClarifyTitle",
+    "v": "A few quick questions to tailor the page to you"
+  },
+  {
+    "k": "aiClarifyMulti",
+    "v": "Multiple choice"
+  },
+  {
+    "k": "aiClarifySelected",
+    "v": "{n} selected"
+  },
+  {
+    "k": "aiClarifyDecide",
+    "v": "Decide for me"
+  },
+  {
+    "k": "aiClarifyDecideAnswer",
+    "v": "(decide for me)"
+  },
+  {
+    "k": "aiClarifyOther",
+    "v": "Other (type in)"
+  },
+  {
+    "k": "aiClarifySkip",
+    "v": "Skip survey"
+  },
+  {
+    "k": "aiClarifyNext",
+    "v": "Next"
+  },
+  {
+    "k": "aiClarifyPrev",
+    "v": "Previous"
+  },
+  {
+    "k": "aiClarifySubmit",
+    "v": "Generate"
+  },
+  {
+    "k": "aiStageStyle",
+    "v": "Style plan"
+  },
+  {
+    "k": "aiStageStyleRunning",
+    "v": "Generating style plan…"
+  },
+  {
+    "k": "aiStageStyleDone",
+    "v": "Style plan ready"
+  },
+  {
+    "k": "aiStagePlan",
+    "v": "Outline"
+  },
+  {
+    "k": "aiStagePlanRunning",
+    "v": "Planning outline…"
+  },
+  {
+    "k": "aiStagePlanProgress",
+    "v": "Planned {done}/{total} pages…"
+  },
+  {
+    "k": "aiStagePlanDone",
+    "v": "Outline complete ({n} pages)"
+  },
+  {
+    "k": "aiStagePlanFailed",
+    "v": "Outline failed"
+  },
+  {
+    "k": "aiStageImages",
+    "v": "Finding images"
+  },
+  {
+    "k": "aiStageImagesRunning",
+    "v": "Searching images ({done}/{total})…"
+  },
+  {
+    "k": "aiStageImagesDone",
+    "v": "Images found ({n})"
+  },
+  {
+    "k": "aiStagePages",
+    "v": "Generating slides"
+  },
+  {
+    "k": "aiStagePageRunning",
+    "v": "Generating page {n}/{total}…"
+  },
+  {
+    "k": "aiStageFinishing",
+    "v": "Finishing up…"
+  },
+  {
+    "k": "aiStagePageRestored",
+    "v": "Restored page {n}…"
+  },
+  {
+    "k": "aiStagePagesLanded",
+    "v": "Generated {n} slides"
+  },
+  {
+    "k": "aiStageDoneSummary",
+    "v": "Generated {n} slides"
+  },
+  {
+    "k": "aiStageAllFailed",
+    "v": "Generation failed (all {n} pages)"
+  },
+  {
+    "k": "aiFailReadSlide",
+    "v": "Read slide"
+  },
+  {
+    "k": "aiFailScript",
+    "v": "Edit script"
+  },
+  {
+    "k": "aiFailApplyOps",
+    "v": "Batch ops"
+  },
+  {
+    "k": "aiSumApplyOps",
+    "v": "Applied {count} op(s)"
+  },
+  {
+    "k": "aiSumApplyOpsDryRun",
+    "v": "Batch plan validated (dry run)"
+  },
+  {
+    "k": "aiFailLoadGuide",
+    "v": "Load op guide"
+  },
+  {
+    "k": "aiSumLoadGuide",
+    "v": "Loaded op guide: {names}"
+  },
+  {
+    "k": "aiOpEditText",
+    "v": "Edit text"
+  },
+  {
+    "k": "aiOpEditFormat",
+    "v": "Edit format"
+  },
+  {
+    "k": "aiOpMoveElement",
+    "v": "Move element"
+  },
+  {
+    "k": "aiOpSetFill",
+    "v": "Set fill"
+  },
+  {
+    "k": "aiOpSetStroke",
+    "v": "Set stroke"
+  },
+  {
+    "k": "aiOpDeleteElement",
+    "v": "Delete element"
+  },
+  {
+    "k": "aiOpUngroup",
+    "v": "Ungroup"
+  },
+  {
+    "k": "aiOpCropImage",
+    "v": "Crop image"
+  },
+  {
+    "k": "aiOpPictureOpacity",
+    "v": "Picture opacity"
+  },
+  {
+    "k": "aiOpSpeakerNotes",
+    "v": "Set speaker notes"
+  },
+  {
+    "k": "aiOpDeleteSlide",
+    "v": "Delete slide"
+  },
+  {
+    "k": "aiOpBackground",
+    "v": "Set background"
+  },
+  {
+    "k": "aiOpEditTable",
+    "v": "Edit table"
+  },
+  {
+    "k": "aiOpTableStructure",
+    "v": "Table structure"
+  },
+  {
+    "k": "aiOpNewShape",
+    "v": "New shape"
+  },
+  {
+    "k": "aiOpNewTextbox",
+    "v": "New text box"
+  },
+  {
+    "k": "aiOpInsertChart",
+    "v": "Insert chart"
+  },
+  {
+    "k": "aiOpInsertSmartart",
+    "v": "Insert diagram"
+  },
+  {
+    "k": "aiOpInsertTable",
+    "v": "Insert table"
+  },
+  {
+    "k": "aiFailWebSearch",
+    "v": "Web search"
+  },
+  {
+    "k": "aiFailImageSearch",
+    "v": "Image search"
+  },
+  {
+    "k": "aiFailGenImage",
+    "v": "AI image"
+  },
+  {
+    "k": "aiFailMedia",
+    "v": "Media analysis"
+  },
+  {
+    "k": "aiFailInsertImage",
+    "v": "Insert image"
+  },
+  {
+    "k": "aiFailReplaceImage",
+    "v": "Replace image"
+  },
+  {
+    "k": "aiFailClarify",
+    "v": "Questionnaire"
+  },
+  {
+    "k": "aiFailPlan",
+    "v": "Planning"
+  },
+  {
+    "k": "aiFailGenSlides",
+    "v": "Generate slides"
+  },
+  {
+    "k": "aiFailRegen",
+    "v": "Redo slide"
+  },
+  {
+    "k": "aiFailGenDeck",
+    "v": "Generate deck"
+  },
+  {
+    "k": "aiOpNewSlide",
+    "v": "New slide"
+  },
+  {
+    "k": "aiFailNewElement",
+    "v": "New element"
+  },
+  {
+    "k": "aiOpTableStyle",
+    "v": "Table style"
+  },
+  {
+    "k": "aiFailChartEdit",
+    "v": "Edit chart"
+  },
+  {
+    "k": "aiFailSaveTemplate",
+    "v": "Save style template"
+  },
+  {
+    "k": "aiFailListTemplates",
+    "v": "List style templates"
+  },
+  {
+    "k": "aiLabelInsertSmartart",
+    "v": "Insert SmartArt"
+  },
+  {
+    "k": "aiSumFromScratchGuard",
+    "v": "{label}: use generate_deck to build from scratch"
+  },
+  {
+    "k": "aiSumReadSlide",
+    "v": "Read slide {n}"
+  },
+  {
+    "k": "aiSumScriptNoop",
+    "v": "Edit script (slide {n}, no changes)"
+  },
+  {
+    "k": "aiSumScript",
+    "v": "Edit script on slide {n} ({count} ops)"
+  },
+  {
+    "k": "aiSumGenImage",
+    "v": "Generated image \"{prompt}\""
+  },
+  {
+    "k": "aiSumParseMedia",
+    "v": "Analyzed media ({count})"
+  },
+  {
+    "k": "aiSumReplaceImage",
+    "v": "Replaced image on slide {n}"
+  },
+  {
+    "k": "aiSumClarifySkipped",
+    "v": "User skipped questionnaire"
+  },
+  {
+    "k": "aiSumClarifyDone",
+    "v": "Collected questionnaire answers"
+  },
+  {
+    "k": "aiSumPlan",
+    "v": "Planned {count} pages | Core hook: {hook}"
+  },
+  {
+    "k": "aiSumHtmlAppend",
+    "v": "Appended {count} HTML pages ({total} total)"
+  },
+  {
+    "k": "aiSumHtmlGenerate",
+    "v": "Generated {count} pages from HTML"
+  },
+  {
+    "k": "aiSumRegen",
+    "v": "Redid slide {n}"
+  },
+  {
+    "k": "aiSumStoppedKept",
+    "v": "Stopped ({n} pages kept)"
+  },
+  {
+    "k": "aiSumDeckGenerated",
+    "v": "Auto-generated {done}/{total} pages"
+  },
+  {
+    "k": "aiSumChartEdit",
+    "v": "Edited chart on slide {n}"
+  },
+  {
+    "k": "aiSumSaveTemplate",
+    "v": "Saved style template \"{name}\""
+  },
+  {
+    "k": "aiSumTemplatesEmpty",
+    "v": "Style templates (empty)"
+  },
+  {
+    "k": "aiSumListTemplates",
+    "v": "Listed {count} style templates"
+  },
+  {
+    "k": "aiPageCloudToLocal",
+    "v": "cloud unavailable — generated locally"
+  },
+  {
+    "k": "aiComposerPlaceholderBuild",
+    "v": "Describe the table, data, or chart to create…"
+  },
+  {
+    "k": "aiEmptyBuildTitle",
+    "v": "Let AI build this workbook for you"
+  },
+  {
+    "k": "aiEmptyBuildBody",
+    "v": "Describe the table, data, or chart you need — AI creates it in place."
+  },
+  {
+    "k": "aiUndelivered",
+    "v": "Not sent"
+  },
+  {
+    "k": "aiCheckBtn",
+    "v": "AI Check"
+  },
+  {
+    "k": "aiCheckPrompt",
+    "v": "Check this sheet for problems: 1) formula errors (#REF!, #DIV/0!, etc.), ranges that do not cover all the data, totals rows missing columns; 2) numbers and text mixed in one column, inconsistent date formats, obvious outliers and duplicate rows; 3) totals that do not match the detail rows, percentage columns that do not add up to 100%. List the issues found and suggest fixes"
+  },
+  {
+    "k": "aiAnalyzeBtn",
+    "v": "AI Analyze"
+  },
+  {
+    "k": "aiAnalyzePrompt",
+    "v": "Analyze the data in this sheet and summarize key findings, trends, and anomalies"
+  },
+  {
+    "k": "aiSettingsTitle",
+    "v": "AI Settings"
+  },
+  {
+    "k": "aiSetUp",
+    "v": "Set up AI"
+  },
+  {
+    "k": "aiEmptyBodyLine1",
+    "v": "Describe a change or ask about the data."
+  },
+  {
+    "k": "aiThinkingAria",
+    "v": "Thinking"
+  },
+  {
+    "k": "aiAutoApplied",
+    "v": "Applied {count} changes"
+  },
+  {
+    "k": "aiUndoTitle",
+    "v": "Undo this AI change (same as ⌘Z)"
+  },
+  {
+    "k": "aiUndo",
+    "v": "Undo"
+  },
+  {
+    "k": "aiPreviewAria",
+    "v": "Change preview"
+  },
+  {
+    "k": "aiProposedChanges",
+    "v": "Proposed changes"
+  },
+  {
+    "k": "aiChangeStructure",
+    "v": "Structure"
+  },
+  {
+    "k": "aiChangeFormat",
+    "v": "Format"
+  },
+  {
+    "k": "aiChangeSheet",
+    "v": "Sheet"
+  },
+  {
+    "k": "aiMoreCells",
+    "v": "and {count} more cells"
+  },
+  {
+    "k": "aiCellEmpty",
+    "v": "empty"
+  },
+  {
+    "k": "aiComposerPlaceholder",
+    "v": "Ask AI to write or edit the document…"
+  },
+  {
+    "k": "aiInstructionAria",
+    "v": "AI instruction"
+  },
+  {
+    "k": "aiFileTooltip",
+    "v": "SHA-256 {sha}\nSaving rewrites only the edited entries; everything else is preserved."
+  },
+  {
+    "k": "aiFileMeta",
+    "v": "{sheets} sheets · {entries} entries"
+  },
+  {
+    "k": "aiGensparkAccount",
+    "v": "Genspark account"
+  },
+  {
+    "k": "aiAccountChecking",
+    "v": "Checking…"
+  },
+  {
+    "k": "aiLoggedIn",
+    "v": "Signed in"
+  },
+  {
+    "k": "aiLoggedInAs",
+    "v": "Signed in: {email}"
+  },
+  {
+    "k": "aiNotLoggedIn",
+    "v": "Not signed in (AI features require a Genspark account)"
+  },
+  {
+    "k": "aiWaitingBrowserLogin",
+    "v": "Waiting for browser sign-in…"
+  },
+  {
+    "k": "aiLoginGenspark",
+    "v": "Sign in to Genspark"
+  },
+  {
+    "k": "aiModel",
+    "v": "Model"
+  },
+  {
+    "k": "aiCancel",
+    "v": "Cancel"
+  },
+  {
+    "k": "aiSave",
+    "v": "Save"
+  },
+  {
+    "k": "aiToolWorkbookContext",
+    "v": "Read workbook info"
+  },
+  {
+    "k": "aiToolReadRange",
+    "v": "Read range"
+  },
+  {
+    "k": "aiToolReadRangeOf",
+    "v": "Read range {range}"
+  },
+  {
+    "k": "aiToolAggregate",
+    "v": "Aggregate range"
+  },
+  {
+    "k": "aiToolAggregateOf",
+    "v": "Aggregate range {range}"
+  },
+  {
+    "k": "aiToolLoadGuide",
+    "v": "Load guide"
+  },
+  {
+    "k": "aiToolLoadGuideOf",
+    "v": "Load guides {names}"
+  },
+  {
+    "k": "aiToolReadFormats",
+    "v": "Read formats"
+  },
+  {
+    "k": "aiToolReadFormatsOf",
+    "v": "Read formats {range}"
+  },
+  {
+    "k": "aiToolSheetFeatures",
+    "v": "Read sheet feature state"
+  },
+  {
+    "k": "aiToolReadCells",
+    "v": "Read cells"
+  },
+  {
+    "k": "aiToolReadCellsCount",
+    "v": "Read {count} cells"
+  },
+  {
+    "k": "aiToolPropose",
+    "v": "Build change plan"
+  },
+  {
+    "k": "aiToolCreateDocument",
+    "v": "Create new file"
+  },
+  {
+    "k": "aiToolCreatedDocument",
+    "v": "Created {name}"
+  },
+  {
+    "k": "aiToolReadAttachment",
+    "v": "Read attachment"
+  },
+  {
+    "k": "aiToolReadAttachmentOf",
+    "v": "Read attachment {name}"
+  },
+  {
+    "k": "aiToolImageAttachment",
+    "v": "Image attachment {name}"
+  },
+  {
+    "k": "aiToolReadFile",
+    "v": "Read {name}"
+  },
+  {
+    "k": "aiToolWebSearch",
+    "v": "Web search"
+  },
+  {
+    "k": "aiToolWebSearchDone",
+    "v": "Searched \"{query}\" · {count} results"
+  },
+  {
+    "k": "aiToolFindCells",
+    "v": "Find cells"
+  },
+  {
+    "k": "aiToolFindCellsOf",
+    "v": "Found \"{query}\" ({count} matches)"
+  },
+  {
+    "k": "aiToolFindErrors",
+    "v": "Scanned for formula errors ({count} found)"
+  },
+  {
+    "k": "aiToolSelectRange",
+    "v": "Select range"
+  },
+  {
+    "k": "aiToolSelectRangeOf",
+    "v": "Selected {range}"
+  },
+  {
+    "k": "aiToolImageSearch",
+    "v": "Image search"
+  },
+  {
+    "k": "aiToolImageSearchDone",
+    "v": "Searched images \"{query}\" ({count} results)"
+  },
+  {
+    "k": "aiToolGenImage",
+    "v": "Generate image"
+  },
+  {
+    "k": "aiToolGenImageDone",
+    "v": "Image generated"
+  },
+  {
+    "k": "aiToolTracePrecedents",
+    "v": "Trace precedents"
+  },
+  {
+    "k": "aiToolTracePrecedentsOf",
+    "v": "Traced precedents of {address}"
+  },
+  {
+    "k": "aiToolTraceDependents",
+    "v": "Trace dependents"
+  },
+  {
+    "k": "aiToolTraceDependentsOf",
+    "v": "Traced dependents of {address} ({count})"
+  },
+  {
+    "k": "aiScopeRange",
+    "v": "Selected {range}"
+  },
+  {
+    "k": "aiScopeColumn",
+    "v": "Selected the \"{name}\" column"
+  },
+  {
+    "k": "aiScopeColumns",
+    "v": "Selected {names} — {count} columns"
+  },
+  {
+    "k": "aiScopeRangeTip",
+    "v": "AI reads \"this column / these rows / the selected part\" as this range, and it stays fixed for the run once you send"
+  },
+  {
+    "k": "aiEmptyBody",
+    "v": "Landing page, report, poster — say what it is for and who it is for; AI proposes a brief first, then builds the page"
+  },
+  {
+    "k": "aiEmptyDocTitle",
+    "v": "Let AI rework this page"
+  },
+  {
+    "k": "aiEmptyDocBody",
+    "v": "Edit copy, recolor, unify the style, or select an element and ask for a targeted change; questions work too"
+  },
+  {
+    "k": "aiStarterLanding",
+    "v": "Design a product landing page"
+  },
+  {
+    "k": "aiStarterLandingPrompt",
+    "v": "Design a product landing page for me. The product is: "
+  },
+  {
+    "k": "aiStarterReport",
+    "v": "Build a data report page"
+  },
+  {
+    "k": "aiStarterReportPrompt",
+    "v": "Build a data report page for me. Topic and key figures: "
+  },
+  {
+    "k": "aiStarterPoster",
+    "v": "Make an infographic poster"
+  },
+  {
+    "k": "aiStarterPosterPrompt",
+    "v": "Make an infographic poster for me. The topic is: "
+  },
+  {
+    "k": "aiStarterWorkspace",
+    "v": "Design a personal dashboard UI"
+  },
+  {
+    "k": "aiStarterWorkspacePrompt",
+    "v": "Design a personal dashboard UI mockup with customizable modules: shortcuts, to-dos, schedule, key metrics. The user and their work: "
+  },
+  {
+    "k": "aiStarterExtractBrief",
+    "v": "Extract this page's design brief"
+  },
+  {
+    "k": "aiStarterExtractBriefPrompt",
+    "v": "Read the structure and styles of this page and extract its core hook and style brief for me to confirm."
+  },
+  {
+    "k": "aiStarterRecolor",
+    "v": "Try a new color scheme"
+  },
+  {
+    "k": "aiStarterRecolorPrompt",
+    "v": "Give this page a new color scheme: keep the content and structure, and propose the new palette and fonts as a brief for me to confirm first."
+  },
+  {
+    "k": "aiStarterUnify",
+    "v": "Unify the page style"
+  },
+  {
+    "k": "aiStarterUnifyPrompt",
+    "v": "Unify the style across the page: fonts, colors, spacing and radii under one set of rules, content unchanged."
+  },
+  {
+    "k": "aiToolOutline",
+    "v": "Read document outline"
+  },
+  {
+    "k": "aiToolReadSource",
+    "v": "Read source"
+  },
+  {
+    "k": "aiToolApplyOps",
+    "v": "Applied {n} edit(s)"
+  },
+  {
+    "k": "aiToolApplyOpsFailed",
+    "v": "Edits not applied"
+  },
+  {
+    "k": "aiToolClarify",
+    "v": "Questionnaire answered"
+  },
+  {
+    "k": "aiToolClarifySkipped",
+    "v": "Questionnaire skipped"
+  },
+  {
+    "k": "aiToolPlan",
+    "v": "Brief confirmed ({n} sections)"
+  },
+  {
+    "k": "aiToolPlanRejected",
+    "v": "Brief not confirmed"
+  },
+  {
+    "k": "aiToolPlanFailed",
+    "v": "Brief could not be drafted"
+  },
+  {
+    "k": "aiDraftingBrief",
+    "v": "Drafting the brief…"
+  },
+  {
+    "k": "aiToolWritePage",
+    "v": "Generated the page"
+  },
+  {
+    "k": "aiToolWritePageFailed",
+    "v": "Page generation failed"
+  },
+  {
+    "k": "aiToolWritePagePartial",
+    "v": "Generated part of the page"
+  },
+  {
+    "k": "aiWritingPage",
+    "v": "Writing the page · {lines} lines"
+  },
+  {
+    "k": "briefTitle",
+    "v": "Page brief"
+  },
+  {
+    "k": "briefHint",
+    "v": "Confirm or edit before generating; the page will follow it"
+  },
+  {
+    "k": "briefCoreHook",
+    "v": "Core hook"
+  },
+  {
+    "k": "briefTone",
+    "v": "Tone"
+  },
+  {
+    "k": "briefPalette",
+    "v": "Palette"
+  },
+  {
+    "k": "briefPrimary",
+    "v": "primary"
+  },
+  {
+    "k": "briefAccent",
+    "v": "accent"
+  },
+  {
+    "k": "briefBg",
+    "v": "background"
+  },
+  {
+    "k": "briefText",
+    "v": "text"
+  },
+  {
+    "k": "briefHeadingFont",
+    "v": "Heading font"
+  },
+  {
+    "k": "briefBodyFont",
+    "v": "Body font"
+  },
+  {
+    "k": "briefLayout",
+    "v": "Layout"
+  },
+  {
+    "k": "briefDensity",
+    "v": "Density"
+  },
+  {
+    "k": "briefDocxFriendly",
+    "v": "Word-export friendly"
+  },
+  {
+    "k": "briefDirections",
+    "v": "Style directions"
+  },
+  {
+    "k": "briefSurface",
+    "v": "Surface"
+  },
+  {
+    "k": "briefRadius",
+    "v": "Radius"
+  },
+  {
+    "k": "briefSpacing",
+    "v": "Spacing"
+  },
+  {
+    "k": "briefShadow",
+    "v": "Shadow"
+  },
+  {
+    "k": "briefSections",
+    "v": "Sections"
+  },
+  {
+    "k": "briefAddSection",
+    "v": "+ Add section"
+  },
+  {
+    "k": "briefRemoveSection",
+    "v": "Remove section"
+  },
+  {
+    "k": "briefSectionBrief",
+    "v": "What goes here"
+  },
+  {
+    "k": "briefAudience",
+    "v": "Audience"
+  },
+  {
+    "k": "briefLength",
+    "v": "Length"
+  },
+  {
+    "k": "briefGenerate",
+    "v": "Generate"
+  },
+  {
+    "k": "briefRedo",
+    "v": "Another brief"
+  },
+  {
+    "k": "briefRedoPlaceholder",
+    "v": "What should change? (optional)"
+  },
+  {
+    "k": "briefDismiss",
+    "v": "Dismiss"
+  },
+  {
+    "k": "briefReceipt",
+    "v": "Brief confirmed: {hook} ({n} sections)"
+  },
+  {
+    "k": "aiScopeElement",
+    "v": "Selected <{tag}>"
+  },
+  {
+    "k": "aiAskCancel",
+    "v": "Cancel"
+  },
+  {
+    "k": "aiRestyleBtn",
+    "v": "Restyle"
+  },
+  {
+    "k": "aiRestylePrompt",
+    "v": "Refine the whole page: read every <style> first, then unify spacing, alignment, the type scale, colors and responsive breakpoints in one apply_ops batch. Do not change any text or add/remove elements; if the page structure has to change, propose it with plan_page first."
+  },
+  {
+    "k": "aiThemeBtn",
+    "v": "Theme"
+  },
+  {
+    "k": "aiThemePrompt",
+    "v": "Give the whole page a \"{direction}\" look: propose the new style with plan_page first (keep the existing sections); after confirmation update only the --brief-* variables and related CSS rules, leaving content and section order untouched."
+  },
+  {
+    "k": "aiThemeMinimal",
+    "v": "Minimal"
+  },
+  {
+    "k": "aiThemeEditorial",
+    "v": "Editorial"
+  },
+  {
+    "k": "aiThemeTech",
+    "v": "Tech"
+  },
+  {
+    "k": "aiThemePlayful",
+    "v": "Playful"
+  },
+  {
+    "k": "aiThemeDark",
+    "v": "Dark"
+  },
+  {
+    "k": "aiIntentLabel",
+    "v": "Pick what to do"
+  },
+  {
+    "k": "aiIntentDesign",
+    "v": "Design a page"
+  },
+  {
+    "k": "aiIntentDesignDesc",
+    "v": "Landing page, report, poster — AI proposes a brief, then lays out the page"
+  },
+  {
+    "k": "aiIntentWrite",
+    "v": "Write content"
+  },
+  {
+    "k": "aiIntentWriteDesc",
+    "v": "Article, announcement, guide — written straight into a clean, readable page"
+  },
+  {
+    "k": "aiEmptyWriteTitle",
+    "v": "Write content with AI"
+  },
+  {
+    "k": "aiEmptyWriteBody",
+    "v": "Say the topic, the reader and the length; AI writes it as a tidy page without the design questionnaire"
+  },
+  {
+    "k": "aiStarterArticle",
+    "v": "Write an article"
+  },
+  {
+    "k": "aiStarterArticlePrompt",
+    "v": "Write an article for me. Topic and reader: "
+  },
+  {
+    "k": "aiStarterAnnouncement",
+    "v": "Draft a product announcement"
+  },
+  {
+    "k": "aiStarterAnnouncementPrompt",
+    "v": "Draft a product announcement for me. Product and key points: "
+  },
+  {
+    "k": "aiStarterGuide",
+    "v": "Write a how-to guide"
+  },
+  {
+    "k": "aiStarterGuidePrompt",
+    "v": "Write a how-to guide for me. The process to explain: "
+  }
+]

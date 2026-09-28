@@ -1,0 +1,524 @@
+[
+  {
+    "key": "loadFailed",
+    "type": "UNTRANSLATED",
+    "en": "Could not open the file",
+    "vi": "Could not open the file"
+  },
+  {
+    "key": "untitled",
+    "type": "UNTRANSLATED",
+    "en": "Untitled",
+    "vi": "Untitled"
+  },
+  {
+    "key": "saveFailedStatus",
+    "type": "UNTRANSLATED",
+    "en": "Save failed",
+    "vi": "Save failed"
+  },
+  {
+    "key": "exportFailed",
+    "type": "UNTRANSLATED",
+    "en": "Export failed",
+    "vi": "Export failed"
+  },
+  {
+    "key": "exportHtmlSkipped",
+    "type": "UNTRANSLATED",
+    "en": "Exported, but {count} asset(s) could not be inlined (e.g. {first})",
+    "vi": "Exported, but {count} asset(s) could not be inlined (e.g. {first})"
+  },
+  {
+    "key": "viewSource",
+    "type": "UNTRANSLATED",
+    "en": "Source",
+    "vi": "Source"
+  },
+  {
+    "key": "saving",
+    "type": "UNTRANSLATED",
+    "en": "Saving…",
+    "vi": "Saving…"
+  },
+  {
+    "key": "savedOk",
+    "type": "UNTRANSLATED",
+    "en": "Saved",
+    "vi": "Saved"
+  },
+  {
+    "key": "unsaved",
+    "type": "UNTRANSLATED",
+    "en": "Unsaved",
+    "vi": "Unsaved"
+  },
+  {
+    "key": "autoSave",
+    "type": "UNTRANSLATED",
+    "en": "Auto save",
+    "vi": "Auto save"
+  },
+  {
+    "key": "replacePlaceholder",
+    "type": "UNTRANSLATED",
+    "en": "Replace with",
+    "vi": "Replace with"
+  },
+  {
+    "key": "matchCase",
+    "type": "UNTRANSLATED",
+    "en": "Match case",
+    "vi": "Match case"
+  },
+  {
+    "key": "wholeWord",
+    "type": "UNTRANSLATED",
+    "en": "Whole words only",
+    "vi": "Whole words only"
+  },
+  {
+    "key": "noResults",
+    "type": "UNTRANSLATED",
+    "en": "No results",
+    "vi": "No results"
+  },
+  {
+    "key": "prevMatch",
+    "type": "UNTRANSLATED",
+    "en": "Previous (Shift+Enter)",
+    "vi": "Previous (Shift+Enter)"
+  },
+  {
+    "key": "nextMatch",
+    "type": "UNTRANSLATED",
+    "en": "Next (Enter)",
+    "vi": "Next (Enter)"
+  },
+  {
+    "key": "closeEsc",
+    "type": "UNTRANSLATED",
+    "en": "Close (Esc)",
+    "vi": "Close (Esc)"
+  },
+  {
+    "key": "replaceAll",
+    "type": "UNTRANSLATED",
+    "en": "Replace All",
+    "vi": "Replace All"
+  },
+  {
+    "key": "findTip",
+    "type": "UNTRANSLATED",
+    "en": "Find and Replace (⌘F)",
+    "vi": "Find and Replace (⌘F)"
+  },
+  {
+    "key": "autoSaveTip",
+    "type": "UNTRANSLATED",
+    "en": "Saves every 30 seconds and when the window loses focus",
+    "vi": "Saves every 30 seconds and when the window loses focus"
+  },
+  {
+    "key": "zoomIn",
+    "type": "UNTRANSLATED",
+    "en": "Zoom in",
+    "vi": "Zoom in"
+  },
+  {
+    "key": "zoomOut",
+    "type": "UNTRANSLATED",
+    "en": "Zoom out",
+    "vi": "Zoom out"
+  },
+  {
+    "key": "cursorPos",
+    "type": "UNTRANSLATED",
+    "en": "Ln {line}, Col {col}",
+    "vi": "Ln {line}, Col {col}"
+  },
+  {
+    "key": "charCount",
+    "type": "UNTRANSLATED",
+    "en": "{n} chars",
+    "vi": "{n} chars"
+  },
+  {
+    "key": "previewNeedsSave",
+    "type": "UNTRANSLATED",
+    "en": "Relative images and styles show in the preview once the file is saved",
+    "vi": "Relative images and styles show in the preview once the file is saved"
+  },
+  {
+    "key": "inspectHint",
+    "type": "UNTRANSLATED",
+    "en": "Click an element in the preview to select it, double-click to edit text",
+    "vi": "Click an element in the preview to select it, double-click to edit text"
+  },
+  {
+    "key": "nodeDynamic",
+    "type": "UNTRANSLATED",
+    "en": "This element was created by the page script and has no source; edit through the source or AI",
+    "vi": "This element was created by the page script and has no source; edit through the source or AI"
+  },
+  {
+    "key": "nodeDynamicShort",
+    "type": "UNTRANSLATED",
+    "en": "script-generated",
+    "vi": "script-generated"
+  },
+  {
+    "key": "nodeDirty",
+    "type": "UNTRANSLATED",
+    "en": "The page script has changed this element; edits written to the source may be overridden by the script",
+    "vi": "The page script has changed this element; edits written to the source may be overridden by the script"
+  },
+  {
+    "key": "nodeDirtyShort",
+    "type": "UNTRANSLATED",
+    "en": "script-modified",
+    "vi": "script-modified"
+  },
+  {
+    "key": "elementDelete",
+    "type": "UNTRANSLATED",
+    "en": "Delete element",
+    "vi": "Delete element"
+  },
+  {
+    "key": "elementDuplicate",
+    "type": "UNTRANSLATED",
+    "en": "Duplicate element",
+    "vi": "Duplicate element"
+  },
+  {
+    "key": "elementMoveUp",
+    "type": "UNTRANSLATED",
+    "en": "Move up",
+    "vi": "Move up"
+  },
+  {
+    "key": "elementMoveDown",
+    "type": "UNTRANSLATED",
+    "en": "Move down",
+    "vi": "Move down"
+  },
+  {
+    "key": "elementToolbar",
+    "type": "UNTRANSLATED",
+    "en": "Element toolbar",
+    "vi": "Element toolbar"
+  },
+  {
+    "key": "elementPath",
+    "type": "UNTRANSLATED",
+    "en": "Element path",
+    "vi": "Element path"
+  },
+  {
+    "key": "openExternal",
+    "type": "UNTRANSLATED",
+    "en": "Link opened in your browser",
+    "vi": "Link opened in your browser"
+  },
+  {
+    "key": "editText",
+    "type": "UNTRANSLATED",
+    "en": "Edit text",
+    "vi": "Edit text"
+  },
+  {
+    "key": "fontSize",
+    "type": "UNTRANSLATED",
+    "en": "Font size",
+    "vi": "Font size"
+  },
+  {
+    "key": "radius",
+    "type": "UNTRANSLATED",
+    "en": "Radius",
+    "vi": "Radius"
+  },
+  {
+    "key": "padding",
+    "type": "UNTRANSLATED",
+    "en": "Padding",
+    "vi": "Padding"
+  },
+  {
+    "key": "opacity",
+    "type": "UNTRANSLATED",
+    "en": "Opacity",
+    "vi": "Opacity"
+  },
+  {
+    "key": "customCss",
+    "type": "UNTRANSLATED",
+    "en": "Custom style",
+    "vi": "Custom style"
+  },
+  {
+    "key": "revert",
+    "type": "UNTRANSLATED",
+    "en": "Revert",
+    "vi": "Revert"
+  },
+  {
+    "key": "device",
+    "type": "UNTRANSLATED",
+    "en": "Device",
+    "vi": "Device"
+  },
+  {
+    "key": "devDesktop",
+    "type": "UNTRANSLATED",
+    "en": "Desktop",
+    "vi": "Desktop"
+  },
+  {
+    "key": "devTablet",
+    "type": "UNTRANSLATED",
+    "en": "Tablet",
+    "vi": "Tablet"
+  },
+  {
+    "key": "stylePanel",
+    "type": "UNTRANSLATED",
+    "en": "Style panel",
+    "vi": "Style panel"
+  },
+  {
+    "key": "stylePanelClose",
+    "type": "UNTRANSLATED",
+    "en": "Close style panel",
+    "vi": "Close style panel"
+  },
+  {
+    "key": "alignLeft",
+    "type": "UNTRANSLATED",
+    "en": "Align left",
+    "vi": "Align left"
+  },
+  {
+    "key": "alignRight",
+    "type": "UNTRANSLATED",
+    "en": "Align right",
+    "vi": "Align right"
+  },
+  {
+    "key": "fontSizeDec",
+    "type": "UNTRANSLATED",
+    "en": "Decrease font size",
+    "vi": "Decrease font size"
+  },
+  {
+    "key": "fontSizeInc",
+    "type": "UNTRANSLATED",
+    "en": "Increase font size",
+    "vi": "Increase font size"
+  },
+  {
+    "key": "typography",
+    "type": "UNTRANSLATED",
+    "en": "Typography",
+    "vi": "Typography"
+  },
+  {
+    "key": "boxSection",
+    "type": "UNTRANSLATED",
+    "en": "Box",
+    "vi": "Box"
+  },
+  {
+    "key": "imageSection",
+    "type": "UNTRANSLATED",
+    "en": "Image",
+    "vi": "Image"
+  },
+  {
+    "key": "imageReplace",
+    "type": "UNTRANSLATED",
+    "en": "Replace image",
+    "vi": "Replace image"
+  },
+  {
+    "key": "imageFlipH",
+    "type": "UNTRANSLATED",
+    "en": "Flip horizontally",
+    "vi": "Flip horizontally"
+  },
+  {
+    "key": "imageFlipV",
+    "type": "UNTRANSLATED",
+    "en": "Flip vertically",
+    "vi": "Flip vertically"
+  },
+  {
+    "key": "imageRotateLeft",
+    "type": "UNTRANSLATED",
+    "en": "Rotate left",
+    "vi": "Rotate left"
+  },
+  {
+    "key": "imageRotateRight",
+    "type": "UNTRANSLATED",
+    "en": "Rotate right",
+    "vi": "Rotate right"
+  },
+  {
+    "key": "imageAlt",
+    "type": "UNTRANSLATED",
+    "en": "Alt text",
+    "vi": "Alt text"
+  },
+  {
+    "key": "imageFit",
+    "type": "UNTRANSLATED",
+    "en": "Fit",
+    "vi": "Fit"
+  },
+  {
+    "key": "imageFitFill",
+    "type": "UNTRANSLATED",
+    "en": "Stretch",
+    "vi": "Stretch"
+  },
+  {
+    "key": "imageFitContain",
+    "type": "UNTRANSLATED",
+    "en": "Contain",
+    "vi": "Contain"
+  },
+  {
+    "key": "imageFitNone",
+    "type": "UNTRANSLATED",
+    "en": "Original size",
+    "vi": "Original size"
+  },
+  {
+    "key": "imageNatural",
+    "type": "UNTRANSLATED",
+    "en": "Natural size",
+    "vi": "Natural size"
+  },
+  {
+    "key": "imageNeedsSave",
+    "type": "UNTRANSLATED",
+    "en": "Save the file before replacing or editing images",
+    "vi": "Save the file before replacing or editing images"
+  },
+  {
+    "key": "insertHeading",
+    "type": "UNTRANSLATED",
+    "en": "Heading",
+    "vi": "Heading"
+  },
+  {
+    "key": "insertList",
+    "type": "UNTRANSLATED",
+    "en": "List",
+    "vi": "List"
+  },
+  {
+    "key": "insertButton",
+    "type": "UNTRANSLATED",
+    "en": "Button",
+    "vi": "Button"
+  },
+  {
+    "key": "insertImage",
+    "type": "UNTRANSLATED",
+    "en": "Image",
+    "vi": "Image"
+  },
+  {
+    "key": "insertSection",
+    "type": "UNTRANSLATED",
+    "en": "Section",
+    "vi": "Section"
+  },
+  {
+    "key": "insertDivider",
+    "type": "UNTRANSLATED",
+    "en": "Divider",
+    "vi": "Divider"
+  },
+  {
+    "key": "insertPlaceholderHeading",
+    "type": "UNTRANSLATED",
+    "en": "New heading",
+    "vi": "New heading"
+  },
+  {
+    "key": "insertPlaceholderParagraph",
+    "type": "UNTRANSLATED",
+    "en": "Type your text here.",
+    "vi": "Type your text here."
+  },
+  {
+    "key": "insertPlaceholderListItem",
+    "type": "UNTRANSLATED",
+    "en": "List item",
+    "vi": "List item"
+  },
+  {
+    "key": "insertPlaceholderButton",
+    "type": "UNTRANSLATED",
+    "en": "Button",
+    "vi": "Button"
+  },
+  {
+    "key": "insertNoBody",
+    "type": "UNTRANSLATED",
+    "en": "The page has no <body> to insert into",
+    "vi": "The page has no <body> to insert into"
+  },
+  {
+    "key": "insertImageUrl",
+    "type": "UNTRANSLATED",
+    "en": "Image from URL…",
+    "vi": "Image from URL…"
+  },
+  {
+    "key": "insertMore",
+    "type": "UNTRANSLATED",
+    "en": "More",
+    "vi": "More"
+  },
+  {
+    "key": "insertPlaceholderTableHeader",
+    "type": "UNTRANSLATED",
+    "en": "Header {n}",
+    "vi": "Header {n}"
+  },
+  {
+    "key": "modePresent",
+    "type": "UNTRANSLATED",
+    "en": "Present",
+    "vi": "Present"
+  },
+  {
+    "key": "presentExit",
+    "type": "UNTRANSLATED",
+    "en": "Exit presentation (Esc)",
+    "vi": "Exit presentation (Esc)"
+  },
+  {
+    "key": "presentInTab",
+    "type": "UNTRANSLATED",
+    "en": "In this tab",
+    "vi": "In this tab"
+  },
+  {
+    "key": "presentFullscreen",
+    "type": "UNTRANSLATED",
+    "en": "Fullscreen",
+    "vi": "Fullscreen"
+  },
+  {
+    "key": "presentNewTab",
+    "type": "UNTRANSLATED",
+    "en": "New tab",
+    "vi": "New tab"
+  }
+]

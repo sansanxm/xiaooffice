@@ -1,0 +1,990 @@
+[
+  {
+    "key": "appPhPromptTitle",
+    "type": "UNTRANSLATED",
+    "en": "Click to add title",
+    "vi": "Click to add title"
+  },
+  {
+    "key": "appPhPromptSubtitle",
+    "type": "UNTRANSLATED",
+    "en": "Click to add subtitle",
+    "vi": "Click to add subtitle"
+  },
+  {
+    "key": "appPhPromptBody",
+    "type": "UNTRANSLATED",
+    "en": "Click to add text",
+    "vi": "Click to add text"
+  },
+  {
+    "key": "appStatusNewBlank",
+    "type": "UNTRANSLATED",
+    "en": "Created a blank presentation",
+    "vi": "Created a blank presentation"
+  },
+  {
+    "key": "appStatusSaved",
+    "type": "UNTRANSLATED",
+    "en": "Saved",
+    "vi": "Saved"
+  },
+  {
+    "key": "appErrorCanceled",
+    "type": "UNTRANSLATED",
+    "en": "Canceled",
+    "vi": "Canceled"
+  },
+  {
+    "key": "appUnknownError",
+    "type": "UNTRANSLATED",
+    "en": "Unknown error",
+    "vi": "Unknown error"
+  },
+  {
+    "key": "appStatusSavedAs",
+    "type": "UNTRANSLATED",
+    "en": "Saved",
+    "vi": "Saved"
+  },
+  {
+    "key": "appUntitledPresentation",
+    "type": "UNTRANSLATED",
+    "en": "Untitled presentation",
+    "vi": "Untitled presentation"
+  },
+  {
+    "key": "appExportNoSlides",
+    "type": "UNTRANSLATED",
+    "en": "No slides to export (all slides are hidden)",
+    "vi": "No slides to export (all slides are hidden)"
+  },
+  {
+    "key": "appExportPdfDone",
+    "type": "UNTRANSLATED",
+    "en": "Exported PDF: {path}",
+    "vi": "Exported PDF: {path}"
+  },
+  {
+    "key": "appStatusBgAppliedAll",
+    "type": "UNTRANSLATED",
+    "en": "Background color applied to all slides",
+    "vi": "Background color applied to all slides"
+  },
+  {
+    "key": "appStatusThemeApplied",
+    "type": "UNTRANSLATED",
+    "en": "Applied theme \"{name}\"",
+    "vi": "Applied theme \"{name}\""
+  },
+  {
+    "key": "appStatusThemeApplyFailed",
+    "type": "UNTRANSLATED",
+    "en": "Failed to apply theme: {error}",
+    "vi": "Failed to apply theme: {error}"
+  },
+  {
+    "key": "appStatusCopied",
+    "type": "UNTRANSLATED",
+    "en": "Copied {count} elements",
+    "vi": "Copied {count} elements"
+  },
+  {
+    "key": "appStatusCut",
+    "type": "UNTRANSLATED",
+    "en": "Cut {count} elements",
+    "vi": "Cut {count} elements"
+  },
+  {
+    "key": "appStatusFormatCopied",
+    "type": "UNTRANSLATED",
+    "en": "Format copied",
+    "vi": "Format copied"
+  },
+  {
+    "key": "appStatusFormatPasted",
+    "type": "UNTRANSLATED",
+    "en": "Format pasted",
+    "vi": "Format pasted"
+  },
+  {
+    "key": "appStatusBrushOnce",
+    "type": "UNTRANSLATED",
+    "en": "Click a target element to apply the format; double-click the button for continuous mode",
+    "vi": "Click a target element to apply the format; double-click the button for continuous mode"
+  },
+  {
+    "key": "appStatusBrushContinuous",
+    "type": "UNTRANSLATED",
+    "en": "Continuous Format Painter mode; press Esc to exit",
+    "vi": "Continuous Format Painter mode; press Esc to exit"
+  },
+  {
+    "key": "appStatusFormatApplied",
+    "type": "UNTRANSLATED",
+    "en": "Format applied",
+    "vi": "Format applied"
+  },
+  {
+    "key": "appStatusTableInserted",
+    "type": "UNTRANSLATED",
+    "en": "Inserted a {rows} × {cols} table",
+    "vi": "Inserted a {rows} × {cols} table"
+  },
+  {
+    "key": "appStatusIconInserted",
+    "type": "UNTRANSLATED",
+    "en": "Inserted icon \"{name}\"",
+    "vi": "Inserted icon \"{name}\""
+  },
+  {
+    "key": "appStatusIconInsertFailed",
+    "type": "UNTRANSLATED",
+    "en": "Failed to insert icon",
+    "vi": "Failed to insert icon"
+  },
+  {
+    "key": "appStatusImageUnsupported",
+    "type": "UNTRANSLATED",
+    "en": "{ext} images are not supported yet",
+    "vi": "{ext} images are not supported yet"
+  },
+  {
+    "key": "appStatusChartInserted",
+    "type": "UNTRANSLATED",
+    "en": "Chart inserted (sample data; you can edit the data in PowerPoint)",
+    "vi": "Chart inserted (sample data; you can edit the data in PowerPoint)"
+  },
+  {
+    "key": "appStatusSmartArtInserted",
+    "type": "UNTRANSLATED",
+    "en": "Inserted SmartArt \"{name}\" (shape group; double-click to edit text)",
+    "vi": "Inserted SmartArt \"{name}\" (shape group; double-click to edit text)"
+  },
+  {
+    "key": "appStatusWordArtInserted",
+    "type": "UNTRANSLATED",
+    "en": "WordArt inserted; double-click to edit text",
+    "vi": "WordArt inserted; double-click to edit text"
+  },
+  {
+    "key": "appStatusDateInserted",
+    "type": "UNTRANSLATED",
+    "en": "Date and time inserted (updates automatically when opened in PowerPoint)",
+    "vi": "Date and time inserted (updates automatically when opened in PowerPoint)"
+  },
+  {
+    "key": "appStatusSlideNumInserted",
+    "type": "UNTRANSLATED",
+    "en": "Slide number inserted (updates automatically during slide show/export)",
+    "vi": "Slide number inserted (updates automatically during slide show/export)"
+  },
+  {
+    "key": "appStatusLinkSet",
+    "type": "UNTRANSLATED",
+    "en": "Hyperlink set (activates on click during a PowerPoint slide show)",
+    "vi": "Hyperlink set (activates on click during a PowerPoint slide show)"
+  },
+  {
+    "key": "appStatusLinkRemoved",
+    "type": "UNTRANSLATED",
+    "en": "Hyperlink removed",
+    "vi": "Hyperlink removed"
+  },
+  {
+    "key": "appStatusZoomInserted",
+    "type": "UNTRANSLATED",
+    "en": "Zoom inserted: click during a slide show to jump to slide {page}",
+    "vi": "Zoom inserted: click during a slide show to jump to slide {page}"
+  },
+  {
+    "key": "appStatusHfApplied",
+    "type": "UNTRANSLATED",
+    "en": "Header and footer applied to all slides",
+    "vi": "Header and footer applied to all slides"
+  },
+  {
+    "key": "appStatusHfUnchanged",
+    "type": "UNTRANSLATED",
+    "en": "No changes to header and footer",
+    "vi": "No changes to header and footer"
+  },
+  {
+    "key": "appStatusEquationInserted",
+    "type": "UNTRANSLATED",
+    "en": "Equation inserted",
+    "vi": "Equation inserted"
+  },
+  {
+    "key": "appStatusVideoInserted",
+    "type": "UNTRANSLATED",
+    "en": "Video inserted (embedded in the .pptx; plays in PowerPoint)",
+    "vi": "Video inserted (embedded in the .pptx; plays in PowerPoint)"
+  },
+  {
+    "key": "appStatusAudioInserted",
+    "type": "UNTRANSLATED",
+    "en": "Audio inserted (embedded in the .pptx)",
+    "vi": "Audio inserted (embedded in the .pptx)"
+  },
+  {
+    "key": "appStatusModel3dInserted",
+    "type": "UNTRANSLATED",
+    "en": "3D model embedded (canvas shows a placeholder; the model file is stored in the .pptx)",
+    "vi": "3D model embedded (canvas shows a placeholder; the model file is stored in the .pptx)"
+  },
+  {
+    "key": "appStatusRecordingEmpty",
+    "type": "UNTRANSLATED",
+    "en": "Recording is empty; nothing was inserted",
+    "vi": "Recording is empty; nothing was inserted"
+  },
+  {
+    "key": "appStatusRecordingInserted",
+    "type": "UNTRANSLATED",
+    "en": "Screen recording inserted on the current slide (embedded webm)",
+    "vi": "Screen recording inserted on the current slide (embedded webm)"
+  },
+  {
+    "key": "appStatusRecording",
+    "type": "UNTRANSLATED",
+    "en": "Recording… click \"Screen Recording\" again to stop and insert",
+    "vi": "Recording… click \"Screen Recording\" again to stop and insert"
+  },
+  {
+    "key": "appStatusRecordingUnavailable",
+    "type": "UNTRANSLATED",
+    "en": "Screen recording unavailable (permission denied or selection canceled)",
+    "vi": "Screen recording unavailable (permission denied or selection canceled)"
+  },
+  {
+    "key": "appStatusTransitionAll",
+    "type": "UNTRANSLATED",
+    "en": "Transition applied to all slides",
+    "vi": "Transition applied to all slides"
+  },
+  {
+    "key": "appStatusTransitionSet",
+    "type": "UNTRANSLATED",
+    "en": "Transition set (takes effect in PowerPoint slide shows)",
+    "vi": "Transition set (takes effect in PowerPoint slide shows)"
+  },
+  {
+    "key": "appStatusAnimRemoved",
+    "type": "UNTRANSLATED",
+    "en": "Animations removed from the selected shapes",
+    "vi": "Animations removed from the selected shapes"
+  },
+  {
+    "key": "appStatusAnimSet",
+    "type": "UNTRANSLATED",
+    "en": "Animation set (plays step by step during slide shows; also works in PowerPoint)",
+    "vi": "Animation set (plays step by step during slide shows; also works in PowerPoint)"
+  },
+  {
+    "key": "appStatusAnimAdded",
+    "type": "UNTRANSLATED",
+    "en": "Animation added",
+    "vi": "Animation added"
+  },
+  {
+    "key": "appStatusMotionPathAdded",
+    "type": "UNTRANSLATED",
+    "en": "Motion path animation added (moves along the path during slide shows; also works in PowerPoint)",
+    "vi": "Motion path animation added (moves along the path during slide shows; also works in PowerPoint)"
+  },
+  {
+    "key": "appStatusCustomShowEmpty",
+    "type": "UNTRANSLATED",
+    "en": "This custom show contains no valid slides",
+    "vi": "This custom show contains no valid slides"
+  },
+  {
+    "key": "appStatusRehearseSaved",
+    "type": "UNTRANSLATED",
+    "en": "Rehearsal timings saved for {count} slides (the saved .pptx advances slides automatically in PowerPoint)",
+    "vi": "Rehearsal timings saved for {count} slides (the saved .pptx advances slides automatically in PowerPoint)"
+  },
+  {
+    "key": "appStatusSlideHidden",
+    "type": "UNTRANSLATED",
+    "en": "Slide {page} hidden (skipped during slide shows)",
+    "vi": "Slide {page} hidden (skipped during slide shows)"
+  },
+  {
+    "key": "appStatusSlideUnhidden",
+    "type": "UNTRANSLATED",
+    "en": "Slide {page} unhidden",
+    "vi": "Slide {page} unhidden"
+  },
+  {
+    "key": "appStatusSlidesHidden",
+    "type": "UNTRANSLATED",
+    "en": "{count} slides hidden (skipped during slide shows)",
+    "vi": "{count} slides hidden (skipped during slide shows)"
+  },
+  {
+    "key": "appStatusSlidesUnhidden",
+    "type": "UNTRANSLATED",
+    "en": "{count} slides unhidden",
+    "vi": "{count} slides unhidden"
+  },
+  {
+    "key": "appStatusCropApplied",
+    "type": "UNTRANSLATED",
+    "en": "Crop applied",
+    "vi": "Crop applied"
+  },
+  {
+    "key": "appStatusCropRemoved",
+    "type": "UNTRANSLATED",
+    "en": "Crop removed",
+    "vi": "Crop removed"
+  },
+  {
+    "key": "appStatusCutoutNoData",
+    "type": "UNTRANSLATED",
+    "en": "Could not read image data; cannot remove the background",
+    "vi": "Could not read image data; cannot remove the background"
+  },
+  {
+    "key": "appStatusCutoutEncodeFailed",
+    "type": "UNTRANSLATED",
+    "en": "Background removal failed: could not encode the result image",
+    "vi": "Background removal failed: could not encode the result image"
+  },
+  {
+    "key": "appStatusCutoutInsertFailed",
+    "type": "UNTRANSLATED",
+    "en": "Background removal failed: could not insert the result image",
+    "vi": "Background removal failed: could not insert the result image"
+  },
+  {
+    "key": "appStatusCutoutDone",
+    "type": "UNTRANSLATED",
+    "en": "Background removed (original image replaced with a transparent PNG)",
+    "vi": "Background removed (original image replaced with a transparent PNG)"
+  },
+  {
+    "key": "appStatusGrouped",
+    "type": "UNTRANSLATED",
+    "en": "Grouped",
+    "vi": "Grouped"
+  },
+  {
+    "key": "appStatusUngrouped",
+    "type": "UNTRANSLATED",
+    "en": "Ungrouped",
+    "vi": "Ungrouped"
+  },
+  {
+    "key": "appStatusCommentAdded",
+    "type": "UNTRANSLATED",
+    "en": "Comment added",
+    "vi": "Comment added"
+  },
+  {
+    "key": "appStatusKeepOneSlide",
+    "type": "UNTRANSLATED",
+    "en": "Cannot delete; at least one slide must remain",
+    "vi": "Cannot delete; at least one slide must remain"
+  },
+  {
+    "key": "appStatusSlideCopied",
+    "type": "UNTRANSLATED",
+    "en": "Slide copied — paste it into any open deck",
+    "vi": "Slide copied — paste it into any open deck"
+  },
+  {
+    "key": "appStatusSlideCopyFailed",
+    "type": "UNTRANSLATED",
+    "en": "Could not copy the slide",
+    "vi": "Could not copy the slide"
+  },
+  {
+    "key": "appStatusSlideCut",
+    "type": "UNTRANSLATED",
+    "en": "Slide cut — paste it into any open deck",
+    "vi": "Slide cut — paste it into any open deck"
+  },
+  {
+    "key": "appStatusSlidePasteFailed",
+    "type": "UNTRANSLATED",
+    "en": "Could not paste the slide",
+    "vi": "Could not paste the slide"
+  },
+  {
+    "key": "appSectionUntitled",
+    "type": "UNTRANSLATED",
+    "en": "Untitled Section",
+    "vi": "Untitled Section"
+  },
+  {
+    "key": "appSectionDefault",
+    "type": "UNTRANSLATED",
+    "en": "Default Section",
+    "vi": "Default Section"
+  },
+  {
+    "key": "appStatusSectionAdded",
+    "type": "UNTRANSLATED",
+    "en": "Section added",
+    "vi": "Section added"
+  },
+  {
+    "key": "appStatusSectionRemoved",
+    "type": "UNTRANSLATED",
+    "en": "Section removed (slides kept)",
+    "vi": "Section removed (slides kept)"
+  },
+  {
+    "key": "appStatusSectionsRemoved",
+    "type": "UNTRANSLATED",
+    "en": "All sections removed (slides kept)",
+    "vi": "All sections removed (slides kept)"
+  },
+  {
+    "key": "appStatusSectionSlidesRemoved",
+    "type": "UNTRANSLATED",
+    "en": "Section and its slides removed",
+    "vi": "Section and its slides removed"
+  },
+  {
+    "key": "appStatusSectionMovedUp",
+    "type": "UNTRANSLATED",
+    "en": "Section moved up",
+    "vi": "Section moved up"
+  },
+  {
+    "key": "appStatusSectionMovedDown",
+    "type": "UNTRANSLATED",
+    "en": "Section moved down",
+    "vi": "Section moved down"
+  },
+  {
+    "key": "appStatusSlideMoved",
+    "type": "UNTRANSLATED",
+    "en": "Moved to slide {page}",
+    "vi": "Moved to slide {page}"
+  },
+  {
+    "key": "appStatusTableDeleteLimit",
+    "type": "UNTRANSLATED",
+    "en": "At least one row and one column must remain (tables with merged cells are not supported yet)",
+    "vi": "At least one row and one column must remain (tables with merged cells are not supported yet)"
+  },
+  {
+    "key": "appStatusTableMergedUnsupported",
+    "type": "HYBRID",
+    "en": "Inserting or deleting rows/columns is not supported for tables with merged cells yet",
+    "vi": "Inserting or deleting rows/columns chưa được hỗ trợ for tables with merged cells yet",
+    "matches": [
+      "for",
+      "with"
+    ]
+  },
+  {
+    "key": "appStatusInkCleared",
+    "type": "UNTRANSLATED",
+    "en": "Ink cleared on the current slide",
+    "vi": "Ink cleared on the current slide"
+  },
+  {
+    "key": "appCtxDuplicateSlide",
+    "type": "UNTRANSLATED",
+    "en": "Duplicate Slide",
+    "vi": "Duplicate Slide"
+  },
+  {
+    "key": "appCtxCutSlide",
+    "type": "UNTRANSLATED",
+    "en": "Cut Slide",
+    "vi": "Cut Slide"
+  },
+  {
+    "key": "appCtxCopySlide",
+    "type": "UNTRANSLATED",
+    "en": "Copy Slide",
+    "vi": "Copy Slide"
+  },
+  {
+    "key": "appCtxPasteSlide",
+    "type": "UNTRANSLATED",
+    "en": "Paste Slide",
+    "vi": "Paste Slide"
+  },
+  {
+    "key": "appCtxPasteSlideKeepSource",
+    "type": "UNTRANSLATED",
+    "en": "Paste Slide (Keep Source Formatting)",
+    "vi": "Paste Slide (Keep Source Formatting)"
+  },
+  {
+    "key": "appCtxPasteSlideAsPicture",
+    "type": "UNTRANSLATED",
+    "en": "Paste as Picture",
+    "vi": "Paste as Picture"
+  },
+  {
+    "key": "appPasteOptTheme",
+    "type": "UNTRANSLATED",
+    "en": "Use Destination Theme",
+    "vi": "Use Destination Theme"
+  },
+  {
+    "key": "appStatusPasteOptionsExpired",
+    "type": "UNTRANSLATED",
+    "en": "Paste options are no longer available",
+    "vi": "Paste options are no longer available"
+  },
+  {
+    "key": "appStatusPasteTruncated",
+    "type": "UNTRANSLATED",
+    "en": "Pasted text was too long and has been truncated",
+    "vi": "Pasted text was too long and has been truncated"
+  },
+  {
+    "key": "appCtxUnhideSlide",
+    "type": "UNTRANSLATED",
+    "en": "Unhide Slide",
+    "vi": "Unhide Slide"
+  },
+  {
+    "key": "appCtxAddSectionBefore",
+    "type": "UNTRANSLATED",
+    "en": "Add Section (before this slide)",
+    "vi": "Add Section (before this slide)"
+  },
+  {
+    "key": "appCtxRenameSection",
+    "type": "UNTRANSLATED",
+    "en": "Rename Section",
+    "vi": "Rename Section"
+  },
+  {
+    "key": "appCtxRemoveSection",
+    "type": "UNTRANSLATED",
+    "en": "Remove Section",
+    "vi": "Remove Section"
+  },
+  {
+    "key": "appCtxRemoveAllSections",
+    "type": "UNTRANSLATED",
+    "en": "Remove All Sections",
+    "vi": "Remove All Sections"
+  },
+  {
+    "key": "appCtxRemoveSectionSlides",
+    "type": "UNTRANSLATED",
+    "en": "Remove Section & Slides",
+    "vi": "Remove Section & Slides"
+  },
+  {
+    "key": "appCtxMoveSectionUp",
+    "type": "UNTRANSLATED",
+    "en": "Move Section Up",
+    "vi": "Move Section Up"
+  },
+  {
+    "key": "appCtxMoveSectionDown",
+    "type": "UNTRANSLATED",
+    "en": "Move Section Down",
+    "vi": "Move Section Down"
+  },
+  {
+    "key": "appCtxInsertRowAbove",
+    "type": "UNTRANSLATED",
+    "en": "Insert Row Above",
+    "vi": "Insert Row Above"
+  },
+  {
+    "key": "appCtxInsertRowBelow",
+    "type": "UNTRANSLATED",
+    "en": "Insert Row Below",
+    "vi": "Insert Row Below"
+  },
+  {
+    "key": "appCtxInsertColLeft",
+    "type": "UNTRANSLATED",
+    "en": "Insert Column to the Left",
+    "vi": "Insert Column to the Left"
+  },
+  {
+    "key": "appCtxInsertColRight",
+    "type": "UNTRANSLATED",
+    "en": "Insert Column to the Right",
+    "vi": "Insert Column to the Right"
+  },
+  {
+    "key": "appCtxDeleteRow",
+    "type": "UNTRANSLATED",
+    "en": "Delete Row",
+    "vi": "Delete Row"
+  },
+  {
+    "key": "appCtxDeleteCol",
+    "type": "UNTRANSLATED",
+    "en": "Delete Column",
+    "vi": "Delete Column"
+  },
+  {
+    "key": "appCtxMergeRight",
+    "type": "UNTRANSLATED",
+    "en": "Merge Right",
+    "vi": "Merge Right"
+  },
+  {
+    "key": "appCtxMergeDown",
+    "type": "UNTRANSLATED",
+    "en": "Merge Down",
+    "vi": "Merge Down"
+  },
+  {
+    "key": "appCtxSplitCell",
+    "type": "UNTRANSLATED",
+    "en": "Split Cell",
+    "vi": "Split Cell"
+  },
+  {
+    "key": "appCtxCellAnchorTop",
+    "type": "UNTRANSLATED",
+    "en": "Align Text Top",
+    "vi": "Align Text Top"
+  },
+  {
+    "key": "appCtxCellAnchorMiddle",
+    "type": "UNTRANSLATED",
+    "en": "Center Text Vertically",
+    "vi": "Center Text Vertically"
+  },
+  {
+    "key": "appCtxCellAnchorBottom",
+    "type": "UNTRANSLATED",
+    "en": "Align Text Bottom",
+    "vi": "Align Text Bottom"
+  },
+  {
+    "key": "appStatusMergeFailed",
+    "type": "UNTRANSLATED",
+    "en": "Cannot merge/split this cell",
+    "vi": "Cannot merge/split this cell"
+  },
+  {
+    "key": "appPrintLayoutFull",
+    "type": "UNTRANSLATED",
+    "en": "Full Page Slides",
+    "vi": "Full Page Slides"
+  },
+  {
+    "key": "appPrintLayoutHandout2",
+    "type": "UNTRANSLATED",
+    "en": "Handouts (2 per page)",
+    "vi": "Handouts (2 per page)"
+  },
+  {
+    "key": "appPrintLayoutHandout3",
+    "type": "UNTRANSLATED",
+    "en": "Handouts (3 per page)",
+    "vi": "Handouts (3 per page)"
+  },
+  {
+    "key": "appPrintLayoutHandout6",
+    "type": "UNTRANSLATED",
+    "en": "Handouts (6 per page)",
+    "vi": "Handouts (6 per page)"
+  },
+  {
+    "key": "appPrintLayoutNotes",
+    "type": "UNTRANSLATED",
+    "en": "Notes Pages",
+    "vi": "Notes Pages"
+  },
+  {
+    "key": "appPrintFrame",
+    "type": "UNTRANSLATED",
+    "en": "Frame slides",
+    "vi": "Frame slides"
+  },
+  {
+    "key": "appPrintHidden",
+    "type": "UNTRANSLATED",
+    "en": "Print hidden slides",
+    "vi": "Print hidden slides"
+  },
+  {
+    "key": "appGuideDragTip",
+    "type": "UNTRANSLATED",
+    "en": "Drag to move; double-click or drag off canvas to remove",
+    "vi": "Drag to move; double-click or drag off canvas to remove"
+  },
+  {
+    "key": "appCtxEditText",
+    "type": "UNTRANSLATED",
+    "en": "Edit Text",
+    "vi": "Edit Text"
+  },
+  {
+    "key": "appCtxCropPicture",
+    "type": "UNTRANSLATED",
+    "en": "Crop Picture",
+    "vi": "Crop Picture"
+  },
+  {
+    "key": "appCtxChangeBgImage",
+    "type": "UNTRANSLATED",
+    "en": "Change Background Picture…",
+    "vi": "Change Background Picture…"
+  },
+  {
+    "key": "appCtxResetSlide",
+    "type": "UNTRANSLATED",
+    "en": "Reset Slide",
+    "vi": "Reset Slide"
+  },
+  {
+    "key": "appCtxSizePosition",
+    "type": "UNTRANSLATED",
+    "en": "Size and Position…",
+    "vi": "Size and Position…"
+  },
+  {
+    "key": "appCtxSetDefaultShape",
+    "type": "UNTRANSLATED",
+    "en": "Set as Default Shape",
+    "vi": "Set as Default Shape"
+  },
+  {
+    "key": "appCtxChangeShape",
+    "type": "UNTRANSLATED",
+    "en": "Change Shape…",
+    "vi": "Change Shape…"
+  },
+  {
+    "key": "appCtxEditPoints",
+    "type": "UNTRANSLATED",
+    "en": "Edit Points",
+    "vi": "Edit Points"
+  },
+  {
+    "key": "appCtxGroup",
+    "type": "UNTRANSLATED",
+    "en": "Group",
+    "vi": "Group"
+  },
+  {
+    "key": "appCtxSaveAsPicture",
+    "type": "UNTRANSLATED",
+    "en": "Save as Picture…",
+    "vi": "Save as Picture…"
+  },
+  {
+    "key": "appStatusPictureSaved",
+    "type": "UNTRANSLATED",
+    "en": "Picture saved to {path}",
+    "vi": "Picture saved to {path}"
+  },
+  {
+    "key": "appStatusPictureSaveFailed",
+    "type": "UNTRANSLATED",
+    "en": "Save as Picture failed: {error}",
+    "vi": "Save as Picture failed: {error}"
+  },
+  {
+    "key": "appCtxUngroup",
+    "type": "UNTRANSLATED",
+    "en": "Ungroup",
+    "vi": "Ungroup"
+  },
+  {
+    "key": "appCtxRegroup",
+    "type": "UNTRANSLATED",
+    "en": "Regroup",
+    "vi": "Regroup"
+  },
+  {
+    "key": "appMasterClose",
+    "type": "UNTRANSLATED",
+    "en": "Close Master View",
+    "vi": "Close Master View"
+  },
+  {
+    "key": "appMasterThumbMaster",
+    "type": "UNTRANSLATED",
+    "en": "Master",
+    "vi": "Master"
+  },
+  {
+    "key": "appMasterThumbLayout",
+    "type": "UNTRANSLATED",
+    "en": "Layout {n}",
+    "vi": "Layout {n}"
+  },
+  {
+    "key": "appMasterFill",
+    "type": "UNTRANSLATED",
+    "en": "Fill Color…",
+    "vi": "Fill Color…"
+  },
+  {
+    "key": "appMasterStroke",
+    "type": "UNTRANSLATED",
+    "en": "Outline Color…",
+    "vi": "Outline Color…"
+  },
+  {
+    "key": "appReadingSlideTitle",
+    "type": "UNTRANSLATED",
+    "en": "Click to go to the next slide (Esc to exit Reading View)",
+    "vi": "Click to go to the next slide (Esc to exit Reading View)"
+  },
+  {
+    "key": "appReadingPrev",
+    "type": "UNTRANSLATED",
+    "en": "‹ Previous",
+    "vi": "‹ Previous"
+  },
+  {
+    "key": "appReadingNext",
+    "type": "UNTRANSLATED",
+    "en": "Next ›",
+    "vi": "Next ›"
+  },
+  {
+    "key": "appReadingExit",
+    "type": "UNTRANSLATED",
+    "en": "Exit Reading View",
+    "vi": "Exit Reading View"
+  },
+  {
+    "key": "appThumbHiddenTitle",
+    "type": "UNTRANSLATED",
+    "en": "Hidden slide (skipped during slide shows)",
+    "vi": "Hidden slide (skipped during slide shows)"
+  },
+  {
+    "key": "appSorterHiddenTitle",
+    "type": "UNTRANSLATED",
+    "en": "Hidden slide (skipped during slide shows); double-click to edit in Normal view",
+    "vi": "Hidden slide (skipped during slide shows); double-click to edit in Normal view"
+  },
+  {
+    "key": "appSorterItemTitle",
+    "type": "UNTRANSLATED",
+    "en": "Double-click to edit in Normal view",
+    "vi": "Double-click to edit in Normal view"
+  },
+  {
+    "key": "appOutlineNoText",
+    "type": "UNTRANSLATED",
+    "en": "(No text)",
+    "vi": "(No text)"
+  },
+  {
+    "key": "appSectionHeaderTitle",
+    "type": "UNTRANSLATED",
+    "en": "Click to collapse/expand; right-click to manage the section",
+    "vi": "Click to collapse/expand; right-click to manage the section"
+  },
+  {
+    "key": "appNotesClickToAdd",
+    "type": "UNTRANSLATED",
+    "en": "Click to add notes",
+    "vi": "Click to add notes"
+  },
+  {
+    "key": "appNotesPlaceholder",
+    "type": "UNTRANSLATED",
+    "en": "Click to add speaker notes (saved into the .pptx)",
+    "vi": "Click to add speaker notes (saved into the .pptx)"
+  },
+  {
+    "key": "appNotesShow",
+    "type": "UNTRANSLATED",
+    "en": "Show notes",
+    "vi": "Show notes"
+  },
+  {
+    "key": "appNotesHide",
+    "type": "UNTRANSLATED",
+    "en": "Hide notes",
+    "vi": "Hide notes"
+  },
+  {
+    "key": "appAiRailExpand",
+    "type": "UNTRANSLATED",
+    "en": "Expand AI assistant",
+    "vi": "Expand AI assistant"
+  },
+  {
+    "key": "appStatusBarSlide",
+    "type": "UNTRANSLATED",
+    "en": "Slide {current} of {total}",
+    "vi": "Slide {current} of {total}"
+  },
+  {
+    "key": "appMediaCloseTitle",
+    "type": "UNTRANSLATED",
+    "en": "Close (Esc)",
+    "vi": "Close (Esc)"
+  },
+  {
+    "key": "appRehearseSummary",
+    "type": "UNTRANSLATED",
+    "en": "The total time for the slide show was {duration}. Do you want to save the slide timings for automatic slide advance?",
+    "vi": "The total time for the slide show was {duration}. Do you want to save the slide timings for automatic slide advance?"
+  },
+  {
+    "key": "appRehearseDiscard",
+    "type": "UNTRANSLATED",
+    "en": "Don't Save",
+    "vi": "Don't Save"
+  },
+  {
+    "key": "appSettingsAccount",
+    "type": "UNTRANSLATED",
+    "en": "Genspark Account",
+    "vi": "Genspark Account"
+  },
+  {
+    "key": "appSettingsLoggedOut",
+    "type": "UNTRANSLATED",
+    "en": "Not signed in (AI features require a Genspark account)",
+    "vi": "Not signed in (AI features require a Genspark account)"
+  },
+  {
+    "key": "appSettingsLoginPending",
+    "type": "UNTRANSLATED",
+    "en": "Waiting for browser sign-in…",
+    "vi": "Waiting for browser sign-in…"
+  },
+  {
+    "key": "appCropHint",
+    "type": "UNTRANSLATED",
+    "en": "Enter to confirm · Esc to cancel · Click outside to confirm",
+    "vi": "Enter to confirm · Esc to cancel · Click outside to confirm"
+  },
+  {
+    "key": "appStatusZoomsInserted",
+    "type": "UNTRANSLATED",
+    "en": "{count} zooms inserted: click during a slide show to jump to their slides",
+    "vi": "{count} zooms inserted: click during a slide show to jump to their slides"
+  },
+  {
+    "key": "appStatusSummaryZoomInserted",
+    "type": "UNTRANSLATED",
+    "en": "Summary Zoom slide inserted with {count} tiles",
+    "vi": "Summary Zoom slide inserted with {count} tiles"
+  },
+  {
+    "key": "appSectionSummary",
+    "type": "UNTRANSLATED",
+    "en": "Summary Section",
+    "vi": "Summary Section"
+  },
+  {
+    "key": "appSectionN",
+    "type": "UNTRANSLATED",
+    "en": "Section {n}",
+    "vi": "Section {n}"
+  }
+]

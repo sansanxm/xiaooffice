@@ -1,0 +1,545 @@
+[
+  {
+    "key": "appExportedPdfMixed",
+    "type": "HYBRID",
+    "en": "PDF exported: {path} (mixed paper sizes, {n} groups merged by page)",
+    "vi": "Đã xuất PDF: {path} (mixed paper sizes, {n} groups merged by page)",
+    "matches": [
+      "by",
+      "page"
+    ]
+  },
+  {
+    "key": "appThemeFontsChanged",
+    "type": "HYBRID",
+    "en": "Theme fonts changed; written to the document on save (styles that reference theme fonts take effect in Word)",
+    "vi": "Theme fonts changed; sẽ được ghi vào tài liệu khi lưu (styles that reference theme fonts take effect in Word)",
+    "matches": [
+      "that",
+      "in"
+    ]
+  },
+  {
+    "key": "appAutoSaveTip",
+    "type": "UNTRANSLATED",
+    "en": "AutoSave (every 30 seconds and when the window loses focus)",
+    "vi": "AutoSave (every 30 seconds and when the window loses focus)"
+  },
+  {
+    "key": "appDocPwdUnsupported",
+    "type": "HYBRID",
+    "en": "This document can't be decrypted: its encryption scheme is not supported (e.g. WPS account encryption). Remove the encryption in the original app and retry.",
+    "vi": "This document can't be decrypted: its encryption scheme chưa được hỗ trợ (e.g. WPS account encryption). Remove the encryption in the original app and retry.",
+    "matches": [
+      "this",
+      "can",
+      "be",
+      "the",
+      "in",
+      "the",
+      "and"
+    ]
+  },
+  {
+    "key": "appUnitInAbbr",
+    "type": "UNTRANSLATED",
+    "en": "\"",
+    "vi": "\""
+  },
+  {
+    "key": "appUnitPiAbbr",
+    "type": "UNTRANSLATED",
+    "en": "pi",
+    "vi": "pi"
+  },
+  {
+    "key": "appNotLoggedIn",
+    "type": "UNTRANSLATED",
+    "en": "Not signed in (AI features require a Genspark account)",
+    "vi": "Not signed in (AI features require a Genspark account)"
+  },
+  {
+    "key": "appWaitingBrowserLogin",
+    "type": "UNTRANSLATED",
+    "en": "Waiting for browser sign-in…",
+    "vi": "Waiting for browser sign-in…"
+  },
+  {
+    "key": "appSynonymsPrompt",
+    "type": "UNTRANSLATED",
+    "en": "What are better synonyms or near-synonym expressions for \"{text}\"? List 3-5 with brief notes on the differences; do not modify the document.",
+    "vi": "What are better synonyms or near-synonym expressions for \"{text}\"? List 3-5 with brief notes on the differences; do not modify the document."
+  },
+  {
+    "key": "appTranslateSelectionPrompt",
+    "type": "UNTRANSLATED",
+    "en": "Translate the currently selected passage into {lang}, replace the original with the translation, and keep the formatting unchanged: \"{text}\"",
+    "vi": "Translate the currently selected passage into {lang}, replace the original with the translation, and keep the formatting unchanged: \"{text}\""
+  },
+  {
+    "key": "appFontPreviewSample",
+    "type": "UNTRANSLATED",
+    "en": "AaBbCcYyZz",
+    "vi": "AaBbCcYyZz"
+  },
+  {
+    "key": "appFontTabAdvanced",
+    "type": "UNTRANSLATED",
+    "en": "Advanced",
+    "vi": "Advanced"
+  },
+  {
+    "key": "appAllCaps",
+    "type": "HYBRID",
+    "en": "All caps",
+    "vi": "Chữ hoa toàn bộ (All caps)",
+    "matches": [
+      "to",
+      "all"
+    ]
+  },
+  {
+    "key": "appCharSpacingExpanded",
+    "type": "UNTRANSLATED",
+    "en": "Expanded",
+    "vi": "Expanded"
+  },
+  {
+    "key": "appCharSpacingCondensed",
+    "type": "UNTRANSLATED",
+    "en": "Condensed",
+    "vi": "Condensed"
+  },
+  {
+    "key": "appCharPositionRaised",
+    "type": "UNTRANSLATED",
+    "en": "Raised",
+    "vi": "Raised"
+  },
+  {
+    "key": "appCharPositionLowered",
+    "type": "UNTRANSLATED",
+    "en": "Lowered",
+    "vi": "Lowered"
+  },
+  {
+    "key": "appCharBy",
+    "type": "UNTRANSLATED",
+    "en": "By (pt)",
+    "vi": "By (pt)"
+  },
+  {
+    "key": "appKerningFor",
+    "type": "UNTRANSLATED",
+    "en": "Kerning for fonts",
+    "vi": "Kerning for fonts"
+  },
+  {
+    "key": "appKerningPointsAbove",
+    "type": "UNTRANSLATED",
+    "en": "points and above",
+    "vi": "points and above"
+  },
+  {
+    "key": "appIndentLeft",
+    "type": "UNTRANSLATED",
+    "en": "Left indent",
+    "vi": "Left indent"
+  },
+  {
+    "key": "appIndentRight",
+    "type": "UNTRANSLATED",
+    "en": "Right indent",
+    "vi": "Right indent"
+  },
+  {
+    "key": "appIndentFirstLine",
+    "type": "UNTRANSLATED",
+    "en": "First line indent",
+    "vi": "First line indent"
+  },
+  {
+    "key": "appSpaceBefore",
+    "type": "UNTRANSLATED",
+    "en": "Space before",
+    "vi": "Space before"
+  },
+  {
+    "key": "appSpaceAfter",
+    "type": "UNTRANSLATED",
+    "en": "Space after",
+    "vi": "Space after"
+  },
+  {
+    "key": "appParaTabIndents",
+    "type": "UNTRANSLATED",
+    "en": "Indents and Spacing",
+    "vi": "Indents and Spacing"
+  },
+  {
+    "key": "appParaTabBreaks",
+    "type": "UNTRANSLATED",
+    "en": "Line and Page Breaks",
+    "vi": "Line and Page Breaks"
+  },
+  {
+    "key": "appParaOutlineLevel",
+    "type": "UNTRANSLATED",
+    "en": "Outline level",
+    "vi": "Outline level"
+  },
+  {
+    "key": "appParaOutlineBody",
+    "type": "UNTRANSLATED",
+    "en": "Body Text",
+    "vi": "Body Text"
+  },
+  {
+    "key": "appParaOutlineLevelN",
+    "type": "UNTRANSLATED",
+    "en": "Level {n}",
+    "vi": "Level {n}"
+  },
+  {
+    "key": "appParaWidowControl",
+    "type": "UNTRANSLATED",
+    "en": "Widow/Orphan control",
+    "vi": "Widow/Orphan control"
+  },
+  {
+    "key": "appParaKeepWithNext",
+    "type": "UNTRANSLATED",
+    "en": "Keep with next",
+    "vi": "Keep with next"
+  },
+  {
+    "key": "appParaKeepLines",
+    "type": "UNTRANSLATED",
+    "en": "Keep lines together",
+    "vi": "Keep lines together"
+  },
+  {
+    "key": "appParaSuppressLineNumbers",
+    "type": "UNTRANSLATED",
+    "en": "Suppress line numbers",
+    "vi": "Suppress line numbers"
+  },
+  {
+    "key": "appParaNoSpaceSameStyle",
+    "type": "UNTRANSLATED",
+    "en": "Don't add space between paragraphs of the same style",
+    "vi": "Don't add space between paragraphs of the same style"
+  },
+  {
+    "key": "appParaSpecialNone",
+    "type": "UNTRANSLATED",
+    "en": "(none)",
+    "vi": "(none)"
+  },
+  {
+    "key": "appParaSpecialFirstLine",
+    "type": "UNTRANSLATED",
+    "en": "First line",
+    "vi": "First line"
+  },
+  {
+    "key": "appParaSpecialHanging",
+    "type": "UNTRANSLATED",
+    "en": "Hanging",
+    "vi": "Hanging"
+  },
+  {
+    "key": "appParaBy",
+    "type": "UNTRANSLATED",
+    "en": "By",
+    "vi": "By"
+  },
+  {
+    "key": "appLatexPreviewHint",
+    "type": "UNTRANSLATED",
+    "en": "Type LaTeX to see a preview",
+    "vi": "Type LaTeX to see a preview"
+  },
+  {
+    "key": "appPreviewUnavailable",
+    "type": "UNTRANSLATED",
+    "en": "Unable to generate a preview",
+    "vi": "Unable to generate a preview"
+  },
+  {
+    "key": "appInlineEquationToggle",
+    "type": "UNTRANSLATED",
+    "en": "Inline equation (inserted at the cursor, flows with text)",
+    "vi": "Inline equation (inserted at the cursor, flows with text)"
+  },
+  {
+    "key": "appInsertNewEquation",
+    "type": "UNTRANSLATED",
+    "en": "π Insert New Equation (LaTeX)…",
+    "vi": "π Insert New Equation (LaTeX)…"
+  },
+  {
+    "key": "appEqCircleArea",
+    "type": "UNTRANSLATED",
+    "en": "Area of Circle",
+    "vi": "Area of Circle"
+  },
+  {
+    "key": "appEqBinomial",
+    "type": "UNTRANSLATED",
+    "en": "Binomial Theorem",
+    "vi": "Binomial Theorem"
+  },
+  {
+    "key": "appEqSumExpansion",
+    "type": "UNTRANSLATED",
+    "en": "Expansion of a Sum",
+    "vi": "Expansion of a Sum"
+  },
+  {
+    "key": "appEqFourier",
+    "type": "UNTRANSLATED",
+    "en": "Fourier Series",
+    "vi": "Fourier Series"
+  },
+  {
+    "key": "appEqTaylor",
+    "type": "UNTRANSLATED",
+    "en": "Taylor Expansion",
+    "vi": "Taylor Expansion"
+  },
+  {
+    "key": "appEqTrigIdentity",
+    "type": "UNTRANSLATED",
+    "en": "Trig Identity",
+    "vi": "Trig Identity"
+  },
+  {
+    "key": "appMatchCase",
+    "type": "UNTRANSLATED",
+    "en": "Match case",
+    "vi": "Match case"
+  },
+  {
+    "key": "appWholeWord",
+    "type": "UNTRANSLATED",
+    "en": "Whole words only",
+    "vi": "Whole words only"
+  },
+  {
+    "key": "appNoResults",
+    "type": "UNTRANSLATED",
+    "en": "No results",
+    "vi": "No results"
+  },
+  {
+    "key": "appPrevMatch",
+    "type": "UNTRANSLATED",
+    "en": "Previous (Shift+Enter)",
+    "vi": "Previous (Shift+Enter)"
+  },
+  {
+    "key": "appNextMatch",
+    "type": "UNTRANSLATED",
+    "en": "Next (Enter)",
+    "vi": "Next (Enter)"
+  },
+  {
+    "key": "appCloseEsc",
+    "type": "UNTRANSLATED",
+    "en": "Close (Esc)",
+    "vi": "Close (Esc)"
+  },
+  {
+    "key": "appReplacePlaceholder",
+    "type": "UNTRANSLATED",
+    "en": "Replace with",
+    "vi": "Replace with"
+  },
+  {
+    "key": "appReplaceAll",
+    "type": "UNTRANSLATED",
+    "en": "Replace All",
+    "vi": "Replace All"
+  },
+  {
+    "key": "appUseWildcards",
+    "type": "UNTRANSLATED",
+    "en": "Use wildcards (? * [ ] < >)",
+    "vi": "Use wildcards (? * [ ] < >)"
+  },
+  {
+    "key": "appUseRegex",
+    "type": "UNTRANSLATED",
+    "en": "Use regular expressions",
+    "vi": "Use regular expressions"
+  },
+  {
+    "key": "appMatchWidth",
+    "type": "UNTRANSLATED",
+    "en": "Match half/full width",
+    "vi": "Match half/full width"
+  },
+  {
+    "key": "appFindResults",
+    "type": "UNTRANSLATED",
+    "en": "{count} results",
+    "vi": "{count} results"
+  },
+  {
+    "key": "appFindResultsCapped",
+    "type": "UNTRANSLATED",
+    "en": "Showing the first {shown} of {total}",
+    "vi": "Showing the first {shown} of {total}"
+  },
+  {
+    "key": "appFindErrInvalid",
+    "type": "UNTRANSLATED",
+    "en": "Invalid pattern",
+    "vi": "Invalid pattern"
+  },
+  {
+    "key": "appFindErrParen",
+    "type": "UNTRANSLATED",
+    "en": "Unbalanced parentheses",
+    "vi": "Unbalanced parentheses"
+  },
+  {
+    "key": "appFindErrBracket",
+    "type": "UNTRANSLATED",
+    "en": "Unbalanced brackets",
+    "vi": "Unbalanced brackets"
+  },
+  {
+    "key": "appFindErrCaret",
+    "type": "UNTRANSLATED",
+    "en": "Unknown ^ code",
+    "vi": "Unknown ^ code"
+  },
+  {
+    "key": "appFindErrParaMark",
+    "type": "UNTRANSLATED",
+    "en": "^p can only start or end a pattern",
+    "vi": "^p can only start or end a pattern"
+  },
+  {
+    "key": "appGoToTitle",
+    "type": "UNTRANSLATED",
+    "en": "Go To",
+    "vi": "Go To"
+  },
+  {
+    "key": "appGoToWhat",
+    "type": "UNTRANSLATED",
+    "en": "Go to what",
+    "vi": "Go to what"
+  },
+  {
+    "key": "appGoToSection",
+    "type": "UNTRANSLATED",
+    "en": "Section",
+    "vi": "Section"
+  },
+  {
+    "key": "appGoToFootnote",
+    "type": "UNTRANSLATED",
+    "en": "Footnote",
+    "vi": "Footnote"
+  },
+  {
+    "key": "appGoToEndnote",
+    "type": "UNTRANSLATED",
+    "en": "Endnote",
+    "vi": "Endnote"
+  },
+  {
+    "key": "appGoToHeading",
+    "type": "UNTRANSLATED",
+    "en": "Heading",
+    "vi": "Heading"
+  },
+  {
+    "key": "appGoToNumberHint",
+    "type": "UNTRANSLATED",
+    "en": "Number, or +N / -N",
+    "vi": "Number, or +N / -N"
+  },
+  {
+    "key": "appGoToPickBookmark",
+    "type": "UNTRANSLATED",
+    "en": "Choose a bookmark",
+    "vi": "Choose a bookmark"
+  },
+  {
+    "key": "appGoToRelativeHint",
+    "type": "UNTRANSLATED",
+    "en": "Enter + or - to move relative to the current location",
+    "vi": "Enter + or - to move relative to the current location"
+  },
+  {
+    "key": "appGoToNotFound",
+    "type": "UNTRANSLATED",
+    "en": "Not found",
+    "vi": "Not found"
+  },
+  {
+    "key": "appPaginationPreview",
+    "type": "UNTRANSLATED",
+    "en": "Pagination Preview",
+    "vi": "Pagination Preview"
+  },
+  {
+    "key": "appPvCommented",
+    "type": "UNTRANSLATED",
+    "en": "Commented",
+    "vi": "Commented"
+  },
+  {
+    "key": "appPvHint",
+    "type": "UNTRANSLATED",
+    "en": "Read-only snapshot; reopen after editing · Esc to close",
+    "vi": "Read-only snapshot; reopen after editing · Esc to close"
+  },
+  {
+    "key": "appPvExportTip",
+    "type": "UNTRANSLATED",
+    "en": "Exports page by page as previewed; headers, footers, and page numbers match what you see",
+    "vi": "Exports page by page as previewed; headers, footers, and page numbers match what you see"
+  },
+  {
+    "key": "appParagraphStyles",
+    "type": "UNTRANSLATED",
+    "en": "Paragraph styles",
+    "vi": "Paragraph styles"
+  },
+  {
+    "key": "appCharacterStyles",
+    "type": "UNTRANSLATED",
+    "en": "Character styles",
+    "vi": "Character styles"
+  },
+  {
+    "key": "appApplyStyle",
+    "type": "UNTRANSLATED",
+    "en": "Apply style {name}",
+    "vi": "Apply style {name}"
+  },
+  {
+    "key": "appUpdateStyleTip",
+    "type": "UNTRANSLATED",
+    "en": "Update this style from the current selection (written back to styles.xml)",
+    "vi": "Update this style from the current selection (written back to styles.xml)"
+  },
+  {
+    "key": "appNewStyleFromSelection",
+    "type": "UNTRANSLATED",
+    "en": "New style from the current selection",
+    "vi": "New style from the current selection"
+  },
+  {
+    "key": "appStyleNamePlaceholder",
+    "type": "UNTRANSLATED",
+    "en": "Style name",
+    "vi": "Style name"
+  }
+]

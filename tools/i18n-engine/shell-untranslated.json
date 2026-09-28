@@ -1,0 +1,582 @@
+[
+  {
+    "key": "newDoc",
+    "en": "AI Docs",
+    "vi": "AI Docs"
+  },
+  {
+    "key": "newSheet",
+    "en": "AI Sheets",
+    "vi": "AI Sheets"
+  },
+  {
+    "key": "newSlide",
+    "en": "AI Slides",
+    "vi": "AI Slides"
+  },
+  {
+    "key": "newMarkdown",
+    "en": "AI Markdown",
+    "vi": "AI Markdown"
+  },
+  {
+    "key": "newHtml",
+    "en": "AI HTML",
+    "vi": "AI HTML"
+  },
+  {
+    "key": "newPdf",
+    "en": "AI PDF",
+    "vi": "AI PDF"
+  },
+  {
+    "key": "filterPdf",
+    "en": "PDF",
+    "vi": "PDF"
+  },
+  {
+    "key": "filterMd",
+    "en": "Markdown",
+    "vi": "Markdown"
+  },
+  {
+    "key": "filterHtml",
+    "en": "HTML",
+    "vi": "HTML"
+  },
+  {
+    "key": "fileCount",
+    "en": "{n} files",
+    "vi": "{n} files"
+  },
+  {
+    "key": "fileCountOne",
+    "en": "{n} file",
+    "vi": "{n} file"
+  },
+  {
+    "key": "deleteFiles",
+    "en": "Delete files",
+    "vi": "Delete files"
+  },
+  {
+    "key": "cancel",
+    "en": "Cancel",
+    "vi": "Cancel"
+  },
+  {
+    "key": "star",
+    "en": "Star",
+    "vi": "Star"
+  },
+  {
+    "key": "unstar",
+    "en": "Unstar",
+    "vi": "Unstar"
+  },
+  {
+    "key": "open",
+    "en": "Open",
+    "vi": "Open"
+  },
+  {
+    "key": "revealInFolder",
+    "en": "Reveal in folder",
+    "vi": "Reveal in folder"
+  },
+  {
+    "key": "copyPath",
+    "en": "Copy path",
+    "vi": "Copy path"
+  },
+  {
+    "key": "rename",
+    "en": "Rename",
+    "vi": "Rename"
+  },
+  {
+    "key": "duplicate",
+    "en": "Duplicate",
+    "vi": "Duplicate"
+  },
+  {
+    "key": "renameFailed",
+    "en": "Rename failed",
+    "vi": "Rename failed"
+  },
+  {
+    "key": "emptyStarred",
+    "en": "No starred files — hover a row and click the star.",
+    "vi": "No starred files — hover a row and click the star."
+  },
+  {
+    "key": "emptyRecent",
+    "en": "No recent files — create or open a file to get started.",
+    "vi": "No recent files — create or open a file to get started."
+  },
+  {
+    "key": "emptyFiltered",
+    "en": "No files of this type.",
+    "vi": "No files of this type."
+  },
+  {
+    "key": "folders",
+    "en": "Folders",
+    "vi": "Folders"
+  },
+  {
+    "key": "newFolder",
+    "en": "New folder",
+    "vi": "New folder"
+  },
+  {
+    "key": "newSubfolder",
+    "en": "New subfolder",
+    "vi": "New subfolder"
+  },
+  {
+    "key": "untitledFolder",
+    "en": "Untitled folder",
+    "vi": "Untitled folder"
+  },
+  {
+    "key": "folderType",
+    "en": "Folder",
+    "vi": "Folder"
+  },
+  {
+    "key": "moveToFolder",
+    "en": "Move to folder…",
+    "vi": "Move to folder…"
+  },
+  {
+    "key": "moveToFolderTitle",
+    "en": "Move to folder",
+    "vi": "Move to folder"
+  },
+  {
+    "key": "searchFolders",
+    "en": "Search folders",
+    "vi": "Search folders"
+  },
+  {
+    "key": "searchFilesPlaceholder",
+    "en": "Search file names and contents…",
+    "vi": "Search file names and contents…"
+  },
+  {
+    "key": "searchNoResults",
+    "en": "No files match “{q}”",
+    "vi": "No files match “{q}”"
+  },
+  {
+    "key": "searchResultCount",
+    "en": "{n} results",
+    "vi": "{n} results"
+  },
+  {
+    "key": "searchResultCountOne",
+    "en": "{n} result",
+    "vi": "{n} result"
+  },
+  {
+    "key": "searchClear",
+    "en": "Clear search",
+    "vi": "Clear search"
+  },
+  {
+    "key": "noMatchingFolders",
+    "en": "No matching folders.",
+    "vi": "No matching folders."
+  },
+  {
+    "key": "currentFolder",
+    "en": "Current",
+    "vi": "Current"
+  },
+  {
+    "key": "moveCount",
+    "en": "Move {n}",
+    "vi": "Move {n}"
+  },
+  {
+    "key": "itemCount",
+    "en": "{n} items",
+    "vi": "{n} items"
+  },
+  {
+    "key": "itemCountOne",
+    "en": "{n} item",
+    "vi": "{n} item"
+  },
+  {
+    "key": "emptyFolder",
+    "en": "This folder is empty. Create a file, or drag files here.",
+    "vi": "This folder is empty. Create a file, or drag files here."
+  },
+  {
+    "key": "deleteFolder",
+    "en": "Delete folder…",
+    "vi": "Delete folder…"
+  },
+  {
+    "key": "deleteFolderTitle",
+    "en": "Delete folder?",
+    "vi": "Delete folder?"
+  },
+  {
+    "key": "deleteFolderConfirm",
+    "en": "\"{name}\" and everything inside it will be moved to the trash.",
+    "vi": "\"{name}\" and everything inside it will be moved to the trash."
+  },
+  {
+    "key": "folderMoreActions",
+    "en": "More actions for {name}",
+    "vi": "More actions for {name}"
+  },
+  {
+    "key": "conflictTitle",
+    "en": "An item with that name already exists",
+    "vi": "An item with that name already exists"
+  },
+  {
+    "key": "conflictBodyOne",
+    "en": "The target folder already contains \"{name}\". What would you like to do?",
+    "vi": "The target folder already contains \"{name}\". What would you like to do?"
+  },
+  {
+    "key": "conflictBodyMany",
+    "en": "The target folder already contains {n} items with the same names. What would you like to do?",
+    "vi": "The target folder already contains {n} items with the same names. What would you like to do?"
+  },
+  {
+    "key": "conflictKeepBoth",
+    "en": "Keep both",
+    "vi": "Keep both"
+  },
+  {
+    "key": "conflictReplace",
+    "en": "Replace",
+    "vi": "Replace"
+  },
+  {
+    "key": "rootUnusable",
+    "en": "The default save location is unavailable, so folders cannot be shown.",
+    "vi": "The default save location is unavailable, so folders cannot be shown."
+  },
+  {
+    "key": "pickSaveDir",
+    "en": "Choose a save location",
+    "vi": "Choose a save location"
+  },
+  {
+    "key": "deleteModalTitle",
+    "en": "Delete Files",
+    "vi": "Delete Files"
+  },
+  {
+    "key": "deleteConfirmOne",
+    "en": "Move \"{name}\" to the Trash?",
+    "vi": "Move \"{name}\" to the Trash?"
+  },
+  {
+    "key": "deleteConfirmMany",
+    "en": "Move these {n} files to the Trash?",
+    "vi": "Move these {n} files to the Trash?"
+  },
+  {
+    "key": "deleteMoreCount",
+    "en": "… {n} in total",
+    "vi": "… {n} in total"
+  },
+  {
+    "key": "delete",
+    "en": "Delete",
+    "vi": "Delete"
+  },
+  {
+    "key": "timelineEmpty",
+    "en": "No AI conversations in this project yet.",
+    "vi": "No AI conversations in this project yet."
+  },
+  {
+    "key": "timelineYou",
+    "en": "You",
+    "vi": "You"
+  },
+  {
+    "key": "timelineUserAria",
+    "en": "User",
+    "vi": "User"
+  },
+  {
+    "key": "untitled",
+    "en": "Untitled",
+    "vi": "Untitled"
+  },
+  {
+    "key": "noContent",
+    "en": "(empty)",
+    "vi": "(empty)"
+  },
+  {
+    "key": "accountGenspark",
+    "en": "Genspark Account",
+    "vi": "Genspark Account"
+  },
+  {
+    "key": "account",
+    "en": "Account",
+    "vi": "Account"
+  },
+  {
+    "key": "login",
+    "en": "Sign in",
+    "vi": "Sign in"
+  },
+  {
+    "key": "loggedIn",
+    "en": "Signed in",
+    "vi": "Signed in"
+  },
+  {
+    "key": "loggedInGenspark",
+    "en": "Signed in to Genspark",
+    "vi": "Signed in to Genspark"
+  },
+  {
+    "key": "waitingLogin",
+    "en": "Waiting for browser sign-in… Click to relaunch the sign-in page",
+    "vi": "Waiting for browser sign-in… Click to relaunch the sign-in page"
+  },
+  {
+    "key": "loginTimeout",
+    "en": "Sign-in timed out — click to retry",
+    "vi": "Sign-in timed out — click to retry"
+  },
+  {
+    "key": "loginLaunchFailed",
+    "en": "Could not start sign-in — click to retry",
+    "vi": "Could not start sign-in — click to retry"
+  },
+  {
+    "key": "loginOpenManually",
+    "en": "Browser did not open? Click to open manually",
+    "vi": "Browser did not open? Click to open manually"
+  },
+  {
+    "key": "loginOpenShort",
+    "en": "Open sign-in page manually",
+    "vi": "Open sign-in page manually"
+  },
+  {
+    "key": "loginCopyUrl",
+    "en": "Copy sign-in link",
+    "vi": "Copy sign-in link"
+  },
+  {
+    "key": "loginCopied",
+    "en": "Copied",
+    "vi": "Copied"
+  },
+  {
+    "key": "loginNetworkError",
+    "en": "Cannot reach Genspark — check your network or proxy settings",
+    "vi": "Cannot reach Genspark — check your network or proxy settings"
+  },
+  {
+    "key": "loginExpired",
+    "en": "Sign-in expired — click to retry",
+    "vi": "Sign-in expired — click to retry"
+  },
+  {
+    "key": "loginFailed",
+    "en": "Sign-in failed — click to retry",
+    "vi": "Sign-in failed — click to retry"
+  },
+  {
+    "key": "waitingShort",
+    "en": "Waiting…",
+    "vi": "Waiting…"
+  },
+  {
+    "key": "loggingOut",
+    "en": "Signing out…",
+    "vi": "Signing out…"
+  },
+  {
+    "key": "logout",
+    "en": "Sign out",
+    "vi": "Sign out"
+  },
+  {
+    "key": "credits",
+    "en": "Credits",
+    "vi": "Credits"
+  },
+  {
+    "key": "creditsTip",
+    "en": "View credit usage details",
+    "vi": "View credit usage details"
+  },
+  {
+    "key": "appVersion",
+    "en": "Version {v}",
+    "vi": "Version {v}"
+  },
+  {
+    "key": "updateChannel",
+    "en": "Update Channel",
+    "vi": "Update Channel"
+  },
+  {
+    "key": "theme",
+    "en": "Theme",
+    "vi": "Theme"
+  },
+  {
+    "key": "saveLocation",
+    "en": "Save Location",
+    "vi": "Save Location"
+  },
+  {
+    "key": "setAutoSave",
+    "en": "Auto-save all documents",
+    "vi": "Auto-save all documents"
+  },
+  {
+    "key": "setAutoSaveDesc",
+    "en": "Turn on AutoSave by default in every editor. You can still switch it off for a single window.",
+    "vi": "Turn on AutoSave by default in every editor. You can still switch it off for a single window."
+  },
+  {
+    "key": "setAnalytics",
+    "en": "Send anonymous usage statistics",
+    "vi": "Send anonymous usage statistics"
+  },
+  {
+    "key": "setAnalyticsDesc",
+    "en": "Enabled by default and can be turned off anytime in Settings → General. Uses Google Analytics 4; Google receives your public IP address and transport metadata, but document contents and file names are never collected.",
+    "vi": "Enabled by default and can be turned off anytime in Settings → General. Uses Google Analytics 4; Google receives your public IP address and transport metadata, but document contents and file names are never collected."
+  },
+  {
+    "key": "setSearchRerank",
+    "en": "Jev search reranking",
+    "vi": "Jev search reranking"
+  },
+  {
+    "key": "setSearchRerankDesc",
+    "en": "Sends the top 20 local hits' excerpts to TypeSafe's Jev model and reorders them by relevance. Off by default; when on, excerpts leave this device.",
+    "vi": "Sends the top 20 local hits' excerpts to TypeSafe's Jev model and reorders them by relevance. Off by default; when on, excerpts leave this device."
+  },
+  {
+    "key": "setSearchRerankEndpoint",
+    "en": "Jev endpoint",
+    "vi": "Jev endpoint"
+  },
+  {
+    "key": "searchRerankedBy",
+    "en": "Reordered by relevance with Jev",
+    "vi": "Reordered by relevance with Jev"
+  },
+  {
+    "key": "searchJevSettings",
+    "en": "Jev semantic reranking",
+    "vi": "Jev semantic reranking"
+  },
+  {
+    "key": "setAiPanelSide",
+    "en": "AI sidebar position",
+    "vi": "AI sidebar position"
+  },
+  {
+    "key": "aiPanelSideLeft",
+    "en": "Left",
+    "vi": "Left"
+  },
+  {
+    "key": "aiPanelSideRight",
+    "en": "Right",
+    "vi": "Right"
+  },
+  {
+    "key": "setAiFontSize",
+    "en": "AI panel text size",
+    "vi": "AI panel text size"
+  },
+  {
+    "key": "aiFontSizeDefault",
+    "en": "Default",
+    "vi": "Default"
+  },
+  {
+    "key": "aiFontSizeLarge",
+    "en": "Large",
+    "vi": "Large"
+  },
+  {
+    "key": "aiFontSizeXLarge",
+    "en": "Extra large",
+    "vi": "Extra large"
+  },
+  {
+    "key": "aiFontSizeCustom",
+    "en": "Custom",
+    "vi": "Custom"
+  },
+  {
+    "key": "setAiSpellcheck",
+    "en": "Spell check in AI chat",
+    "vi": "Spell check in AI chat"
+  },
+  {
+    "key": "setDefaultApp",
+    "en": "Default app for Office documents",
+    "vi": "Default app for Office documents"
+  },
+  {
+    "key": "setDefaultAppDesc",
+    "en": "Open .docx, .xlsx and .pptx files in GenOffice when double-clicked.",
+    "vi": "Open .docx, .xlsx and .pptx files in GenOffice when double-clicked."
+  },
+  {
+    "key": "setDefaultAppIs",
+    "en": "GenOffice is already the default.",
+    "vi": "GenOffice is already the default."
+  },
+  {
+    "key": "setDefaultAppOther",
+    "en": "Current default: {app}",
+    "vi": "Current default: {app}"
+  },
+  {
+    "key": "setDefaultAppSet",
+    "en": "Make default",
+    "vi": "Make default"
+  },
+  {
+    "key": "setDefaultAppOpenSettings",
+    "en": "Open system settings",
+    "vi": "Open system settings"
+  },
+  {
+    "key": "setDefaultAppFailed",
+    "en": "Could not change it. Please set it in the system settings.",
+    "vi": "Could not change it. Please set it in the system settings."
+  },
+  {
+    "key": "intgMcpPartTitle",
+    "en": "MCP",
+    "vi": "MCP"
+  },
+  {
+    "key": "intgMcpClaudeTitle",
+    "en": "Claude Code",
+    "vi": "Claude Code"
+  },
+  {
+    "key": "setEmail",
+    "en": "Email",
+    "vi": "Email"
+  }
+]

@@ -1,0 +1,5992 @@
+[
+  {
+    "shard": "i18n/app",
+    "key": "appOpenFailed",
+    "text": "Open failed: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appVerticalTextNotice",
+    "text": "This document contains vertical text (shown horizontally for now; saving is unaffected)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveFailed",
+    "text": "Save failed: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintRangeHint",
+    "text": "e.g. 1,3,5-8"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintPageCount",
+    "text": "{n} pages"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintFailed",
+    "text": "Print failed: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appExportImagesProgress",
+    "text": "Exporting {count} images…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMixedExportOpening",
+    "text": "Mixed paper sizes: opening pagination preview to export pages merged…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEditComment",
+    "text": "Edit comment"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteComment",
+    "text": "Delete comment"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteCommentWithReplies",
+    "text": "Delete comment (and replies)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteReply",
+    "text": "Delete reply"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReplyPlaceholder",
+    "text": "Reply…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReply",
+    "text": "Reply"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReopen",
+    "text": "Reopen"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appResolve",
+    "text": "Resolve"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoComments",
+    "text": "This document has no comments"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAllRevisionsAccepted",
+    "text": "All changes accepted"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAllRevisionsRejected",
+    "text": "All changes rejected"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoRevisionsToHandle",
+    "text": "No tracked changes to process"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectSecurity",
+    "text": "Security"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectDesc",
+    "text": "Set open and modify passwords, editing restrictions, and privacy options; changes apply when the document is saved"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOptional",
+    "text": "(optional)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOptionalBlank",
+    "text": "(optional)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectOpenPwd",
+    "text": "Password to open this document"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectModifyPwd",
+    "text": "Password to modify this document"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectPwdKeepHint",
+    "text": "An existing password shows as dots: leave it unchanged to keep it, or clear the field to remove it"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectSectionTitle",
+    "text": "Protection"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectFor",
+    "text": "Restrict editing"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectModeTracked",
+    "text": "Tracked changes"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectModeReadOnly",
+    "text": "Read only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectModeForms",
+    "text": "Forms"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectUnlockPwd",
+    "text": "Enter the protection password to change or remove it"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectPrivacy",
+    "text": "Privacy"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectRemovePersonal",
+    "text": "Remove author and organization metadata from this file on save"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectUpdated",
+    "text": "Protection settings updated; they apply when the document is saved"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appModifyPwdTitle",
+    "text": "Write-Protected"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appModifyPwdBody",
+    "text": "\"{name}\" has a password to modify. Enter it to edit, or open read-only."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOpenReadOnly",
+    "text": "Open Read-Only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectPwdOptional",
+    "text": "Protection password"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWrongPassword",
+    "text": "Incorrect password"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCompareFailed",
+    "text": "Compare failed: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCompareResult",
+    "text": "Compare Results"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCompareWithPrefix",
+    "text": "Compared with "
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCompareStats",
+    "text": ": {added} added, {removed} deleted, {changed} changed"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCompareIdentical",
+    "text": "The two documents are identical"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCompareSameRun",
+    "text": "… {n} identical paragraphs …"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEmptyParagraph",
+    "text": "(empty paragraph)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appInksCleared",
+    "text": "All ink removed; takes effect after saving"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWatermarkRemoved",
+    "text": "Watermark removed; takes effect after saving"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSourceAdded",
+    "text": "Source \"{title}\" added; reference it via Insert Citation"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTitlePgOn",
+    "text": "\"Different First Page\" enabled; switch at the top of the page to edit the first-page header and footer"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTitlePgOff",
+    "text": "\"Different First Page\" disabled"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEvenOddOn",
+    "text": "\"Different Odd & Even Pages\" enabled; switch at the top of the page to edit the even-page header and footer"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEvenOddOff",
+    "text": "\"Different Odd & Even Pages\" disabled"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFirstPage",
+    "text": "First Page"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOddPage",
+    "text": "Odd Pages"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEvenPage",
+    "text": "Even Pages"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDefaultPage",
+    "text": "Default"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDblclickEditHeader",
+    "text": "Double-click to edit the header"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDblclickEditFooter",
+    "text": "Double-click to edit the footer"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHfPageNumHint",
+    "text": " (# stands for the automatic page number)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHfSameAsPrevious",
+    "text": "Same as Previous"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHfLinkConfirmHeader",
+    "text": "Delete this header and connect to the header in the previous section?"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHfLinkConfirmFooter",
+    "text": "Delete this footer and connect to the footer in the previous section?"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHfHeaderSectionTag",
+    "text": "Header -Section {n}-"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHfFooterSectionTag",
+    "text": "Footer -Section {n}-"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDblclickEditFootnote",
+    "text": "Double-click to edit the footnote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEditFootnote",
+    "text": "Edit footnote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteFootnote",
+    "text": "Delete footnote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEditEndnote",
+    "text": "Edit endnote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteEndnote",
+    "text": "Delete endnote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFootnotePlaceholder",
+    "text": "Footnote text…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEndnotePlaceholder",
+    "text": "Endnote text…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutoSaveTip",
+    "text": "AutoSave (every 30 seconds and when the window loses focus)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStartOpening",
+    "text": "Opening…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDocPwdTitle",
+    "text": "Password Protected"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDocPwdBody",
+    "text": "\"{name}\" is password protected. Enter the password to open it."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDocPwdLabel",
+    "text": "Password"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDocPwdPlaceholder",
+    "text": "Enter the open password"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appModifyPwdPlaceholder",
+    "text": "Enter the password to modify"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPwdShow",
+    "text": "Show password"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPwdHide",
+    "text": "Hide password"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDocPwdWrong",
+    "text": "The password is incorrect. Try again."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEncConfirmLabel",
+    "text": "Confirm password"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEncMismatch",
+    "text": "The passwords don't match"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRecentDocs",
+    "text": "Recent Documents"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSplitPaneLabel",
+    "text": "Split pane (read-only preview, scrolls independently)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRemoveSplit",
+    "text": "Remove Split"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appExitReadMode",
+    "text": "Exit Read Mode (Esc)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appExpandAiPanel",
+    "text": "Expand the AI editing pane"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiRail",
+    "text": "AI"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPageOf",
+    "text": "Page {current} of {total}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWordCountTitle",
+    "text": "Word Count"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWordCountN",
+    "text": "{n} words"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTrackChangesOn",
+    "text": "Track Changes: On"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTrackChangesOff",
+    "text": "Track Changes: Off"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcTitle",
+    "text": "AutoCorrect Options"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcIntro",
+    "text": "Replace as you type:"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcSmartQuotes",
+    "text": "\"Straight quotes\" with “smart quotes”"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcDashes",
+    "text": "Hyphens (--) with dash (—)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcAutoLists",
+    "text": "Automatic bulleted and numbered lists"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcSymbols",
+    "text": "Symbols: (c) (r) (tm) ... fractions and arrows"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcOrdinals",
+    "text": "Ordinals (1st) with superscript"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcCapitalize",
+    "text": "Capitalize first letter of sentences"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcRestore",
+    "text": "Restore Defaults"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcUndoHint",
+    "text": "Backspace right after a correction undoes it."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAcPasteFromOther",
+    "text": "Pasting from other programs:"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrefsTitle",
+    "text": "Preferences"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrefsUnitsLabel",
+    "text": "Show measurements in units of"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitInches",
+    "text": "Inches"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitCentimeters",
+    "text": "Centimeters"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitMillimeters",
+    "text": "Millimeters"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitPoints",
+    "text": "Points"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitPicas",
+    "text": "Picas"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitInAbbr",
+    "text": "\""
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitCmAbbr",
+    "text": "cm"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitMmAbbr",
+    "text": "mm"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitPtAbbr",
+    "text": "pt"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnitPiAbbr",
+    "text": "pi"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatWords",
+    "text": "Words"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatAsianChars",
+    "text": "Asian characters (Chinese, Japanese, Korean)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatNonAsianWords",
+    "text": "Non-Asian words"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatCharsNoSpaces",
+    "text": "Characters (no spaces)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatCharsWithSpaces",
+    "text": "Characters (with spaces)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatParagraphs",
+    "text": "Paragraphs"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavNoHeadings",
+    "text": "No headings in this document"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavSearch",
+    "text": "Search document"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavTabHeadings",
+    "text": "Headings"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavTabResults",
+    "text": "Results"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavSearchHint",
+    "text": "Type to search the document"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavNoResults",
+    "text": "No matches"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavPagesPending",
+    "text": "Preparing pages…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavPage",
+    "text": "Page {n}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavExpand",
+    "text": "Expand"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavCollapse",
+    "text": "Collapse"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavPromote",
+    "text": "Promote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavDemote",
+    "text": "Demote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavNewBefore",
+    "text": "New Heading Before"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavNewAfter",
+    "text": "New Heading After"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavSelectContent",
+    "text": "Select Heading and Content"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavExpandAll",
+    "text": "Expand All"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavCollapseAll",
+    "text": "Collapse All"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavShowLevels",
+    "text": "Show Heading Levels"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNavShowLevel",
+    "text": "Show Heading {n}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTabTypeTip",
+    "text": "Tab stop type: {type} (click to cycle)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTabStopTitle",
+    "text": "{type} tab stop @ {pos}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTabLeader",
+    "text": ", leader: {leader}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRulerFirstLineIndent",
+    "text": "First Line Indent"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRulerLeftIndent",
+    "text": "Left Indent"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRulerRightIndent",
+    "text": "Right Indent"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRulerLeftMargin",
+    "text": "Left Margin"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRulerRightMargin",
+    "text": "Right Margin"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTabDecimal",
+    "text": "Decimal"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiSettings",
+    "text": "AI Settings"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGensparkAccount",
+    "text": "Genspark account"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChecking",
+    "text": "Checking…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLoggedIn",
+    "text": "Signed in"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLoggedInEmail",
+    "text": "Signed in: {email}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNotLoggedIn",
+    "text": "Not signed in (AI features require a Genspark account)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWaitingBrowserLogin",
+    "text": "Waiting for browser sign-in…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLoginGenspark",
+    "text": "Sign in to Genspark"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appModel",
+    "text": "Model"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPastePlain",
+    "text": "Paste as Plain Text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteOptions",
+    "text": "Paste Options"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteKeepSource",
+    "text": "Keep Source Formatting"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteMergeFormat",
+    "text": "Merge Formatting"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteTextOnly",
+    "text": "Keep Text Only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteRememberDefault",
+    "text": "Always use this choice"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontMenu",
+    "text": "Font…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParagraphMenu",
+    "text": "Paragraph…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUpdateField",
+    "text": "Update Field"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appToggleFieldCodes",
+    "text": "Toggle Field Codes"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEditField",
+    "text": "Edit Field…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFieldCode",
+    "text": "Field code"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRestartNumbering",
+    "text": "Restart at 1"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appContinueNumbering",
+    "text": "Continue Numbering"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSetNumberingValue",
+    "text": "Set Numbering Value…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAdjustListIndents",
+    "text": "Adjust List Indents…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNumberingValueSet",
+    "text": "Numbering value set to {value}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSpellNoSuggestions",
+    "text": "No Suggestions"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSpellAddToDictionary",
+    "text": "Add to Dictionary"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSpellIgnoreAll",
+    "text": "Ignore All"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSynonyms",
+    "text": "Synonyms"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSynonymsPrompt",
+    "text": "What are better synonyms or near-synonym expressions for \"{text}\"? List 3-5 with brief notes on the differences; do not modify the document."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTranslateSelectionPrompt",
+    "text": "Translate the currently selected passage into {lang}, replace the original with the translation, and keep the formatting unchanged: \"{text}\""
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiBadgeTip",
+    "text": "Uses AI"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appViewImage",
+    "text": "View Image"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveImageAs",
+    "text": "Save Image As…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appImgActualSize",
+    "text": "Actual Size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHyperlinkMenu",
+    "text": "Hyperlink…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEditHyperlink",
+    "text": "Edit Hyperlink…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOpenHyperlink",
+    "text": "Open Hyperlink"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCopyHyperlink",
+    "text": "Copy Hyperlink"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRemoveHyperlink",
+    "text": "Remove Hyperlink"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWrapInline",
+    "text": "In Line with Text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWrapSquareLeft",
+    "text": "Square · picture left"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWrapSquareRight",
+    "text": "Square · picture right"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWrapTopBottom",
+    "text": "Top and Bottom"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWrapBehind",
+    "text": "Behind Text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWrapFront",
+    "text": "In Front of Text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBringToFront",
+    "text": "Bring to Front"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBringForward",
+    "text": "Bring Forward"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSendBackward",
+    "text": "Send Backward"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSendToBack",
+    "text": "Send to Back"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontFamilyLabel",
+    "text": "Asian / Latin font"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontStyleLabel",
+    "text": "Font style"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontRegular",
+    "text": "Regular"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontBoldItalic",
+    "text": "Bold Italic"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontColor",
+    "text": "Font color"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontPreviewSample",
+    "text": "AaBbCcYyZz"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontTabAdvanced",
+    "text": "Advanced"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDoubleStrikethrough",
+    "text": "Double strikethrough"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSmallCaps",
+    "text": "Small caps"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAllCaps",
+    "text": "All caps"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHiddenText",
+    "text": "Hidden"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCharScale",
+    "text": "Scale (%)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCharSpacingExpanded",
+    "text": "Expanded"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCharSpacingCondensed",
+    "text": "Condensed"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCharPositionRaised",
+    "text": "Raised"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCharPositionLowered",
+    "text": "Lowered"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCharBy",
+    "text": "By (pt)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appKerningFor",
+    "text": "Kerning for fonts"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appKerningPointsAbove",
+    "text": "points and above"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAlignJustify",
+    "text": "Justified"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLineSpacingLabel",
+    "text": "Line spacing"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLineSingle",
+    "text": "Single"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLine15",
+    "text": "1.5 lines"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLineDouble",
+    "text": "Double"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLineMultiple",
+    "text": "Multiple"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLineValue",
+    "text": "At"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appIndentLeft",
+    "text": "Left indent"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appIndentRight",
+    "text": "Right indent"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appIndentFirstLine",
+    "text": "First line indent"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSpaceBefore",
+    "text": "Space before"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSpaceAfter",
+    "text": "Space after"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaTabIndents",
+    "text": "Indents and Spacing"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaTabBreaks",
+    "text": "Line and Page Breaks"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaOutlineLevel",
+    "text": "Outline level"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaOutlineBody",
+    "text": "Body Text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaOutlineLevelN",
+    "text": "Level {n}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaWidowControl",
+    "text": "Widow/Orphan control"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaKeepWithNext",
+    "text": "Keep with next"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaKeepLines",
+    "text": "Keep lines together"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaPageBreakBefore",
+    "text": "Page break before"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaSuppressLineNumbers",
+    "text": "Suppress line numbers"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaNoSpaceSameStyle",
+    "text": "Don't add space between paragraphs of the same style"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaSpecial",
+    "text": "Special"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaSpecialNone",
+    "text": "(none)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaSpecialFirstLine",
+    "text": "First line"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaSpecialHanging",
+    "text": "Hanging"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParaBy",
+    "text": "By"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLatexPlaceholder",
+    "text": "e.g. x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLatexPreviewHint",
+    "text": "Type LaTeX to see a preview"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPreviewUnavailable",
+    "text": "Unable to generate a preview"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appInlineEquationToggle",
+    "text": "Inline equation (inserted at the cursor, flows with text)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appInsertNewEquation",
+    "text": "π Insert New Equation (LaTeX)…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEqCircleArea",
+    "text": "Area of Circle"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEqBinomial",
+    "text": "Binomial Theorem"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEqSumExpansion",
+    "text": "Expansion of a Sum"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEqFourier",
+    "text": "Fourier Series"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEqTaylor",
+    "text": "Taylor Expansion"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEqTrigIdentity",
+    "text": "Trig Identity"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMatchCase",
+    "text": "Match case"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWholeWord",
+    "text": "Whole words only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoResults",
+    "text": "No results"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrevMatch",
+    "text": "Previous (Shift+Enter)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNextMatch",
+    "text": "Next (Enter)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCloseEsc",
+    "text": "Close (Esc)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReplacePlaceholder",
+    "text": "Replace with"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReplaceAll",
+    "text": "Replace All"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUseWildcards",
+    "text": "Use wildcards (? * [ ] < >)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUseRegex",
+    "text": "Use regular expressions"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMatchWidth",
+    "text": "Match half/full width"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindResults",
+    "text": "{count} results"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindResultsCapped",
+    "text": "Showing the first {shown} of {total}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindErrInvalid",
+    "text": "Invalid pattern"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindErrParen",
+    "text": "Unbalanced parentheses"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindErrBracket",
+    "text": "Unbalanced brackets"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindErrCaret",
+    "text": "Unknown ^ code"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindErrParaMark",
+    "text": "^p can only start or end a pattern"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToTitle",
+    "text": "Go To"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToWhat",
+    "text": "Go to what"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToSection",
+    "text": "Section"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToFootnote",
+    "text": "Footnote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToEndnote",
+    "text": "Endnote"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToHeading",
+    "text": "Heading"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToNumberHint",
+    "text": "Number, or +N / -N"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToPickBookmark",
+    "text": "Choose a bookmark"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToRelativeHint",
+    "text": "Enter + or - to move relative to the current location"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToNotFound",
+    "text": "Not found"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPaginationPreview",
+    "text": "Pagination Preview"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPvCommented",
+    "text": "Commented"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTotalPagesN",
+    "text": "{n} pages"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPvHint",
+    "text": "Read-only snapshot; reopen after editing · Esc to close"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPvExportTip",
+    "text": "Exports page by page as previewed; headers, footers, and page numbers match what you see"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appParagraphStyles",
+    "text": "Paragraph styles"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCharacterStyles",
+    "text": "Character styles"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appApplyStyle",
+    "text": "Apply style {name}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUpdateStyleTip",
+    "text": "Update this style from the current selection (written back to styles.xml)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNewStyleFromSelection",
+    "text": "New style from the current selection"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleNamePlaceholder",
+    "text": "Style name"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "loadFailed",
+    "text": "Could not open the file"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "untitled",
+    "text": "Untitled"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "saveFailed",
+    "text": "Save failed: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "saveFailedStatus",
+    "text": "Save failed"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "exportFailed",
+    "text": "Export failed"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "exportHtmlSkipped",
+    "text": "Exported, but {count} asset(s) could not be inlined (e.g. {first})"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "viewSource",
+    "text": "Source"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "saving",
+    "text": "Saving…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "savedOk",
+    "text": "Saved"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "unsaved",
+    "text": "Unsaved"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "autoSave",
+    "text": "Auto save"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "replacePlaceholder",
+    "text": "Replace with"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "matchCase",
+    "text": "Match case"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "wholeWord",
+    "text": "Whole words only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "noResults",
+    "text": "No results"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "prevMatch",
+    "text": "Previous (Shift+Enter)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "nextMatch",
+    "text": "Next (Enter)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "closeEsc",
+    "text": "Close (Esc)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "replaceAll",
+    "text": "Replace All"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "findTip",
+    "text": "Find and Replace (⌘F)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "autoSaveTip",
+    "text": "Saves every 30 seconds and when the window loses focus"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "zoomIn",
+    "text": "Zoom in"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "zoomOut",
+    "text": "Zoom out"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "cursorPos",
+    "text": "Ln {line}, Col {col}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "charCount",
+    "text": "{n} chars"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "previewNeedsSave",
+    "text": "Relative images and styles show in the preview once the file is saved"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "inspectHint",
+    "text": "Click an element in the preview to select it, double-click to edit text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "nodeDynamic",
+    "text": "This element was created by the page script and has no source; edit through the source or AI"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "nodeDynamicShort",
+    "text": "script-generated"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "nodeDirty",
+    "text": "The page script has changed this element; edits written to the source may be overridden by the script"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "nodeDirtyShort",
+    "text": "script-modified"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "elementDelete",
+    "text": "Delete element"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "elementDuplicate",
+    "text": "Duplicate element"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "elementMoveUp",
+    "text": "Move up"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "elementMoveDown",
+    "text": "Move down"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "elementToolbar",
+    "text": "Element toolbar"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "elementPath",
+    "text": "Element path"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "openExternal",
+    "text": "Link opened in your browser"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "editText",
+    "text": "Edit text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "fontSize",
+    "text": "Font size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "radius",
+    "text": "Radius"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "padding",
+    "text": "Padding"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "opacity",
+    "text": "Opacity"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "customCss",
+    "text": "Custom style"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "revert",
+    "text": "Revert"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "device",
+    "text": "Device"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "devDesktop",
+    "text": "Desktop"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "devTablet",
+    "text": "Tablet"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "stylePanel",
+    "text": "Style panel"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "stylePanelClose",
+    "text": "Close style panel"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "alignLeft",
+    "text": "Align left"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "alignRight",
+    "text": "Align right"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "fontSizeDec",
+    "text": "Decrease font size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "fontSizeInc",
+    "text": "Increase font size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "typography",
+    "text": "Typography"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "boxSection",
+    "text": "Box"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageSection",
+    "text": "Image"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageReplace",
+    "text": "Replace image"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageFlipH",
+    "text": "Flip horizontally"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageFlipV",
+    "text": "Flip vertically"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageRotateLeft",
+    "text": "Rotate left"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageRotateRight",
+    "text": "Rotate right"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageAlt",
+    "text": "Alt text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageFit",
+    "text": "Fit"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageFitFill",
+    "text": "Stretch"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageFitContain",
+    "text": "Contain"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageFitNone",
+    "text": "Original size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageNatural",
+    "text": "Natural size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "imageNeedsSave",
+    "text": "Save the file before replacing or editing images"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertHeading",
+    "text": "Heading"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertList",
+    "text": "List"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertButton",
+    "text": "Button"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertImage",
+    "text": "Image"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertSection",
+    "text": "Section"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertDivider",
+    "text": "Divider"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertPlaceholderHeading",
+    "text": "New heading"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertPlaceholderParagraph",
+    "text": "Type your text here."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertPlaceholderListItem",
+    "text": "List item"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertPlaceholderButton",
+    "text": "Button"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertNoBody",
+    "text": "The page has no <body> to insert into"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertImageUrl",
+    "text": "Image from URL…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertMore",
+    "text": "More"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "insertPlaceholderTableHeader",
+    "text": "Header {n}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "modePresent",
+    "text": "Present"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "presentExit",
+    "text": "Exit presentation (Esc)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "presentInTab",
+    "text": "In this tab"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "presentFullscreen",
+    "text": "Fullscreen"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "presentNewTab",
+    "text": "New tab"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLabelFormatPlaceholder",
+    "text": "e.g. 0.0% / #,##0"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appValuesRangeExample",
+    "text": "e.g. B2:B13"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCategoriesRangeExample",
+    "text": "e.g. A2:A13"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMoreSeries",
+    "text": "+{count} more series…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMoreItems",
+    "text": "+{count} more…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToButtonTitle",
+    "text": "Go To (⌘G)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotChartHintIn",
+    "text": "Create a PivotChart from the current PivotTable"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerHintIn",
+    "text": "Insert a slicer for the current PivotTable"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTooManyImages",
+    "text": "At most {max} images per message; the extras were ignored"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appImageNotLoaded",
+    "text": "The image failed to load: {path}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotLayoutMismatch",
+    "text": "The PivotTable layout does not match its output range — refresh it in Excel before recalculating."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotGrowUnsupported",
+    "text": "This PivotTable layout (compact/multi-row headers) does not support automatic growth yet — refresh it in Excel."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotGrowConflict",
+    "text": "The grown PivotTable area conflicts with existing content — clear the target area, then refresh."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShapeNotEditable",
+    "text": "No editable shape \"{id}\" (only shapes added this session can be edited)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCalcFieldNameClash",
+    "text": "The calculated field \"{name}\" cannot share a name with a source header."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCalcFieldNameDuplicate",
+    "text": "Calculated field names must be unique."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotRelayoutOverlap",
+    "text": "The new PivotTable layout would overwrite existing content — clear the target area first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotDefNotLoadedSave",
+    "text": "The PivotTable definition is not loaded yet — if you edited it this session, save (⌘S) first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotEditUnsupported",
+    "text": "This PivotTable cannot be edited yet: {reasons}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotEditHasFeatures",
+    "text": "PivotTables with grouping, filters, report filters, or calculated fields do not support layout editing yet — adjust them in Excel."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotEditValuesOnRows",
+    "text": "PivotTables with value fields on the row axis do not support layout editing yet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotEditAggUnsupported",
+    "text": "This PivotTable's aggregation (e.g. Product or Count Numbers) does not support layout editing yet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotSourceSheetNotFound",
+    "text": "Cannot find the PivotTable source sheet \"{name}\"."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerPivotStale",
+    "text": "The slicer's target PivotTable is no longer valid."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerNeedsFullLoad",
+    "text": "Slicer filtering needs full-load mode — this workbook is too large and was stream-loaded."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerPivotMissing",
+    "text": "The PivotTable bound to this slicer no longer exists."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerSheetMissing",
+    "text": "The sheet bound to this slicer no longer exists."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerFilterFailed",
+    "text": "Slicer filtering failed."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerKeepOne",
+    "text": "Keep at least one member selected in the slicer."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerCleared",
+    "text": "Slicer \"{name}\" filter cleared."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicerRemoved",
+    "text": "Slicer \"{name}\" removed; all members restored."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTimelineHintIn",
+    "text": "Insert a timeline for a date field of the current PivotTable"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTimelineNoDateFields",
+    "text": "This PivotTable has no usable date fields — a timeline needs an ungrouped field whose values are all dates."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTimelineCreated",
+    "text": "Timeline \"{name}\" created — click months to filter the PivotTable."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTimelineCleared",
+    "text": "Timeline \"{name}\" filter cleared."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTimelineRemoved",
+    "text": "Timeline \"{name}\" removed; all members restored."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTimelineEmptyRange",
+    "text": "No members within the selected month range."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFieldFilterTaken",
+    "text": "Every qualifying field already has a slicer or timeline — remove the existing one first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToNotReady",
+    "text": "The workbook is not ready yet — cannot go to a reference."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToEmpty",
+    "text": "Enter a cell address or a defined name."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToUnresolved",
+    "text": "Cannot go to \"{ref}\": not a valid address or a navigable defined name."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToOutOfBounds",
+    "text": "Cannot go to \"{ref}\": outside the sheet bounds."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToSheetNotFound",
+    "text": "Cannot go to \"{ref}\": that sheet was not found."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoToFailed",
+    "text": "Cannot go to \"{ref}\": {detail}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSymbolInsertFailed",
+    "text": "Unable to insert the symbol."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSymbolInserted",
+    "text": "Inserted {char} into {cell}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAdvFilterNeedsFilter",
+    "text": "Advanced Filter needs an AutoFilter range — select the data and click Filter first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAdvFilterGone",
+    "text": "The current sheet has no AutoFilter — turn it on again and retry."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAdvFilterFailed",
+    "text": "Failed to apply the advanced filter."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAdvFilterApplied",
+    "text": "Advanced filter criteria applied — ⌘S saves to the file."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFlashFillNeedsLeft",
+    "text": "Flash Fill needs data columns to the left of the target column."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFlashFillNeedsRows",
+    "text": "Flash Fill needs at least two rows of data."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFlashFillNeedsExamples",
+    "text": "Fill in 1-2 examples in the target column first, then click Flash Fill."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFlashFillNoPattern",
+    "text": "No pattern recognized from the examples — target values must be derivable from the columns on the left; try adding another example."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFlashFillNothingToFill",
+    "text": "No empty rows to fill."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFlashFillDone",
+    "text": "⚡ Flash Fill filled {count} row(s) from your examples."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSparklineNeedsFile",
+    "text": "Sparklines need an imported XLSX file."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveHeldStranded",
+    "text": "PivotTables/tables cannot be saved together with new sheets plus row/column changes — save the structure first, then add the PivotTables/tables."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveSecondCanceled",
+    "text": "The second save phase was canceled — the structure is saved; PivotTables/tables/defined names are not written yet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSavedTwoPhase",
+    "text": "Saved."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveSecondFailed",
+    "text": "The structure is saved, but the second phase (PivotTables/tables/defined names) failed: {reason}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReadyInitial",
+    "text": "Ready for a local, deterministic AI command."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiThinking",
+    "text": "AI is thinking…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiDone",
+    "text": "AI finished"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiTurnLimit",
+    "text": "(Reached the tool-call turn limit for this request; the answer above is based on what was read so far and may be incomplete.)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiTruncatedNote",
+    "text": "(The reply was cut off by the length limit and may be incomplete.)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiStopped",
+    "text": "(stopped)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiNoSummary",
+    "text": "AI finished with no summary."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiNoAction",
+    "text": "The AI made no changes and gave no reply. Try again or rephrase."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNewConversation",
+    "text": "New conversation started."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAreaStreaming",
+    "text": "That area is still streaming in — try editing it again in a moment."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormulaRecordedPartial",
+    "text": "Formula recorded — it saves to the file, but the on-screen result may be incomplete because this large workbook streams partially."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormulaTooExpensive",
+    "text": "This formula evaluates a large range once per element — the computation would freeze the app, so it was cancelled. Narrow the referenced range and try again."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotSheetNoStructural",
+    "text": "This sheet contains a PivotTable — structural changes are not supported yet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteSpanFormulas",
+    "text": "A formula references only the deleted rows/columns — update or remove it first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appIconSetUnsupported",
+    "text": "This icon combination cannot be saved to xlsx — please choose a different icon set."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNeedFullLoadSort",
+    "text": "Sorting, filtering, moving ranges, and splitting text need the fully-loaded mode — this workbook is too large and streams partially."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFullLoadFilterTitle",
+    "text": "Filtering needs the full workbook"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFullLoadFilterBody",
+    "text": "This workbook is large and only partially streamed in. Filtering (including value counts) needs the complete data to be correct. Load the entire workbook now?"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFullLoadStart",
+    "text": "Load all"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFullLoadRunning",
+    "text": "Loading the entire workbook — filtering unlocks when it finishes…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFullLoadTooLarge",
+    "text": "This workbook is too large to load fully into memory; filtering is unavailable for this file."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableFilterNoEdit",
+    "text": "This sheet's filter belongs to an Excel table — editing it cannot be saved yet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutofillStreaming",
+    "text": "Autofill into an area that is still streaming in is not allowed yet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDvNeedsIndexed",
+    "text": "Editing data validation needs this sheet fully indexed first — try again in a moment."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMoveRowsColsUnsaved",
+    "text": "Moving whole columns cannot be saved to imported workbooks yet — moving whole rows is supported."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoWorkbookOpen",
+    "text": "No workbook is open."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDvListOptions",
+    "text": "List: {items}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDvListFromRange",
+    "text": "List (from range {range})"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRuleBrokenRef",
+    "text": "Broken reference (#REF!) — this rule can never apply"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCellStreaming",
+    "text": "That cell is still streaming in — try again in a moment."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPreviewCreated",
+    "text": "Preview created — nothing changes until you apply."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPreviewCreatedDemo",
+    "text": "Preview created. No workbook state has changed."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPreviewFailed",
+    "text": "Unable to create a preview."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appApplyTxFailed",
+    "text": "Unable to apply the transaction."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTxCommitted",
+    "text": "Transaction committed at revision {revision}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPreviewOtherWorkbook",
+    "text": "The preview belonged to a different workbook — create a new one."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPreviewSheetGone",
+    "text": "The previewed sheet no longer exists — create a new preview."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWorkbookChangedSincePreview",
+    "text": "The workbook changed since the preview — create a new preview."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAppliedJournaled",
+    "text": "Applied — the changes are journaled; save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUndoCommitted",
+    "text": "Undo committed as revision {revision}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUndoFailed",
+    "text": "Unable to undo."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutoFilterCreateFailed",
+    "text": "Unable to create the auto-filter."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutoFilterRemoveFailed",
+    "text": "Unable to remove the auto-filter."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectDataRangeFirst",
+    "text": "Select the data range first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnsupportedChartType",
+    "text": "Unsupported chart type: {kind}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartInsertedDemo",
+    "text": "Chart inserted — demo edits stay in memory; open an XLSX file to save to disk."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartInsertFailed",
+    "text": "Unable to insert the chart."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartNeedsNumericColumn",
+    "text": "Select a range with at least one numeric column (headers optional)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartInserted",
+    "text": "Chart inserted — select it to edit, ⌘S writes it into the file."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPictureTooLarge",
+    "text": "Pictures over 20MB are not supported."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPictureBadType",
+    "text": "Only PNG, JPEG, or GIF pictures are supported."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableNeedsRows",
+    "text": "A table needs a header row plus at least one data row."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableTooWide",
+    "text": "A table can span at most 1,000 columns."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableNameUsed",
+    "text": "Table name \"{name}\" was already used this session."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableOverlapsSession",
+    "text": "The range overlaps table \"{name}\" created this session."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableSelectRange",
+    "text": "Select the data range first — headers in its first row."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableCreated",
+    "text": "Table created — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableCreateFailed",
+    "text": "Unable to create the table."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotOnAddedSheet",
+    "text": "Pivots on sheets added this session are not supported yet — save first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotSourceNeedsRows",
+    "text": "The pivot source needs a header row plus data rows."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotSourceRowLimit",
+    "text": "The pivot source is limited to 10,000 data rows."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotSourceColLimit",
+    "text": "The pivot source is limited to 200 columns."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotHeaderBlank",
+    "text": "Every source header cell must be non-blank."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotHeaderDuplicate",
+    "text": "Source header names must be unique."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotFieldNotHeader",
+    "text": "Field \"{label}\" is not a source header."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotTooManyRowItems",
+    "text": "The pivot has more than 10,000 row items."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotTooManyColItems",
+    "text": "The pivot has more than 1,000 column items."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotTooManyColLines",
+    "text": "The pivot has more than 1,000 column lines."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotNeedsValues",
+    "text": "The pivot needs one values entry."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotTooManyRowLines",
+    "text": "The pivot has more than 20,000 row lines."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotOverlapSource",
+    "text": "The pivot output would overlap its source range — pick another targetCell."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotOverlapExisting",
+    "text": "The pivot output would overlap an existing pivot on the target sheet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotOverlapSession",
+    "text": "The pivot output would overlap pivot \"{name}\" created this session."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotNameUsed",
+    "text": "Pivot name \"{name}\" was already used this session."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appActiveCellFallback",
+    "text": "the active cell"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormulaStartsEquals",
+    "text": "A formula starts with \"=\"."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnbalancedParens",
+    "text": "Unbalanced parentheses — finish the arguments."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSetFormulaFailed",
+    "text": "Unable to set the formula."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormulaSet",
+    "text": "Formula set in {cell}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectSourceRangeFirst",
+    "text": "Select the source data range first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectRangeWithHeader",
+    "text": "Select a data range with a header row."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSubtotalSameColumns",
+    "text": "Pick different group and value columns."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRangeNoDataRows",
+    "text": "The selected range has no data rows."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSubtotalTooManyGroups",
+    "text": "Too many groups (max 200) — sort by the group column first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSubtotalInsertFailed",
+    "text": "Unable to insert the subtotal rows."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSubtotalsInserted",
+    "text": "Subtotals inserted: {count} group(s) plus a grand total."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectTargetCellFirst",
+    "text": "Select the target cell first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConsolidateBadRef",
+    "text": "Not a valid reference: {ref}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoSheetNamed",
+    "text": "No sheet named \"{name}\"."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConsolidateEmptySources",
+    "text": "The source areas are empty."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConsolidateOverlap",
+    "text": "The output area overlaps a source area — pick another target cell."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConsolidateWriteFailed",
+    "text": "Unable to write the consolidation."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConsolidateDone",
+    "text": "Consolidated {count} area(s) at {cell} ({rows}×{columns} live formulas)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConsolidateMaxMinLabels",
+    "text": "Max and Min are not supported with left-column labels — use by-position instead."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConsolidateLabelNeedsCols",
+    "text": "Label mode needs at least two columns per area (labels plus a value column)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConsolidateNoLabels",
+    "text": "No labels found in the left column of the source areas."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOutlineSelectFirst",
+    "text": "Select the rows or columns to group first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDetailHidden",
+    "text": "Detail hidden — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDetailShown",
+    "text": "Detail shown — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOutlineMaxLevel",
+    "text": "Already at the deepest outline level (7)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRowsGrouped",
+    "text": "Rows grouped — save with ⌘S. Collapse them with Hide Detail."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appColsGrouped",
+    "text": "Columns grouped — save with ⌘S. Collapse them with Hide Detail."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRowsUngrouped",
+    "text": "Rows ungrouped — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appColsUngrouped",
+    "text": "Columns ungrouped — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSheetAdded",
+    "text": "Sheet added — double-click its tab to rename it."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSheetAddFailed",
+    "text": "Unable to add a sheet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormatCopied",
+    "text": "Format copied — select the target cells to apply it."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectionNeedsIndexed",
+    "text": "Protection needs this sheet fully indexed first — try again in a moment."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appZoom",
+    "text": "Zoom {percent}%."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTopRowFrozen",
+    "text": "Top row frozen — saves with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFirstColFrozen",
+    "text": "First column frozen — saves with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindScanTruncated",
+    "text": "Large sheet: search stopped after {cells} cells — results may be incomplete."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReplaceNeedsFullLoad",
+    "text": "Replace needs the fully-loaded mode — use Find instead."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGridlinesHiddenSave",
+    "text": "Gridlines hidden — saves with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGridlinesShownSave",
+    "text": "Gridlines shown — saves with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGridlinesHidden",
+    "text": "Gridlines hidden."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGridlinesShown",
+    "text": "Gridlines shown."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShowingFormulas",
+    "text": "Showing formulas — toggle again for values."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShowingValues",
+    "text": "Showing calculated values."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTraceNoFormula",
+    "text": "Trace Precedents: the active cell has no formula."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTraceNoRefs",
+    "text": "Trace Precedents: this formula has no cell references."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTracedPrecedents",
+    "text": "Traced {count} precedent range(s)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTraceOffSheetRefs",
+    "text": "{count} reference(s) on other sheets not drawn."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLoadedRegionOnly",
+    "text": " (loaded region only)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTraceNoDependents",
+    "text": "Trace Dependents: no formulas read the active cell{note}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTracedDependents",
+    "text": "Traced {count} dependent cell(s){note}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTraceOffSheetDeps",
+    "text": "{count} dependent(s) on other sheets not drawn."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTraceArrowsRemoved",
+    "text": "Trace arrows removed."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoTraceArrows",
+    "text": "No trace arrows to remove."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWorkbookStats",
+    "text": "Workbook statistics: {sheets} sheets · {cells} cells with data · {formulas} formulas{note}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectCellsFirst",
+    "text": "Select the cells first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCellStyleApplied",
+    "text": "Cell style applied — it journals like any format edit (⌘S to save)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTooManyCellsForSetting",
+    "text": "Select fewer than 10,000 cells for this setting."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appProtectionFlagsRecorded",
+    "text": "Protection flags recorded — they apply when the sheet is protected."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortSelectRows",
+    "text": "Select the rows to sort first — include every column that belongs together."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortedAsc",
+    "text": "Sorted A → Z by the first selected column."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortedDesc",
+    "text": "Sorted Z → A by the first selected column."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutofnSelectCells",
+    "text": "Select the cells to aggregate — {fn} goes in the row below."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRowBelowStreaming",
+    "text": "The row below is still streaming in — try again in a moment."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortedCustom",
+    "text": "Sorted by your custom levels."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDedupeNeedsFullLoad",
+    "text": "Removing duplicates needs the fully-loaded mode — this workbook is too large and streams partially."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDedupeSelectRows",
+    "text": "Select the rows to check for duplicates first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDuplicatesRemoved",
+    "text": "Removed {count} duplicate row(s)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinksNeedFile",
+    "text": "Open an XLSX file to edit links."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinkRemoved",
+    "text": "Link removed."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinkInvalid",
+    "text": "Enter a web address (https://…) or a sheet reference like Sheet1!A1."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinkSaved",
+    "text": "Link saved — click the cell to follow it."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTextToColsSelectOne",
+    "text": "Select a single column of text to split."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSplitIntoColumns",
+    "text": "Split into columns."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCommandFailed",
+    "text": "Unable to apply the command."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appColumnLabel",
+    "text": "Column {col}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBridgeUnavailable",
+    "text": "Desktop file bridge is unavailable. Restart the Electron app."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOpeningWorkbook",
+    "text": "Opening workbook…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOpened",
+    "text": "Opened {name} — cell edits save back with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOpenFailed",
+    "text": "Unable to open the workbook."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPageSetupRecorded",
+    "text": "{note} — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOrientationPortrait",
+    "text": "Orientation: portrait"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOrientationLandscape",
+    "text": "Orientation: landscape"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMarginsNormal",
+    "text": "Margins: normal"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMarginsWide",
+    "text": "Margins: wide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMarginsNarrow",
+    "text": "Margins: narrow"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPaperSizeNote",
+    "text": "Paper size: {name}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintScaleNote",
+    "text": "Print scale: {scale}%"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFitAutomatic",
+    "text": "automatic"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFitPages",
+    "text": "{count} page(s)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFitWidthNote",
+    "text": "Fit width: {value}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFitHeightNote",
+    "text": "Fit height: {value}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGridlinesWillPrint",
+    "text": "Gridlines will print"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGridlinesWontPrint",
+    "text": "Gridlines will not print"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHeadingsWillPrint",
+    "text": "Row and column headings will print"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHeadingsWontPrint",
+    "text": "Headings will not print"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintAreaCleared",
+    "text": "Print area cleared"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectPrintRange",
+    "text": "Select the print range first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintAreaNote",
+    "text": "Print area: {area}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintTitlesCleared",
+    "text": "Print titles cleared"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRow1Repeats",
+    "text": "Row 1 repeats on every printed page"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectRepeatRows",
+    "text": "Select the rows to repeat first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRowsRepeat",
+    "text": "Rows {rows} repeat on every printed page"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appActiveSheetUnavailable",
+    "text": "The active sheet is unavailable."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHfUpdated",
+    "text": "Header & footer updated — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPdfNeedsFullLoad",
+    "text": "PDF export needs the fully loaded workbook — wait for loading to finish."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPdfRendering",
+    "text": "Rendering the PDF…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPdfCanceled",
+    "text": "PDF export canceled."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPdfExported",
+    "text": "Exported {path}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPdfExportFailed",
+    "text": "Unable to export the PDF."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintPreparing",
+    "text": "Preparing to print…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintSent",
+    "text": "Sent to the printer."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintCanceled",
+    "text": "Printing canceled."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintFailed",
+    "text": "Unable to print."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintNeedsFullLoad",
+    "text": "Printing needs the whole workbook loaded — please wait for loading to finish."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvExportNeedsFullLoad",
+    "text": "CSV export needs the fully loaded workbook — wait for loading to finish."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvExportTooLarge",
+    "text": "The sheet is too large to export as CSV."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvExportCanceled",
+    "text": "CSV export canceled."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvExported",
+    "text": "Exported {path}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvExportedActiveOnly",
+    "text": "CSV holds a single sheet — exported the active sheet \"{name}\" to {path}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvExportFailed",
+    "text": "Unable to export the CSV."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDemoNoSave",
+    "text": "Demo edits stay in memory — open an XLSX file to save to disk."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFilterSnapshotFailed",
+    "text": "Unable to snapshot the filters."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appColorFiltersUnsaveable",
+    "text": "Color filters cannot be saved as XLSX yet — clear them before saving."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoEditsToSave",
+    "text": "No edits to save yet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSheetOrderReadFailed",
+    "text": "Unable to read the sheet order — try again."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSavingEdits",
+    "text": "Saving {count} edit(s)…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveCanceled",
+    "text": "Save canceled."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaved",
+    "text": "Saved."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveFailed",
+    "text": "Unable to save the workbook."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCfRuleUnsaveable",
+    "text": "This conditional formatting rule cannot be saved to xlsx — switch to another rule type."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrMultiSelectList",
+    "text": "Multi-select list validation cannot be saved to xlsx — delete the rule before saving."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrX14Cf",
+    "text": "This range has extended (x14) conditional formatting and cannot be modified yet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrPivotWithSheetOps",
+    "text": "A newly created PivotTable cannot be saved together with sheet-management changes — save the PivotTable first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrPivotWithRowCol",
+    "text": "A newly created PivotTable cannot be saved together with row/column changes on its sheet — save the PivotTable first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrTableWithRowCol",
+    "text": "A newly created table cannot be saved together with row/column changes on its sheet — save the table first."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrNamesWithStructural",
+    "text": "Defined-name changes cannot be saved together with row/column or sheet-structure changes — save them separately."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrChangedOnDisk",
+    "text": "The file was changed on disk by another program — save aborted; reopen the file and try again."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrTargetLocked",
+    "text": "The file could not be replaced — it looks locked by another program (open in Excel, or being scanned/synced). Close it there and save again."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrStylesheetLimited",
+    "text": "This workbook's stylesheet is missing basic structure, so style changes cannot be saved."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrPackageGuard",
+    "text": "Saving would change the workbook's package structure — aborted to protect the file."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrChartUnsupported",
+    "text": "This chart type does not support that edit; save aborted — undo the chart change."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveErrMoveOverlap",
+    "text": "A formula, formatted range, drawing, or table spans the moved rows; save aborted — undo the move."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvImported",
+    "text": "Imported {rows} rows × {columns} columns from the file into {cell}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvEmpty",
+    "text": "The CSV file has no data."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvTooLarge",
+    "text": "CSV is too large — over 50,000 cells; use Open to load it as a new workbook."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCsvImportFailed",
+    "text": "CSV import failed."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoNotesOnSheet",
+    "text": "No comments on this sheet."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNotePrevTitle",
+    "text": "Jump to the previous comment"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoteNextTitle",
+    "text": "Jump to the next comment"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShowCommentsTitle",
+    "text": "Pin/unpin the selected cell's comment bubble"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStructuralShiftBlocked",
+    "text": "A chart or table on this sheet is anchored to the affected rows/columns, so they can't shift; the structural change was not saved. Undo it (Cmd+Z) and save again."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiChangesNotSaved",
+    "text": "AI changes applied (not saved). Undo with Cmd+Z; save to the file with Cmd+S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartUpdated",
+    "text": "Chart updated."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartNotEditable",
+    "text": "This chart is not editable."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartEditRecorded",
+    "text": "Chart edit recorded — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartDeleted",
+    "text": "Chart deleted."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartMoved",
+    "text": "Chart moved."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appVisualNotEditable",
+    "text": "This visual is not editable."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFileVisualMoveDeleteOnly",
+    "text": "Only moving or deleting is supported for visuals already in the file."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appVisualNoMove",
+    "text": "This visual cannot be moved — its drawing shape is not editable."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appVisualDeleted",
+    "text": "Visual deleted — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShapeTextUpdated",
+    "text": "Shape text updated — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShapeMoved",
+    "text": "Shape moved — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appScopeWorkbook",
+    "text": "Workbook"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNameGone",
+    "text": "That name no longer exists."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNameApplyFailed",
+    "text": "The name could not be applied."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNamesUpdated",
+    "text": "Defined names updated — save with ⌘S."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinkInternal",
+    "text": "Link points inside the workbook: {location}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinkSheetNotFound",
+    "text": "Sheet \"{name}\" was not found."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinkJumpFailed",
+    "text": "Unable to jump to {location}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appClosureActive",
+    "text": "{count} formulas recalculate live (closure mode); the rest of the workbook streams on demand."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRecalcPartial",
+    "text": "Formulas recalculated from your edits — {count} kept cached values (functions the fallback engine lacks)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRecalcDone",
+    "text": "Formulas recalculated from your edits ({count} cells, engine fallback)."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appIndexing",
+    "text": "Indexing {name}: {rows} rows ready."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStreamingRows",
+    "text": "Streaming {name}: {rows} rows available."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLoadRangeFailed",
+    "text": "Unable to load the visible range."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFullyLoaded",
+    "text": "Workbook fully loaded — formulas recalculate live, rows/columns editable."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRangeMustBeVector",
+    "text": "{range} must be a single row or a single column of cells."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRangeTooManyCells",
+    "text": "{range} covers more than {max} cells."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCopyLoadingRange",
+    "text": "Loading {range} for copy…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCopyValuesOnly",
+    "text": "{range} copied as values only ({cells} cells): styles are kept only up to {max} cells."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSheetStillIndexing",
+    "text": "The sheet is still indexing — try again in a moment."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintNothing",
+    "text": "The sheet has nothing to print."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintTooLarge",
+    "text": "The print range is too large — set a smaller print area on the Page Layout tab."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintBadArea",
+    "text": "Invalid print area \"{area}\"."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintBadTitles",
+    "text": "Invalid print titles \"{titles}\"."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintTitlesLimit",
+    "text": "Print titles repeat at most 21 rows."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appVisualHintText",
+    "text": "Drag to move · handles to resize · double-click to edit text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appVisualHintEdit",
+    "text": "Drag to move · handles to resize · double-click to edit"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appVisualHint",
+    "text": "Drag to move · handles to resize"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteVisualTitle",
+    "text": "Delete this visual"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDrawingObject",
+    "text": "Drawing object"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appImageLoadFailed",
+    "text": "Unable to load image."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appImageLoading",
+    "text": "Loading image…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWorkbookImageAlt",
+    "text": "Workbook image"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEditChartTitle",
+    "text": "Edit chart"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReadRangeFailed",
+    "text": "Unable to read the range."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSliceN",
+    "text": "Slice {n}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSeriesData",
+    "text": "{name} data"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appValuesPlaceholder",
+    "text": "Values e.g. B2:B13"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLabelsPlaceholder",
+    "text": "Labels e.g. A2:A13"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appValuesRangeTitle",
+    "text": "Values range for {name} — a single row or column, e.g. B2:B13"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCategoriesRangeTitle",
+    "text": "Category labels range for {name} — a single row or column, e.g. A2:A13"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTabFormulas",
+    "text": "Formulas"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTabAi",
+    "text": "AI"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutoSaveTitle",
+    "text": "AutoSave is available for cloud files only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutoSaveTip",
+    "text": "AutoSave (every 30 seconds and when the window loses focus)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appExportPdfTitle",
+    "text": "Export as PDF"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSaveAs",
+    "text": "Save As"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnsavedEditOne",
+    "text": "● {count} unsaved edit"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnsavedEditMany",
+    "text": "● {count} unsaved edits"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSavedState",
+    "text": "Saved"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSavedLocally",
+    "text": "Saved locally"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRevisionChip",
+    "text": "Revision {revision}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOpenWorkbookTitle",
+    "text": "Open Workbook (⌘O)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOpenXlsx",
+    "text": "Open XLSX"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHideAi",
+    "text": "Hide AI"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShowAi",
+    "text": "Show AI"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCategoryAxisTitle",
+    "text": "Category Axis Title"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appValueAxisTitle",
+    "text": "Value Axis Title"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTitleText",
+    "text": "Title text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAxisTitleText",
+    "text": "Axis title text (empty removes it)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSort",
+    "text": "Sort"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMyDataHasHeaders",
+    "text": "My data has headers"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortBy",
+    "text": "Sort by"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appThenBy",
+    "text": "Then by"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortNone",
+    "text": "(none)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortAsc",
+    "text": "A → Z"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortDesc",
+    "text": "Z → A"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEditLinkTitle",
+    "text": "Edit Link"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appInsertLinkTitle",
+    "text": "Insert Link"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinkAddressLabel",
+    "text": "Address — a web page (https://…) or a sheet reference (Sheet1!A1)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLinkPlaceholder",
+    "text": "https://example.com or Sheet1!A1"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNotAvailableYet",
+    "text": "Not available yet"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appComingSoon",
+    "text": "Coming soon"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupChartLayouts",
+    "text": "Chart layouts"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAddChartElementTitle",
+    "text": "Titles, data labels, legend"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appQuickLayoutTitle",
+    "text": "Preset legend + label layouts"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRecolorSlices",
+    "text": "Recolor every slice"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRecolorSeries",
+    "text": "Recolor every series"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectEditableChart",
+    "text": "Select an editable chart"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElTitle",
+    "text": "Chart Title…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElAxisCat",
+    "text": "Axis Title: Category…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElAxisVal",
+    "text": "Axis Title: Value…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLabelsNamePct",
+    "text": "Data Labels: Name + %"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLabelsPct",
+    "text": "Data Labels: %"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLabelsValues",
+    "text": "Data Labels: Values"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLabelsNone",
+    "text": "Data Labels: None"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLegendRight",
+    "text": "Legend: Right"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLegendTop",
+    "text": "Legend: Top"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLegendBottom",
+    "text": "Legend: Bottom"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLegendLeft",
+    "text": "Legend: Left"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartElLegendNone",
+    "text": "Legend: None"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLayoutLabelsNamePct",
+    "text": "name + % labels"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLayoutLabelsValue",
+    "text": "value labels"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLayout1",
+    "text": "Layout 1 — Legend right, {labels}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLayout2",
+    "text": "Layout 2 — Legend top, {labels}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLayout3",
+    "text": "Layout 3 — Legend bottom, no labels"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appLayout4",
+    "text": "Layout 4 — No legend, {labels}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appColorsOffice",
+    "text": "Office"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appColorsBlue",
+    "text": "Monochromatic Blue"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appColorsGreen",
+    "text": "Monochromatic Green"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChangeChartType",
+    "text": "Change chart type"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChartCombo",
+    "text": "Combo (column + line)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupingBtn",
+    "text": "Stacked"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupingTitle",
+    "text": "Clustered or stacked"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupingClustered",
+    "text": "Clustered"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupingStacked",
+    "text": "Stacked"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupingPercent",
+    "text": "100% stacked"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCurrentType",
+    "text": "Current type"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appScatterKeepType",
+    "text": "Scatter/combo charts keep their type"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSelectDataBtn",
+    "text": "Select Data"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSeriesNamesRanges",
+    "text": "Series names and ranges"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormatPaneDetail",
+    "text": "Axis, gap width, explosion"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupChartActions",
+    "text": "Chart actions"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRemoveFromSheet",
+    "text": "Remove from sheet"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupAiAssistant",
+    "text": "AI assistant"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiOpenPanelDetail",
+    "text": "Chat sidebar"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupAiStarters",
+    "text": "Quick start"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiStarterDetail",
+    "text": "Send to AI panel"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appEditPivotTable",
+    "text": "Edit PivotTable"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appChangeFields",
+    "text": "Change fields"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRealExcelTable",
+    "text": "Real Excel table"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPictureTypes",
+    "text": "PNG, JPEG, GIF"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appScreenshot",
+    "text": "Screenshot"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupCheckbox",
+    "text": "Checkbox"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupCharts",
+    "text": "Charts"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRecommendedCharts",
+    "text": "Recommended Charts"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotChart",
+    "text": "PivotChart"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupSparklines",
+    "text": "Sparklines"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSparkWinLoss",
+    "text": "Win/Loss"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupFilters",
+    "text": "Filters"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSlicer",
+    "text": "Slicer"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTimeline",
+    "text": "Timeline"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintedPages",
+    "text": "Printed pages"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMarginsTitle",
+    "text": "Margins — {value}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAsSavedInFile",
+    "text": "as saved in file"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOrientationTitle",
+    "text": "Orientation — {value}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPaperSizeTitle",
+    "text": "Paper size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintAreaTitle",
+    "text": "Print area — {area}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintTitlesTitle",
+    "text": "Print titles — rows {rows} repeat on every page"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintTitlesHint",
+    "text": "Rows repeated at the top of every printed page"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRepeatRow1",
+    "text": "Repeat Row 1"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRepeatSelectedRows",
+    "text": "Repeat Selected Rows"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appClearPrintTitles",
+    "text": "Clear Print Titles"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFitPage1",
+    "text": "{count} page"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFitPagesN",
+    "text": "{count} pages"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintCheck",
+    "text": "Print"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintGridlinesTitle",
+    "text": "Print gridlines"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHeadingsHidden",
+    "text": "Headings hidden."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHeadingsShown",
+    "text": "Headings shown."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintHeadingsTitle",
+    "text": "Print row and column headings"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupFunctionLibrary",
+    "text": "Function Library"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBrowseCatalog",
+    "text": "Browse the catalog"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBrowseCatalogFiltered",
+    "text": "Browse this category"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFnCatMore",
+    "text": "More Functions"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupDefinedNames",
+    "text": "Defined Names"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNameManagerDetail",
+    "text": "Add, edit, delete"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUseInFormulaTitle",
+    "text": "Insert a defined name into the formula"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUseInFormulaNeedsEmptyCell",
+    "text": "Select an empty cell first — inserting the name would replace this cell's contents"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoNamesYet",
+    "text": "No defined names yet"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCreateNamesTopRow",
+    "text": "From top row"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCreateNamesLeftCol",
+    "text": "From left column"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCreateNamesNeedsData",
+    "text": "Select labels plus the data they name."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNamesCreated",
+    "text": "Created {count} names."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNamesCreatedSkipped",
+    "text": "Created {count} names, skipped {skipped}."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupFormulaAuditing",
+    "text": "Formula Auditing"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTracePrecedentsTitle",
+    "text": "Cells it reads"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTraceDependentsTitle",
+    "text": "Cells reading it"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRemoveArrowsTitle",
+    "text": "Clear all traces"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShowFormulasDetail",
+    "text": "Toggle raw view"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWatchWindow",
+    "text": "Watch Window"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWatchWindowDetail",
+    "text": "Watch cell values live"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWatchAdd",
+    "text": "Add watch"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWatchEmpty",
+    "text": "Select cells, then click Add watch."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWatchSheet",
+    "text": "Sheet"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWatchFormula",
+    "text": "Formula"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupCalculation",
+    "text": "Calculation"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCalculationOptionsTitle",
+    "text": "Automatic or manual recalculation"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCalcManual",
+    "text": "Manual"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCalcManualOn",
+    "text": "Manual calculation on — use Calculate Now to update."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCalcAutoOn",
+    "text": "Automatic calculation on."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRecalculated",
+    "text": "Recalculated."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCalculateNowTitle",
+    "text": "Recalculate the whole workbook"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCalculateSheetTitle",
+    "text": "Recalculate the active sheet only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOoxmlPivot",
+    "text": "OOXML PivotTable"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupGetData",
+    "text": "Get Data"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFromTextCsv",
+    "text": "From Text/CSV"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRefreshAll",
+    "text": "Refresh All"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWorkbookNoPivot",
+    "text": "No pivot tables in this workbook."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRefreshAllTitle",
+    "text": "Refresh every pivot table"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appErrorCheckingDetail",
+    "text": "Scan the sheet for error values"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appErrorsFound",
+    "text": "{count} errors — at {cell}: {value}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCheckingErrors",
+    "text": "Scanning the whole sheet for errors…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoErrorsFound",
+    "text": "No error values found."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortAToZ",
+    "text": "Sort A → Z"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSortZToA",
+    "text": "Sort Z → A"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFilterToggleDetail",
+    "text": "Toggle ⇧⌘L"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appClearFilterTitle",
+    "text": "Clear the filter criteria"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReapply",
+    "text": "Reapply"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReapplyTitle",
+    "text": "Reapply the current filter"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAdvanced",
+    "text": "Advanced"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAdvancedFilterTitle",
+    "text": "Custom filter conditions on a column"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupDataTools",
+    "text": "Data Tools"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTextToColumnsTitle",
+    "text": "Split a single column of text (fully-loaded workbooks)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSplitByComma",
+    "text": "Split by Comma"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSplitBySemicolon",
+    "text": "Split by Semicolon"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSplitBySpace",
+    "text": "Split by Space"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSplitByTab",
+    "text": "Split by Tab"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFlashFillDetail",
+    "text": "Fill from 1-2 examples"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRulesPanel",
+    "text": "Rules panel"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCombineRanges",
+    "text": "Combine ranges"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupForecast",
+    "text": "Forecast"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoalSeek",
+    "text": "Goal Seek"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWhatIfTitle",
+    "text": "Solve an input for a target value"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoalSeekNeedsFormula",
+    "text": "Set cell must contain a formula."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoalSeekByCellNotNumber",
+    "text": "By changing cell must hold a plain number or be empty."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoalSeekTargetNotNumber",
+    "text": "Set cell did not produce a number."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOutlineGroup",
+    "text": "Group"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOutlineGroupTitle",
+    "text": "Group the selected rows or columns into an outline"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupRows",
+    "text": "Group Rows"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupCols",
+    "text": "Group Columns"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHideDetailRows",
+    "text": "Hide Detail (Rows)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appHideDetailCols",
+    "text": "Hide Detail (Columns)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOutlineUngroup",
+    "text": "Ungroup"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUngroupRows",
+    "text": "Ungroup Rows"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUngroupCols",
+    "text": "Ungroup Columns"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShowDetailRows",
+    "text": "Show Detail (Rows)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appShowDetailCols",
+    "text": "Show Detail (Columns)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSubtotal",
+    "text": "Subtotal"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSubtotalDetail",
+    "text": "Per group + total"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPivotSubtotal",
+    "text": "Subtotal"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupWorkbookViews",
+    "text": "Workbook Views"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCurrentViewTitle",
+    "text": "Current view"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontSizeTip",
+    "text": "Font size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appZoomIn",
+    "text": "Zoom in"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appZoomOut",
+    "text": "Zoom out"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appZoomSheetTitle",
+    "text": "Zoom the sheet"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appResetZoom",
+    "text": "Reset zoom"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFreezeTitle",
+    "text": "Freeze rows and columns"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appWorkbookStatsLabel",
+    "text": "Workbook Statistics"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSheetsCellsFormulas",
+    "text": "Sheets, cells, formulas"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTranslatePrompt",
+    "text": "Translate the text in the selected range into {language} and write the translations back to the same cells."
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNewCommentDetail",
+    "text": "Add or edit"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupProtection",
+    "text": "Protection"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOpenFileFirst",
+    "text": "Open a file first"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNoPassword",
+    "text": "No password"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteTitle",
+    "text": "Paste ⌘V"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteSpecialTitle",
+    "text": "Paste only values, formulas, or formatting"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteValuesOnly",
+    "text": "Values Only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteFormulasOnly",
+    "text": "Formulas Only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteFormattingOnly",
+    "text": "Formatting Only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteColWidths",
+    "text": "Column Widths Only"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteExceptBorders",
+    "text": "All Except Borders"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCutTitle",
+    "text": "Cut ⌘X"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCopyTitle",
+    "text": "Copy ⌘C"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appIncreaseFontSize",
+    "text": "Increase font size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDecreaseFontSize",
+    "text": "Decrease font size"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDoubleUnderline",
+    "text": "Double underline"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFontColor",
+    "text": "Font color"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBorderAll",
+    "text": "All borders"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBorderOuter",
+    "text": "Outside borders"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBorderThickOuter",
+    "text": "Thick outside"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBorderTop",
+    "text": "Top border"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBorderBottom",
+    "text": "Bottom border"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBorderLeft",
+    "text": "Left border"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBorderRight",
+    "text": "Right border"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBorderNone",
+    "text": "No border"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTopAlign",
+    "text": "Top align"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMiddleAlign",
+    "text": "Middle align"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appBottomAlign",
+    "text": "Bottom align"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAngleCcw",
+    "text": "Angle Counterclockwise"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAngleCw",
+    "text": "Angle Clockwise"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appVerticalText",
+    "text": "Vertical Text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRotateUp",
+    "text": "Rotate Text Up"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRotateDown",
+    "text": "Rotate Text Down"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appClearRotation",
+    "text": "Clear Rotation"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAlignLeft",
+    "text": "Align left"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAlignCenter",
+    "text": "Align center"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAlignRight",
+    "text": "Align right"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMergeCenter",
+    "text": "Merge & Center"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMergeAcross",
+    "text": "Merge Across"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnmergeCells",
+    "text": "Unmerge Cells"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupNumber",
+    "text": "Number"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCurrency",
+    "text": "Currency"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appThousands",
+    "text": "Thousands"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appIncreaseDecimal",
+    "text": "Increase decimal"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDecreaseDecimal",
+    "text": "Decrease decimal"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appConditionalFormatting",
+    "text": "Conditional Formatting"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormatAsTable",
+    "text": "Format as Table"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableStyleLight1",
+    "text": "Light 1 (gray)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableStyleLight9",
+    "text": "Light 9 (blue)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableStyleMedium2",
+    "text": "Medium 2 (blue)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableStyleMedium4",
+    "text": "Medium 4 (orange)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableStyleMedium7",
+    "text": "Medium 7 (green)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appTableStyleDark2",
+    "text": "Dark 2 (navy)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCellStyles",
+    "text": "Cell Styles"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleGood",
+    "text": "Good"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleBad",
+    "text": "Bad"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleNeutral",
+    "text": "Neutral"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleInput",
+    "text": "Input"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleOutput",
+    "text": "Output"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleCalculation",
+    "text": "Calculation"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleWarningText",
+    "text": "Warning Text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleTotal",
+    "text": "Total"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleAccent120",
+    "text": "20% Accent1"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleAccent140",
+    "text": "40% Accent1"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStyleAccent1",
+    "text": "Accent1"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGroupCells",
+    "text": "Cells"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormatCells",
+    "text": "Format Cells"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appInsertRow",
+    "text": "Insert row"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFormatMenu",
+    "text": "Format"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutoFitRowHeight",
+    "text": "AutoFit Row Height"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAutoFitColWidth",
+    "text": "AutoFit Column Width"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRowHeightLabel",
+    "text": "Row height (points)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appColWidthLabel",
+    "text": "Column width (characters)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteRow",
+    "text": "Delete row"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appInsertCol",
+    "text": "Insert column"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appDeleteCol",
+    "text": "Delete column"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFillMenu",
+    "text": "Fill"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFillDown",
+    "text": "Fill Down"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFillRight",
+    "text": "Fill Right"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appClearFormats",
+    "text": "Clear Formats"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appClearContents",
+    "text": "Clear Contents"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appFindTitle",
+    "text": "Find & Select ⌘F"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGoTo",
+    "text": "Go To"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPhPromptTitle",
+    "text": "Click to add title"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPhPromptSubtitle",
+    "text": "Click to add subtitle"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPhPromptBody",
+    "text": "Click to add text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusNewBlank",
+    "text": "Created a blank presentation"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSaved",
+    "text": "Saved"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSaveFailed",
+    "text": "Save failed: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appErrorCanceled",
+    "text": "Canceled"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUnknownError",
+    "text": "Unknown error"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSavedAs",
+    "text": "Saved"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appUntitledPresentation",
+    "text": "Untitled presentation"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appExportNoSlides",
+    "text": "No slides to export (all slides are hidden)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appExportImagesProgress",
+    "text": "Exporting {count} images…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appExportPdfDone",
+    "text": "Exported PDF: {path}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusBgAppliedAll",
+    "text": "Background color applied to all slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusThemeApplied",
+    "text": "Applied theme \"{name}\""
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusThemeApplyFailed",
+    "text": "Failed to apply theme: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCopied",
+    "text": "Copied {count} elements"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCut",
+    "text": "Cut {count} elements"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusFormatCopied",
+    "text": "Format copied"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusFormatPasted",
+    "text": "Format pasted"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusBrushOnce",
+    "text": "Click a target element to apply the format; double-click the button for continuous mode"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusBrushContinuous",
+    "text": "Continuous Format Painter mode; press Esc to exit"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusFormatApplied",
+    "text": "Format applied"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusTableInserted",
+    "text": "Inserted a {rows} × {cols} table"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusIconInserted",
+    "text": "Inserted icon \"{name}\""
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusIconInsertFailed",
+    "text": "Failed to insert icon"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusImageUnsupported",
+    "text": "{ext} images are not supported yet"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusChartInserted",
+    "text": "Chart inserted (sample data; you can edit the data in PowerPoint)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSmartArtInserted",
+    "text": "Inserted SmartArt \"{name}\" (shape group; double-click to edit text)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusWordArtInserted",
+    "text": "WordArt inserted; double-click to edit text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusDateInserted",
+    "text": "Date and time inserted (updates automatically when opened in PowerPoint)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlideNumInserted",
+    "text": "Slide number inserted (updates automatically during slide show/export)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusLinkSet",
+    "text": "Hyperlink set (activates on click during a PowerPoint slide show)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusLinkRemoved",
+    "text": "Hyperlink removed"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusZoomInserted",
+    "text": "Zoom inserted: click during a slide show to jump to slide {page}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusHfApplied",
+    "text": "Header and footer applied to all slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusHfUnchanged",
+    "text": "No changes to header and footer"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusEquationInserted",
+    "text": "Equation inserted"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusVideoInserted",
+    "text": "Video inserted (embedded in the .pptx; plays in PowerPoint)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusAudioInserted",
+    "text": "Audio inserted (embedded in the .pptx)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusModel3dInserted",
+    "text": "3D model embedded (canvas shows a placeholder; the model file is stored in the .pptx)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusRecordingEmpty",
+    "text": "Recording is empty; nothing was inserted"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusRecordingInserted",
+    "text": "Screen recording inserted on the current slide (embedded webm)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusRecording",
+    "text": "Recording… click \"Screen Recording\" again to stop and insert"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusRecordingUnavailable",
+    "text": "Screen recording unavailable (permission denied or selection canceled)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusTransitionAll",
+    "text": "Transition applied to all slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusTransitionSet",
+    "text": "Transition set (takes effect in PowerPoint slide shows)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusAnimRemoved",
+    "text": "Animations removed from the selected shapes"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusAnimSet",
+    "text": "Animation set (plays step by step during slide shows; also works in PowerPoint)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusAnimAdded",
+    "text": "Animation added"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusMotionPathAdded",
+    "text": "Motion path animation added (moves along the path during slide shows; also works in PowerPoint)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCustomShowEmpty",
+    "text": "This custom show contains no valid slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusRehearseSaved",
+    "text": "Rehearsal timings saved for {count} slides (the saved .pptx advances slides automatically in PowerPoint)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlideHidden",
+    "text": "Slide {page} hidden (skipped during slide shows)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlideUnhidden",
+    "text": "Slide {page} unhidden"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlidesHidden",
+    "text": "{count} slides hidden (skipped during slide shows)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlidesUnhidden",
+    "text": "{count} slides unhidden"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCropApplied",
+    "text": "Crop applied"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCropRemoved",
+    "text": "Crop removed"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCutoutNoData",
+    "text": "Could not read image data; cannot remove the background"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCutoutEncodeFailed",
+    "text": "Background removal failed: could not encode the result image"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCutoutInsertFailed",
+    "text": "Background removal failed: could not insert the result image"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCutoutDone",
+    "text": "Background removed (original image replaced with a transparent PNG)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusGrouped",
+    "text": "Grouped"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusUngrouped",
+    "text": "Ungrouped"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusCommentAdded",
+    "text": "Comment added"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusKeepOneSlide",
+    "text": "Cannot delete; at least one slide must remain"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlideCopied",
+    "text": "Slide copied — paste it into any open deck"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlideCopyFailed",
+    "text": "Could not copy the slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlideCut",
+    "text": "Slide cut — paste it into any open deck"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlidePasteFailed",
+    "text": "Could not paste the slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSectionUntitled",
+    "text": "Untitled Section"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSectionDefault",
+    "text": "Default Section"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSectionAdded",
+    "text": "Section added"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSectionRemoved",
+    "text": "Section removed (slides kept)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSectionsRemoved",
+    "text": "All sections removed (slides kept)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSectionSlidesRemoved",
+    "text": "Section and its slides removed"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSectionMovedUp",
+    "text": "Section moved up"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSectionMovedDown",
+    "text": "Section moved down"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSlideMoved",
+    "text": "Moved to slide {page}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusTableDeleteLimit",
+    "text": "At least one row and one column must remain (tables with merged cells are not supported yet)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusInkCleared",
+    "text": "Ink cleared on the current slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxDuplicateSlide",
+    "text": "Duplicate Slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxCutSlide",
+    "text": "Cut Slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxCopySlide",
+    "text": "Copy Slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxPasteSlide",
+    "text": "Paste Slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxPasteSlideKeepSource",
+    "text": "Paste Slide (Keep Source Formatting)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxPasteSlideAsPicture",
+    "text": "Paste as Picture"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteOptions",
+    "text": "Paste Options"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteOptSource",
+    "text": "Keep Source Formatting"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPasteOptTheme",
+    "text": "Use Destination Theme"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusPasteOptionsExpired",
+    "text": "Paste options are no longer available"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusPasteTruncated",
+    "text": "Pasted text was too long and has been truncated"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxUnhideSlide",
+    "text": "Unhide Slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxAddSectionBefore",
+    "text": "Add Section (before this slide)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxRenameSection",
+    "text": "Rename Section"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxRemoveSection",
+    "text": "Remove Section"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxRemoveAllSections",
+    "text": "Remove All Sections"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxRemoveSectionSlides",
+    "text": "Remove Section & Slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxCollapseAll",
+    "text": "Collapse All"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxExpandAll",
+    "text": "Expand All"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxMoveSectionUp",
+    "text": "Move Section Up"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxMoveSectionDown",
+    "text": "Move Section Down"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxInsertRowAbove",
+    "text": "Insert Row Above"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxInsertRowBelow",
+    "text": "Insert Row Below"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxInsertColLeft",
+    "text": "Insert Column to the Left"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxInsertColRight",
+    "text": "Insert Column to the Right"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxDeleteRow",
+    "text": "Delete Row"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxDeleteCol",
+    "text": "Delete Column"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxMergeRight",
+    "text": "Merge Right"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxMergeDown",
+    "text": "Merge Down"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxSplitCell",
+    "text": "Split Cell"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxCellAnchorTop",
+    "text": "Align Text Top"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxCellAnchorMiddle",
+    "text": "Center Text Vertically"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxCellAnchorBottom",
+    "text": "Align Text Bottom"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusMergeFailed",
+    "text": "Cannot merge/split this cell"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintLayoutFull",
+    "text": "Full Page Slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintLayoutHandout2",
+    "text": "Handouts (2 per page)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintLayoutHandout3",
+    "text": "Handouts (3 per page)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintLayoutHandout6",
+    "text": "Handouts (6 per page)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintLayoutNotes",
+    "text": "Notes Pages"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintRangeHint",
+    "text": "e.g. 1,3,5-8"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintFrame",
+    "text": "Frame slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintHidden",
+    "text": "Print hidden slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintPageCount",
+    "text": "{n} pages"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appGuideDragTip",
+    "text": "Drag to move; double-click or drag off canvas to remove"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appPrintFailed",
+    "text": "Print failed: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxBringToFront",
+    "text": "Bring to Front"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxSendToBack",
+    "text": "Send to Back"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxBringForward",
+    "text": "Bring Forward"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxSendBackward",
+    "text": "Send Backward"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxEditText",
+    "text": "Edit Text"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxHyperlink",
+    "text": "Hyperlink…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxCropPicture",
+    "text": "Crop Picture"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxChangeBgImage",
+    "text": "Change Background Picture…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxResetSlide",
+    "text": "Reset Slide"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxSizePosition",
+    "text": "Size and Position…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxSetDefaultShape",
+    "text": "Set as Default Shape"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxChangeShape",
+    "text": "Change Shape…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxEditPoints",
+    "text": "Edit Points"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxGroup",
+    "text": "Group"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxSaveAsPicture",
+    "text": "Save as Picture…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusPictureSaved",
+    "text": "Picture saved to {path}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusPictureSaveFailed",
+    "text": "Save as Picture failed: {error}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxUngroup",
+    "text": "Ungroup"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCtxRegroup",
+    "text": "Regroup"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMasterClose",
+    "text": "Close Master View"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMasterThumbMaster",
+    "text": "Master"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMasterThumbLayout",
+    "text": "Layout {n}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMasterFill",
+    "text": "Fill Color…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMasterStroke",
+    "text": "Outline Color…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStartOpening",
+    "text": "Opening…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReadingSlideTitle",
+    "text": "Click to go to the next slide (Esc to exit Reading View)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReadingPrev",
+    "text": "‹ Previous"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReadingNext",
+    "text": "Next ›"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appReadingExit",
+    "text": "Exit Reading View"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appThumbHiddenTitle",
+    "text": "Hidden slide (skipped during slide shows)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSorterHiddenTitle",
+    "text": "Hidden slide (skipped during slide shows); double-click to edit in Normal view"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSorterItemTitle",
+    "text": "Double-click to edit in Normal view"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appOutlineNoText",
+    "text": "(No text)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSectionHeaderTitle",
+    "text": "Click to collapse/expand; right-click to manage the section"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNotesClickToAdd",
+    "text": "Click to add notes"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNotesPlaceholder",
+    "text": "Click to add speaker notes (saved into the .pptx)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNotesShow",
+    "text": "Show notes"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appNotesHide",
+    "text": "Hide notes"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiRailExpand",
+    "text": "Expand AI assistant"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appAiRailText",
+    "text": "AI"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusBarSlide",
+    "text": "Slide {current} of {total}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appMediaCloseTitle",
+    "text": "Close (Esc)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRehearseSummary",
+    "text": "The total time for the slide show was {duration}. Do you want to save the slide timings for automatic slide advance?"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appRehearseDiscard",
+    "text": "Don't Save"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsTitle",
+    "text": "AI Settings"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsAccount",
+    "text": "Genspark Account"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsChecking",
+    "text": "Checking…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsLoggedIn",
+    "text": "Signed in"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsLoggedInEmail",
+    "text": "Signed in: {email}"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsLoggedOut",
+    "text": "Not signed in (AI features require a Genspark account)"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsLoginPending",
+    "text": "Waiting for browser sign-in…"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsLogin",
+    "text": "Sign in to Genspark"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSettingsModel",
+    "text": "Model"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appCropHint",
+    "text": "Enter to confirm · Esc to cancel · Click outside to confirm"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusZoomsInserted",
+    "text": "{count} zooms inserted: click during a slide show to jump to their slides"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appStatusSummaryZoomInserted",
+    "text": "Summary Zoom slide inserted with {count} tiles"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSectionSummary",
+    "text": "Summary Section"
+  },
+  {
+    "shard": "i18n/app",
+    "key": "appSectionN",
+    "text": "Section {n}"
+  }
+]
