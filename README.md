@@ -1,164 +1,164 @@
 <p align="center">
-  <picture>
-    <source srcset="docs/assets/readme/hero-dark.webp" media="(prefers-color-scheme: dark)">
-    <img src="docs/assets/readme/hero.webp" alt="Xiao Office — the open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML with a built-in AI panel" width="100%">
-  </picture>
+  <img src="docs/assets/readme/hero.png" alt="Xiao Office — Bộ ứng dụng văn phòng AI mã nguồn mở: Docs, Sheets, Slides, PDF, Markdown và HTML tích hợp trợ lý AI" width="100%">
 </p>
 
 <h1 align="center">Xiao Office (xiaooffice)</h1>
 
-<p align="center"><b>The full-featured open-source AI Office suite.</b><br>
-Word (.docx), Excel (.xlsx), PowerPoint (.pptx) and PDF files, edited by you and your AI, saved back in native real formats.</p>
+<p align="center"><b>Bộ ứng dụng văn phòng AI mã nguồn mở toàn diện, hiện đại và bảo mật.</b><br>
+Soạn thảo Văn bản (.docx), Bảng tính (.xlsx), Bản trình chiếu (.pptx) và PDF cùng với trợ lý AI, lưu lại đúng định dạng chuẩn gốc.</p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License: Apache-2.0"></a>
-  <a href="https://github.com/sansanxm/xiaooffice/releases"><img src="https://img.shields.io/github/v/release/sansanxm/xiaooffice?color=brightgreen&label=Release" alt="Latest release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/Gi%E1%BA%A5y%20ph%C3%A9p-Apache_2.0-blue.svg" alt="Giấy phép: Apache-2.0"></a>
+  <a href="https://github.com/sansanxm/xiaooffice/releases"><img src="https://img.shields.io/badge/Phi%C3%AAn%20b%E1%BA%A3n-v0.10.0-brightgreen" alt="Phiên bản"></a>
   <a href="https://github.com/sansanxm/xiaooffice/stargazers"><img src="https://img.shields.io/github/stars/sansanxm/xiaooffice?style=flat&color=yellow" alt="GitHub stars"></a>
   <a href="https://github.com/sansanxm/xiaooffice"><img src="https://img.shields.io/badge/GitHub-xiaooffice-blue?logo=github" alt="GitHub Repo"></a>
 </p>
 
-<p align="center"><b>English</b> · <a href="docs/i18n/README.vi.md">Tiếng Việt</a></p>
+<p align="center"><b>Tiếng Việt</b> · <a href="README.en.md">English</a></p>
 
 <p align="center">
-  <a href="#key-features"><b>Features</b></a> ·
-  <a href="#download--installation"><b>Download</b></a> ·
-  <a href="#development--building"><b>Development</b></a> ·
-  <a href="#ai-providers-setup"><b>AI Setup</b></a> ·
-  <a href="#the-six-office-apps"><b>Apps</b></a> ·
-  <a href="LICENSE"><b>License</b></a>
+  <a href="#tính-năng-nổi-bật"><b>Tính năng</b></a> ·
+  <a href="#tải-về--cài-đặt"><b>Tải về</b></a> ·
+  <a href="#hướng-dẫn-phát-triển-từ-mã-nguồn"><b>Phát triển & Đóng gói</b></a> ·
+  <a href="#cấu-hình-mô-hình-ai"><b>Cấu hình AI</b></a> ·
+  <a href="#các-ứng-dụng-chính"><b>Ứng dụng</b></a> ·
+  <a href="LICENSE"><b>Bản quyền</b></a>
 </p>
 
 ---
 
-## What is Xiao Office?
+## Giới thiệu về Xiao Office
 
-**Xiao Office** is a free, modern, and open-source alternative to Microsoft Office for macOS, Windows, and Linux. It opens and saves native `.docx`, `.xlsx`, and `.pptx` files, edits PDF, Markdown, and HTML, and pairs each document with a deeply integrated AI assistant that can inspect content, draft edits, run live formulas, and highlight changes directly.
+**Xiao Office** là bộ công cụ văn phòng mã nguồn mở, bảo mật và miễn phí hàng đầu dành cho các hệ điều hành macOS, Windows và Linux. Ứng dụng hỗ trợ mở và lưu trực tiếp các tệp tin Microsoft Office chuẩn gốc (`.docx`, `.xlsx`, `.pptx`), chỉnh sửa PDF trực quan, hỗ trợ Markdown và HTML, đồng thời tích hợp trợ lý AI thông minh ngay bên cạnh màn hình làm việc để hỗ trợ bạn đọc hiểu tài liệu, phân tích dữ liệu, viết lại nội dung và tạo lập văn bản tự động.
 
-- **Native formats, byte-preserving:** Only the sections you edit are rewritten. Everything else in your documents survives byte-for-byte, ensuring full compatibility with Microsoft Office.
-- **Auditable & transparent AI:** AI suggestions appear as visual diffs and tracked changes with one-click rollback. Spreadsheets receive live calculated formulas instead of raw numbers.
-- **Local-first privacy:** Files open, edit, save, and convert entirely on your computer. Conversions (PDF → Word/Excel/PowerPoint, Markdown → Word, HTML → Word) execute on-device. Only AI prompts are transmitted to the provider you choose.
-- **Fast local search:** Search file names, folders, and full text across all `.docx`, `.xlsx`, `.pptx`, PDF, Markdown, and HTML files via a local SQLite index.
-- **Bring Your Own Key (BYOK):** Connect directly to OpenAI (GPT-4o), Anthropic (Claude 3.5), Google (Gemini 2.0 / 1.5), DeepSeek, Ollama (offline local models), OpenRouter, and any OpenAI-compatible server.
-
----
-
-## Key Features & Recent Enhancements
-
-- 📄 **Page Layout View for Sheets:**
-  - View spreadsheets formatted into discrete printed pages matching selected paper sizes (**A4: 210 × 297 mm**, **A3**, **A5**, Letter, Legal...).
-  - Displays page frames, margin guidelines (Normal, Wide, Narrow), page headers/footers, and automatically zooms to fit the page width.
-- 🎛️ **Status Bar View Switcher:**
-  - Three convenient view mode buttons located right on the bottom-right status bar (before the zoom slider) and under the View ribbon tab:
-    - `▦` **Normal View:** Unbounded spreadsheet grid.
-    - `▤` **Page Layout View:** Formatted printed pages matching paper size.
-    - `┆` **Page Break Preview:** Page boundary lines and watermarks.
-- ▽ **Prominent Filter Button:**
-  - One-click **Filter** button with funnel icon `▽` prominently placed on both the **Home tab** and **Data tab**, with active state illumination.
-- ↔️ **Double-Click Gridlines Auto-Fit (MS Excel Behavior):**
-  - Double-clicking vertical gridlines or column dividers automatically auto-fits column width to the widest content.
-  - Double-clicking horizontal gridlines or row dividers automatically auto-fits row height.
-- 💾 **Smart Save As Dialog:**
-  - Saving a newly created document (`⌘S` / `Ctrl+S`) always triggers the Save As dialog, allowing users to choose the destination folder, filename, and format (`.xlsx`, `.docx`, `.pptx`, `.csv`...).
-- 🖨️ **Reliable macOS Printing:**
-  - Direct integration with macOS system print sheets for sheets and documents without print failures.
+- **Định dạng chuẩn gốc, bảo toàn cấu trúc:** Chỉ ghi đè lên các khối nội dung bạn chỉnh sửa. Mọi định dạng phức tạp khác trong tài liệu (phông chữ, bố cục, bảng biểu, hình ảnh) đều được giữ nguyên vẹn từng byte, đảm bảo tương thích 100% với Microsoft Word, Excel và PowerPoint.
+- **AI minh bạch, kiểm soát toàn diện:** Mọi chỉnh sửa do AI tạo ra đều hiển thị dưới dạng so sánh trực quan (diffs) hoặc chế độ theo dõi thay đổi (track changes), cho phép bạn hoàn tác chỉ với một cú nhấp chuột. Bảng tính tạo ra công thức tính toán thật (`SUMIF`, `VLOOKUP`...), không dán số tĩnh.
+- **Bảo mật và xử lý cục bộ (Local-first):** Mở, chỉnh sửa, lưu trữ và chuyển đổi định dạng tài liệu đều chạy trực tiếp trên máy tính của bạn. Chuyển đổi PDF sang Word / Excel / PowerPoint hoàn toàn ngoại tuyến. Chỉ các câu lệnh hỏi đáp AI mới được gửi tới nhà cung cấp API mà bạn chỉ định.
+- **Tìm kiếm tệp thông minh:** Tìm kiếm nhanh chóng theo tên, thư mục và toàn văn nội dung tệp tin từ cơ sở dữ liệu SQLite cục bộ cực kỳ nhanh nhạy.
+- **Tự do kết nối mọi mô hình AI (BYOK):** Kết nối trực tiếp với OpenAI (GPT-4o), Anthropic (Claude 3.5), Google (Gemini 2.0 / 1.5), DeepSeek, Ollama (mô hình AI chạy cục bộ không cần mạng), OpenRouter hoặc bất kỳ máy chủ nào tương thích chuẩn OpenAI API.
 
 ---
 
-## Download & Installation
+## Tính năng nổi bật & Cải tiến mới
 
-Pre-built binaries are available on the [Releases](https://github.com/sansanxm/xiaooffice/releases) page:
-- **macOS:** `.dmg` installer or `.zip` (supports Apple Silicon M1/M2/M3/M4 and Intel x64).
-- **Windows:** `.exe` installer (NSIS installer for Windows 10/11 x64 and Arm64).
-- **Linux:** `.AppImage`, `.deb`, and `.rpm` packages.
+1. **📄 Bảng tính — Chế độ xem Bố cục trang in (Page Layout View):**
+   - Xem bảng tính vừa vặn theo từng trang in thực tế theo các khổ giấy chuẩn: **A4 (210 × 297 mm)**, **A3**, **A5**, Letter, Legal...
+   - Tự động hiển thị khung trang in sang trọng, căn lề (Thường, Rộng, Hẹp), hướng in (Dọc / Ngang) và tỷ lệ co giãn in (Fit-to-page).
+   - Tự động điều chỉnh mức thu phóng (zoom) để vừa khít màn hình khi chuyển sang chế độ Bố cục trang.
+2. **🎛️ Bộ 3 nút chuyển chế độ xem tiện lợi:**
+   - Bố trí ngay trên thanh trạng thái góc dưới bên phải (trước thanh trượt thu phóng) và trên thẻ **Xem (View)**:
+     - `▦` **Bình thường (Normal):** Lưới làm việc bảng tính không giới hạn.
+     - `▤` **Bố cục trang (Page Layout):** Xem chuẩn xác theo từng trang in theo khổ giấy đã đặt.
+     - `┆` **Xem trước ngắt trang (Page Break Preview):** Hiển thị các đường phân trang và nhãn trang mờ.
+3. **▽ Nút Lọc (Filter) trực quan:**
+   - Nút **Lọc** nổi bật với biểu tượng phễu `▽` được đưa ra ngay thẻ **Trang đầu (Home)** và thẻ **Dữ liệu (Data)**.
+   - Nút sáng đèn báo hiệu trạng thái khi bảng tính đang kích hoạt bộ lọc, bật/tắt tức thì chỉ với một cú click chuột.
+4. **↔️ Tự động co giãn hàng / cột khi nháy đúp đường lưới (như MS Excel):**
+   - Nháy đúp vào đường phân cách cột hoặc đường lưới dọc: Tự động vừa khít chiều rộng cột theo nội dung dài nhất.
+   - Nháy đúp vào đường phân cách hàng hoặc đường lưới ngang: Tự động vừa khít chiều cao hàng theo nội dung.
+5. **💾 Hộp thoại Lưu tài liệu mới thông minh (Save As):**
+   - Khi nhấn Lưu (`⌘S` / `Ctrl+S`) trên tài liệu mới chưa có tên, ứng dụng luôn hiển thị hộp thoại chọn thư mục lưu, đặt tên tệp và chọn định dạng (`.xlsx`, `.docx`, `.pptx`, `.csv`...).
+6. **🖨️ In ấn ổn định trên macOS:**
+   - Khắc phục triệt để lỗi không thể in trên macOS; tích hợp mượt mà với hộp thoại in hệ thống của macOS.
 
 ---
 
-## Development & Building
+## Tải về & Cài đặt
 
-Xiao Office is built with TypeScript, Electron, Vite, React, and high-performance native engines.
+Người dùng có thể tải về các gói cài đặt dựng sẵn tại trang [Releases](https://github.com/sansanxm/xiaooffice/releases):
+- **macOS:** Tệp `.dmg` hoặc `.zip` (tương thích Apple Silicon M1/M2/M3/M4 và Intel x64).
+- **Windows:** Tệp cài đặt `.exe` (NSIS Installer dành cho Windows 10/11 x64 và Arm64).
+- **Linux:** Các định dạng `.AppImage`, `.deb` và `.rpm`.
 
-### 1. Prerequisites
-- **Node.js**: `>= 22.12.0` (Node.js 22 LTS recommended).
-- **npm**: `>= 10`.
-- **Rust & Cargo**: (Optional) Only required if modifying the native `xlsx-writer` sidecar.
+---
 
-### 2. Clone & Install
+## Hướng dẫn phát triển từ mã nguồn
+
+Dành cho các lập trình viên muốn tự biên dịch hoặc đóng góp phát triển Xiao Office:
+
+### 1. Yêu cầu hệ thống
+- **Node.js**: Phiên bản `>= 22.12.0` (khuyến nghị dùng Node.js 22 LTS).
+- **npm**: Phiên bản `>= 10`.
+- **Rust & Cargo**: (Tùy chọn) Cần thiết nếu biên dịch lại các module native hiệu năng cao của engine bảng tính (`xlsx-writer`).
+
+### 2. Tải mã nguồn & Cài đặt gói phụ thuộc
 ```bash
 git clone https://github.com/sansanxm/xiaooffice.git
 cd xiaooffice
 npm install
 ```
 
-### 3. Run Development Server
-Launches all six editors and the shell concurrently with hot-reloading:
+### 3. Chạy môi trường phát triển (Development)
+Khởi chạy đồng thời toàn bộ giao diện và các tiến trình con với tính năng hot-reload:
 ```bash
 npm run dev
 ```
 
-### 4. Quality Checks & Testing
+### 4. Kiểm tra mã nguồn (Typecheck & Unit Test)
 ```bash
-# Typecheck across all workspaces
+# Kiểm tra an toàn kiểu dữ liệu TypeScript trên toàn bộ monorepo
 npm run typecheck
 
-# Run the test suite (>2,800 unit tests)
+# Chạy bộ kiểm thử tự động (hơn 2.800 unit tests)
 npm run test
 ```
 
-### 5. Build Desktop Packages
-- **macOS:**
+### 5. Đóng gói bộ cài đặt Desktop (Build Distributable)
+- **Cho macOS (Apple Silicon / Intel):**
   ```bash
   npm run dist:mac
   ```
-  Generates `Xiao Office-0.10.0-arm64.dmg` in `apps/shell/release/`.
+  Tệp cài đặt DMG sẽ xuất hiện tại thư mục `apps/shell/release/Xiao Office-0.10.0-arm64.dmg`.
 
-- **Windows:**
+- **Cho Windows (Installer x64 / Arm64):**
   ```bash
   npm run dist:win
   ```
 
-- **Linux:**
+- **Cho Linux (AppImage / Deb / Rpm):**
   ```bash
   npm run dist:linux
   ```
 
 ---
 
-## AI Providers Setup
+## Cấu hình mô hình AI
 
-Xiao Office stores your API credentials securely in your local machine keychain:
-1. Open any document and expand the **AI panel** on the right side.
-2. Select your preferred provider:
+Xiao Office tôn trọng quyền riêng tư của bạn — cơ chế Mang khóa API riêng (Bring Your Own Key):
+1. Khởi động Xiao Office và mở một tài liệu bất kỳ.
+2. Mở bảng điều khiển **AI** ở cạnh phải màn hình.
+3. Chọn nhà cung cấp:
    - **OpenAI:** GPT-4o, GPT-4o-mini...
    - **Anthropic:** Claude 3.5 Sonnet, Claude 3 Opus...
    - **Google Gemini:** Gemini 2.0 Flash, Gemini 1.5 Pro...
-   - **DeepSeek:** DeepSeek-Chat, DeepSeek-Reasoner...
-   - **Ollama:** Completely offline local LLMs.
-   - **OpenRouter & Custom Endpoints:** Connect to any OpenAI-compatible API.
-3. Enter your API key. The key is never sent to third-party tracking servers.
+   - **DeepSeek:** DeepSeek-Chat, DeepSeek-Reasoner (R1)...
+   - **Ollama / Local LLM:** Chạy các mô hình mã nguồn mở ngoại tuyến không cần internet.
+   - **OpenRouter & Máy chủ tùy chỉnh:** Kết nối với bất kỳ máy chủ nào tương thích OpenAI API.
+4. Điền API Key của bạn. Khóa API được lưu mã hóa an toàn trên máy cục bộ (Keychain) và chỉ gửi trực tiếp đến API endpoint khi bạn gửi câu lệnh.
 
 ---
 
-## The Six Office Apps
+## Các ứng dụng chính
 
-| Application | Supported Formats | Key Capabilities |
+| Ứng dụng | Định dạng hỗ trợ | Điểm nổi bật |
 | :--- | :--- | :--- |
-| **Docs** | `.docx`, `.doc` | Faithful Word rendering, track changes, diffs, tables, headers, footers, full-bleed images. |
-| **Sheets** | `.xlsx`, `.csv`, `.xls` | Rust-powered Excel engine, Page Layout view (A4/A3/A5), filter toggle, double-click auto-fit gridlines, pivot tables. |
-| **Slides** | `.pptx`, `.ppt` | Generates 10–12 slide decks from a single prompt, master layouts, consistent typography and themes. |
-| **PDF** | `.pdf` | In-place text editing, on-device conversion to Word, Excel, and PowerPoint with local OCR. |
-| **Markdown** | `.md` | Block editor on plain `.md`, LaTeX math support, Mermaid diagrams, task lists. |
-| **HTML** | `.html` | AI UI generation, single-file HTML sites, one-click restyling, export to Word / PDF. |
+| **Docs** | `.docx`, `.doc` | Trình soạn thảo văn bản chuẩn Word, bố cục hai cột, tràn ảnh, theo dõi thay đổi (track changes), bảng biểu và ghi chú. |
+| **Sheets** | `.xlsx`, `.csv`, `.xls` | Bảng tính siêu tốc với engine Rust, hỗ trợ chế độ Bố cục trang A4/A3/A5, nút lọc trực quan, nháy đúp co giãn hàng cột, Pivot Table. |
+| **Slides** | `.pptx`, `.ppt` | Tạo bộ slide 10–12 trang tự động từ ý tưởng qua AI, bố cục và kiểu chữ đồng nhất, xuất file PowerPoint thực tế. |
+| **PDF** | `.pdf` | Chỉnh sửa văn bản trực tiếp trên trang PDF, chuyển đổi PDF sang Word / Excel / PowerPoint chạy cục bộ có hỗ trợ OCR. |
+| **Markdown** | `.md` | Biên tập văn bản dạng khối hiện đại, hỗ trợ công thức Toán học LaTeX, sơ đồ Mermaid và danh sách công việc. |
+| **HTML** | `.html` | Thiết kế giao diện và trang web trực quan từ mô tả AI, xuất bản tệp HTML độc lập khép kín. |
 
 ---
 
-## Contributing
+## Đóng góp & Phát triển
 
-Contributions, bug reports, and feature requests are welcome!
-- Issue Tracker: [GitHub Issues](https://github.com/sansanxm/xiaooffice/issues)
-- Pull Requests: [GitHub Pull Requests](https://github.com/sansanxm/xiaooffice/pulls)
+Mọi ý kiến đóng góp, báo lỗi hoặc đề xuất tính năng mới đều được hoan nghênh:
+- Báo cáo lỗi: [GitHub Issues](https://github.com/sansanxm/xiaooffice/issues)
+- Tạo Pull Request: [GitHub Pull Requests](https://github.com/sansanxm/xiaooffice/pulls)
 
 ---
 
-## License
+## Giấy phép (License)
 
-Xiao Office is licensed under the open-source [Apache License 2.0](LICENSE).
+Dự án được phân phối dưới giấy phép mã nguồn mở [Apache License 2.0](LICENSE).
