@@ -68,7 +68,13 @@ jobs:
         run: npm ci
 
       - name: Build Windows native xlsx engine
-        run: cargo build --release --manifest-path apps/sheets/native/xlsx-engine/Cargo.toml
+        shell: bash
+        run: |
+          cargo build --release --manifest-path apps/sheets/native/xlsx-engine/Cargo.toml
+          mkdir -p apps/sheets/native/xlsx-engine/target/x86_64-pc-windows-gnu/release
+          mkdir -p apps/sheets/native/xlsx-engine/target/x86_64-pc-windows-msvc/release
+          find apps/sheets/native/xlsx-engine/target -name "xlsx-sidecar.exe" -exec cp -f {} apps/sheets/native/xlsx-engine/target/x86_64-pc-windows-gnu/release/xlsx-sidecar.exe \;
+          find apps/sheets/native/xlsx-engine/target -name "xlsx-sidecar.exe" -exec cp -f {} apps/sheets/native/xlsx-engine/target/x86_64-pc-windows-msvc/release/xlsx-sidecar.exe \;
 
       - name: Build Windows distributables
         run: npm run dist:win
@@ -106,7 +112,10 @@ jobs:
         run: npm ci
 
       - name: Build Linux native xlsx engine
-        run: cargo build --release --manifest-path apps/sheets/native/xlsx-engine/Cargo.toml
+        run: |
+          cargo build --release --manifest-path apps/sheets/native/xlsx-engine/Cargo.toml
+          mkdir -p apps/sheets/native/xlsx-engine/target/x86_64-unknown-linux-gnu/release
+          find apps/sheets/native/xlsx-engine/target -name "xlsx-sidecar" -type f -exec cp -f {} apps/sheets/native/xlsx-engine/target/x86_64-unknown-linux-gnu/release/xlsx-sidecar \; || true
 
       - name: Build Linux distributables
         run: npm run dist:linux
