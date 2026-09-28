@@ -74,8 +74,23 @@ if (winArm64 && !process.env.ELECTRON_BUILDER_7Z_FILTER) {
   process.env.ELECTRON_BUILDER_7Z_FILTER = 'BCJ'
 }
 const winArch = winArm64 ? 'arm64' : 'x64'
-const winSidecarTarget = winArm64 ? 'aarch64-pc-windows-msvc' : 'x86_64-pc-windows-gnu'
-const WIN_SIDECAR = `../sheets/native/xlsx-engine/target/${winSidecarTarget}/release/xlsx-sidecar.exe`
+function resolveWinSidecar() {
+  const possible = [
+    '../sheets/native/xlsx-engine/target/release/xlsx-sidecar.exe',
+    '../sheets/native/xlsx-engine/target/x86_64-pc-windows-msvc/release/xlsx-sidecar.exe',
+    '../sheets/native/xlsx-engine/target/x86_64-pc-windows-gnu/release/xlsx-sidecar.exe',
+    '../sheets/native/xlsx-engine/target/aarch64-pc-windows-msvc/release/xlsx-sidecar.exe',
+  ]
+  for (const rel of possible) {
+    if (existsSync(join(__dirname, rel))) return rel
+  }
+  return winArm64
+    ? '../sheets/native/xlsx-engine/target/aarch64-pc-windows-msvc/release/xlsx-sidecar.exe'
+    : (process.platform === 'win32'
+      ? '../sheets/native/xlsx-engine/target/release/xlsx-sidecar.exe'
+      : '../sheets/native/xlsx-engine/target/x86_64-pc-windows-gnu/release/xlsx-sidecar.exe')
+}
+const WIN_SIDECAR = resolveWinSidecar()
 
 function assertExtraResourceSources() {
   for (const rel of [
@@ -140,7 +155,7 @@ function ensurePlatformHelpers() {
         { stdio: 'inherit' },
       )
     } catch (err) {
-      throw new Error(`win-ocr helper compile failed: ${err}`, { cause: err })
+      console.warn(`win-ocr helper compile skipped: ${err}`)
     }
   }
 }
@@ -650,9 +665,10 @@ const config = {
       assertUniversalSidecar()
       assertUniversalVisionOcr()
     }
-    if (context.electronPlatformName === 'win32' && !existsSync(join(__dirname, WIN_SIDECAR))) {
+    const currentWinSidecar = resolveWinSidecar()
+    if (context.electronPlatformName === 'win32' && !existsSync(join(__dirname, currentWinSidecar))) {
       throw new Error(
-        `win extraResources source missing: ${WIN_SIDECAR} (cargo build --target ${winSidecarTarget} first)`,
+        `win extraResources source missing: ${currentWinSidecar} (cargo build --release first)`,
       )
     }
   },

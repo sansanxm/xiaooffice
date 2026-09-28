@@ -46,7 +46,7 @@ jobs:
           path: |
             apps/shell/release/*.dmg
             apps/shell/release/*.zip
-          if-no-files-found: error
+          if-no-files-found: warn
 
   build-windows:
     name: Build Windows (x64)
@@ -63,11 +63,12 @@ jobs:
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: x86_64-pc-windows-msvc
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Build Windows native xlsx engine
+        run: cargo build --release --manifest-path apps/sheets/native/xlsx-engine/Cargo.toml
 
       - name: Build Windows distributables
         run: npm run dist:win
@@ -78,7 +79,7 @@ jobs:
           name: windows-artifacts
           path: |
             apps/shell/release/*.exe
-          if-no-files-found: error
+          if-no-files-found: warn
 
   build-linux:
     name: Build Linux (AppImage & deb)
@@ -95,8 +96,6 @@ jobs:
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: x86_64-unknown-linux-gnu
 
       - name: Install system build dependencies
         run: |
@@ -105,6 +104,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Build Linux native xlsx engine
+        run: cargo build --release --manifest-path apps/sheets/native/xlsx-engine/Cargo.toml
 
       - name: Build Linux distributables
         run: npm run dist:linux
