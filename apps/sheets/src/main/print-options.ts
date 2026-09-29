@@ -7,7 +7,18 @@ const CSS_PX_PER_INCH = 96
 /// webContents.print options matching what printToPDF gets for the same
 /// request: print() wants custom sizes in microns, margins in CSS pixels and
 /// the scale as a percentage.
-export function printOptionsFor(request: WorkbookExportPdfRequest): WebContentsPrintOptions {
+export function printOptionsFor(
+  request: WorkbookExportPdfRequest,
+  simple = false,
+): WebContentsPrintOptions {
+  if (simple) {
+    return {
+      silent: false,
+      printBackground: true,
+      landscape: request.landscape,
+      margins: { marginType: 'printableArea' },
+    }
+  }
   const { margins, pageSize } = request
   return {
     silent: false,
@@ -27,6 +38,6 @@ export function printOptionsFor(request: WorkbookExportPdfRequest): WebContentsP
       left: Math.round(margins.left * CSS_PX_PER_INCH),
       right: Math.round(margins.right * CSS_PX_PER_INCH),
     },
-    scaleFactor: Math.round(request.scale * 100),
+    scaleFactor: Math.max(10, Math.min(400, Math.round(request.scale * 100))),
   }
 }

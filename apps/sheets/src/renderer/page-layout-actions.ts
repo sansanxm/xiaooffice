@@ -101,8 +101,8 @@ export function handlePageLayoutCommand(ctx: PageLayoutContext, rest: string): v
   // Fields set_page_setup carries (fitToPage is derived by the executor);
   // breaks and print titles have no op yet and journal directly.
   const record = (patch: PageSetupJournalState, note: string): void => {
+    recordDirect(patch, note)
     if (!Object.keys(patch).every((key) => PAGE_SETUP_OP_FIELDS.has(key))) {
-      recordDirect(patch, note)
       return
     }
     const op: WorkbookOperation = {
@@ -118,9 +118,7 @@ export function handlePageLayoutCommand(ctx: PageLayoutContext, rest: string): v
       ...(patch.printHeadings !== undefined ? { printHeadings: patch.printHeadings } : {}),
       ...(patch.printArea !== undefined ? { printArea: patch.printArea } : {}),
     }
-    void ctx
-      .runOps([op], t('appPageSetupRecorded', { note }))
-      .then((outcome) => outcome.ok && ctx.refreshPageBreakPreview?.())
+    void ctx.runOps([op], null)
   }
   const separator = rest.indexOf(':')
   const key = separator === -1 ? rest : rest.slice(0, separator)

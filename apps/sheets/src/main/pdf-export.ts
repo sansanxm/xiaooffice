@@ -74,7 +74,6 @@ export async function printWorkbook(
     center: true,
     title: request.fileName ? `In - ${request.fileName}` : 'In bảng tính',
     autoHideMenuBar: true,
-    skipTaskbar: true,
     ...(owner && !owner.isDestroyed() ? { parent: owner } : {}),
     webPreferences: { sandbox: true, javascript: false },
   })
@@ -83,7 +82,7 @@ export async function printWorkbook(
     await window.loadFile(htmlPath)
     window.show()
     window.focus()
-    const outcome = await new Promise<{ success: boolean; failureReason: string }>((resolve) => {
+    let outcome = await new Promise<{ success: boolean; failureReason: string }>((resolve) => {
       let settled = false
       const finish = (res: { success: boolean; failureReason: string }) => {
         if (!settled) {
@@ -96,6 +95,16 @@ export async function printWorkbook(
         finish({ success, failureReason })
       })
     })
+
+    // If driver failed with custom parameters, retry with standard options
+    if (!outcome.success && outcome.failureReason && outcome.failureReason !== 'Print job canceled' && !window.isDestroyed()) {
+      outcome = await new Promise<{ success: boolean; failureReason: string }>((resolve) => {
+        window.webContents.print(printOptionsFor(request, true), (success, failureReason) => {
+          resolve({ success, failureReason })
+        })
+      })
+    }
+
     if (outcome.success) return { ok: true }
     return outcome.failureReason === 'Print job canceled' || !outcome.failureReason
       ? { ok: false }
