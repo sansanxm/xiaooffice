@@ -63,6 +63,7 @@ import {
   type ContextTabRequest,
 } from './components/context-tabs'
 import { SlideShowView } from './components/SlideShowView'
+import { MorphStage } from './components/MorphStage'
 import { IconNotes, IconPlayBoxed } from './components/icons'
 import { PresenterView } from './components/PresenterView'
 import { CustomShowDialog } from './components/CustomShowDialog'
@@ -1674,15 +1675,16 @@ export function App() {
   // ── Transitions tab: one-shot canvas preview when an effect is clicked (PPT-style) ──
   const [transPreviewKind, setTransPreviewKind] = useState<TransitionKind | null>(null)
   const previewTransitionOnCanvas = useCallback((kind: TransitionKind) => {
-    const concrete =
+    let concrete =
       kind === 'random'
         ? PREVIEWABLE_TRANSITIONS[Math.floor(Math.random() * PREVIEWABLE_TRANSITIONS.length)]!
         : kind
     if (concrete === 'none') return
+    if (concrete === 'morph' && current === 0) concrete = 'fade'
     // drop the class for one frame so re-clicking the same effect restarts its animation
     setTransPreviewKind(null)
     requestAnimationFrame(() => setTransPreviewKind(concrete))
-  }, [])
+  }, [current])
 
   // ── Animations tab: current page's animation list (refreshed after page switch/edit/undo; re-fetched whenever the slide identity changes) ──
   useEffect(() => {
@@ -3238,6 +3240,7 @@ export function App() {
           void applyTransition(kind, all)
           if (!all) previewTransitionOnCanvas(kind)
         }}
+        onPreviewTransition={() => previewTransitionOnCanvas(transition)}
         selectedAnimEffect={selectedAnimEffect}
         selectionIsMedia={
           selectedNode?.type === 'picture' && !!(selectedNode as PictureRenderNode).media
@@ -3902,7 +3905,7 @@ export function App() {
                         >
                           <div
                             ref={stageRelRef}
-                            className={`stage-rel${transPreviewKind ? ` tp-${transPreviewKind}` : ''}`}
+                            className={`stage-rel${transPreviewKind && (transPreviewKind !== 'morph' || current === 0) ? ` tp-${transPreviewKind}` : ''}`}
                             onAnimationEnd={(e) => {
                               if (e.target === e.currentTarget) setTransPreviewKind(null)
                             }}
@@ -3946,6 +3949,24 @@ export function App() {
                               }
                             }}
                           >
+                            {transPreviewKind === 'morph' && current > 0 && slides[current - 1] && (
+                              <div
+                                style={{
+                                  position: 'absolute',
+                                  inset: 0,
+                                  zIndex: 100,
+                                  pointerEvents: 'none',
+                                }}
+                              >
+                                <MorphStage
+                                  from={slides[current - 1]!}
+                                  to={slide}
+                                  images={images}
+                                  width={slide.widthPx}
+                                  onDone={() => setTransPreviewKind(null)}
+                                />
+                              </div>
+                            )}
                             <SlideCanvas
                               ref={canvasRef}
                               slide={slide}

@@ -569,6 +569,7 @@ function parseSpShape(
     placeholder: ph ? (phType ?? 'body') : undefined,
     ...(nv?.['p:cNvSpPr']?.['@_txBox'] === '1' ? { txBox: true } : {}),
     name,
+    ...(nv?.['p:cNvPr']?.['@_id'] != null ? { nvId: String(nv['p:cNvPr']['@_id']) } : {}),
     presetGeometry,
     ...(adjust ? { adjust } : {}),
     ...(customGeometry ? { customGeometry } : {}),
@@ -1141,6 +1142,9 @@ function parsePicture(
     anchor,
     transform,
     name,
+    ...(node['p:nvPicPr']?.['p:cNvPr']?.['@_id'] != null
+      ? { nvId: String(node['p:nvPicPr']['p:cNvPr']['@_id']) }
+      : {}),
     ...(descr ? { descr } : {}),
     mediaRef,
     ...(srcRect ? { srcRect } : {}),

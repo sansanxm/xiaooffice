@@ -290,6 +290,7 @@ export const vi: Record<keyof typeof en, string> = {
   "ribbonTransApplyTip": "Sử dụng hiệu ứng chuyển tiếp \"{name}\" trên trang chiếu này (có hiệu lực trong trình chiếu PowerPoint)",
   "ribbonGroupTiming": "Thời gian căn chỉnh",
   "ribbonTransApplyAllTip": "Áp dụng hiệu ứng chuyển tiếp của trang chiếu này cho tất cả trang chiếu",
+  "ribbonTransPreviewTip": "Xem trước hiệu ứng chuyển tiếp trên trang chiếu này trong khung chỉnh sửa",
   "ribbonPreview": "Xem trước",
   "ribbonAnimPreviewTip": "Phát thử tất cả hoạt ảnh trên trang chiếu này trong khung chỉnh sửa",
   "ribbonGroupAnimation": "Hoạt ảnh",

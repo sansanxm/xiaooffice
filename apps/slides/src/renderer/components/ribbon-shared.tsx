@@ -429,6 +429,8 @@ export interface Props {
   transition: TransitionKind
   /** Set the transition effect; allSlides=true applies to all pages */
   onTransition: (kind: TransitionKind, allSlides: boolean) => void
+  /** Re-play the transition effect on the slide canvas */
+  onPreviewTransition?: () => void
   // ── Animations tab ─────────────────────────────────────────────────────
   /** Selected shape's current animation effect (gallery highlight; null when no selection/no animation) */
   selectedAnimEffect: AnimEffectKind | null

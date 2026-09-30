@@ -288,6 +288,7 @@ export const en = {
   "ribbonTransApplyTip": "Use the \"{name}\" transition on this slide (takes effect in PowerPoint slide show)",
   "ribbonGroupTiming": "Timing",
   "ribbonTransApplyAllTip": "Apply this slide's transition to all slides",
+  "ribbonTransPreviewTip": "Preview the transition effect on this slide in the editing canvas",
   "ribbonPreview": "Preview",
   "ribbonAnimPreviewTip": "Play all animations on this slide in the editing canvas",
   "ribbonGroupAnimation": "Animation",

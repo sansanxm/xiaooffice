@@ -227,6 +227,15 @@ export function AudienceView() {
         setMorph((m) => ({ fromIdx: from, toIdx: sync.idx, nonce: (m?.nonce ?? 0) + 1 }))
         setAnim((a) => ({ kind: 'none', nonce: a.nonce + 1 }))
       } else {
+        if (sync.fresh && from >= 0 && from !== sync.idx && transRef.current[sync.idx] === undefined) {
+          void window.slidesApi.getTransition(sync.idx).then((resolved) => {
+            transRef.current[sync.idx] = resolved
+            if (resolved === 'morph') {
+              setMorph((m) => ({ fromIdx: from, toIdx: sync.idx, nonce: (m?.nonce ?? 0) + 1 }))
+              setAnim((a) => ({ kind: 'none', nonce: a.nonce + 1 }))
+            }
+          })
+        }
         if (kind === 'morph') kind = 'fade'
         setMorph(null)
         setAnim((a) => ({ kind, nonce: a.nonce + 1 }))

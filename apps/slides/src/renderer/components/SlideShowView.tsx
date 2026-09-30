@@ -291,6 +291,15 @@ export function SlideShowView({
         setMorph((m) => ({ fromIdx: current, toIdx: target, nonce: (m?.nonce ?? 0) + 1 }))
         setAnim((a) => ({ kind: 'none', nonce: a.nonce + 1 }))
       } else {
+        if (animate && transRef.current[target] === undefined && current != null && current !== target) {
+          void window.slidesApi.getTransition(target).then((resolved) => {
+            transRef.current[target] = resolved
+            if (resolved === 'morph') {
+              setMorph((m) => ({ fromIdx: current, toIdx: target, nonce: (m?.nonce ?? 0) + 1 }))
+              setAnim((a) => ({ kind: 'none', nonce: a.nonce + 1 }))
+            }
+          })
+        }
         // Morphs that can't tween (start page/same page) degrade to fade-in
         if (kind === 'morph') kind = 'fade'
         setMorph(null)

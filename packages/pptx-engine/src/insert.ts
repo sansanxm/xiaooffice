@@ -217,12 +217,15 @@ export function addElement(slide: Slide, opts: NewElementOptions): TextElement {
     return el
   }
   const xml = buildSpXml(slide, opts)
+  const idM = /<p:cNvPr\s[^>]*\bid="(\d+)"/.exec(xml)
   const autoFit = effectiveAutoFit(opts.bodyPr, opts.kind === 'textbox')
   const el: TextElement = {
     id: `spnew_${(insertCounter++).toString(36)}_${Date.now().toString(36)}`,
     type: opts.kind === 'textbox' ? 'text' : 'shape',
     anchor: { spIndex: slide.elements.length, originalXml: xml, range: [0, 0] },
     transform: { offset: { ...opts.offset }, rot: 0, flipH: false, flipV: false },
+    name: opts.name ?? (opts.kind === 'textbox' ? 'TextBox' : opts.kind),
+    ...(idM ? { nvId: idM[1] } : {}),
     ...(opts.kind !== 'textbox' ? { presetGeometry: opts.kind } : {}),
     ...(opts.kind !== 'textbox' && opts.adjustments ? { adjust: { ...opts.adjustments } } : {}),
     ...(opts.fillColor ? { fill: { type: 'solid' as const, color: opts.fillColor } } : {}),

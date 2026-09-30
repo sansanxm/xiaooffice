@@ -1152,6 +1152,7 @@ export function Ribbon({
   onInsertTable,
   transition,
   onTransition,
+  onPreviewTransition,
   selectedAnimEffect,
   selectionIsMedia,
   timingAnim,
@@ -2136,6 +2137,20 @@ export function Ribbon({
           </>
         ) : tab === 'transitions' ? (
           <>
+            <Group label={t('ribbonPreview')}>
+              <button
+                className="rb-big"
+                disabled={!hasDoc || transition === 'none'}
+                onClick={() => onPreviewTransition?.()}
+                data-tip={t('ribbonTransPreviewTip')}
+              >
+                <span className="rb-big-icon">
+                  <IconPlayCurrent size={BIG} />
+                </span>
+                <span>{t('ribbonPreview')}</span>
+              </button>
+            </Group>
+            <div className="ribbon-sep" />
             <Group label={t('ribbonGroupTransitionToThis')}>
               {TRANSITIONS.map((tr) => (
                 <button

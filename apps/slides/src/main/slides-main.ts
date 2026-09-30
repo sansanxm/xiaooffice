@@ -4156,11 +4156,14 @@ export function registerSlidesIpc(): void {
     const session = sessions.get(e.sender.id)
     const slide = session?.opened.deck.slides[slideIndex]
     if (!slide) return []
-    return slide.elements.map((el) => ({
-      sourceId: el.id,
-      spid: elementSpid(el),
-      name: el.name ?? '',
-    }))
+    return slide.elements.map((el) => {
+      const spid = elementSpid(el) ?? (el.nvId ? Number(el.nvId) : null)
+      return {
+        sourceId: el.id,
+        spid: Number.isFinite(spid) ? spid : null,
+        name: el.name ?? (el as any).presetGeometry ?? el.type ?? '',
+      }
+    })
   })
 
   ipcMain.handle('slides:set-animations', (e, op: SetAnimationsOp) => {
