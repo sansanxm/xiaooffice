@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it } from 'vitest'
 import { Editor } from '@tiptap/core'
 import { NodeSelection, TextSelection } from '@tiptap/pm/state'
-import { CellSelection } from '@tiptap/pm/tables'
+import { CellSelection, setCellAttr } from '@tiptap/pm/tables'
 import { editorExtensions } from '../src/renderer/editor/extensions'
 import { computeFormatState } from '../src/renderer/components/ribbon-format-state'
 import {
@@ -128,3 +128,7 @@ describe('Table Layout ▸ Select ▾', () => {
     expect(inTableOrSelected(editor.state)).toBe(false)
   })
 })
+
+
+
+

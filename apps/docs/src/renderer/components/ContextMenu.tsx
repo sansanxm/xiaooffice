@@ -22,11 +22,13 @@ import { setTableAutoFit } from '../editor/table-properties'
 import { distributeSelectedColumns } from '../editor/table-sizing'
 import {
   distributeRowsEvenly,
+  enterSelectedTable,
   inTableOrSelected,
   selectTablePart,
   setCellAlignment,
   setCellTextDirection,
   splitTableAtSelection,
+  tableCellsSelection,
   type CellHAlign,
   type CellTextDirection,
   type CellVAlign,
@@ -270,19 +272,24 @@ export function EditorContextMenu({
 
   // ---- table section (shown when the cursor is inside a table, Word parity) ----
   const inTable = inTableOrSelected(editor.state)
-  /** cell commands can't run on a whole-table NodeSelection: drop the caret into the first cell */
-  const enterFirstCell = () => {
+  /** cell commands on a whole-table NodeSelection: select all cells (Word parity) */
+  const enterTableCells = () => {
     const sel = editor.state.selection
     if (sel instanceof NodeSelection && sel.node.type.name === 'docTable') {
-      editor.view.dispatch(
-        editor.state.tr.setSelection(TextSelection.near(editor.state.doc.resolve(sel.from + 1))),
-      )
+      const cells = tableCellsSelection(editor.state)
+      if (cells) {
+        editor.view.dispatch(editor.state.tr.setSelection(cells))
+      } else {
+        editor.view.dispatch(
+          editor.state.tr.setSelection(TextSelection.near(editor.state.doc.resolve(sel.from + 1))),
+        )
+      }
     }
   }
   const runTable = (command: Command) => {
     editor.view.focus()
-    enterFirstCell()
-    command(editor.state, editor.view.dispatch)
+    enterTableCells()
+    command(editor.view.state, editor.view.dispatch)
   }
 
   const protAttrs = editor.getAttributes('docProtected')
@@ -523,7 +530,7 @@ export function EditorContextMenu({
           {item(t('ribbonSplitCellsDialog'), {
             disabled: !canEdit,
             onClick: run(() => {
-              enterFirstCell()
+              enterSelectedTable(editor.state, editor.view.dispatch)
               if (onTableDialog) onTableDialog('splitCells')
               else runTable(splitCell)
             }),
@@ -539,7 +546,7 @@ export function EditorContextMenu({
                 <button
                   className="ctx-item"
                   onClick={run(() => {
-                    enterFirstCell()
+                    enterSelectedTable(editor.state, editor.view.dispatch)
                     distributeRowsEvenly(editor.view)
                   })}
                 >
@@ -612,7 +619,7 @@ export function EditorContextMenu({
             item(t('ribbonTableProperties'), {
               disabled: !canEdit,
               onClick: run(() => {
-                enterFirstCell()
+                enterSelectedTable(editor.state, editor.view.dispatch)
                 onTableDialog('properties')
               }),
             })}

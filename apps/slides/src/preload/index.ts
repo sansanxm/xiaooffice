@@ -308,6 +308,8 @@ const api: SlidesApi = {
   applyTheme: (op: ApplyThemeOp) => ipcRenderer.invoke('slides:apply-theme', op),
   setTransition: (op: SetTransitionOp) => ipcRenderer.invoke('slides:set-transition', op),
   getTransition: (slideIndex: number) => ipcRenderer.invoke('slides:get-transition', slideIndex),
+  getTransitionTiming: (slideIndex: number) =>
+    ipcRenderer.invoke('slides:get-transition-timing', slideIndex),
   getAdvanceTime: (slideIndex: number) => ipcRenderer.invoke('slides:get-advance-time', slideIndex),
   setAdvanceTimes: (op: SetAdvanceTimesOp) => ipcRenderer.invoke('slides:set-advance-times', op),
   getAnimations: (slideIndex: number) => ipcRenderer.invoke('slides:get-animations', slideIndex),

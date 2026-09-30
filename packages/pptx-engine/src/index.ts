@@ -34,15 +34,19 @@ import {
   patchElementStroke,
   patchElementXfrm,
   patchPictureSrcRect,
+  patchSlideAdvanceOnClickXml,
   patchSlideAdvanceTimeXml,
   patchSlideBackgroundXml,
   patchSlideHiddenXml,
   patchSlideShowMasterSpXml,
+  patchSlideTransitionDurationXml,
   patchSlideTransitionXml,
   patchTextElementXml,
   rebuildTxBody,
+  readSlideAdvanceOnClickXml,
   readSlideAdvanceTimeXml,
   readSlideHiddenXml,
+  readSlideTransitionDurationXml,
   readSlideTransitionXml,
   removeSlideBackgroundXml,
   topLevelChildren,
@@ -148,13 +152,17 @@ export {
   patchElementStroke,
   patchBodyPrAutofit,
   patchPictureSrcRect,
+  patchSlideAdvanceOnClickXml,
   patchSlideAdvanceTimeXml,
   patchSlideBackgroundXml,
   patchSlideHiddenXml,
   patchSlideShowMasterSpXml,
+  patchSlideTransitionDurationXml,
   patchSlideTransitionXml,
+  readSlideAdvanceOnClickXml,
   readSlideAdvanceTimeXml,
   readSlideHiddenXml,
+  readSlideTransitionDurationXml,
   readSlideTransitionXml,
   removeSlideBackgroundXml,
   generateParagraphXml,
@@ -4235,6 +4243,28 @@ export function setSlideAdvanceTime(slide: Slide, ms: number | null): void {
 /** Read the auto-advance time (ms; null when unset). */
 export function getSlideAdvanceTime(slide: Slide): number | null {
   return readSlideAdvanceTimeXml(slide.bodySuffix)
+}
+
+/** Set/clear advance on mouse click (advClick="0" when disabled; PowerPoint default is true). */
+export function setSlideAdvanceOnClick(slide: Slide, enabled: boolean): void {
+  slide.bodySuffix = patchSlideAdvanceOnClickXml(slide.bodySuffix, enabled)
+  slide.structureDirty = true
+}
+
+/** Read whether advance on mouse click is enabled (default is true). */
+export function getSlideAdvanceOnClick(slide: Slide): boolean {
+  return readSlideAdvanceOnClickXml(slide.bodySuffix)
+}
+
+/** Set transition duration in seconds (writes spd and p14:dur). */
+export function setSlideTransitionDuration(slide: Slide, sec: number): void {
+  slide.bodySuffix = patchSlideTransitionDurationXml(slide.bodySuffix, sec)
+  slide.structureDirty = true
+}
+
+/** Read transition duration in seconds (null when unset / default). */
+export function getSlideTransitionDuration(slide: Slide): number | null {
+  return readSlideTransitionDurationXml(slide.bodySuffix)
 }
 
 // ── Hidden slides ───────────────────────────────────────────────────────

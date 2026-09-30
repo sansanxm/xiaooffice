@@ -680,7 +680,7 @@ export function enterSelectedTable(
   return true
 }
 
-/** the table move handle selects the whole table as a NodeSelection; cell commands need a caret inside */
+/** when a whole table is selected (NodeSelection), cell commands need a CellSelection across all cells (Word parity) */
 export function ensureCaretInTable(
   state: EditorState,
   dispatch?: (tr: Transaction) => void,
@@ -688,6 +688,11 @@ export function ensureCaretInTable(
   if (isInTable(state)) return true
   const sel = state.selection
   if (sel instanceof NodeSelection && sel.node.type.name === 'docTable') {
+    const cells = tableCellsSelection(state)
+    if (cells) {
+      dispatch?.(state.tr.setSelection(cells))
+      return true
+    }
     dispatch?.(state.tr.setSelection(TextSelection.near(state.doc.resolve(sel.from + 1))))
     return true
   }

@@ -99,6 +99,8 @@ import {
   getSlideComments,
   getSlideNotes,
   getSlideTransition,
+  getSlideTransitionDuration,
+  getSlideAdvanceOnClick,
   getSlideAdvanceTime,
   elementSpid,
   getSlideAnimations,
@@ -4087,6 +4089,16 @@ export function registerSlidesIpc(): void {
       op.slideIndex === -1 ? slides.map((_, i) => i) : slides[op.slideIndex] ? [op.slideIndex] : []
     if (idxs.length === 0) return false
     const ops: any[] = idxs.map((i) => ({ op: 'setTransition', target: { slide: i }, kind: op.kind }))
+    if (op.durationSec !== undefined && op.durationSec > 0) {
+      for (const i of idxs) {
+        ops.push({ op: 'setTransitionDuration', target: { slide: i }, sec: op.durationSec })
+      }
+    }
+    if (op.advanceOnClick !== undefined) {
+      for (const i of idxs) {
+        ops.push({ op: 'setAdvanceOnClick', target: { slide: i }, enabled: op.advanceOnClick })
+      }
+    }
     if (op.advanceAfterSec !== undefined) {
       const ms = op.advanceAfterSec != null ? Math.round(op.advanceAfterSec * 1000) : null
       for (const i of idxs) {
@@ -4101,6 +4113,18 @@ export function registerSlidesIpc(): void {
     const session = sessions.get(e.sender.id)
     const slide = session?.opened.deck.slides[slideIndex]
     return slide ? getSlideTransition(slide) : 'none'
+  })
+
+  ipcMain.handle('slides:get-transition-timing', (e, slideIndex: number) => {
+    const session = sessions.get(e.sender.id)
+    const slide = session?.opened.deck.slides[slideIndex]
+    if (!slide) return null
+    return {
+      transition: getSlideTransition(slide),
+      durationSec: getSlideTransitionDuration(slide),
+      advanceOnClick: getSlideAdvanceOnClick(slide),
+      advanceAfterSec: getSlideAdvanceTime(slide) != null ? (getSlideAdvanceTime(slide)! / 1000) : null,
+    }
   })
 
   ipcMain.handle('slides:get-advance-time', (e, slideIndex: number) => {

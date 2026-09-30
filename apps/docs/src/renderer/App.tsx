@@ -259,6 +259,7 @@ import {
 import { computeFormatState } from './components/ribbon-format-state'
 import {
   IconOutlineView,
+  IconPrint,
   IconPrintLayout,
   IconReadMode,
   IconRedo,
@@ -6671,6 +6672,15 @@ export function App() {
           onClick={() => editor?.chain().focus().redo().run()}
         >
           <IconRedo size={16} />
+        </button>
+        <button
+          className="qa-btn"
+          data-tip={t('ribbonPrintTip')}
+          aria-label={t('ribbonPrint')}
+          disabled={!hasDoc}
+          onClick={() => setShowPrintDialog(true)}
+        >
+          <IconPrint size={16} />
         </button>
         <label className={`autosave-toggle ${autoSave ? 'on' : ''}`} data-tip={t('appAutoSaveTip')}>
           <span className="autosave-knob" />

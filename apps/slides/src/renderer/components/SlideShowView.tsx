@@ -96,6 +96,10 @@ export function SlideShowView({
   const [covered, setCovered] = useState(false)
   /** Per-page transition effects (prefetched once when the show starts, zero IPC on page turns) */
   const transRef = useRef<TransitionKind[]>([])
+  /** Per-page transition durations in seconds */
+  const durRef = useRef<number[]>([])
+  /** Per-page advance on click flags */
+  const advOnClickRef = useRef<boolean[]>([])
   /** Per-page auto-advance times in ms (prefetched once) */
   const advTimesRef = useRef<Array<number | null>>([])
   /** Per-page animation lists (also prefetched once) */
@@ -128,16 +132,29 @@ export function SlideShowView({
 
   useEffect(() => {
     let cancelled = false
-    void Promise.all(slides.map((_, i) => window.slidesApi.getTransition(i))).then((kinds) => {
-      if (!cancelled) transRef.current = kinds
-    })
-    void Promise.all(
-      slides.map((_, i) =>
-        window.slidesApi?.getAdvanceTime ? window.slidesApi.getAdvanceTime(i) : Promise.resolve(null),
-      ),
-    ).then((times) => {
-      if (!cancelled) advTimesRef.current = times
-    })
+    if (window.slidesApi?.getTransitionTiming) {
+      void Promise.all(slides.map((_, i) => window.slidesApi.getTransitionTiming(i))).then((timings) => {
+        if (!cancelled) {
+          transRef.current = timings.map((t) => t?.transition ?? 'none')
+          durRef.current = timings.map((t) => t?.durationSec ?? 1.0)
+          advOnClickRef.current = timings.map((t) => t?.advanceOnClick ?? true)
+          advTimesRef.current = timings.map((t) =>
+            t?.advanceAfterSec != null && t.advanceAfterSec > 0 ? Math.round(t.advanceAfterSec * 1000) : null,
+          )
+        }
+      })
+    } else {
+      void Promise.all(slides.map((_, i) => window.slidesApi.getTransition(i))).then((kinds) => {
+        if (!cancelled) transRef.current = kinds
+      })
+      void Promise.all(
+        slides.map((_, i) =>
+          window.slidesApi?.getAdvanceTime ? window.slidesApi.getAdvanceTime(i) : Promise.resolve(null),
+        ),
+      ).then((times) => {
+        if (!cancelled) advTimesRef.current = times
+      })
+    }
     void Promise.all(slides.map((_, i) => window.slidesApi.getAnimations(i))).then((lists) => {
       if (!cancelled) setAllAnims(lists)
     })
@@ -488,6 +505,11 @@ export function SlideShowView({
       setKeys(INITIAL_SHOW_KEYS)
       return
     }
+    const currentSlideIdx = order[pos]
+    if (currentSlideIdx != null && advOnClickRef.current[currentSlideIdx] === false) {
+      // Advance on mouse click is disabled for this slide
+      return
+    }
     next()
   }
 
@@ -560,6 +582,9 @@ export function SlideShowView({
                 toAnims={allAnims?.[morph.toIdx] ?? []}
                 images={images}
                 width={fitW}
+                durationMs={
+                  durRef.current[morph.toIdx] ? Math.round(durRef.current[morph.toIdx] * 1000) : undefined
+                }
                 onDone={() => setMorph(null)}
               />
             </div>
@@ -567,6 +592,11 @@ export function SlideShowView({
             <div
               key={anim.nonce}
               className={`ss-frame${anim.kind !== 'none' ? ` ss-anim-${anim.kind}` : ''}`}
+              style={
+                anim.kind !== 'none' && order[pos] != null && durRef.current[order[pos]]
+                  ? { animationDuration: `${durRef.current[order[pos]]}s` }
+                  : undefined
+              }
             >
               <div
                 style={{ position: 'relative', width: fitW, margin: '0 auto' }}

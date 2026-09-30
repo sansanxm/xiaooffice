@@ -1664,13 +1664,25 @@ export function App() {
   const [advanceOnClick, setAdvanceOnClick] = useState<boolean>(true)
   const [advanceAfterSec, setAdvanceAfterSec] = useState<number | null>(null)
 
-  // Reflect the current page's transition effect on page/document changes
+  // Reflect the current page's transition effect and timing on page/document changes
   useEffect(() => {
     if (!hasDoc) return
-    void window.slidesApi.getTransition(current).then(setTransition)
-    void window.slidesApi.getAdvanceTime(current).then((ms) => {
-      setAdvanceAfterSec(ms != null && ms > 0 ? ms / 1000 : null)
-    })
+    if (window.slidesApi?.getTransitionTiming) {
+      void window.slidesApi.getTransitionTiming(current).then((timing) => {
+        if (!timing) return
+        setTransition(timing.transition)
+        if (timing.durationSec && Number.isFinite(timing.durationSec)) {
+          setTransDurationSec(timing.durationSec)
+        }
+        setAdvanceOnClick(timing.advanceOnClick ?? true)
+        setAdvanceAfterSec(timing.advanceAfterSec)
+      })
+    } else {
+      void window.slidesApi.getTransition(current).then(setTransition)
+      void window.slidesApi.getAdvanceTime(current).then((ms) => {
+        setAdvanceAfterSec(ms != null && ms > 0 ? ms / 1000 : null)
+      })
+    }
   }, [hasDoc, current, path])
 
   const applyTransition = useCallback(

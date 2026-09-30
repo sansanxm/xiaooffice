@@ -1,7 +1,8 @@
 import type { Editor } from '@tiptap/core'
 import type { Lang } from '@genoffice/i18n'
 import { Extension } from '@tiptap/core'
-import { Plugin, PluginKey } from '@tiptap/pm/state'
+import { NodeSelection, Plugin, PluginKey } from '@tiptap/pm/state'
+import { CellSelection } from '@tiptap/pm/tables'
 import { Mapping } from '@tiptap/pm/transform'
 
 /** paragraph-like blocks that carry the bidi attribute */
@@ -97,22 +98,36 @@ export function setSelectionAlign(
     .chain()
     .focus()
     .command(({ state, tr, dispatch }) => {
-      const { from, to } = state.selection
+      const sel = state.selection
       let changed = false
-      state.doc.nodesBetween(from, to, (node, pos) => {
-        if (DIR_BLOCKS.has(node.type.name)) {
-          const value = alignAttrFor(align, effectiveBidi(node.attrs))
-          tr.setNodeMarkup(pos, undefined, { ...node.attrs, align: value })
-          changed = true
-        } else if (node.type.name === 'docProtected') {
-          // alignment also applies to selected images (w:jc on the image paragraph)
-          tr.setNodeMarkup(pos, undefined, {
-            ...node.attrs,
-            imageAlign: alignAttrFor(align, false),
+
+      if (sel instanceof CellSelection) {
+        sel.forEachCell((cell, cellPos) => {
+          cell.descendants((node, pos) => {
+            if (DIR_BLOCKS.has(node.type.name)) {
+              const value = alignAttrFor(align, effectiveBidi(node.attrs))
+              tr.setNodeMarkup(cellPos + 1 + pos, undefined, { ...node.attrs, align: value })
+              changed = true
+            }
           })
-          changed = true
-        }
-      })
+        })
+      } else {
+        const { from, to } = sel
+        state.doc.nodesBetween(from, to, (node, pos) => {
+          if (DIR_BLOCKS.has(node.type.name)) {
+            const value = alignAttrFor(align, effectiveBidi(node.attrs))
+            tr.setNodeMarkup(pos, undefined, { ...node.attrs, align: value })
+            changed = true
+          } else if (node.type.name === 'docProtected') {
+            // alignment also applies to selected images (w:jc on the image paragraph)
+            tr.setNodeMarkup(pos, undefined, {
+              ...node.attrs,
+              imageAlign: alignAttrFor(align, false),
+            })
+            changed = true
+          }
+        })
+      }
       if (changed && dispatch) dispatch(tr)
       return changed
     })

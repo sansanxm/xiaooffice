@@ -1595,6 +1595,93 @@ export function readSlideAdvanceTimeXml(bodySuffix: string): number | null {
   return adv ? Number(adv[1]) : null
 }
 
+// ── Advance on click patch (<p:transition advClick="0|1">) ────────────────
+
+function patchAdvClickAttr(block: string, enabled: boolean): string {
+  return block.replace(/<p:transition\b[^>]*>/g, (tag) => {
+    const cleaned = tag.replace(/\s+advClick="[^"]*"/, '')
+    if (enabled) return cleaned
+    return cleaned.replace(
+      /(\s*\/)?>$/,
+      (_m, close: string | undefined) => ` advClick="0"${close ?? ''}>`,
+    )
+  })
+}
+
+export function patchSlideAdvanceOnClickXml(bodySuffix: string, enabled: boolean): string {
+  const m = AC_TRANSITION_RE.exec(bodySuffix) ?? TRANSITION_RE.exec(bodySuffix)
+  if (m) {
+    return (
+      bodySuffix.slice(0, m.index) +
+      patchAdvClickAttr(m[0], enabled) +
+      bodySuffix.slice(m.index + m[0].length)
+    )
+  }
+  if (enabled) return bodySuffix
+  const at = transitionInsertPos(bodySuffix)
+  if (at < 0) return bodySuffix
+  return (
+    bodySuffix.slice(0, at) +
+    `<p:transition advClick="0"/>` +
+    bodySuffix.slice(at)
+  )
+}
+
+export function readSlideAdvanceOnClickXml(bodySuffix: string): boolean {
+  const m = AC_TRANSITION_RE.exec(bodySuffix) ?? TRANSITION_RE.exec(bodySuffix)
+  if (!m) return true
+  const match = /\badvClick="(0|false)"/i.exec(m[0])
+  return !match
+}
+
+// ── Transition duration patch (<p:transition spd="..." p14:dur="...">) ───
+
+function patchDurAttr(block: string, sec: number): string {
+  const durMs = Math.round(sec * 1000)
+  const spd = sec <= 0.75 ? 'fast' : sec >= 1.5 ? 'slow' : 'med'
+  return block.replace(/<p:transition\b[^>]*>/g, (tag) => {
+    const cleaned = tag.replace(/\s+(?:p14:dur|spd)="[^"]*"/g, '')
+    return cleaned.replace(
+      /(\s*\/)?>$/,
+      (_m, close: string | undefined) => ` spd="${spd}" p14:dur="${durMs}"${close ?? ''}>`,
+    )
+  })
+}
+
+export function patchSlideTransitionDurationXml(bodySuffix: string, sec: number): string {
+  const durMs = Math.round(sec * 1000)
+  const spd = sec <= 0.75 ? 'fast' : sec >= 1.5 ? 'slow' : 'med'
+  const m = AC_TRANSITION_RE.exec(bodySuffix) ?? TRANSITION_RE.exec(bodySuffix)
+  if (m) {
+    return (
+      bodySuffix.slice(0, m.index) +
+      patchDurAttr(m[0], sec) +
+      bodySuffix.slice(m.index + m[0].length)
+    )
+  }
+  const at = transitionInsertPos(bodySuffix)
+  if (at < 0) return bodySuffix
+  return (
+    bodySuffix.slice(0, at) +
+    `<p:transition spd="${spd}" p14:dur="${durMs}"/>` +
+    bodySuffix.slice(at)
+  )
+}
+
+export function readSlideTransitionDurationXml(bodySuffix: string): number | null {
+  const m = AC_TRANSITION_RE.exec(bodySuffix) ?? TRANSITION_RE.exec(bodySuffix)
+  if (!m) return null
+  const durMatch = /\bp14:dur="(\d+)"/.exec(m[0])
+  if (durMatch) return Number(durMatch[1]) / 1000
+  const spdMatch = /\bspd="([^"]+)"/.exec(m[0])
+  if (spdMatch) {
+    if (spdMatch[1] === 'fast') return 0.5
+    if (spdMatch[1] === 'med') return 1.0
+    if (spdMatch[1] === 'slow') return 1.5
+  }
+  return null
+}
+
 // ── Hidden slide patch (<p:sld show="0">, skipped during slideshow) ─────
 
 const SLD_OPEN_RE = /<p:sld\b[^>]*>/

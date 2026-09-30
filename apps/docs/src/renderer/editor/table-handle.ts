@@ -1,5 +1,6 @@
 import { Extension } from '@tiptap/core'
-import { NodeSelection, Plugin, PluginKey } from '@tiptap/pm/state'
+import { NodeSelection, Plugin, PluginKey, type Selection } from '@tiptap/pm/state'
+import { CellSelection, TableMap } from '@tiptap/pm/tables'
 import type { EditorView } from '@tiptap/pm/view'
 import { t } from '../i18n/locale'
 
@@ -115,7 +116,7 @@ function tableHandlePlugin(): Plugin {
       }
 
       /** tablePos was captured on a past mousemove — validate against the current doc */
-      const selectTable = (): NodeSelection | null => {
+      const selectNodeTable = (): NodeSelection | null => {
         if (tablePos === null || tablePos >= view.state.doc.content.size) return null
         if (view.state.doc.nodeAt(tablePos)?.type.name !== 'docTable') return null
         try {
@@ -125,12 +126,30 @@ function tableHandlePlugin(): Plugin {
         }
       }
 
+      /** Clicking the table move handle selects every cell (Word parity) so formatting applies to all cells */
+      const selectTableCells = (): Selection | null => {
+        if (tablePos === null || tablePos >= view.state.doc.content.size) return null
+        const tableNode = view.state.doc.nodeAt(tablePos)
+        if (tableNode?.type.name !== 'docTable') return null
+        try {
+          const map = TableMap.get(tableNode)
+          const start = tablePos + 1
+          return CellSelection.create(
+            view.state.doc,
+            start + map.map[0],
+            start + map.map[map.map.length - 1],
+          )
+        } catch {
+          return selectNodeTable()
+        }
+      }
+
       const onClick = () => {
         if (suppressClick) {
           suppressClick = false
           return
         }
-        const selection = selectTable()
+        const selection = selectTableCells()
         if (!selection) return
         view.dispatch(view.state.tr.setSelection(selection))
         view.focus()
@@ -138,7 +157,7 @@ function tableHandlePlugin(): Plugin {
 
       const onDragStart = (event: DragEvent) => {
         if (!event.dataTransfer) return
-        const selection = selectTable()
+        const selection = selectNodeTable()
         if (!selection) return event.preventDefault()
         if (selection.node.attrs.tblFloat === 'left' || selection.node.attrs.tblFloat === 'right') {
           event.preventDefault()

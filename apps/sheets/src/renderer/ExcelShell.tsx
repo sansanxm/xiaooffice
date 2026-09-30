@@ -20,6 +20,7 @@ import {
   BorderTopIcon,
   CaretIcon,
   GensparkMark,
+  PrintIcon,
   RIBBON_GLYPH_ICONS,
   RedoIcon,
   SaveAsIcon,
@@ -589,6 +590,15 @@ export function ExcelShell({
             onClick={onRedo}
           >
             <RedoIcon />
+          </button>
+          <button
+            type="button"
+            className="qa-btn"
+            data-tip={t('appPrintBtnTip')}
+            aria-label={t('appPrintBtn')}
+            onClick={() => setShowPrintPreview(true)}
+          >
+            <PrintIcon />
           </button>
           <label
             className={`autosave-toggle ${autoSave ? 'on' : ''}`}

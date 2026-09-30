@@ -483,6 +483,32 @@ describe('additional transition effects', () => {
     expect(body).not.toContain('<p:cover')
     expect(readSlideTransitionXml(body)).toBe('zoom')
   })
+
+  it('transition duration and advance-on-click round-trip', async () => {
+    const {
+      patchSlideTransitionXml,
+      patchSlideTransitionDurationXml,
+      readSlideTransitionDurationXml,
+      patchSlideAdvanceOnClickXml,
+      readSlideAdvanceOnClickXml,
+    } = await import('../src/generate')
+
+    let body = '<p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr></p:sld>'
+    body = patchSlideTransitionXml(body, 'fade')
+    body = patchSlideTransitionDurationXml(body, 1.5)
+    expect(body).toContain('spd="slow"')
+    expect(body).toContain('p14:dur="1500"')
+    expect(readSlideTransitionDurationXml(body)).toBe(1.5)
+
+    // Test advance on click
+    expect(readSlideAdvanceOnClickXml(body)).toBe(true)
+    body = patchSlideAdvanceOnClickXml(body, false)
+    expect(body).toContain('advClick="0"')
+    expect(readSlideAdvanceOnClickXml(body)).toBe(false)
+    body = patchSlideAdvanceOnClickXml(body, true)
+    expect(body).not.toContain('advClick="0"')
+    expect(readSlideAdvanceOnClickXml(body)).toBe(true)
+  })
 })
 
 describe('addPicture media sharing', () => {

@@ -45,6 +45,8 @@ import {
   setSlideNotes,
   setSlideSize,
   setSlideTransition,
+  setSlideTransitionDuration,
+  setSlideAdvanceOnClick,
   elementSpid,
   matchesElementRef,
   ANIM_EFFECTS,
@@ -504,6 +506,36 @@ register({
     const { slide } = resolveSlide(ctx, op)
     setSlideAdvanceTime(slide, op.ms == null ? null : Math.round(op.ms as number))
     return { op, after: op.ms }
+  },
+})
+
+register({
+  name: 'setTransitionDuration',
+  validate(op, ctx) {
+    resolveSlide(ctx, op)
+    if (typeof op.sec !== 'number' || !Number.isFinite(op.sec) || op.sec <= 0) {
+      throw new GuidedError('op "setTransitionDuration" needs "sec": positive number of seconds.')
+    }
+  },
+  apply(op, ctx): OpRecord {
+    const { slide } = resolveSlide(ctx, op)
+    setSlideTransitionDuration(slide, op.sec as number)
+    return { op, after: op.sec }
+  },
+})
+
+register({
+  name: 'setAdvanceOnClick',
+  validate(op, ctx) {
+    resolveSlide(ctx, op)
+    if (typeof op.enabled !== 'boolean') {
+      throw new GuidedError('op "setAdvanceOnClick" needs "enabled": boolean.')
+    }
+  },
+  apply(op, ctx): OpRecord {
+    const { slide } = resolveSlide(ctx, op)
+    setSlideAdvanceOnClick(slide, op.enabled as boolean)
+    return { op, after: op.enabled }
   },
 })
 

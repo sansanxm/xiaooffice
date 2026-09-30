@@ -41,6 +41,7 @@ export function MorphStage({
   toAnims,
   images,
   width,
+  durationMs = MORPH_MS,
   onDone,
 }: {
   from: RenderSlide
@@ -50,18 +51,21 @@ export function MorphStage({
   toAnims?: AnimationItem[]
   images: Map<string, HTMLImageElement>
   width: number
+  /** Transition duration in ms (defaults to MORPH_MS / 750ms) */
+  durationMs?: number
   /** Tween finished (guaranteed to fire only once) */
   onDone: () => void
 }) {
   const [t, setT] = useState(0)
   const onDoneRef = useRef(onDone)
   onDoneRef.current = onDone
+  const dur = Math.max(100, durationMs || MORPH_MS)
 
   useEffect(() => {
     let raf = 0
     const t0 = performance.now()
     const tick = () => {
-      const u = (performance.now() - t0) / MORPH_MS
+      const u = (performance.now() - t0) / dur
       if (u >= 1) {
         setT(1)
         onDoneRef.current()
@@ -72,7 +76,7 @@ export function MorphStage({
     }
     raf = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(raf)
-  }, [])
+  }, [dur])
 
   const plan = useMemo(() => buildPlan(from, to, fromKeys, toKeys), [from, to, fromKeys, toKeys])
 

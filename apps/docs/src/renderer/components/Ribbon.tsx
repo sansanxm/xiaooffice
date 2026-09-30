@@ -8,7 +8,7 @@ import type {
   ReactNode,
 } from 'react'
 import type { ChainedCommands, Editor } from '@tiptap/core'
-import type { Command } from '@tiptap/pm/state'
+import { type Command, NodeSelection } from '@tiptap/pm/state'
 import { closeHistory } from '@tiptap/pm/history'
 import type { Mark, Node as PMNode, ResolvedPos } from '@tiptap/pm/model'
 import {
@@ -1162,8 +1162,16 @@ function RibbonInner({
   const runTableCommand = (command: Command) => {
     if (!canEdit) return
     editor.view.focus()
-    enterSelectedTable(editor.state, editor.view.dispatch)
-    command(editor.state, editor.view.dispatch)
+    const sel = editor.state.selection
+    if (sel instanceof NodeSelection && sel.node.type.name === 'docTable') {
+      const cells = tableCellsSelection(editor.state)
+      if (cells) {
+        editor.view.dispatch(editor.state.tr.setSelection(cells))
+      }
+    } else {
+      enterSelectedTable(editor.state, editor.view.dispatch)
+    }
+    command(editor.view.state, editor.view.dispatch)
   }
 
   // ---- Table borders / vertical alignment / row height & column width ----
@@ -1310,6 +1318,7 @@ function RibbonInner({
    * stored mark. Rebuilding from getAttributes read-back dropped the previous call's
    * value on a collapsed cursor (stored-mark changes don't re-render). */
   const setTextStyle = (patch: Record<string, unknown>) => {
+    enterSelectedTable(editor.state, editor.view.dispatch)
     chain().setMark('docTextStyle', patch).run()
     setDropdown(null)
   }
@@ -1436,6 +1445,7 @@ function RibbonInner({
 
   const applyStyle = (info: StyleInfo) => {
     if (!canEdit) return
+    enterSelectedTable(editor.state, editor.view.dispatch)
     applyGalleryStyle(editor, sub, info, styles, activeCharStyleId)
   }
 
@@ -1913,7 +1923,11 @@ function RibbonInner({
       disabled={!canEdit}
       data-tip={title}
       aria-label={title}
-      onClick={() => chain().toggleMark(name).run()}
+      onClick={() => {
+        if (!canEdit) return
+        enterSelectedTable(editor.state, editor.view.dispatch)
+        chain().toggleMark(name).run()
+      }}
     >
       {label}
     </button>

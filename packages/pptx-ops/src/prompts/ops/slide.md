@@ -174,6 +174,26 @@ Automatic advance after the given milliseconds; `null` returns to click-to-advan
 { "op": "setAdvanceTime", "target": { "slide": 0 }, "ms": 5000 }
 ```
 
+### setTransitionDuration
+
+`{sec:number} — transition duration in seconds`
+
+Sets the transition duration for the slide in seconds.
+
+```json
+{ "op": "setTransitionDuration", "target": { "slide": 0 }, "sec": 1.5 }
+```
+
+### setAdvanceOnClick
+
+`{enabled:boolean} — advance on mouse click`
+
+Enables or disables advancing to the next slide on mouse click.
+
+```json
+{ "op": "setAdvanceOnClick", "target": { "slide": 0 }, "enabled": true }
+```
+
 ### setAnimations (not-ai-callable)
 
 `{items:[{spid,effect,trigger,durationMs,delayMs,…}]} — spid-addressed (cNvPr id), no id translation yet`
