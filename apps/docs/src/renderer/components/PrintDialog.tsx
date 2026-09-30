@@ -15,6 +15,8 @@ import { parsePrintRange } from '../print-range'
 import { clearPrintZoom, setPrintZoom } from '../print-zoom'
 
 type RangeMode = 'all' | 'current' | 'custom'
+type PageSubset = 'all' | 'odd' | 'even'
+type DuplexMode = 'simplex' | 'longEdge' | 'shortEdge'
 
 const pvPages = (): HTMLElement[] => [
   ...document.querySelectorAll<HTMLElement>('.pagination-preview .pv-page'),
@@ -32,6 +34,10 @@ export function PrintDialog({
   const [page, setPage] = useState(0)
   const [rangeMode, setRangeMode] = useState<RangeMode>('all')
   const [customRange, setCustomRange] = useState('')
+  const [subset, setSubset] = useState<PageSubset>('all')
+  const [duplex, setDuplex] = useState<DuplexMode>('simplex')
+  const [copies, setCopies] = useState(1)
+  const [collate, setCollate] = useState(true)
   const [printing, setPrinting] = useState(false)
   const paneRef = useRef<HTMLDivElement | null>(null)
   const hostRef = useRef<HTMLDivElement | null>(null)
@@ -63,13 +69,23 @@ export function PrintDialog({
   const ready = pageCount > 0
 
   /** 0-based page indices selected by the range options (null = invalid custom range) */
-  const selected: number[] | null =
+  const rawSelected: number[] | null =
     rangeMode === 'all'
       ? Array.from({ length: pageCount }, (_x, i) => i)
       : rangeMode === 'current'
         ? [current]
         : parsePrintRange(customRange, pageCount)
-  const rangeInvalid = rangeMode === 'custom' && selected === null
+
+  const selected: number[] | null =
+    rawSelected === null
+      ? null
+      : rawSelected.filter((idx) => {
+          if (subset === 'odd') return (idx + 1) % 2 !== 0
+          if (subset === 'even') return (idx + 1) % 2 === 0
+          return true
+        })
+
+  const rangeInvalid = rangeMode === 'custom' && rawSelected === null
 
   /** Scale the cloned page so the whole sheet fits the preview pane (Word-style single-page fit) */
   const applyZoom = useCallback(() => {
@@ -120,7 +136,11 @@ export function PrintDialog({
     els.forEach((el, i) => el.classList.toggle('pv-print-skip', !sel.has(i)))
     const scale = setPrintZoom()
     try {
-      const r = await window.desktop.print(scale)
+      const r = await window.desktop.print(scale, {
+        copies: copies > 1 ? copies : undefined,
+        duplexMode: duplex,
+        collate: copies > 1 ? collate : undefined,
+      })
       if (r.ok) {
         onClose()
         return
@@ -173,6 +193,30 @@ export function PrintDialog({
           </div>
           <div className="print-options">
             <fieldset>
+              <legend>{t('appPrintCopies')}</legend>
+              <div className="print-copies-row">
+                <input
+                  type="number"
+                  min={1}
+                  max={999}
+                  className="print-copies-input"
+                  value={copies}
+                  onChange={(e) => setCopies(Math.max(1, Math.min(999, parseInt(e.target.value, 10) || 1)))}
+                />
+                {copies > 1 && (
+                  <label className="print-checkbox">
+                    <input
+                      type="checkbox"
+                      checked={collate}
+                      onChange={(e) => setCollate(e.target.checked)}
+                    />
+                    {t('appPrintCollate')}
+                  </label>
+                )}
+              </div>
+            </fieldset>
+
+            <fieldset>
               <legend>{t('appPrintRange')}</legend>
               <label className="print-radio">
                 <input
@@ -211,10 +255,39 @@ export function PrintDialog({
                 onChange={(e) => setCustomRange(e.target.value)}
               />
             </fieldset>
+
+            <fieldset>
+              <legend>{t('appPrintSubset')}</legend>
+              <select
+                className="print-select"
+                value={subset}
+                onChange={(e) => setSubset(e.target.value as PageSubset)}
+              >
+                <option value="all">{t('appPrintSubsetAll')}</option>
+                <option value="odd">{t('appPrintSubsetOdd')}</option>
+                <option value="even">{t('appPrintSubsetEven')}</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>{t('appPrintSides')}</legend>
+              <select
+                className="print-select"
+                value={duplex}
+                onChange={(e) => setDuplex(e.target.value as DuplexMode)}
+              >
+                <option value="simplex">{t('appPrintSidesOneSided')}</option>
+                <option value="longEdge">{t('appPrintSidesDuplexLong')}</option>
+                <option value="shortEdge">{t('appPrintSidesDuplexShort')}</option>
+              </select>
+            </fieldset>
+
             <div className="print-page-count">
               {ready && selected && selected.length > 0
-                ? t('appPrintPageCount', { n: selected.length })
-                : ''}
+                ? t('appPrintSummary', { n: selected.length, copies })
+                : ready && (!selected || selected.length === 0)
+                  ? t('appPrintNoPages')
+                  : ''}
             </div>
           </div>
         </div>
@@ -225,7 +298,7 @@ export function PrintDialog({
             disabled={!ready || !selected || selected.length === 0 || printing}
             onClick={() => void doPrint()}
           >
-            {printing ? t('appPrintProgress') : t('appPrintTitle')}
+            {printing ? t('appPrintProgress') : t('appPrintButton')}
           </button>
         </div>
       </div>

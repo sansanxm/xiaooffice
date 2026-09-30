@@ -1660,16 +1660,32 @@ export function App() {
   const insertModel3dFile = useCallback(() => insertActions.insertModel3dFile(ctxRef.current), [])
   const toggleScreenRecord = useCallback(() => insertActions.toggleScreenRecord(ctxRef.current), [])
 
+  const [transDurationSec, setTransDurationSec] = useState<number>(1.0)
+  const [advanceOnClick, setAdvanceOnClick] = useState<boolean>(true)
+  const [advanceAfterSec, setAdvanceAfterSec] = useState<number | null>(null)
+
   // Reflect the current page's transition effect on page/document changes
   useEffect(() => {
     if (!hasDoc) return
     void window.slidesApi.getTransition(current).then(setTransition)
+    void window.slidesApi.getAdvanceTime(current).then((ms) => {
+      setAdvanceAfterSec(ms != null && ms > 0 ? ms / 1000 : null)
+    })
   }, [hasDoc, current, path])
 
   const applyTransition = useCallback(
-    (kind: TransitionKind, allSlides: boolean) =>
-      animationActions.applyTransition(ctxRef.current, kind, allSlides),
-    [],
+    (
+      kind: TransitionKind,
+      allSlides: boolean,
+      options?: { durationSec?: number; advanceOnClick?: boolean; advanceAfterSec?: number | null },
+    ) =>
+      animationActions.applyTransition(ctxRef.current, kind, allSlides, {
+        durationSec: options?.durationSec ?? transDurationSec,
+        advanceOnClick: options?.advanceOnClick ?? advanceOnClick,
+        advanceAfterSec:
+          options?.advanceAfterSec !== undefined ? options.advanceAfterSec : advanceAfterSec,
+      }),
+    [transDurationSec, advanceOnClick, advanceAfterSec],
   )
 
   // ── Transitions tab: one-shot canvas preview when an effect is clicked (PPT-style) ──
@@ -3241,6 +3257,21 @@ export function App() {
           if (!all) previewTransitionOnCanvas(kind)
         }}
         onPreviewTransition={() => previewTransitionOnCanvas(transition)}
+        transDurationSec={transDurationSec}
+        onTransDurationChange={(sec) => {
+          setTransDurationSec(sec)
+          void applyTransition(transition, false, { durationSec: sec })
+        }}
+        advanceOnClick={advanceOnClick}
+        onAdvanceOnClickChange={(val) => {
+          setAdvanceOnClick(val)
+          void applyTransition(transition, false, { advanceOnClick: val })
+        }}
+        advanceAfterSec={advanceAfterSec}
+        onAdvanceAfterSecChange={(sec) => {
+          setAdvanceAfterSec(sec)
+          void applyTransition(transition, false, { advanceAfterSec: sec })
+        }}
         selectedAnimEffect={selectedAnimEffect}
         selectionIsMedia={
           selectedNode?.type === 'picture' && !!(selectedNode as PictureRenderNode).media
@@ -3913,6 +3944,7 @@ export function App() {
                               position: 'relative',
                               width: slide.widthPx,
                               height: slide.heightPx,
+                              animationDuration: transPreviewKind ? `${transDurationSec}s` : undefined,
                             }}
                             onDragOver={(e) => {
                               if (e.dataTransfer.types.includes('Files')) e.preventDefault()

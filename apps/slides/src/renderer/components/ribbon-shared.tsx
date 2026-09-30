@@ -431,6 +431,15 @@ export interface Props {
   onTransition: (kind: TransitionKind, allSlides: boolean) => void
   /** Re-play the transition effect on the slide canvas */
   onPreviewTransition?: () => void
+  /** Transition duration in seconds */
+  transDurationSec?: number
+  onTransDurationChange?: (sec: number) => void
+  /** Advance on mouse click */
+  advanceOnClick?: boolean
+  onAdvanceOnClickChange?: (val: boolean) => void
+  /** Advance after seconds (null = disabled) */
+  advanceAfterSec?: number | null
+  onAdvanceAfterSecChange?: (sec: number | null) => void
   // ── Animations tab ─────────────────────────────────────────────────────
   /** Selected shape's current animation effect (gallery highlight; null when no selection/no animation) */
   selectedAnimEffect: AnimEffectKind | null

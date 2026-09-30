@@ -1153,6 +1153,12 @@ export function Ribbon({
   transition,
   onTransition,
   onPreviewTransition,
+  transDurationSec = 1.0,
+  onTransDurationChange,
+  advanceOnClick = true,
+  onAdvanceOnClickChange,
+  advanceAfterSec = null,
+  onAdvanceAfterSecChange,
   selectedAnimEffect,
   selectionIsMedia,
   timingAnim,
@@ -2171,17 +2177,91 @@ export function Ribbon({
             </Group>
             <div className="ribbon-sep" />
             <Group label={t('ribbonGroupTiming')}>
-              <button
-                className="rb-big"
-                disabled={!hasDoc}
-                onClick={() => onTransition(transition, true)}
-                data-tip={t('ribbonTransApplyAllTip')}
-              >
-                <span className="rb-big-icon">
-                  <IconApplyAll size={BIG} />
+              <div className="rb-anim-timing">
+                <label>
+                  {t('ribbonTransDuration')}
+                  <input
+                    type="number"
+                    min={0.1}
+                    max={20}
+                    step={0.25}
+                    disabled={!hasDoc || transition === 'none'}
+                    value={transDurationSec}
+                    onChange={(e) => {
+                      const v = parseFloat(e.target.value)
+                      if (Number.isFinite(v) && v > 0) onTransDurationChange?.(v)
+                    }}
+                    title={t('ribbonTransDurationTip')}
+                  />
+                  {t('ribbonSecondsUnit')}
+                </label>
+                <div style={{ height: 2 }} />
+                <button
+                  className="rb-apply-all-btn"
+                  disabled={!hasDoc}
+                  onClick={() => onTransition(transition, true)}
+                  data-tip={t('ribbonTransApplyAllTip')}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 4,
+                    padding: '2px 6px',
+                    fontSize: 11,
+                    background: 'var(--surface-hover)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 3,
+                    cursor: 'pointer',
+                  }}
+                >
+                  <IconApplyAll size={14} />
+                  <span>{t('ribbonApplyToAll')}</span>
+                </button>
+              </div>
+              <div className="ribbon-sep" />
+              <div className="rb-anim-timing">
+                <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--text-muted)' }}>
+                  {t('ribbonTransAdvanceSlide')}
                 </span>
-                <span>{t('ribbonApplyToAll')}</span>
-              </button>
+                <label style={{ cursor: 'pointer' }}>
+                  <input
+                    type="checkbox"
+                    style={{ width: 'auto' }}
+                    disabled={!hasDoc}
+                    checked={advanceOnClick}
+                    onChange={(e) => onAdvanceOnClickChange?.(e.target.checked)}
+                  />
+                  {t('ribbonTransOnMouseClick')}
+                </label>
+                <label style={{ cursor: 'pointer' }}>
+                  <input
+                    type="checkbox"
+                    style={{ width: 'auto' }}
+                    disabled={!hasDoc}
+                    checked={advanceAfterSec !== null && advanceAfterSec > 0}
+                    onChange={(e) => {
+                      if (e.target.checked) {
+                        onAdvanceAfterSecChange?.(5.0)
+                      } else {
+                        onAdvanceAfterSecChange?.(null)
+                      }
+                    }}
+                  />
+                  {t('ribbonTransAfter')}
+                  <input
+                    type="number"
+                    min={0.5}
+                    max={3600}
+                    step={1}
+                    disabled={!hasDoc || advanceAfterSec === null || advanceAfterSec <= 0}
+                    value={advanceAfterSec ?? 5}
+                    onChange={(e) => {
+                      const v = parseFloat(e.target.value)
+                      if (Number.isFinite(v) && v > 0) onAdvanceAfterSecChange?.(v)
+                    }}
+                  />
+                  {t('ribbonSecondsUnit')}
+                </label>
+              </div>
             </Group>
           </>
         ) : tab === 'animations' ? (

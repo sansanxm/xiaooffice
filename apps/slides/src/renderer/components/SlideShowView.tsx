@@ -96,6 +96,8 @@ export function SlideShowView({
   const [covered, setCovered] = useState(false)
   /** Per-page transition effects (prefetched once when the show starts, zero IPC on page turns) */
   const transRef = useRef<TransitionKind[]>([])
+  /** Per-page auto-advance times in ms (prefetched once) */
+  const advTimesRef = useRef<Array<number | null>>([])
   /** Per-page animation lists (also prefetched once) */
   const [allAnims, setAllAnims] = useState<AnimationItem[][] | null>(null)
   /** Per-page element Morph pairing keys (also prefetched once) */
@@ -128,6 +130,13 @@ export function SlideShowView({
     let cancelled = false
     void Promise.all(slides.map((_, i) => window.slidesApi.getTransition(i))).then((kinds) => {
       if (!cancelled) transRef.current = kinds
+    })
+    void Promise.all(
+      slides.map((_, i) =>
+        window.slidesApi?.getAdvanceTime ? window.slidesApi.getAdvanceTime(i) : Promise.resolve(null),
+      ),
+    ).then((times) => {
+      if (!cancelled) advTimesRef.current = times
     })
     void Promise.all(slides.map((_, i) => window.slidesApi.getAnimations(i))).then((lists) => {
       if (!cancelled) setAllAnims(lists)
@@ -335,6 +344,20 @@ export function SlideShowView({
     }
     if (pos > 0) goTo(pos - 1, false)
   }, [ended, pos, goTo])
+
+  // Auto-advance timer: if the current slide has an auto-advance time set, automatically advance
+  useEffect(() => {
+    if (ended || rehearseRef.current) return
+    const target = order[pos]
+    if (target == null) return
+    const ms = advTimesRef.current[target]
+    if (ms != null && ms > 0) {
+      const timer = window.setTimeout(() => {
+        next()
+      }, ms)
+      return () => window.clearTimeout(timer)
+    }
+  }, [pos, ended, order, next])
 
   // Element hyperlinks during the show (PowerPoint behavior): a click on a linked element follows
   // the link instead of advancing — slide links (Zoom/jump) go to that page, URLs open in the browser

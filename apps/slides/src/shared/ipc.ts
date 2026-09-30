@@ -610,6 +610,9 @@ export interface SetAnimationsOp {
 export interface SetTransitionOp {
   slideIndex: number
   kind: TransitionKind
+  durationSec?: number
+  advanceOnClick?: boolean
+  advanceAfterSec?: number | null
 }
 
 /** Batch-write each page's auto-advance time (<p:transition advTm>, ms; ms=null clears). Used by rehearsal timing save. */
@@ -1566,6 +1569,8 @@ export interface SlidesApi {
   setTransition: (op: SetTransitionOp) => Promise<boolean>
   /** The current page's transition effect (echoed on page switch) */
   getTransition: (slideIndex: number) => Promise<TransitionKind>
+  /** Read the auto-advance time (<p:transition advTm>, ms; null when unset) */
+  getAdvanceTime: (slideIndex: number) => Promise<number | null>
   /** Batch-write each page's auto-advance time (rehearsal timing save; the saved pptx auto-advances in PowerPoint shows); returns success */
   setAdvanceTimes: (op: SetAdvanceTimesOp) => Promise<boolean>
   /** The current page's animation list (read by the Animations tab / during shows) */

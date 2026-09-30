@@ -15,6 +15,7 @@ import {
   IconPageBreak,
   IconPageSize,
   IconPosition,
+  IconPrint,
   IconWrapText,
 } from './icons'
 
@@ -148,6 +149,7 @@ interface LayoutTabProps extends TabProps {
   ) => void
   mirrorMargins: boolean
   onMirrorMargins: (on: boolean) => void
+  onPrint?: () => void
 }
 
 export function LayoutTab({
@@ -162,6 +164,7 @@ export function LayoutTab({
   onPaperSizeAll,
   mirrorMargins,
   onMirrorMargins,
+  onPrint,
 }: LayoutTabProps) {
   const { t } = useI18n()
   const { format } = useMeasurement()
@@ -596,6 +599,19 @@ export function LayoutTab({
               </div>
             )}
           </div>
+          {onPrint && (
+            <button
+              className="rb-big"
+              disabled={!enabled}
+              data-tip={t('ribbonPrintTip')}
+              onClick={onPrint}
+            >
+              <span className="rb-big-icon">
+                <IconPrint size={BIG} />
+              </span>
+              <span>{t('ribbonPrint')}</span>
+            </button>
+          )}
         </div>
         <div className="ribbon-group-label">{t('ribbonGroupPageSetup')}</div>
       </div>

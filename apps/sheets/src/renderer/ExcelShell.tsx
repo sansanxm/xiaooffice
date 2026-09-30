@@ -61,6 +61,8 @@ import type { ConsolidateConfig } from './consolidate'
 import { HeaderFooterDialog, type HeaderFooterResult } from './HeaderFooterDialog'
 import type { HeaderFooterParts } from './edit-journal'
 import { useModalDialog } from './modal-dialog'
+import { PrintPreviewDialog } from './components/PrintPreviewDialog'
+import type { PageLayoutContext } from './page-layout-actions'
 
 // No File tab: file commands live in the macOS
 // application menu (File → Open/Save/Save As) and the toolbar icons.
@@ -291,6 +293,8 @@ interface ExcelShellProps {
   /// Session page-layout settings of the active sheet, echoed by the Page
   /// Layout tab's controls (untouched fields show the app default).
   readonly pageLayout: PageLayoutEcho
+  /// Context provider for page setup operations like Print and Print Preview
+  readonly pageLayoutContext?: () => PageLayoutContext
   /// Manual-recalc mode echo for the Calculation Options menu.
   readonly calcManual: boolean
   /// Goal Seek solve; rejects with a user-facing Error message.
@@ -392,6 +396,7 @@ export function ExcelShell({
   onAutoSaveChange,
   selectedChart,
   pageLayout,
+  pageLayoutContext,
   calcManual,
   onGoalSeek,
 }: ExcelShellProps): React.JSX.Element {
@@ -428,6 +433,7 @@ export function ExcelShell({
   const [showGoTo, setShowGoTo] = useState(false)
   const [showHeaderFooter, setShowHeaderFooter] = useState(false)
   const [showAllowEditRanges, setShowAllowEditRanges] = useState(false)
+  const [showPrintPreview, setShowPrintPreview] = useState(false)
   /// Non-null while the Chart Design → Add Chart Element text prompt is open.
   const [chartTextTarget, setChartTextTarget] = useState<ChartTextTarget | null>(null)
   const onCommandRef = useRef(onCommand)
@@ -455,6 +461,12 @@ export function ExcelShell({
         if (action.dialog === 'formatCells') setShowFormatCells(true)
         else setShowGoTo(true)
         return
+      }
+      if (action.command === 'print' || action.command === 'print-preview') {
+        if (pageLayoutContext) {
+          setShowPrintPreview(true)
+          return
+        }
       }
       onCommand(action.command)
     }
@@ -657,6 +669,7 @@ export function ExcelShell({
             else if (command === 'chart-element-title') setChartTextTarget('title')
             else if (command === 'chart-element-axis-cat') setChartTextTarget('axis-category')
             else if (command === 'chart-element-axis-val') setChartTextTarget('axis-value')
+            else if (command === 'print' || command === 'print-preview') setShowPrintPreview(true)
             else onCommand(command)
           }}
           onAiRun={(nextPrompt) => {
@@ -929,6 +942,12 @@ export function ExcelShell({
           initialFooter={pageLayout.footer ?? null}
           onApply={onApplyHeaderFooter}
           onClose={() => setShowHeaderFooter(false)}
+        />
+      )}
+      {showPrintPreview && pageLayoutContext && (
+        <PrintPreviewDialog
+          ctx={pageLayoutContext()}
+          onClose={() => setShowPrintPreview(false)}
         />
       )}
     </main>
@@ -1860,6 +1879,20 @@ function Ribbon({
           </div>
         </RibbonGroup>
         <RibbonGroup label={t('appGroupPageSetup')}>
+          <RibbonButton
+            large
+            label={t('appPrintBtn')}
+            detail={t('appPrintBtnTip')}
+            symbol="⎙"
+            onClick={() => onCommand('print')}
+          />
+          <RibbonButton
+            large
+            label={t('appPrintPreviewBtn')}
+            detail={t('appPrintPreviewBtnTip')}
+            symbol="🔎"
+            onClick={() => onCommand('print-preview')}
+          />
           {largeMenu(
             t('appMargins'),
             '⿴',

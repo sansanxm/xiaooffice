@@ -99,6 +99,7 @@ import {
   getSlideComments,
   getSlideNotes,
   getSlideTransition,
+  getSlideAdvanceTime,
   elementSpid,
   getSlideAnimations,
   listEmbeddedFonts,
@@ -4085,9 +4086,14 @@ export function registerSlidesIpc(): void {
     const idxs =
       op.slideIndex === -1 ? slides.map((_, i) => i) : slides[op.slideIndex] ? [op.slideIndex] : []
     if (idxs.length === 0) return false
-    const r = sessionTxn(session, {
-      ops: idxs.map((i) => ({ op: 'setTransition', target: { slide: i }, kind: op.kind })),
-    })
+    const ops: any[] = idxs.map((i) => ({ op: 'setTransition', target: { slide: i }, kind: op.kind }))
+    if (op.advanceAfterSec !== undefined) {
+      const ms = op.advanceAfterSec != null ? Math.round(op.advanceAfterSec * 1000) : null
+      for (const i of idxs) {
+        ops.push({ op: 'setAdvanceTime', target: { slide: i }, ms })
+      }
+    }
+    const r = sessionTxn(session, { ops })
     return r !== null
   })
 
@@ -4095,6 +4101,12 @@ export function registerSlidesIpc(): void {
     const session = sessions.get(e.sender.id)
     const slide = session?.opened.deck.slides[slideIndex]
     return slide ? getSlideTransition(slide) : 'none'
+  })
+
+  ipcMain.handle('slides:get-advance-time', (e, slideIndex: number) => {
+    const session = sessions.get(e.sender.id)
+    const slide = session?.opened.deck.slides[slideIndex]
+    return slide ? getSlideAdvanceTime(slide) : null
   })
 
   // Rehearsal timing save: batch-write each page's auto-advance time (<p:transition advTm>, ms)

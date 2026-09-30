@@ -12,10 +12,16 @@ export async function applyTransition(
   ctx: ActionCtx,
   kind: TransitionKind,
   allSlides: boolean,
+  options?: {
+    durationSec?: number
+    advanceOnClick?: boolean
+    advanceAfterSec?: number | null
+  },
 ): Promise<void> {
   const ok = await window.slidesApi.setTransition({
     slideIndex: allSlides ? -1 : ctx.current,
     kind,
+    ...options,
   })
   if (ok) {
     ctx.setTransition(kind)

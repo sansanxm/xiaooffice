@@ -127,6 +127,7 @@ import type {
   CreateDocumentRequest,
   CreateDocumentResult,
   DecryptOpenResult,
+  DocsPrintOptions,
   DocsTabInfo,
   MenuCommand,
   OpenDocxResult,
@@ -2394,13 +2395,29 @@ export function registerDocsIpc(): void {
       ? { scaleFactor: Math.round(scale * 100) }
       : {}
 
-  ipcMain.handle('docs:print', async (event, scale?: number) => {
+  ipcMain.handle('docs:print', async (event, scale?: number, options?: DocsPrintOptions) => {
     // print the calling tab's own content; zero margins — the docx page padding provides them.
     // Resolves when the system dialog is dismissed; the print dialog stays open on cancel
     // (ok=false without error) and surfaces real failures.
     return new Promise<{ ok: boolean; error?: string }>((resolve) => {
+      const printOpts: Record<string, unknown> = {
+        margins: { marginType: 'none' },
+        ...printScale(scale),
+      }
+      if (options?.copies && Number.isInteger(options.copies) && options.copies > 0) {
+        printOpts.copies = options.copies
+      }
+      if (options?.duplexMode) {
+        printOpts.duplexMode = options.duplexMode
+      }
+      if (typeof options?.collate === 'boolean') {
+        printOpts.collate = options.collate
+      }
+      if (typeof options?.landscape === 'boolean') {
+        printOpts.landscape = options.landscape
+      }
       event.sender.print(
-        { margins: { marginType: 'none' }, ...printScale(scale) },
+        printOpts,
         (success, failureReason) => {
           resolve({
             ok: success,

@@ -4730,6 +4730,7 @@ export function App({
         onCreateConsolidate={(config) => handleCreateConsolidateImpl(dataToolsContext(), config)}
         onGetConsolidateDefault={() => consolidateDefaultReferenceImpl(dataToolsContext())}
         onApplyHeaderFooter={(result) => handleApplyHeaderFooterImpl(pageLayoutContext(), result)}
+        pageLayoutContext={pageLayoutContext}
       />
       {openingWorkbook && (
         <div className="workbook-opening-screen" role="status" aria-live="polite">

@@ -275,6 +275,7 @@ interface RibbonProps {
   ) => void
   mirrorMargins: boolean
   onMirrorMargins: (on: boolean) => void
+  onPrint?: () => void
   pageColor: string | null
   onPageColor: (hex: string | null) => void
   /** Design → Watermark / Themes */
@@ -708,6 +709,7 @@ function RibbonInner({
   onPaperSizeAll,
   mirrorMargins,
   onMirrorMargins,
+  onPrint,
   pageColor,
   onPageColor,
   watermark,
@@ -4108,6 +4110,7 @@ function RibbonInner({
             onPaperSizeAll={onPaperSizeAll}
             mirrorMargins={mirrorMargins}
             onMirrorMargins={onMirrorMargins}
+            onPrint={onPrint}
           />
         ) : tab === 'references' ? (
           <ReferencesTab

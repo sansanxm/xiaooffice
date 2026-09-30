@@ -32,6 +32,7 @@ import {
 import {
   clampTitleRows,
   resolveEffectivePageSetup,
+  type EffectivePageSetup,
   type HeaderFooterPictureSlot,
 } from './print-settings'
 import { settleVisualNodes, snapshotPrintVisuals } from './print-visuals'
@@ -350,11 +351,33 @@ export function handleApplyHeaderFooter(
   return null
 }
 
+/// Gets the active sheet's effective page setup
+export function getEffectivePageSetup(ctx: PageLayoutContext): EffectivePageSetup | null {
+  const runtime = ctx.univerRef.current
+  const worksheet = runtime?.univerAPI.getActiveWorkbook()?.getActiveSheet()
+  if (!runtime || !worksheet) return null
+  const state = ctx.lazyWorkbookRef.current
+  const sheetId = worksheet.getSheetId()
+  const journal = state?.editJournal.pageSetup.get(sheetId) ?? {}
+  const fileSetup = state?.sheetFilePageSetups.get(sheetId) ?? null
+  const fileSheet = state?.file.sheets.find((sheet) => sheet.id === sheetId)
+  return resolveEffectivePageSetup(
+    journal,
+    fileSetup,
+    {
+      ...(fileSheet?.printArea === undefined ? {} : { printArea: fileSheet.printArea }),
+      ...(fileSheet?.printTitles === undefined ? {} : { printTitles: fileSheet.printTitles }),
+    },
+    state?.editJournal.structuralOps.get(sheetId) ?? [],
+  )
+}
+
 /// The active sheet laid out as print HTML with its Page Layout settings, or
 /// null (after a status message) when the workbook is not ready for it.
-async function activeSheetPrintPayload(
+export async function activeSheetPrintPayload(
   ctx: PageLayoutContext,
   messages: { readonly notLoaded: string; readonly preparing: string },
+  overrideSetup?: Partial<EffectivePageSetup>,
 ): Promise<WorkbookExportPdfRequest | null> {
   const runtime = ctx.univerRef.current
   const worksheet = runtime?.univerAPI.getActiveWorkbook()?.getActiveSheet()
@@ -372,7 +395,7 @@ async function activeSheetPrintPayload(
   const journal = state?.editJournal.pageSetup.get(sheetId) ?? {}
   const fileSetup = state?.sheetFilePageSetups.get(sheetId) ?? null
   const fileSheet = state?.file.sheets.find((sheet) => sheet.id === sheetId)
-  const setup = resolveEffectivePageSetup(
+  const baseSetup = resolveEffectivePageSetup(
     journal,
     fileSetup,
     {
@@ -381,6 +404,7 @@ async function activeSheetPrintPayload(
     },
     state?.editJournal.structuralOps.get(sheetId) ?? [],
   )
+  const setup = overrideSetup ? { ...baseSetup, ...overrideSetup } : baseSetup
   const baseName = (state?.file.name ?? 'Book1').replace(/\.[^.]+$/, '')
   const pictures = state
     ? await loadHeaderFooterPictures(state.file.sessionId, setup.headerFooterPictures)

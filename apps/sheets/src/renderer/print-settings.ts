@@ -65,7 +65,7 @@ export interface EffectivePageSetup {
 }
 
 /// Inches, mirroring the gateway's margin presets.
-const MARGIN_PRESETS: Record<'normal' | 'wide' | 'narrow', PrintMargins> = {
+export const MARGIN_PRESETS: Record<'normal' | 'wide' | 'narrow', PrintMargins> = {
   normal: { left: 0.7, right: 0.7, top: 0.75, bottom: 0.75, header: 0.3, footer: 0.3 },
   wide: { left: 1, right: 1, top: 1, bottom: 1, header: 0.5, footer: 0.5 },
   narrow: { left: 0.25, right: 0.25, top: 0.75, bottom: 0.75, header: 0.3, footer: 0.3 },

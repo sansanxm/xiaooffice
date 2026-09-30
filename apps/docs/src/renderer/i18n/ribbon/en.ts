@@ -762,6 +762,8 @@ export const en = {
   "ribbonProtectDoc": "Protect Document",
   "ribbonProtectDocTip": "Protect document: open/modify passwords, editing restrictions and privacy",
   "ribbonGroupProtect": "Protect",
+  "ribbonPrint": "Print",
+  "ribbonPrintTip": "Print document or customize print settings (Ctrl+P)",
   "ribbonPrintLayout": "Print Layout",
   "ribbonPrintLayoutTip": "Print Layout: show the document at page size",
   "ribbonWebLayout": "Web Layout",

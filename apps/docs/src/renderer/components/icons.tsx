@@ -1411,6 +1411,17 @@ export function IconSplit(props: IconProps) {
   )
 }
 
+export function IconPrint(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="M4 6V2h8v4" />
+      <rect x="2" y="6" width="12" height="6" rx="1" />
+      <path d="M4 10h8v4H4z" />
+      <circle cx="11.5" cy="8.5" r="0.5" fill="currentColor" />
+    </Svg>
+  )
+}
+
 export function IconPrintLayout(props: IconProps) {
   return (
     <Svg {...props}>

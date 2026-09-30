@@ -6844,6 +6844,7 @@ export function App() {
         tableGridlines={tableGridlines}
         activeSection={sections.length > 1 ? activeSection : null}
         mirrorMargins={mirrorMargins}
+        onPrint={() => setShowPrintDialog(true)}
         pageColor={pageColor}
         watermark={watermark}
         themeFonts={themeFonts}

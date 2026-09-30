@@ -2383,6 +2383,9 @@ export const workbookExportPdfRequestSchema = z
     /// Headless export mode only (--headless-export): write here instead of
     /// opening the save dialog. Ignored by a normal GUI session.
     outPath: z.string().min(1).max(4096).optional(),
+    copies: z.number().int().min(1).max(999).optional(),
+    duplexMode: z.enum(['simplex', 'shortEdge', 'longEdge']).optional(),
+    collate: z.boolean().optional(),
   })
   .strict()
 

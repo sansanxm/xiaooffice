@@ -764,6 +764,8 @@ export const vi = {
   "ribbonProtectDoc": "Bảo vệ tài liệu",
   "ribbonProtectDocTip": "Bảo vệ tài liệu: mật khẩu mở/chỉnh sửa, giới hạn quyền chỉnh sửa và quyền riêng tư",
   "ribbonGroupProtect": "Bảo vệ",
+  "ribbonPrint": "In ấn",
+  "ribbonPrintTip": "In tài liệu hoặc tùy chỉnh bản in (Ctrl+P)",
   "ribbonPrintLayout": "Bố cục in",
   "ribbonPrintLayoutTip": "Bố cục in: hiển thị tài liệu theo kích thước trang thực",
   "ribbonWebLayout": "Bố cục web",
