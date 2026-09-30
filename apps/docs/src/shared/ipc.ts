@@ -289,11 +289,21 @@ export interface SpellLanguages {
   available: string[]
 }
 
+export interface PrinterInfo {
+  name: string
+  displayName?: string
+  description?: string
+  status?: number
+  isDefault?: boolean
+}
+
 export interface DocsPrintOptions {
   copies?: number
   duplexMode?: 'simplex' | 'shortEdge' | 'longEdge'
   collate?: boolean
   landscape?: boolean
+  deviceName?: string
+  silent?: boolean
 }
 
 export interface DesktopApi {
@@ -438,6 +448,8 @@ export interface DesktopApi {
   fontMetrics(family: string): Promise<FaceVerticalMetrics | null>
   getAiSettings(): Promise<AiSettings>
   setAiSettings(settings: AiSettings): Promise<void>
+  /** list of connected printers from the operating system */
+  getPrinters(): Promise<PrinterInfo[]>
   /** system print dialog for the current window; ok=false without error = canceled.
    *  scale: print scale inverting the preview's print zoom (print-zoom.ts) */
   print(scale?: number, options?: DocsPrintOptions): Promise<{ ok: boolean; error?: string }>

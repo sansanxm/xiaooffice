@@ -4,6 +4,7 @@ import { buildPlan } from '../src/renderer/components/morph-plan'
 
 function makeSlide(nodes: RenderNode[]): RenderSlide {
   return {
+    scale: 1,
     widthPx: 960,
     heightPx: 540,
     background: { kind: 'solid', color: '#ffffff' },
@@ -50,7 +51,7 @@ function makeShapeNode(opts: {
     id: opts.id,
     sourceId: opts.sourceId,
     type: 'shape',
-    name: opts.name,
+    ...(opts.name ? { name: opts.name } : {} as any),
     box: {
       x,
       y,
@@ -59,6 +60,8 @@ function makeShapeNode(opts: {
       rotationDeg,
       centerX: x + w / 2,
       centerY: y + h / 2,
+      flipH: false,
+      flipV: false,
     },
     presetGeometry: opts.presetGeometry ?? 'rect',
     placeholder: opts.placeholder,
@@ -95,6 +98,8 @@ function makePicNode(opts: {
       rotationDeg: 0,
       centerX: x + w / 2,
       centerY: y + h / 2,
+      flipH: false,
+      flipV: false,
     },
   }
 }

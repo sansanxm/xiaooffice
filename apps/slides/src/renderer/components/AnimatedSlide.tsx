@@ -14,6 +14,8 @@ import type { Context } from 'konva/lib/Context'
 import type { RenderNode, RenderSlide, ShapeRenderNode } from '@genoffice/pptx-render'
 import type { AnimationItem } from '../../shared/ipc'
 import {
+  animClassOf,
+  NORMAL,
   buildSteps,
   computeMediaCommands,
   computeNodeStates,
@@ -59,17 +61,79 @@ export interface AnimPlayer {
   ) => void
 }
 
-export function useAnimPlayer(canvasHpx: number, canvasWpx?: number): AnimPlayer {
+export function useAnimPlayer(
+  canvasHpx: number,
+  canvasWpx?: number,
+  pageItems?: AnimationItem[],
+  pageMode: 'fresh' | 'all' = 'fresh',
+  pageKey?: string | number,
+): AnimPlayer {
+  const [prevKey, setPrevKey] = useState<string | number | undefined>(pageKey)
+  const prevItemsRef = useRef(pageItems)
   const [state, setState] = useState<{
     steps: AnimStep[]
     played: number
     startedAt: number | null
     epoch: number
     mediaBase: number
-  }>({ steps: [], played: 0, startedAt: null, epoch: 0, mediaBase: 0 })
+  }>(() => {
+    const steps = pageItems ? buildSteps(pageItems) : []
+    const isAll = pageMode === 'all'
+    return isAll
+      ? {
+          steps,
+          played: steps.length,
+          startedAt: null,
+          epoch: 0,
+          mediaBase: computeMediaCommands(steps, steps.length, null).length,
+        }
+      : {
+          steps,
+          played: 0,
+          startedAt: steps[0]?.auto ? performance.now() : null,
+          epoch: 0,
+          mediaBase: 0,
+        }
+  })
   const [elapsed, setElapsed] = useState(0)
   const stateRef = useRef(state)
   stateRef.current = state
+
+  // Synchronous page switch: if pageKey changed during navigation, immediately
+  // initialize the new page's animation steps before painting, eliminating the
+  // split-second flash of un-animated entrance shapes.
+  if (pageKey !== undefined && pageKey !== prevKey) {
+    setPrevKey(pageKey)
+    prevItemsRef.current = pageItems
+    const steps = buildSteps(pageItems ?? [])
+    const isAll = pageMode === 'all'
+    setState({
+      steps,
+      played: isAll ? steps.length : 0,
+      startedAt: !isAll && steps[0]?.auto ? performance.now() : null,
+      epoch: state.epoch + 1,
+      mediaBase: isAll ? computeMediaCommands(steps, steps.length, null).length : 0,
+    })
+    setElapsed(0)
+  } else if (
+    pageItems &&
+    pageItems !== prevItemsRef.current &&
+    state.steps.length === 0 &&
+    pageItems.length > 0
+  ) {
+    // Late-arriving prefetched animations for the initial page
+    prevItemsRef.current = pageItems
+    const steps = buildSteps(pageItems)
+    const isAll = pageMode === 'all'
+    setState({
+      steps,
+      played: isAll ? steps.length : 0,
+      startedAt: !isAll && steps[0]?.auto ? performance.now() : null,
+      epoch: state.epoch + 1,
+      mediaBase: isAll ? computeMediaCommands(steps, steps.length, null).length : 0,
+    })
+    setElapsed(0)
+  }
 
   // rAF drives the current step's progress; when finished, stops at step end automatically (awaiting the next trigger)
   useEffect(() => {
@@ -191,11 +255,13 @@ export function AnimatedSlideStage({
   images,
   width,
   states,
+  animations,
 }: {
   slide: RenderSlide
   images: Map<string, HTMLImageElement>
   width: number
   states: Map<string, NodeAnimState>
+  animations?: AnimationItem[]
 }) {
   const scale = width / slide.widthPx
   const h = slide.heightPx * scale
@@ -209,6 +275,20 @@ export function AnimatedSlideStage({
     arr.push({ para: pk.para, st })
     paraStates.set(pk.sourceId, arr)
   }
+
+  // Pre-index entrance animation items: any shape with an entrance effect that is not yet
+  // in states must start hidden, so it never flashes into view on page entry.
+  const entranceHiddenIds = useMemo(() => {
+    if (!animations || animations.length === 0) return new Set<string>()
+    const set = new Set<string>()
+    for (const item of animations) {
+      if (animClassOf(item.effect) === 'entrance' && item.paragraph == null) {
+        set.add(item.sourceId)
+      }
+    }
+    return set
+  }, [animations])
+
   return (
     <Stage width={width} height={h} listening={false} style={{ pointerEvents: 'none' }}>
       <Layer scaleX={scale} scaleY={scale} listening={false}>
@@ -219,15 +299,21 @@ export function AnimatedSlideStage({
           height={slide.heightPx}
           {...(Object.keys(bg).length ? bg : { fill: '#ffffff' })}
         />
-        {slide.nodes.map((n) => (
-          <AnimNode
-            key={n.id}
-            node={n}
-            images={images}
-            st={n.decoration ? undefined : states.get(n.sourceId)}
-            paraSts={n.decoration ? undefined : paraStates.get(n.sourceId)}
-          />
-        ))}
+        {slide.nodes.map((n) => {
+          let nodeState = n.decoration ? undefined : states.get(n.sourceId)
+          if (!nodeState && entranceHiddenIds.has(n.sourceId)) {
+            nodeState = { ...NORMAL, hidden: true }
+          }
+          return (
+            <AnimNode
+              key={n.id}
+              node={n}
+              images={images}
+              st={nodeState}
+              paraSts={n.decoration ? undefined : paraStates.get(n.sourceId)}
+            />
+          )
+        })}
       </Layer>
     </Stage>
   )

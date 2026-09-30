@@ -9989,6 +9989,22 @@ body.docs-crop-active
   border-color: var(--accent);
 }
 
+.print-options .print-printer-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.print-options .print-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+
 .print-page-count {
   margin-top: auto;
   padding: 4px 2px 0;

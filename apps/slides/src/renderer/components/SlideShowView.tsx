@@ -164,8 +164,16 @@ export function SlideShowView({
     }
   }, [slides])
 
-  const slide = slides[order[pos]!]
-  const player = useAnimPlayer(slide?.heightPx ?? 540, slide?.widthPx ?? 960)
+  const curSlideIdx = order[pos]!
+  const curSlideAnims = allAnims?.[curSlideIdx] ?? []
+  const slide = slides[curSlideIdx]
+  const player = useAnimPlayer(
+    slide?.heightPx ?? 540,
+    slide?.widthPx ?? 960,
+    curSlideAnims,
+    navModeRef.current,
+    curSlideIdx,
+  )
 
   // ── Rehearsal timing: start timing the first page on entry; accumulate the previous page's dwell on turn; redraw the timer bar every 500ms ──
   const rehearseRef = useRef<RehearseTiming | null>(null)
@@ -185,10 +193,12 @@ export function SlideShowView({
     }
   }, [curIdx])
 
-  // Load the page's animations when the page changes/prefetch completes (forward = initial state, back/jump = finished state)
+  // Keep fallback load in case animations arrive late
   useEffect(() => {
-    player.load(allAnims?.[order[pos]!] ?? [], navModeRef.current)
-  }, [allAnims, pos, order, player.load]) // eslint-disable-line react-hooks/exhaustive-deps
+    if (allAnims?.[curSlideIdx]) {
+      player.load(allAnims[curSlideIdx], navModeRef.current)
+    }
+  }, [allAnims, curSlideIdx, player.load]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const exitRef = useRef(() => {})
   exitRef.current = () => {
@@ -547,6 +557,7 @@ export function SlideShowView({
                 to={slides[morph.toIdx]!}
                 fromKeys={keysRef.current[morph.fromIdx] ?? []}
                 toKeys={keysRef.current[morph.toIdx] ?? []}
+                toAnims={allAnims?.[morph.toIdx] ?? []}
                 images={images}
                 width={fitW}
                 onDone={() => setMorph(null)}
@@ -574,6 +585,7 @@ export function SlideShowView({
                   images={images}
                   width={fitW}
                   states={player.states}
+                  animations={curSlideAnims}
                 />
                 <ShowMediaLayer
                   key={order[pos]!}

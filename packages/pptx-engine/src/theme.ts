@@ -9,6 +9,7 @@ import { asXmlNode, xmlArray, type XmlNode } from './xml-utils'
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' })
 
 export interface Theme {
+  name?: string
   /** clrScheme: dk1/lt1/dk2/lt2/accent1..6/hlink/folHlink → #RRGGBB */
   colors: Record<string, string>
   /**

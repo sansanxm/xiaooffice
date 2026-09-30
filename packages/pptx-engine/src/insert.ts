@@ -41,6 +41,7 @@ export interface NewElementBodyPr {
 }
 
 export interface NewElementOptions {
+  name?: string
   kind: NewShapeKind
   offset: EmuRect
   paragraphs?: Paragraph[]

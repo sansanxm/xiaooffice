@@ -133,15 +133,25 @@ export function PresenterView({
     }
   }, [slides])
 
-  const slide = slides[order[pos]!]
-  const player = useAnimPlayer(slide?.heightPx ?? 540, slide?.widthPx ?? 960)
+  const curSlideIdx = order[pos]!
+  const curSlideAnims = allAnims?.[curSlideIdx] ?? []
+  const slide = slides[curSlideIdx]
+  const player = useAnimPlayer(
+    slide?.heightPx ?? 540,
+    slide?.widthPx ?? 960,
+    curSlideAnims,
+    navModeRef.current,
+    curSlideIdx,
+  )
 
   // Load the page's animations when the page changes/prefetch completes (forward = initial state, back/jump = finished state);
   // loadedRef ticks with player.epoch; the broadcast effect uses it to read the "in place" page number
   const loadedRef = useRef<{ idx: number; fresh: boolean }>({ idx: order[pos]!, fresh: true })
   useEffect(() => {
     loadedRef.current = { idx: order[pos]!, fresh: navModeRef.current === 'fresh' }
-    player.load(allAnims?.[order[pos]!] ?? [], navModeRef.current)
+    if (allAnims?.[order[pos]!]) {
+      player.load(allAnims[order[pos]!], navModeRef.current)
+    }
   }, [allAnims, pos, order, player.load]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Multi-screen: open the audience window on entry, close on exit ─────────────
@@ -484,6 +494,7 @@ export function PresenterView({
                   images={images}
                   width={fitW}
                   states={player.states}
+                  animations={curSlideAnims}
                 />
                 <ShowMediaLayer
                   key={order[pos]!}

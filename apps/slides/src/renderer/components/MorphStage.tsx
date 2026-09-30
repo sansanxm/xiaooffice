@@ -17,7 +17,8 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Stage, Layer, Rect, Group } from 'react-konva'
 import type { RenderSlide } from '@genoffice/pptx-render'
-import type { ShapeKey } from '../../shared/ipc'
+import type { AnimationItem, ShapeKey } from '../../shared/ipc'
+import { animClassOf } from '../animation-play'
 import { fillToKonva } from '../konva-adapter'
 import { StaticNode } from '../NodeBody'
 import {
@@ -37,6 +38,7 @@ export function MorphStage({
   to,
   fromKeys,
   toKeys,
+  toAnims,
   images,
   width,
   onDone,
@@ -45,6 +47,7 @@ export function MorphStage({
   to: RenderSlide
   fromKeys?: ShapeKey[]
   toKeys?: ShapeKey[]
+  toAnims?: AnimationItem[]
   images: Map<string, HTMLImageElement>
   width: number
   /** Tween finished (guaranteed to fire only once) */
@@ -111,6 +114,10 @@ export function MorphStage({
           if (n.decoration) return <StaticNode key={n.id} node={n} images={images} />
           const f = plan.fromOf.get(n.sourceId)
           if (!f) {
+            const isEntrance = toAnims?.some(
+              (a) => a.sourceId === n.sourceId && animClassOf(a.effect) === 'entrance',
+            )
+            if (isEntrance) return null
             return (
               <Group key={n.id} opacity={q} listening={false}>
                 <StaticNode node={n} images={images} />

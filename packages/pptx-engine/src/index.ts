@@ -18,7 +18,10 @@ import {
   parsePlaceholderMap,
   parseMasterTextStyles,
   parseDefaultTextStyle,
+  type PlaceholderMap,
+  type MasterTextStyles,
   type TextStyleLevels,
+  type TextStyleLevels as TextStyleDefaults,
 } from './placeholder'
 import { isPresetShapeType } from './preset-shape-types'
 import { custGeomXml, parseCustGeom, validCustGeomPath, type CustGeomPath } from './custgeom'

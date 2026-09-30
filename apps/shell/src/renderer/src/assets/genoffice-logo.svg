@@ -1,13 +1,23 @@
 <svg width="1091" height="240" viewBox="0 0 1091 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="logoX" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
   <!-- Xiao Office App Icon -->
-  <rect width="240" height="240" rx="54" fill="black"/>
+  <rect width="240" height="240" rx="54" fill="url(#logoBg)"/>
   <!-- Layered document sheets -->
-  <rect x="52" y="46" width="90" height="114" rx="14" fill="white" transform="rotate(-7 52 46)"/>
-  <rect x="96" y="58" width="92" height="122" rx="14" fill="white"/>
-  <!-- Stylized X and AI Star in black cutouts -->
-  <path d="M106 78L130 119L106 160H118L136 129L154 160H166L142 119L166 78H154L136 109L118 78H106Z" fill="black"/>
+  <rect x="52" y="46" width="90" height="114" rx="14" fill="#FFFFFF" fill-opacity="0.85" transform="rotate(-7 52 46)"/>
+  <rect x="96" y="58" width="92" height="122" rx="14" fill="#FFFFFF"/>
+  <!-- Stylized X -->
+  <path d="M106 78L130 119L106 160H118L136 129L154 160H166L142 119L166 78H154L136 109L118 78H106Z" fill="url(#logoX)"/>
   <!-- Sparkles -->
-  <path d="M136 68C136 75 140 75 140 75C140 75 136 75 136 82C136 75 132 75 132 75C132 75 136 75 136 68Z" fill="black"/>
+  <path d="M136 68C136 75 140 75 140 75C140 75 136 75 136 82C136 75 132 75 132 75C132 75 136 75 136 68Z" fill="#38BDF8"/>
 
   <!-- Xiao Office Wordmark -->
   <!-- Letter X -->

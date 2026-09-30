@@ -2395,6 +2395,14 @@ export function registerDocsIpc(): void {
       ? { scaleFactor: Math.round(scale * 100) }
       : {}
 
+  ipcMain.handle('docs:get-printers', async (event) => {
+    try {
+      return await event.sender.getPrintersAsync()
+    } catch {
+      return []
+    }
+  })
+
   ipcMain.handle('docs:print', async (event, scale?: number, options?: DocsPrintOptions) => {
     // print the calling tab's own content; zero margins — the docx page padding provides them.
     // Resolves when the system dialog is dismissed; the print dialog stays open on cancel
@@ -2403,6 +2411,12 @@ export function registerDocsIpc(): void {
       const printOpts: Record<string, unknown> = {
         margins: { marginType: 'none' },
         ...printScale(scale),
+      }
+      if (options?.deviceName) {
+        printOpts.deviceName = options.deviceName
+      }
+      if (typeof options?.silent === 'boolean') {
+        printOpts.silent = options.silent
       }
       if (options?.copies && Number.isInteger(options.copies) && options.copies > 0) {
         printOpts.copies = options.copies

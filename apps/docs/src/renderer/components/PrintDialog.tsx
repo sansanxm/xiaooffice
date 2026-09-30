@@ -10,6 +10,7 @@
  * preview source, so what the dialog shows is exactly what prints.
  */
 import { useCallback, useEffect, useRef, useState } from 'react'
+import type { PrinterInfo } from '../../shared/ipc'
 import { useI18n } from '../i18n/locale'
 import { parsePrintRange } from '../print-range'
 import { clearPrintZoom, setPrintZoom } from '../print-zoom'
@@ -30,6 +31,9 @@ export function PrintDialog({
   setStatus: (s: string) => void
 }) {
   const { t } = useI18n()
+  const [printers, setPrinters] = useState<PrinterInfo[]>([])
+  const [selectedPrinter, setSelectedPrinter] = useState<string>('')
+  const [loadingPrinters, setLoadingPrinters] = useState(true)
   const [pageCount, setPageCount] = useState(0)
   const [page, setPage] = useState(0)
   const [rangeMode, setRangeMode] = useState<RangeMode>('all')
@@ -41,6 +45,24 @@ export function PrintDialog({
   const [printing, setPrinting] = useState(false)
   const paneRef = useRef<HTMLDivElement | null>(null)
   const hostRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    let alive = true
+    window.desktop?.getPrinters?.()
+      .then((list) => {
+        if (!alive) return
+        setPrinters(list ?? [])
+        setLoadingPrinters(false)
+        const def = list?.find((p) => p.isDefault) || list?.[0]
+        if (def) setSelectedPrinter(def.name)
+      })
+      .catch(() => {
+        if (alive) setLoadingPrinters(false)
+      })
+    return () => {
+      alive = false
+    }
+  }, [])
 
   // The pagination preview measures and slices asynchronously; poll until the
   // .pv-page count is stable (and keep tracking it, e.g. re-slices on resize).
@@ -136,10 +158,13 @@ export function PrintDialog({
     els.forEach((el, i) => el.classList.toggle('pv-print-skip', !sel.has(i)))
     const scale = setPrintZoom()
     try {
+      const isSystemDialog = selectedPrinter === 'system_dialog' || !selectedPrinter
       const r = await window.desktop.print(scale, {
         copies: copies > 1 ? copies : undefined,
         duplexMode: duplex,
         collate: copies > 1 ? collate : undefined,
+        deviceName: isSystemDialog ? undefined : selectedPrinter,
+        silent: false,
       })
       if (r.ok) {
         onClose()
@@ -192,6 +217,32 @@ export function PrintDialog({
             )}
           </div>
           <div className="print-options">
+            <fieldset>
+              <legend>{t('appPrintPrinter')}</legend>
+              <select
+                className="print-select"
+                value={selectedPrinter}
+                onChange={(e) => setSelectedPrinter(e.target.value)}
+                disabled={loadingPrinters}
+              >
+                {printers.map((p) => (
+                  <option key={p.name} value={p.name}>
+                    🖨️ {p.displayName || p.name} {p.isDefault ? `(${t('appPrintDefaultPrinter')})` : ''}
+                  </option>
+                ))}
+                {printers.length === 0 && !loadingPrinters && (
+                  <option value="">{t('appPrintNoPrinters')}</option>
+                )}
+                <option value="system_dialog">⚙️ {t('appPrintSystemDialog')}</option>
+              </select>
+              {selectedPrinter && selectedPrinter !== 'system_dialog' && (
+                <div className="print-printer-status">
+                  <span className="print-status-dot" />
+                  <span>{t('appPrintPrinterReady')}</span>
+                </div>
+              )}
+            </fieldset>
+
             <fieldset>
               <legend>{t('appPrintCopies')}</legend>
               <div className="print-copies-row">

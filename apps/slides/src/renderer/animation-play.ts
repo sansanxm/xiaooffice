@@ -145,7 +145,7 @@ export interface NodeAnimState {
   clip: { t: number; mode: 'btm' | 'top' | 'mid' } | null
 }
 
-const NORMAL: NodeAnimState = {
+export const NORMAL: NodeAnimState = {
   hidden: false,
   opacity: 1,
   scale: 1,
