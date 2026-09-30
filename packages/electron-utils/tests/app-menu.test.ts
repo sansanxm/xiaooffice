@@ -59,9 +59,9 @@ describe('appMenuLabels', () => {
   })
 
   it('merges the context-menu clipboard labels', () => {
-    const zh = appMenuLabels('vi')
-    expect(zh.copy).toBe('复制')
-    expect(zh.selectAll).toBe('全选')
+    const viLabels = appMenuLabels('vi')
+    expect(viLabels.copy).toBe('Sao chép')
+    expect(viLabels.selectAll).toBe('Chọn tất cả')
   })
 })
 
@@ -86,8 +86,8 @@ describe('windowMenuTemplate', () => {
 
   it('localizes the Windows submenu', () => {
     const items = submenuOf(windowMenuTemplate('win32', appMenuLabels('vi')))
-    expect(items[0]!.label).toBe('最小化')
-    expect(items[2]!.label).toBe('关闭窗口')
+    expect(items[0]!.label).toBe('Thu nhỏ')
+    expect(items[2]!.label).toBe('Đóng cửa sổ')
   })
 })
 
@@ -206,6 +206,6 @@ describe('checkUpdatesMenuItem / manual update check wiring', () => {
   it('About dialog copy button still copies name + version', async () => {
     electronMock.showMessageBox.mockResolvedValue({ response: 1 })
     await (aboutMenuItem(en) as { click: () => Promise<void> }).click()
-    expect(electronMock.writeText).toHaveBeenCalledWith('GenOffice 1.2.3')
+    expect(electronMock.writeText).toHaveBeenCalledWith('Xiao Office 1.2.3')
   })
 })

@@ -3536,6 +3536,16 @@ export function startDocsStandalone(): void {
   registerDocsIpc()
 
   app.whenReady().then(() => {
+    if (process.platform === 'darwin') {
+      app.setAboutPanelOptions({
+        applicationName: 'Xiao Office',
+        applicationVersion: app.getVersion(),
+        copyright: 'Copyright © 2026 Xiao Office',
+        version: app.getVersion(),
+        authors: ['Xiao Office'],
+        website: 'https://github.com/sansanxm/xiaooffice',
+      })
+    }
     installRendererProtocol({ docs: join(__dirname, '../renderer') })
     setUiLang(normalizeLang(process.env.GENOFFICE_LANG ?? app.getLocale()))
     // packaged builds get the Dock icon from icon.icns; dev shows Electron's default

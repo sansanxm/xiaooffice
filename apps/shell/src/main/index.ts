@@ -3590,6 +3590,16 @@ async function runHeadlessExportEntry(
 }
 
 app.whenReady().then(async () => {
+  if (process.platform === 'darwin') {
+    app.setAboutPanelOptions({
+      applicationName: 'Xiao Office',
+      applicationVersion: app.getVersion(),
+      copyright: 'Copyright © 2026 Xiao Office',
+      version: app.getVersion(),
+      authors: ['Xiao Office'],
+      website: 'https://github.com/sansanxm/xiaooffice',
+    })
+  }
   // first scan waits for the windows to come up; later ones follow folder changes
   setTimeout(() => ensureFileIndexer()?.refresh(), 4000)
   installRendererProtocol({

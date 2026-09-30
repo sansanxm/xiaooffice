@@ -45,7 +45,7 @@ const EN: Labels = {
   zoomOut: 'Zoom Out',
   fullscreen: 'Full Screen',
   help: 'Help',
-  about: 'About GenOffice',
+  about: 'About Xiao Office',
   checkUpdates: 'Check for Updates…',
   version: 'Version',
 }
@@ -71,7 +71,7 @@ const LABELS: Record<string, Labels> = {
     zoomOut: "Thu nhỏ",
     fullscreen: "Toàn màn hình",
     help: "Trợ giúp",
-    about: "Giới thiệu về GenOffice",
+    about: "Giới thiệu về Xiao Office",
     checkUpdates: "Kiểm tra bản cập nhật…",
     version: "Phiên bản",
   },

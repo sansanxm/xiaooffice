@@ -13,7 +13,7 @@
  */
 
 import { execFileSync } from 'node:child_process'
-import { copyFileSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -181,13 +181,27 @@ async function renderPng(page, svgString, canvasSize) {
   await page.setViewportSize({ width: canvasSize, height: canvasSize })
   await page.setContent(
     `<body style="margin:0;background:transparent;overflow:hidden">` +
-      `<img src="${dataUrl}" style="width:${canvasSize}px;height:${canvasSize}px;display:block">` +
+      `<img id="icon" src="${dataUrl}" style="width:${canvasSize}px;height:${canvasSize}px;display:block">` +
       `</body>`,
   )
+  await page.evaluate(async () => {
+    const img = document.getElementById('icon')
+    if (img && !img.complete) {
+      await new Promise((resolve) => {
+        img.onload = resolve
+        img.onerror = resolve
+      })
+    }
+    if (img && img.decode) {
+      try {
+        await img.decode()
+      } catch {}
+    }
+  })
+  await page.waitForTimeout(100)
   return page.screenshot({ omitBackground: true, type: 'png' })
 }
 
-const MAC_CANVAS_SIZES = [16, 32, 64, 128, 256, 512, 1024]
 const ICONSET_ENTRIES = [
   ['icon_16x16.png', 16],
   ['icon_16x16@2x.png', 32],
@@ -202,23 +216,25 @@ const ICONSET_ENTRIES = [
 ]
 const WIN_SIZES = [16, 24, 32, 48, 64, 128, 256]
 
-console.log('Launching Chrome to render icons...')
+console.log('Launching Chrome to render 1024x1024 master icons...')
 const browser = await chromium.launch({ channel: 'chrome', headless: true })
 const page = await browser.newPage({ deviceScaleFactor: 1 })
 const tmp = mkdtempSync(join(tmpdir(), 'xiao-office-iconset-'))
 
 try {
-  // 1. Full-bleed 1024x1024 SVG for Linux / general app icon
+  // 1. Full-bleed 1024x1024 SVG for Linux / Windows master
   const fullSvg = createXiaoOfficeSvg(0.92)
   const fullPng1024 = await renderPng(page, fullSvg, 1024)
 
-  // 2. macOS HIG 824/1024 content squircle SVG (so it sits at identical optical size with Apple apps in Dock/Finder)
+  // 2. macOS HIG 824/1024 content squircle SVG
   const macSvg = createXiaoOfficeSvg(824 / 1024)
   const macPng1024 = await renderPng(page, macSvg, 1024)
 
-  // Save base PNGs in apps/shell/build/
-  writeFileSync(join(shellBuildDir, 'icon.png'), fullPng1024)
-  writeFileSync(join(shellBuildDir, 'icon-mac.png'), macPng1024)
+  // Save base master PNGs in apps/shell/build/
+  const fullPngPath = join(shellBuildDir, 'icon.png')
+  const macPngPath = join(shellBuildDir, 'icon-mac.png')
+  writeFileSync(fullPngPath, fullPng1024)
+  writeFileSync(macPngPath, macPng1024)
 
   // Copy icon.png to all renderer asset locations
   const assetTargets = [
@@ -232,24 +248,34 @@ try {
     console.log(`Updated asset: ${target}`)
   }
 
-  // 3. Build macOS .iconset -> .icns
+  // 3. Build macOS .iconset -> .icns using CoreGraphics (sips) for high-quality Lanczos downsampling
+  console.log('Generating macOS .icns with sips...')
   const iconsetDir = join(tmp, 'icon.iconset')
   mkdirSync(iconsetDir, { recursive: true })
 
-  const macPngs = new Map()
-  for (const size of MAC_CANVAS_SIZES) {
-    macPngs.set(size, await renderPng(page, macSvg, size))
-  }
   for (const [name, size] of ICONSET_ENTRIES) {
-    writeFileSync(join(iconsetDir, name), macPngs.get(size))
+    const targetFile = join(iconsetDir, name)
+    if (size === 1024) {
+      writeFileSync(targetFile, macPng1024)
+    } else {
+      execFileSync('sips', ['-z', String(size), String(size), macPngPath, '--out', targetFile], { stdio: 'ignore' })
+    }
   }
   execFileSync('iconutil', ['-c', 'icns', iconsetDir, '-o', join(shellBuildDir, 'icon.icns')])
   console.log(`Generated apps/shell/build/icon.icns`)
 
-  // 4. Build Windows .ico
+  // 4. Build Windows .ico with pristine multi-size images (sips downsampling)
+  console.log('Generating Windows .ico with pristine multi-size images...')
   const winEntries = []
   for (const size of WIN_SIZES) {
-    winEntries.push({ size, png: await renderPng(page, fullSvg, size) })
+    if (size === 1024) {
+      winEntries.push({ size, png: fullPng1024 })
+    } else {
+      const resizedPath = join(tmp, `win_${size}.png`)
+      execFileSync('sips', ['-z', String(size), String(size), fullPngPath, '--out', resizedPath], { stdio: 'ignore' })
+      const pngBuf = readFileSync(resizedPath)
+      winEntries.push({ size, png: pngBuf })
+    }
   }
   writeFileSync(join(shellBuildDir, 'icon.ico'), buildIco(winEntries))
   console.log(`Generated apps/shell/build/icon.ico`)

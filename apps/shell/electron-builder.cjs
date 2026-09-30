@@ -337,6 +337,7 @@ function ensureThirdPartyNotices() {
 const config = {
   appId: 'com.genoffice.app',
   productName: 'Xiao Office',
+  copyright: 'Copyright © 2026 Xiao Office',
   // Resolved from the installed electron package so dependency bumps can
   // never leave a stale hard-coded pin behind (packaging would silently ship
   // the old runtime).
@@ -561,6 +562,9 @@ const config = {
     category: 'public.app-category.productivity',
     hardenedRuntime: true,
     gatekeeperAssess: false,
+    extendInfo: {
+      NSHumanReadableCopyright: 'Copyright © 2026 Xiao Office',
+    },
     entitlements: 'build/entitlements.mac.plist',
     entitlementsInherit: 'build/entitlements.mac.plist',
     notarize: true,
