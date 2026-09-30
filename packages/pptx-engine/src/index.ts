@@ -342,8 +342,34 @@ export interface OpenedPptx {
   archive: PackageArchive
 }
 
+interface SlideParseCache {
+  themes: Map<string, Theme>
+  partMediaRels: Map<string, Map<string, string>>
+  layoutPlaceholders: Map<string, PlaceholderMap>
+  masterPlaceholders: Map<string, PlaceholderMap>
+  masterTextStyles: Map<string, MasterTextStyles>
+  defaultTextStyle?: TextStyleDefaults | null
+}
+
+function getCachedPartMediaRels(
+  archive: PackageArchive,
+  partPath: string,
+  parseCache?: SlideParseCache,
+): Map<string, string> {
+  let media = parseCache?.partMediaRels.get(partPath)
+  if (!media) {
+    media = partMediaRels(archive, partPath)
+    parseCache?.partMediaRels.set(partPath, media)
+  }
+  return media
+}
+
 /** Parse one slide from the archive (assembling the inheritance-chain ctx); shared by openPptx and duplicateSlide. */
-function parseSlideFromArchive(archive: PackageArchive, slidePath: string): Slide | null {
+function parseSlideFromArchive(
+  archive: PackageArchive,
+  slidePath: string,
+  parseCache?: SlideParseCache,
+): Slide | null {
   const slideXml = archive.readText(slidePath)
   if (slideXml == null) return null
 
@@ -355,26 +381,61 @@ function parseSlideFromArchive(archive: PackageArchive, slidePath: string): Slid
   if (chain.themePath) {
     const themeXml = archive.readText(chain.themePath)
     if (themeXml) {
-      ctx.theme = parseTheme(themeXml)
+      let baseTheme = parseCache?.themes.get(chain.themePath)
+      if (!baseTheme) {
+        baseTheme = parseTheme(themeXml)
+        parseCache?.themes.set(chain.themePath, baseTheme)
+      }
+      ctx.theme = { ...baseTheme }
       // Dark masters remap schemeClr names (bg1→dk1 …); must be in place before any color resolution below
       ctx.theme.clrMap = parseClrMap(masterXml, layoutXml, slideXml)
-      ctx.themeMediaRels = partMediaRels(archive, chain.themePath)
+      ctx.themeMediaRels = getCachedPartMediaRels(archive, chain.themePath, parseCache)
     }
   }
   if (layoutXml) {
-    if (chain.layoutPath) ctx.layoutMediaRels = partMediaRels(archive, chain.layoutPath)
-    ctx.layoutPlaceholders = parsePlaceholderMap(layoutXml, ctx.theme, ctx.layoutMediaRels)
+    if (chain.layoutPath) ctx.layoutMediaRels = getCachedPartMediaRels(archive, chain.layoutPath, parseCache)
+    const layoutKey = chain.layoutPath
+      ? `${chain.layoutPath}:${ctx.theme?.name ?? ''}:${ctx.theme?.clrMap ? JSON.stringify(ctx.theme.clrMap) : ''}`
+      : undefined
+    let lph = layoutKey ? parseCache?.layoutPlaceholders.get(layoutKey) : undefined
+    if (!lph) {
+      lph = parsePlaceholderMap(layoutXml, ctx.theme, ctx.layoutMediaRels)
+      if (layoutKey) parseCache?.layoutPlaceholders.set(layoutKey, lph)
+    }
+    ctx.layoutPlaceholders = lph
     ctx.layoutBg = layoutXml
   }
   if (masterXml) {
-    if (chain.masterPath) ctx.masterMediaRels = partMediaRels(archive, chain.masterPath)
-    ctx.masterPlaceholders = parsePlaceholderMap(masterXml, ctx.theme, ctx.masterMediaRels)
-    ctx.masterTextStyles = parseMasterTextStyles(masterXml, ctx.theme, ctx.masterMediaRels)
+    if (chain.masterPath) ctx.masterMediaRels = getCachedPartMediaRels(archive, chain.masterPath, parseCache)
+    const masterKey = chain.masterPath
+      ? `${chain.masterPath}:${ctx.theme?.name ?? ''}:${ctx.theme?.clrMap ? JSON.stringify(ctx.theme.clrMap) : ''}`
+      : undefined
+    let mph = masterKey ? parseCache?.masterPlaceholders.get(masterKey) : undefined
+    if (!mph) {
+      mph = parsePlaceholderMap(masterXml, ctx.theme, ctx.masterMediaRels)
+      if (masterKey) parseCache?.masterPlaceholders.set(masterKey, mph)
+    }
+    ctx.masterPlaceholders = mph
+
+    let mts = masterKey ? parseCache?.masterTextStyles.get(masterKey) : undefined
+    if (!mts) {
+      mts = parseMasterTextStyles(masterXml, ctx.theme, ctx.masterMediaRels)
+      if (masterKey) parseCache?.masterTextStyles.set(masterKey, mts)
+    }
+    ctx.masterTextStyles = mts
     ctx.masterBg = masterXml
   }
   // presentation.xml <p:defaultTextStyle>: base text defaults for non-placeholder shapes
-  const presXml = archive.readText('ppt/presentation.xml')
-  if (presXml) ctx.defaultTextStyle = parseDefaultTextStyle(presXml, ctx.theme)
+  if (parseCache) {
+    if (parseCache.defaultTextStyle === undefined) {
+      const presXml = archive.readText('ppt/presentation.xml')
+      parseCache.defaultTextStyle = presXml ? parseDefaultTextStyle(presXml, ctx.theme) : null
+    }
+    if (parseCache.defaultTextStyle) ctx.defaultTextStyle = parseCache.defaultTextStyle
+  } else {
+    const presXml = archive.readText('ppt/presentation.xml')
+    if (presXml) ctx.defaultTextStyle = parseDefaultTextStyle(presXml, ctx.theme)
+  }
   // Media rId → zip path; chart rId → chart part content
   const rels = archive.readRels(slidePath)
   const mediaRels = new Map<string, string>()
@@ -645,9 +706,17 @@ export async function openPptx(bytes: Uint8Array): Promise<OpenedPptx> {
   const archive = await PackageArchive.open(bytes)
   const { size, slidePaths } = archive.readPresentation()
 
+  const parseCache: SlideParseCache = {
+    themes: new Map(),
+    partMediaRels: new Map(),
+    layoutPlaceholders: new Map(),
+    masterPlaceholders: new Map(),
+    masterTextStyles: new Map(),
+  }
+
   const slides: Slide[] = []
   for (const slidePath of slidePaths) {
-    const slide = parseSlideFromArchive(archive, slidePath)
+    const slide = parseSlideFromArchive(archive, slidePath, parseCache)
     if (slide) slides.push(slide)
   }
 
@@ -664,9 +733,16 @@ export async function openPptx(bytes: Uint8Array): Promise<OpenedPptx> {
 export function reparseDeck(opened: OpenedPptx): OpenedPptx {
   const { archive } = opened
   const { size, slidePaths } = archive.readPresentation()
+  const parseCache: SlideParseCache = {
+    themes: new Map(),
+    partMediaRels: new Map(),
+    layoutPlaceholders: new Map(),
+    masterPlaceholders: new Map(),
+    masterTextStyles: new Map(),
+  }
   const slides: Slide[] = []
   for (const slidePath of slidePaths) {
-    const slide = parseSlideFromArchive(archive, slidePath)
+    const slide = parseSlideFromArchive(archive, slidePath, parseCache)
     if (slide) slides.push(slide)
   }
   return { deck: { slides, size, originalHash: archive.originalHash }, archive }

@@ -446,14 +446,35 @@ export function retintThemedSvg(svg: string, opened: OpenedPptx, slidePath?: str
   )
 }
 
+const deckMediaCache = new WeakMap<OpenedPptx, Map<string, string | undefined>>()
+
+export function invalidateDeckMedia(opened: OpenedPptx, mediaRef?: string): void {
+  const cache = deckMediaCache.get(opened)
+  if (!cache) return
+  if (!mediaRef) {
+    cache.clear()
+  } else {
+    cache.delete(mediaRef)
+    for (const key of cache.keys()) {
+      if (key.startsWith(`${mediaRef}::`)) cache.delete(key)
+    }
+  }
+}
+
 /** Image mediaRef -> dataUrl (lazily decoded). TIFF is transcoded to PNG for display
     (Chromium can't decode it); the archive keeps the original bytes for save fidelity.
     The mime comes from magic-byte sniffing first (legacy decks mislabel media — a PNG
-    stored as .emf must not enter the EMF parser), extension second. */
+    stored as .emf must not enter the EMF parser), extension second. Cached deck-wide. */
 export function makeMediaResolver(opened: OpenedPptx, slidePath?: string) {
-  const cache = new Map<string, string | undefined>()
+  let cache = deckMediaCache.get(opened)
+  if (!cache) {
+    cache = new Map<string, string | undefined>()
+    deckMediaCache.set(opened, cache)
+  }
   return (mediaRef: string): string | undefined => {
-    if (cache.has(mediaRef)) return cache.get(mediaRef)
+    const isThemedSvg = mediaRef.toLowerCase().endsWith('.svg')
+    const cacheKey = isThemedSvg && slidePath ? `${mediaRef}::${slidePath}` : mediaRef
+    if (cache.has(cacheKey)) return cache.get(cacheKey)
     const bytes = opened.archive.readBytes(mediaRef)
     let url: string | undefined
     if (bytes) {
@@ -472,7 +493,7 @@ export function makeMediaResolver(opened: OpenedPptx, slidePath?: string) {
         url = `data:${mime};base64,${Buffer.from(served).toString('base64')}`
       }
     }
-    cache.set(mediaRef, url)
+    cache.set(cacheKey, url)
     return url
   }
 }

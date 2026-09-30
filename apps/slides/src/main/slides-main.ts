@@ -817,6 +817,29 @@ function adoptEmbeddedFonts(opened: OpenedPptx): void {
   }
 }
 
+const prewarmedDeck = new Map<
+  string,
+  Promise<{ opened: OpenedPptx; recovered: boolean }>
+>()
+
+export function prewarmPptxFile(filePath: string): void {
+  if (!filePath || !existsSync(filePath)) return
+  const wanted = resolve(filePath)
+  if (prewarmedDeck.has(wanted)) return
+  const p = (async () => {
+    const raw = await readFile(wanted)
+    const { bytes, recovered } = await maybeRecoverBytes(wanted, new Uint8Array(raw))
+    await shapedMetricsReady()
+    const opened = await openPptx(bytes)
+    adoptEmbeddedFonts(opened)
+    return { opened, recovered }
+  })().catch((err) => {
+    prewarmedDeck.delete(wanted)
+    throw err
+  })
+  prewarmedDeck.set(wanted, p)
+}
+
 async function openAndBuild(
   wc: WebContents,
   path: string,
@@ -840,11 +863,21 @@ async function openAndBuild(
       defaultFont: deckDefaultFont(existing.opened),
     }
   }
-  const raw = await readFile(path)
-  const { bytes, recovered } = await maybeRecoverBytes(path, new Uint8Array(raw))
-  await shapedMetricsReady() // Lay out only after complex-script shaped metrics are ready, avoiding an init race falling back to estimation
-  const opened = await openPptx(bytes)
-  adoptEmbeddedFonts(opened)
+
+  let inFlight = prewarmedDeck.get(wanted)
+  if (inFlight) {
+    prewarmedDeck.delete(wanted)
+  } else {
+    inFlight = (async () => {
+      const raw = await readFile(wanted)
+      const { bytes, recovered } = await maybeRecoverBytes(wanted, new Uint8Array(raw))
+      await shapedMetricsReady()
+      const opened = await openPptx(bytes)
+      adoptEmbeddedFonts(opened)
+      return { opened, recovered }
+    })()
+  }
+  const { opened, recovered } = await inFlight
   sessions.set(wc.id, {
     path,
     opened,
@@ -4828,6 +4861,7 @@ export function createSlidesWindow(openPath?: string | null): BrowserWindow {
 
   if (openPath) {
     win.setTitle(basename(openPath))
+    prewarmPptxFile(openPath)
     win.webContents.once('did-finish-load', async () => {
       try {
         const result = await openAndBuild(win.webContents, openPath, 1280)
@@ -4869,8 +4903,11 @@ export function createSlidesView(openPath?: string | null): WebContentsView {
   registerSlidesIpc()
   trackSlidesWebContents(view.webContents)
   armVibrancy(view)
-  // The renderer calls consumePendingOpen on mount; use that to avoid a did-finish-load timing race
-  if (openPath && existsSync(openPath)) pendingByWc.set(view.webContents.id, openPath)
+  // The renderer calls consumePendingOpen on mount; pre-warm parsing immediately to race page load
+  if (openPath && existsSync(openPath)) {
+    pendingByWc.set(view.webContents.id, openPath)
+    prewarmPptxFile(openPath)
+  }
   // mode=tab: the shell's tab strip owns the traffic lights / caption buttons,
   // so the ribbon must not reserve space for them
   void view.webContents.loadURL(rendererUrl(runtime.rendererDevUrl, 'slides', { mode: 'tab' }))
@@ -5053,6 +5090,7 @@ export function startSlidesStandalone(): void {
 
   app.on('open-file', (event, path) => {
     event.preventDefault()
+    prewarmPptxFile(path)
     if (app.isReady()) {
       const win = BrowserWindow.getAllWindows()[0]
       if (win) {
@@ -5065,7 +5103,10 @@ export function startSlidesStandalone(): void {
   })
 
   const argPath = process.argv.find((a) => a.toLowerCase().endsWith('.pptx'))
-  if (argPath && existsSync(argPath)) pendingOpenPath = argPath
+  if (argPath && existsSync(argPath)) {
+    pendingOpenPath = argPath
+    prewarmPptxFile(argPath)
+  }
 
   app.whenReady().then(async () => {
     installRendererProtocol({ slides: join(__dirname, '../renderer') })

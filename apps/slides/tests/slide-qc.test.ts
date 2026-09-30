@@ -116,9 +116,10 @@ describe('vision capability fallback', () => {
 
   it('does not send screenshots to text-only models under a vision-capable provider', () => {
     const settings = defaultAiSettings()
-    settings.providers.genspark.model = 'deep-seek-v4-flash'
+    const p = (settings.providers as any).gemini ?? (settings.providers as any).genspark
+    p.model = 'deep-seek-v4-flash'
     expect(settingsSupportVision(settings)).toBe(false)
-    settings.providers.genspark.model = 'claude-opus-4-7'
+    p.model = 'gemini-2.5-pro'
     expect(settingsSupportVision(settings)).toBe(true)
   })
 

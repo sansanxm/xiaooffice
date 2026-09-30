@@ -60,24 +60,63 @@ export function assertZipWithinLimits(zip: JSZip): void {
   }
 }
 
+class TrackedEntriesMap extends Map<string, Uint8Array> {
+  onMutate?: (key?: string) => void
+  override set(key: string, value: Uint8Array): this {
+    super.set(key, value)
+    this.onMutate?.(key)
+    return this
+  }
+  override delete(key: string): boolean {
+    const res = super.delete(key)
+    if (res) this.onMutate?.(key)
+    return res
+  }
+  override clear(): void {
+    super.clear()
+    this.onMutate?.()
+  }
+}
+
 export class PackageArchive {
+  private readonly textCache = new Map<string, string>()
+  private readonly relsCache = new Map<string, Map<string, Relationship>>()
+  private presentationCache?: { size: SlideSize; slidePaths: string[] }
+
   private constructor(
     private readonly zip: JSZip,
     /** Original bytes of every entry, keyed by path inside the zip */
     readonly entries: Map<string, Uint8Array>,
     readonly originalHash: string,
-  ) {}
+  ) {
+    if (entries instanceof TrackedEntriesMap) {
+      entries.onMutate = (key) => {
+        this.relsCache.clear()
+        this.presentationCache = undefined
+        if (key) {
+          this.textCache.delete(key)
+        } else {
+          this.textCache.clear()
+        }
+      }
+    }
+  }
 
   static async open(bytes: Uint8Array): Promise<PackageArchive> {
     const originalHash = createHash('sha256').update(bytes).digest('hex')
     const zip = await JSZip.loadAsync(bytes)
     assertZipWithinLimits(zip)
-    const entries = new Map<string, Uint8Array>()
-    const names = Object.keys(zip.files)
-    for (const name of names) {
-      const file = zip.files[name]
-      if (file.dir) continue
-      entries.set(name, await file.async('uint8array'))
+    const entries = new TrackedEntriesMap()
+    const nonDirFiles = Object.entries(zip.files).filter(([, f]) => !f.dir)
+    const BATCH_SIZE = 16
+    for (let i = 0; i < nonDirFiles.length; i += BATCH_SIZE) {
+      const batch = nonDirFiles.slice(i, i + BATCH_SIZE)
+      const results = await Promise.all(
+        batch.map(async ([name, file]) => [name, await file.async('uint8array')] as const),
+      )
+      for (const [name, raw] of results) {
+        entries.set(name, raw)
+      }
     }
     return new PackageArchive(zip, entries, originalHash)
   }
@@ -86,11 +125,15 @@ export class PackageArchive {
     return this.entries.has(path)
   }
 
-  /** Read a part as a UTF-8 string (for XML parts). */
+  /** Read a part as a UTF-8 string (for XML parts). Cached for performance. */
   readText(path: string): string | null {
+    const cached = this.textCache.get(path)
+    if (cached !== undefined) return cached
     const bytes = this.entries.get(path)
     if (!bytes) return null
-    return Buffer.from(bytes).toString('utf8')
+    const text = Buffer.from(bytes).toString('utf8')
+    this.textCache.set(path, text)
+    return text
   }
 
   readBytes(path: string): Uint8Array | null {
@@ -99,13 +142,18 @@ export class PackageArchive {
 
   /**
    * Read a part's relationships file. partPath e.g. 'ppt/slides/slide1.xml' →
-   * 'ppt/slides/_rels/slide1.xml.rels'.
+   * 'ppt/slides/_rels/slide1.xml.rels'. Cached for fast repeated lookups across slides.
    */
   readRels(partPath: string): Map<string, Relationship> {
+    const cached = this.relsCache.get(partPath)
+    if (cached) return cached
     const relsPath = relsPathFor(partPath)
     const rels = new Map<string, Relationship>()
     const xml = this.readText(relsPath)
-    if (!xml) return rels
+    if (!xml) {
+      this.relsCache.set(partPath, rels)
+      return rels
+    }
     const doc = asXmlNode(relsParser.parse(xml))
     const list = asXmlNode(doc.Relationships).Relationship
     for (const r of xmlArray(list)) {
@@ -117,6 +165,7 @@ export class PackageArchive {
         ...(r['@_TargetMode'] != null ? { targetMode: String(r['@_TargetMode']) } : {}),
       })
     }
+    this.relsCache.set(partPath, rels)
     return rels
   }
 
@@ -124,6 +173,7 @@ export class PackageArchive {
    * Read the presentation's slide size and the slide part paths in order.
    */
   readPresentation(): { size: SlideSize; slidePaths: string[] } {
+    if (this.presentationCache) return this.presentationCache
     const presXml = this.readText('ppt/presentation.xml')
     if (!presXml) throw new Error('pptx: missing ppt/presentation.xml')
 
@@ -162,7 +212,9 @@ export class PackageArchive {
       if (!rel) continue
       slidePaths.push(resolveTarget('ppt/presentation.xml', rel.target))
     }
-    return { size, slidePaths }
+    const result = { size, slidePaths }
+    this.presentationCache = result
+    return result
   }
 
   /** Resolve a slide's layout / master part paths (via the rels chain). */
