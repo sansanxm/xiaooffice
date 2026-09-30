@@ -24,7 +24,7 @@
     },
     "apps/docs": {
       "name": "@genoffice/docs",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/electron-utils": "*",
         "@genoffice/font-metrics": "*",
@@ -66,7 +66,7 @@
     },
     "apps/html": {
       "name": "@genoffice/html",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "devDependencies": {
         "@codemirror/autocomplete": "^6.20.3",
         "@codemirror/commands": "^6.11.0",
@@ -100,7 +100,7 @@
     },
     "apps/markdown": {
       "name": "@genoffice/markdown",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@tiptap/extension-mathematics": "3.31.0",
         "json5": "^2.2.3",
@@ -151,7 +151,7 @@
     },
     "apps/pdf": {
       "name": "@genoffice/pdf",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "devDependencies": {
         "@embedpdf/pdfium": "^2.15.1",
         "@genoffice/agent-core": "*",
@@ -180,7 +180,7 @@
     },
     "apps/sheets": {
       "name": "@genoffice/sheets",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@fluentui/react-icons": "^2.0.333",
         "@genoffice/agent-core": "*",
@@ -232,7 +232,7 @@
     },
     "apps/shell": {
       "name": "@genoffice/shell",
-      "version": "0.10.0",
+      "version": "0.12.0",
       "devDependencies": {
         "@genoffice/agent-core": "*",
         "@genoffice/ai-provider": "*",
@@ -267,7 +267,7 @@
     },
     "apps/slides": {
       "name": "@genoffice/slides",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/electron-utils": "*",
         "acorn": "^8.18.0",
@@ -307,7 +307,7 @@
     },
     "packages/agent-core": {
       "name": "@genoffice/agent-core",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "devDependencies": {
         "typescript": "^5.9.3",
         "vitest": "^4.1.11",
@@ -315,7 +315,7 @@
     },
     "packages/ai-provider": {
       "name": "@genoffice/ai-provider",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/agent-core": "*",
       },
@@ -326,7 +326,7 @@
     },
     "packages/ai-search": {
       "name": "@genoffice/ai-search",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/ai-provider": "*",
         "@genoffice/electron-utils": "*",
@@ -341,7 +341,7 @@
     },
     "packages/cli": {
       "name": "@genoffice/cli",
-      "version": "0.10.0",
+      "version": "0.12.0",
       "bin": {
         "genoffice": "bin/genoffice",
       },
@@ -373,7 +373,7 @@
     },
     "packages/docx-engine": {
       "name": "@genoffice/docx-engine",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/pptx-engine": "*",
         "fast-xml-parser": "^5.3.4",
@@ -389,7 +389,7 @@
     },
     "packages/electron-utils": {
       "name": "@genoffice/electron-utils",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "parse5": "^8.0.1",
       },
@@ -400,7 +400,7 @@
     },
     "packages/file-parse": {
       "name": "@genoffice/file-parse",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/docx-engine": "*",
         "cfb": "^1.2.2",
@@ -418,7 +418,7 @@
     },
     "packages/font-metrics": {
       "name": "@genoffice/font-metrics",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "devDependencies": {
         "typescript": "^5.9.3",
         "vitest": "^4.1.11",
@@ -426,7 +426,7 @@
     },
     "packages/html2docx": {
       "name": "@genoffice/html2docx",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "docx": "^9.7.1",
       },
@@ -441,7 +441,7 @@
     },
     "packages/i18n": {
       "name": "@genoffice/i18n",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "devDependencies": {
         "typescript": "^5.9.3",
         "vitest": "^4.1.11",
@@ -449,7 +449,7 @@
     },
     "packages/pdf2docx": {
       "name": "@genoffice/pdf2docx",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@embedpdf/pdfium": "^2.15.0",
         "@genoffice/docx-engine": "*",
@@ -466,7 +466,7 @@
     },
     "packages/pipelines": {
       "name": "@genoffice/pipelines",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/pptx-engine": "*",
         "@genoffice/pptx-render": "*",
@@ -479,7 +479,7 @@
     },
     "packages/pptx-engine": {
       "name": "@genoffice/pptx-engine",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "fast-xml-parser": "^5.3.4",
         "jszip": "^3.10.1",
@@ -493,7 +493,7 @@
     },
     "packages/pptx-ops": {
       "name": "@genoffice/pptx-ops",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/docx-engine": "*",
         "@genoffice/pptx-engine": "*",
@@ -506,7 +506,7 @@
     },
     "packages/pptx-render": {
       "name": "@genoffice/pptx-render",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/pptx-engine": "*",
         "bidi-js": "^1.0.3",
@@ -522,7 +522,7 @@
     },
     "packages/project-store": {
       "name": "@genoffice/project-store",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "devDependencies": {
         "typescript": "^5.9.3",
         "vitest": "^4.1.11",
@@ -530,7 +530,7 @@
     },
     "packages/ui": {
       "name": "@genoffice/ui",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "@genoffice/i18n": "*",
         "@genoffice/pptx-render": "*",
@@ -546,7 +546,7 @@
     },
     "packages/xlsx-gateway": {
       "name": "@genoffice/xlsx-gateway",
-      "version": "0.1.0",
+      "version": "0.12.0",
       "dependencies": {
         "jszip": "^3.10.1",
         "numfmt": "^3.2.6",

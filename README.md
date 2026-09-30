@@ -9,7 +9,7 @@ Soạn thảo Văn bản (.docx), Bảng tính (.xlsx), Bản trình chiếu (.p
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/Gi%E1%BA%A5y%20ph%C3%A9p-Apache_2.0-blue.svg" alt="Giấy phép: Apache-2.0"></a>
-  <a href="https://github.com/sansanxm/xiaooffice/releases"><img src="https://img.shields.io/badge/Phi%C3%AAn%20b%E1%BA%A3n-v0.10.0-brightgreen" alt="Phiên bản"></a>
+  <a href="https://github.com/sansanxm/xiaooffice/releases"><img src="https://img.shields.io/badge/Phi%C3%AAn%20b%E1%BA%A3n-v0.12.0-brightgreen" alt="Phiên bản"></a>
   <a href="https://github.com/sansanxm/xiaooffice/stargazers"><img src="https://img.shields.io/github/stars/sansanxm/xiaooffice?style=flat&color=yellow" alt="GitHub stars"></a>
   <a href="https://github.com/sansanxm/xiaooffice"><img src="https://img.shields.io/badge/GitHub-xiaooffice-blue?logo=github" alt="GitHub Repo"></a>
 </p>
@@ -108,7 +108,7 @@ npm run test
   ```bash
   npm run dist:mac
   ```
-  Tệp cài đặt DMG sẽ xuất hiện tại thư mục `apps/shell/release/Xiao Office-0.10.0-arm64.dmg`.
+  Tệp cài đặt DMG sẽ xuất hiện tại thư mục `apps/shell/release/Xiao Office-0.12.0-arm64.dmg`.
 
 - **Cho Windows (Installer x64 / Arm64):**
   ```bash

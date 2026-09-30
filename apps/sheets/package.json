@@ -1,7 +1,7 @@
 {
   "name": "@genoffice/sheets",
   "productName": "Xiao Office Sheets",
-  "version": "0.1.0",
+  "version": "0.12.0",
   "private": true,
   "description": "Cross-platform AI-native spreadsheet compatibility prototype",
   "license": "Apache-2.0",

@@ -1,10 +1,10 @@
 {
   "name": "@genoffice/html2docx",
-  "version": "0.1.0",
+  "version": "0.12.0",
   "license": "Apache-2.0",
   "private": true,
   "type": "module",
-  "description": "HTML \u2192 DOCX conversion: in-browser intent-tree extraction, screenshots for unmappable visuals, native OOXML generation",
+  "description": "HTML → DOCX conversion: in-browser intent-tree extraction, screenshots for unmappable visuals, native OOXML generation",
   "exports": {
     ".": "./src/index.ts"
   },

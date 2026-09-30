@@ -9,7 +9,7 @@ Word (.docx), Excel (.xlsx), PowerPoint (.pptx) and PDF files, edited by you and
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License: Apache-2.0"></a>
-  <a href="https://github.com/sansanxm/xiaooffice/releases"><img src="https://img.shields.io/badge/Release-v0.10.0-brightgreen" alt="Release"></a>
+  <a href="https://github.com/sansanxm/xiaooffice/releases"><img src="https://img.shields.io/badge/Release-v0.12.0-brightgreen" alt="Release"></a>
   <a href="https://github.com/sansanxm/xiaooffice/stargazers"><img src="https://img.shields.io/github/stars/sansanxm/xiaooffice?style=flat&color=yellow" alt="GitHub stars"></a>
   <a href="https://github.com/sansanxm/xiaooffice"><img src="https://img.shields.io/badge/GitHub-xiaooffice-blue?logo=github" alt="GitHub Repo"></a>
 </p>
@@ -106,7 +106,7 @@ npm run test
   ```bash
   npm run dist:mac
   ```
-  Generates `Xiao Office-0.10.0-arm64.dmg` in `apps/shell/release/`.
+  Generates `Xiao Office-0.12.0-arm64.dmg` in `apps/shell/release/`.
 
 - **Windows:**
   ```bash

@@ -112,7 +112,7 @@ npm run test
   ```bash
   npm run dist:mac
   ```
-  Tệp cài đặt DMG sẽ xuất hiện tại thư mục `apps/shell/release/Xiao Office-0.10.0-arm64.dmg`.
+  Tệp cài đặt DMG sẽ xuất hiện tại thư mục `apps/shell/release/Xiao Office-0.12.0-arm64.dmg`.
 
 - **Cho Windows (Installer x64 / Arm64):**
   ```bash
