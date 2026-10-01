@@ -143,7 +143,7 @@ export function dkBorder(side: DkBorderSide, borderCss: string): string {
 export function dkTableBorders(docBorderDecls: string[]): string[] {
   const out: string[] = []
   for (const decl of docBorderDecls) {
-    const m = /^--doc-b-([trblhv]):(.*)$/.exec(decl)
+    const m = /^--doc-b-([trblhv]|break):(.*)$/.exec(decl)
     if (m) out.push(`--dk-tb-${m[1]}:${darkPageBorderCss(m[2])}`)
   }
   return out

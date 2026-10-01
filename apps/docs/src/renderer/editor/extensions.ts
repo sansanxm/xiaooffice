@@ -143,6 +143,7 @@ import {
 } from './convert'
 import { inlineMathML } from './equation'
 import { constrainTableWidthAtCell } from './table-sizing'
+import { createTableInteractionPlugin } from './table-resizing'
 
 /**
  * Custom schema mirroring the docx-engine Block model 1:1.
@@ -2920,6 +2921,12 @@ export function tableBordersCss(b: TableBordersAttr | null): string[] {
   }
   styles.push(`--doc-b-h:${borderLineCss(b.insideH) ?? 'none'}`)
   styles.push(`--doc-b-v:${borderLineCss(b.insideV) ?? 'none'}`)
+  const hBreak =
+    borderLineCss(b.insideH) ??
+    borderLineCss(b.bottom) ??
+    borderLineCss(b.top) ??
+    'none'
+  styles.push(`--doc-b-break:${hBreak}`)
   // vertical line widths feed the cell text inset (styles.css)
   styles.push(
     `--doc-bw-l:${borderWidthPx(b.left)}px`,
@@ -3657,6 +3664,7 @@ export const NativeTableSupport = Extension.create({
       }),
       columnResizing({ View: null, cellMinWidth: 40, lastColumnResizable: true }),
       tableEditing({ allowTableNodeSelection: true }),
+      createTableInteractionPlugin(() => this.editor),
       // Word never ends a body with a table: without a paragraph below it the
       // caret can never leave the table (public issue #266)
       new Plugin({

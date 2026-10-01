@@ -24,6 +24,11 @@ const en = {
   ribbonVerticalPosition: 'Vertical position',
   ribbonDistanceFromText: 'Distance from text',
   ribbonCellMargins: 'Default cell margins',
+  ribbonDrawTable: 'Draw Table',
+  ribbonDrawTableTip: 'Draw table borders or split cells',
+  ribbonTableEraser: 'Eraser',
+  ribbonTableEraserTip: 'Erase gridlines to merge cells',
+  ribbonGroupDraw: 'Draw',
 }
 
 const vi: Record<keyof typeof en, string> = {
@@ -50,6 +55,11 @@ const vi: Record<keyof typeof en, string> = {
   ribbonVerticalPosition: 'Vị trí theo chiều dọc',
   ribbonDistanceFromText: 'Khoảng cách từ văn bản',
   ribbonCellMargins: 'Căn lề ô mặc định',
+  ribbonDrawTable: 'Kẻ bảng',
+  ribbonDrawTableTip: 'Kẻ thêm đường kẻ hoặc chia ô',
+  ribbonTableEraser: 'Tẩy đường kẻ',
+  ribbonTableEraserTip: 'Tẩy/xóa đường kẻ để gộp ô',
+  ribbonGroupDraw: 'Vẽ',
 }
 
 export const tableStrings = defineStrings({

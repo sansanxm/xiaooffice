@@ -1,3 +1,4 @@
+import type { Editor } from '@tiptap/core'
 import type { Fragment, Node as PmNode, Schema } from '@tiptap/pm/model'
 import type { Command, EditorState, Transaction } from '@tiptap/pm/state'
 import { NodeSelection, TextSelection } from '@tiptap/pm/state'
@@ -22,6 +23,12 @@ import {
   pctOf,
   reflowColumns,
 } from '../ai/table-ops'
+export {
+  getSelectedTableRanges,
+  formatTableOrSelectionMark,
+  formatTableOrSelectionTextStyle,
+  formatTableOrSelectionClear,
+} from './table-format'
 
 /** Word's Table menu operations that prosemirror-tables has no command for.
  *  Structural edits rebuild the whole table node from a placed-cell grid: a
@@ -730,3 +737,123 @@ export function editableOrToast(editor: { isEditable: boolean }): boolean {
   showToast(t('ribbonReadOnlyEdit'), 'error')
   return false
 }
+
+/**
+ * Splits a cell at a specific position into rows x cols (used by Draw Table).
+ */
+export function splitCellAtPos(
+  editor: Editor,
+  cellPos: number,
+  rows: number,
+  cols: number,
+): boolean {
+  const { state, dispatch } = editor.view
+  const $cell = state.doc.resolve(cellPos)
+  let tableDepth = -1
+  for (let d = $cell.depth; d > 0; d--) {
+    if ($cell.node(d).type.name === 'docTable') {
+      tableDepth = d
+      break
+    }
+  }
+  if (tableDepth === -1) return false
+  const table = $cell.node(tableDepth)
+  const tablePos = $cell.before(tableDepth)
+  const map = TableMap.get(table)
+  const relPos = cellPos - $cell.start(tableDepth)
+  const cellRect = map.findCell(relPos)
+  const result = splitGridCell(table, { row: cellRect.top, col: cellRect.left }, rows, cols)
+  if (!result) return false
+  const tr = state.tr
+  tr.replaceWith(tablePos, tablePos + table.nodeSize, result.table)
+  caretIntoCell(tr, tablePos, result.table, result.focus.top, result.focus.left)
+  dispatch(tr.scrollIntoView())
+  return true
+}
+
+/**
+ * Merges two cells given their document positions (used by Table Eraser).
+ */
+export function mergeTwoCells(editor: Editor, cellPosA: number, cellPosB: number): boolean {
+  try {
+    const { state, dispatch } = editor.view
+    const sel = CellSelection.create(state.doc, cellPosA, cellPosB)
+    const tr = state.tr.setSelection(sel)
+    let mergedTr: Transaction | null = null
+    const success = mergeCells({ ...state, selection: sel, tr }, (t) => {
+      mergedTr = t
+    })
+    if (success && mergedTr) {
+      dispatch(mergedTr)
+      return true
+    }
+  } catch (err) {
+    console.error('Failed to merge cells:', err)
+  }
+  return false
+}
+
+/**
+ * Given a cell position and direction, returns the position of the adjacent cell in the table, or null if outer boundary.
+ */
+export function findAdjacentCellPos(
+  doc: PmNode,
+  cellPos: number,
+  direction: 'top' | 'bottom' | 'left' | 'right',
+): number | null {
+  const $cell = doc.resolve(cellPos)
+  let tableDepth = -1
+  for (let d = $cell.depth; d > 0; d--) {
+    if ($cell.node(d).type.name === 'docTable') {
+      tableDepth = d
+      break
+    }
+  }
+  if (tableDepth === -1) return null
+  const table = $cell.node(tableDepth)
+  const tableStart = $cell.start(tableDepth)
+  const map = TableMap.get(table)
+  const relPos = cellPos - tableStart
+  const rect = map.findCell(relPos)
+
+  let targetRow = rect.top
+  let targetCol = rect.left
+  if (direction === 'top') {
+    targetRow = rect.top - 1
+  } else if (direction === 'bottom') {
+    targetRow = rect.bottom
+  } else if (direction === 'left') {
+    targetCol = rect.left - 1
+  } else if (direction === 'right') {
+    targetCol = rect.right
+  }
+
+  if (targetRow < 0 || targetRow >= map.height || targetCol < 0 || targetCol >= map.width) {
+    return null
+  }
+
+  const adjacentRelPos = map.map[targetRow * map.width + targetCol]
+  return tableStart + adjacentRelPos
+}
+
+/**
+ * Sets border to 'none' on a specific side of a cell (used by Table Eraser on outer borders).
+ */
+export function setCellBorderNone(
+  editor: Editor,
+  cellPos: number,
+  side: 'top' | 'bottom' | 'left' | 'right',
+): boolean {
+  const { state, dispatch } = editor.view
+  const node = state.doc.nodeAt(cellPos)
+  if (!node) return false
+  const borders = { ...((node.attrs.borders as Record<string, any> | null) ?? {}) }
+  borders[side] = { style: 'none', szEighths: 0 }
+  const tr = state.tr.setNodeMarkup(cellPos, undefined, {
+    ...node.attrs,
+    borders,
+  })
+  dispatch(tr)
+  return true
+}
+

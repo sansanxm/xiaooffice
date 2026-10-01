@@ -36,7 +36,9 @@ import {
   IconTable,
   IconTextBox,
   IconWordArt,
+  IconPencil,
 } from './icons'
+import { setActiveTableTool } from '../editor/table-resizing'
 
 /** icon size for the big icon-over-label ribbon buttons (slides ribbon parity) */
 import {
@@ -829,6 +831,16 @@ export function InsertTab({
                   }}
                 >
                   {t('ribbonTableInsertDialog')}
+                </button>
+                <button
+                  className="table-picker-custom"
+                  onClick={() => {
+                    setDropdown(() => null)
+                    setActiveTableTool('draw')
+                  }}
+                >
+                  <IconPencil size={15} style={{ marginRight: 6, verticalAlign: -2 }} />
+                  {t('ribbonDrawTable')}
                 </button>
               </div>
             )}

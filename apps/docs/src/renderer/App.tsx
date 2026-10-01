@@ -329,6 +329,7 @@ import type { CompareEntry } from './editor/compare'
 import { collectHeadings } from './editor/headings'
 import { applyTocPageDisplays } from './editor/toc-refresh'
 import { setSelectionAlign } from './editor/direction'
+import { formatTableOrSelectionMark, formatTableOrSelectionClear } from './editor/table-ops'
 
 import {
   editorExtensions,
@@ -1965,6 +1966,7 @@ export function App() {
     setLargeDocSpellOff,
     setShowPagePreview,
     section,
+    activeSection,
     sectionDirty,
     sections,
     sectionsDirty,
@@ -4412,6 +4414,14 @@ export function App() {
                   const r = (
                     anchorElement(anchor)?.closest('td > *, th > *') ?? cutCell
                   ).getBoundingClientRect()
+                  const tbl = cutCell.closest('table')
+                  const tblRect = tbl?.getBoundingClientRect()
+                  const tableLeft = tblRect
+                    ? (tblRect.left - pmRect.left) / factor - pageLeftOf(nextSec)
+                    : undefined
+                  const tableRight = tblRect
+                    ? (pmRect.right - tblRect.right) / factor - pageLeftOf(nextSec)
+                    : undefined
                   gaps.push({
                     pos,
                     kind: 'cell',
@@ -4421,6 +4431,8 @@ export function App() {
                       // rect offsets from the paper edge already include the page margins
                       marginLeft: (r.left - pmRect.left) / factor - pageLeftOf(nextSec),
                       marginRight: (pmRect.right - r.right) / factor - pageLeftOf(nextSec),
+                      tableLeft,
+                      tableRight,
                     },
                     ...(pullUp > 0.5 ? { pullUp } : {}),
                     ...hfProps,
@@ -5344,7 +5356,8 @@ export function App() {
       // Clear character formatting ⌃␣ (Word uses Ctrl+Space on both platforms)
       if (e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && e.code === 'Space' && canEdit) {
         e.preventDefault()
-        ;(getActiveSubEditor() ?? editor)?.chain().focus().unsetAllMarks().run()
+        const target = getActiveSubEditor() ?? editor
+        if (target) formatTableOrSelectionClear(target)
       }
       // Indent ⌃M / outdent ⌃⇧M and hanging indent ⌘T / ⇧⌘T. Ctrl-only on both
       // platforms: ⌘M minimizes the window, and indenting a paragraph on the way
@@ -5568,15 +5581,24 @@ export function App() {
           }
           break
         // menu accelerators reach the strip / textbox editor that has focus, like the ribbon
-        case 'bold':
-          ;(getActiveSubEditor() ?? editor)?.chain().focus().toggleMark('bold').run()
+        case 'bold': {
+          const sub = getActiveSubEditor()
+          if (sub) sub.chain().focus().toggleMark('bold').run()
+          else if (editor) formatTableOrSelectionMark(editor, 'bold', undefined, true)
           break
-        case 'italic':
-          ;(getActiveSubEditor() ?? editor)?.chain().focus().toggleMark('italic').run()
+        }
+        case 'italic': {
+          const sub = getActiveSubEditor()
+          if (sub) sub.chain().focus().toggleMark('italic').run()
+          else if (editor) formatTableOrSelectionMark(editor, 'italic', undefined, true)
           break
-        case 'underline':
-          ;(getActiveSubEditor() ?? editor)?.chain().focus().toggleMark('underline').run()
+        }
+        case 'underline': {
+          const sub = getActiveSubEditor()
+          if (sub) sub.chain().focus().toggleMark('underline').run()
+          else if (editor) formatTableOrSelectionMark(editor, 'underline', undefined, true)
           break
+        }
         case 'align-left':
           align('left')
           break
@@ -6481,14 +6503,14 @@ export function App() {
     onSaveAs: () => void save(true),
     onToggleAi: () => setShowAi((v) => !v),
     onSection: (next: SectionSettings) => {
+      dirtyRef.current = true
       // layout applies to the cursor's section; the final section's sectPr goes through SaveOptions.section (also drives canvas geometry)
       setSections((prev) =>
         prev.map((s, i) => (i === activeSection ? { ...s, settings: next } : s)),
       )
-      if (sections.length <= 1 || activeSection === sections.length - 1) {
-        setSection(next)
-        setSectionDirty(true)
-      } else {
+      setSection(next)
+      setSectionDirty(true)
+      if (sections.length > 1 && activeSection !== sections.length - 1) {
         setSectionsDirty((d) => (d.includes(activeSection) ? d : [...d, activeSection]))
         setStatus(t('appSectionSettingsApplied', { n: activeSection + 1 }))
       }
@@ -6811,9 +6833,9 @@ export function App() {
         // w:docGrid charSpace: every character advances natural width + this delta
         <style>{`.doc-page { --doc-char-space:${Math.round(charSpacePt * 10000) / 10000}pt }`}</style>
       )}
-      {doc && section && (
+      {doc && (canvasSection ?? section) && (
         // over-wide tables may spill into the margins (Word/LO), capped at the paper edge
-        <style>{`.doc-page { --doc-margin-left:${twipsToPx(section.marginLeft)}px; --doc-margin-right:${twipsToPx(section.marginRight)}px; --doc-margin-top:${twipsToPx((canvasSection ?? section).marginTop)}px }`}</style>
+        <style>{`.doc-page { --doc-margin-left:${twipsToPx((canvasSection ?? section).marginLeft)}px; --doc-margin-right:${twipsToPx((canvasSection ?? section).marginRight)}px; --doc-margin-top:${twipsToPx((canvasSection ?? section).marginTop)}px }`}</style>
       )}
       {/* Theme CSS comes from live state, so a Design ▸ Themes/Fonts/Colors pick shows
           on the page immediately instead of only in the saved file */}

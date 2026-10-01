@@ -94,44 +94,51 @@ export function setSelectionAlign(
   editor: Editor,
   align: 'left' | 'center' | 'right' | 'justify',
 ): boolean {
-  return editor
-    .chain()
-    .focus()
-    .command(({ state, tr, dispatch }) => {
-      const sel = state.selection
-      let changed = false
+  const { state, dispatch } = editor.view
+  const sel = state.selection
+  let changed = false
+  const tr = state.tr
 
-      if (sel instanceof CellSelection) {
-        sel.forEachCell((cell, cellPos) => {
-          cell.descendants((node, pos) => {
-            if (DIR_BLOCKS.has(node.type.name)) {
-              const value = alignAttrFor(align, effectiveBidi(node.attrs))
-              tr.setNodeMarkup(cellPos + 1 + pos, undefined, { ...node.attrs, align: value })
-              changed = true
-            }
-          })
-        })
-      } else {
-        const { from, to } = sel
-        state.doc.nodesBetween(from, to, (node, pos) => {
-          if (DIR_BLOCKS.has(node.type.name)) {
-            const value = alignAttrFor(align, effectiveBidi(node.attrs))
-            tr.setNodeMarkup(pos, undefined, { ...node.attrs, align: value })
-            changed = true
-          } else if (node.type.name === 'docProtected') {
-            // alignment also applies to selected images (w:jc on the image paragraph)
-            tr.setNodeMarkup(pos, undefined, {
-              ...node.attrs,
-              imageAlign: alignAttrFor(align, false),
-            })
-            changed = true
-          }
-        })
-      }
-      if (changed && dispatch) dispatch(tr)
-      return changed
+  if (sel instanceof CellSelection) {
+    sel.forEachCell((cell, cellPos) => {
+      cell.descendants((node, pos) => {
+        if (DIR_BLOCKS.has(node.type.name)) {
+          const value = alignAttrFor(align, effectiveBidi(node.attrs))
+          tr.setNodeMarkup(cellPos + 1 + pos, undefined, { ...node.attrs, align: value })
+          changed = true
+        }
+      })
     })
-    .run()
+  } else if ((sel as any).node?.type?.name === 'docTable' || (sel instanceof NodeSelection && sel.node.type.name === 'docTable')) {
+    const start = sel.from + 1
+    sel.node.descendants((node, pos) => {
+      if (DIR_BLOCKS.has(node.type.name)) {
+        const value = alignAttrFor(align, effectiveBidi(node.attrs))
+        tr.setNodeMarkup(start + pos, undefined, { ...node.attrs, align: value })
+        changed = true
+      }
+    })
+  } else {
+    const { from, to } = sel
+    state.doc.nodesBetween(from, to, (node, pos) => {
+      if (DIR_BLOCKS.has(node.type.name)) {
+        const value = alignAttrFor(align, effectiveBidi(node.attrs))
+        tr.setNodeMarkup(pos, undefined, { ...node.attrs, align: value })
+        changed = true
+      } else if (node.type.name === 'docProtected') {
+        // alignment also applies to selected images (w:jc on the image paragraph)
+        tr.setNodeMarkup(pos, undefined, {
+          ...node.attrs,
+          imageAlign: alignAttrFor(align, false),
+        })
+        changed = true
+      }
+    })
+  }
+  if (changed) {
+    editor.view.dispatch(tr)
+  }
+  return changed
 }
 
 /** Set the writing direction of every paragraph-like block in the selection. */

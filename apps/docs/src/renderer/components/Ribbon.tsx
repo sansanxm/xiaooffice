@@ -77,6 +77,9 @@ import {
   setCellAlignment,
   setCellTextDirection,
   splitTableAtSelection,
+  formatTableOrSelectionMark,
+  formatTableOrSelectionTextStyle,
+  formatTableOrSelectionClear,
   type CellHAlign,
   type CellTextDirection,
   type CellVAlign,
@@ -215,7 +218,15 @@ import {
   IconSearch,
   IconStylesPane,
   IconSelectAll,
+  IconPencil,
+  IconEraser,
 } from './icons'
+import {
+  getActiveTableTool,
+  setActiveTableTool,
+  onActiveTableToolChange,
+  type TableTool,
+} from '../editor/table-resizing'
 interface RibbonProps {
   /** App keyboard shortcuts reuse ribbon closures through here (font-size stepping keeps its coalescing) */
   actionsRef?: React.MutableRefObject<{
@@ -1175,6 +1186,9 @@ function RibbonInner({
   }
 
   // ---- Table borders / vertical alignment / row height & column width ----
+  const [tableTool, setTableToolState] = useState<TableTool>(getActiveTableTool())
+  useEffect(() => onActiveTableToolChange(setTableToolState), [])
+
   const [borderColor, setBorderColor] = useState('000000')
   const [borderSz, setBorderSz] = useState(4) // 1/8 pt:4 = 0.5pt
   const [borderStyle, setBorderStyle] = useState('single')
@@ -1318,8 +1332,12 @@ function RibbonInner({
    * stored mark. Rebuilding from getAttributes read-back dropped the previous call's
    * value on a collapsed cursor (stored-mark changes don't re-render). */
   const setTextStyle = (patch: Record<string, unknown>) => {
-    enterSelectedTable(editor.state, editor.view.dispatch)
-    chain().setMark('docTextStyle', patch).run()
+    if (sub) {
+      chain().setMark('docTextStyle', patch).run()
+    } else {
+      enterSelectedTable(editor.state, editor.view.dispatch)
+      formatTableOrSelectionTextStyle(editor, patch)
+    }
     setDropdown(null)
   }
 
@@ -1643,10 +1661,14 @@ function RibbonInner({
         return
       st.applied = pending
       // deliberately no focus(): a deferred apply must never pull focus back
-      target
-        .chain()
-        .setMark('docTextStyle', { sizeHalfPoints: Math.round(pending * 2) })
-        .run()
+      if (sub) {
+        target
+          .chain()
+          .setMark('docTextStyle', { sizeHalfPoints: Math.round(pending * 2) })
+          .run()
+      } else {
+        formatTableOrSelectionTextStyle(target, { sizeHalfPoints: Math.round(pending * 2) })
+      }
     }, FONT_STEP_COALESCE_MS)
   }
 
@@ -1925,8 +1947,12 @@ function RibbonInner({
       aria-label={title}
       onClick={() => {
         if (!canEdit) return
-        enterSelectedTable(editor.state, editor.view.dispatch)
-        chain().toggleMark(name).run()
+        if (sub) {
+          chain().toggleMark(name).run()
+        } else {
+          enterSelectedTable(editor.state, editor.view.dispatch)
+          formatTableOrSelectionMark(editor, name, undefined, true)
+        }
       }}
     >
       {label}
@@ -2627,6 +2653,28 @@ function RibbonInner({
               </div>
               <div className="ribbon-group-label">{t('ribbonGroupBorders')}</div>
             </div>
+            <div className="ribbon-sep" />
+            <div className="table-tool-group">
+              <div className="table-tool-stack">
+                <button
+                  className={`table-command-row table-tool-button${tableTool === 'draw' ? ' active' : ''}`}
+                  data-tip={t('ribbonDrawTableTip')}
+                  onClick={() => setActiveTableTool(tableTool === 'draw' ? null : 'draw')}
+                >
+                  <IconPencil size={17} />
+                  <span>{t('ribbonDrawTable')}</span>
+                </button>
+                <button
+                  className={`table-command-row table-tool-button${tableTool === 'eraser' ? ' active' : ''}`}
+                  data-tip={t('ribbonTableEraserTip')}
+                  onClick={() => setActiveTableTool(tableTool === 'eraser' ? null : 'eraser')}
+                >
+                  <IconEraser size={17} />
+                  <span>{t('ribbonTableEraser')}</span>
+                </button>
+              </div>
+              <div className="ribbon-group-label">{t('ribbonGroupDraw')}</div>
+            </div>
           </div>
         ) : tab === 'tableLayout' ? (
           <div className="table-ribbon-body">
@@ -2688,6 +2736,28 @@ function RibbonInner({
                 </button>
               </div>
               <div className="ribbon-group-label">{t('ribbonTableData')}</div>
+            </div>
+            <div className="ribbon-sep" />
+            <div className="table-tool-group">
+              <div className="table-tool-stack">
+                <button
+                  className={`table-command-row table-tool-button${tableTool === 'draw' ? ' active' : ''}`}
+                  data-tip={t('ribbonDrawTableTip')}
+                  onClick={() => setActiveTableTool(tableTool === 'draw' ? null : 'draw')}
+                >
+                  <IconPencil size={17} />
+                  <span>{t('ribbonDrawTable')}</span>
+                </button>
+                <button
+                  className={`table-command-row table-tool-button${tableTool === 'eraser' ? ' active' : ''}`}
+                  data-tip={t('ribbonTableEraserTip')}
+                  onClick={() => setActiveTableTool(tableTool === 'eraser' ? null : 'eraser')}
+                >
+                  <IconEraser size={17} />
+                  <span>{t('ribbonTableEraser')}</span>
+                </button>
+              </div>
+              <div className="ribbon-group-label">{t('ribbonGroupDraw')}</div>
             </div>
             <div className="ribbon-sep" />
             <div className="table-tool-group">

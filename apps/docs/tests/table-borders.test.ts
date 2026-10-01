@@ -48,4 +48,43 @@ describe('tableBordersCss', () => {
     expect(borderWidthPx({ style: 'thinThickLargeGap', szEighths: 48 })).toBe(11)
     expect(borderWidthPx({ style: 'thinThickThinMediumGap', szEighths: 8 })).toBe(4)
   })
+
+  it('emits --doc-b-break using insideH or outer fallback for table pagination breaks', () => {
+    const withInsideH = tableBordersCss({
+      top: { style: 'single', szEighths: 4, color: '000000' },
+      insideH: { style: 'single', szEighths: 8, color: '00FF00' },
+    })
+    expect(withInsideH).toContain('--doc-b-break:1px solid #00FF00')
+
+    const fallbackBottom = tableBordersCss({
+      bottom: { style: 'single', szEighths: 4, color: '0000FF' },
+    })
+    expect(fallbackBottom).toContain('--doc-b-break:1px solid #0000FF')
+
+    const fallbackTop = tableBordersCss({
+      top: { style: 'single', szEighths: 4, color: 'FF0000' },
+    })
+    expect(fallbackTop).toContain('--doc-b-break:1px solid #FF0000')
+
+    const none = tableBordersCss({})
+    expect(none).toContain('--doc-b-break:none')
+  })
+
+  it('makeGapEl sets --gap-tbl-left and --gap-tbl-right', async () => {
+    const { makeGapEl } = await import('../src/renderer/editor/pagination-gaps')
+    const el = makeGapEl(
+      {
+        marginTop: 50,
+        marginBottom: 50,
+        marginLeft: 40,
+        marginRight: 40,
+        tableLeft: 60,
+        tableRight: 70,
+      },
+      'cell',
+    )
+    expect(el.style.getPropertyValue('--gap-tbl-left')).toBe('60px')
+    expect(el.style.getPropertyValue('--gap-tbl-right')).toBe('70px')
+  })
 })
+

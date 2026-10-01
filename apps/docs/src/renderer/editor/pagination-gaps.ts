@@ -355,6 +355,8 @@ export interface GapMetrics {
    *  documents center narrower pages); absent = the page spans the paper */
   pageLeft?: number
   pageWidth?: number
+  tableLeft?: number
+  tableRight?: number
 }
 
 /** height of the gray inter-page band inside a page gap */
@@ -387,6 +389,13 @@ export function makeGapEl(m: GapMetrics, kind: GapKind, cols?: number): HTMLElem
   // (indent included), which is the wrong place for a strip
   gap.style.setProperty('--gap-ml', `${m.sectionMarginLeft ?? m.marginLeft}px`)
   gap.style.setProperty('--gap-mr', `${m.sectionMarginRight ?? m.marginRight}px`)
+  if (m.tableLeft !== undefined && m.tableRight !== undefined) {
+    gap.style.setProperty('--gap-tbl-left', `${m.tableLeft}px`)
+    gap.style.setProperty('--gap-tbl-right', `${m.tableRight}px`)
+  } else {
+    gap.style.setProperty('--gap-tbl-left', `${m.sectionMarginLeft ?? m.marginLeft}px`)
+    gap.style.setProperty('--gap-tbl-right', `${m.sectionMarginRight ?? m.marginRight}px`)
+  }
   if (kind === 'table') {
     // A real spanning cell is required here. Chromium's collapsed-border table
     // painting can leak the neighboring row's border/fill through a cell-less
@@ -536,7 +545,7 @@ export function setPageGaps(
     }
     // boundaryY in the key: a reused widget must not keep a stale boundary
     // (cols too: a table-structure edit must rebuild the spanning cell)
-    const mKey = `${metrics.marginTop},${metrics.marginBottom},${metrics.marginLeft},${metrics.marginRight},${Math.round(gap.pullUp ?? 0)},${Math.round(gap.boundaryY ?? -1)},${gap.cols ?? 0},${Math.round(metrics.pageLeft ?? -1)}`
+    const mKey = `${metrics.marginTop},${metrics.marginBottom},${metrics.marginLeft},${metrics.marginRight},${Math.round(gap.pullUp ?? 0)},${Math.round(gap.boundaryY ?? -1)},${gap.cols ?? 0},${Math.round(metrics.pageLeft ?? -1)},${Math.round(metrics.tableLeft ?? -1)},${Math.round(metrics.tableRight ?? -1)}`
     decos.push(
       Decoration.widget(
         pos,

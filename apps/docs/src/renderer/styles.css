@@ -4396,6 +4396,16 @@ th.cell-rev-del {
   .page-dark .doc-table th:last-child:where(:not(.doc-textbox-filled *)) {
     border-right: var(--dk-tb-r, var(--dk-tb-v, none));
   }
+
+  .page-dark .doc-table .page-gap-table > td:where(:not(.doc-textbox-filled *)) {
+    border-top: var(--dk-tb-break, var(--dk-tb-h, var(--dk-tb-b, 1px solid currentColor))) !important;
+    border-bottom: var(--dk-tb-break, var(--dk-tb-h, var(--dk-tb-t, 1px solid currentColor))) !important;
+  }
+
+  .page-dark .page-gap-cell::after {
+    border-top: var(--dk-tb-break, var(--dk-tb-h, 1px solid currentColor));
+    border-bottom: var(--dk-tb-break, var(--dk-tb-h, 1px solid currentColor));
+  }
 }
 
 /* visual page-break indicator (w:pageBreakBefore): one out-of-flow pseudo-element
@@ -4462,6 +4472,18 @@ th.cell-rev-del {
   z-index: 1;
 }
 
+.page-gap-cell::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--gap-tbl-left, var(--gap-ml, 0px));
+  right: var(--gap-tbl-right, var(--gap-mr, 0px));
+  border-top: var(--doc-b-break, var(--doc-b-h, 1px solid currentColor));
+  border-bottom: var(--doc-b-break, var(--doc-b-h, 1px solid currentColor));
+  pointer-events: none;
+}
+
 /* In-table gap at a row boundary. A real spanning cell isolates collapsed
    borders/backgrounds from the page gutter; the inner fill paints paper /
    canvas / paper bands without inheriting table-cell decoration. */
@@ -4475,7 +4497,10 @@ th.cell-rev-del {
   padding: 0;
   /* !important: the td edge-border rules (--doc-b-l/r on first/last-child) come
      later in the sheet and would otherwise frame the page gutter */
-  border: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: var(--doc-b-break, var(--doc-b-h, var(--doc-b-b, 1px solid currentColor))) !important;
+  border-bottom: var(--doc-b-break, var(--doc-b-h, var(--doc-b-t, 1px solid currentColor))) !important;
   background: var(--page-bg, var(--docs-paper));
 }
 
@@ -5516,6 +5541,52 @@ body.docs-crop-active .doc-protected[data-doc-protected='image'] .doc-img-wrap {
   pointer-events: none;
   background: var(--word-blue);
 }
+
+/* Real-time visual guideline when dragging table row or column boundaries */
+.table-resize-guide {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999999;
+}
+
+.table-resize-guide-horizontal {
+  border-top: 2px dashed #0078d4 !important;
+  box-shadow: 0 0 4px rgba(0, 120, 212, 0.4);
+}
+
+.table-resize-guide-vertical {
+  border-left: 2px dashed #0078d4 !important;
+  box-shadow: 0 0 4px rgba(0, 120, 212, 0.4);
+}
+
+.table-draw-preview-line {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999999;
+  border: 2px dashed #0078d4 !important;
+  box-shadow: 0 0 4px rgba(0, 120, 212, 0.4);
+}
+
+body.table-tool-draw-active .doc-page,
+body.table-tool-draw-active .doc-table,
+body.table-tool-draw-active .doc-table td,
+body.table-tool-draw-active .doc-table th {
+  cursor: crosshair !important;
+}
+
+body.table-tool-eraser-active .doc-page,
+body.table-tool-eraser-active .doc-table,
+body.table-tool-eraser-active .doc-table td,
+body.table-tool-eraser-active .doc-table th {
+  cursor: cell !important;
+}
+
+.table-command-row.table-tool-button.active {
+  background: var(--active-bg, rgba(0, 120, 212, 0.12));
+  border-color: var(--word-blue, #0078d4);
+  color: var(--word-blue, #0078d4);
+}
+
 
 .table-ribbon-body {
   display: flex;

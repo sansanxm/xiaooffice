@@ -3,6 +3,7 @@ import type { Mark as PmMark } from '@tiptap/pm/model'
 import { Plugin, PluginKey } from '@tiptap/pm/state'
 import { Decoration, DecorationSet } from '@tiptap/pm/view'
 import {} from '@tiptap/pm/tables'
+import { formatTableOrSelectionMark } from './table-format'
 import { cssCsFontFamily, cssRunFontFamily, cssFontFamily } from '../line-metrics'
 import { isEastAsianFontName } from '../font-list'
 import { t } from '../i18n/locale'
@@ -54,7 +55,7 @@ export const BoldMark = Mark.create({
     return ['strong', 0]
   },
   addKeyboardShortcuts() {
-    return { 'Mod-b': () => this.editor.commands.toggleMark('bold') }
+    return { 'Mod-b': () => formatTableOrSelectionMark(this.editor, 'bold', undefined, true) }
   },
 })
 
@@ -67,7 +68,7 @@ export const ItalicMark = Mark.create({
     return ['em', 0]
   },
   addKeyboardShortcuts() {
-    return { 'Mod-i': () => this.editor.commands.toggleMark('italic') }
+    return { 'Mod-i': () => formatTableOrSelectionMark(this.editor, 'italic', undefined, true) }
   },
 })
 
@@ -86,7 +87,7 @@ export const UnderlineMark = Mark.create({
     return ['u', 0]
   },
   addKeyboardShortcuts() {
-    return { 'Mod-u': () => this.editor.commands.toggleMark('underline') }
+    return { 'Mod-u': () => formatTableOrSelectionMark(this.editor, 'underline', undefined, true) }
   },
 })
 

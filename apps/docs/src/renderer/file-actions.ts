@@ -125,6 +125,7 @@ export interface FileActionContext {
   setLargeDocSpellOff: (off: boolean) => void
   setShowPagePreview: (show: boolean) => void
   section: SectionSettings | null
+  activeSection?: number
   sectionDirty: boolean
   sections: SectionInfo[]
   sectionsDirty: number[]
@@ -769,7 +770,12 @@ export async function buildDocBytes(ctx: FileActionContext): Promise<Uint8Array 
     links: ctx.hfLinks,
   })
   const bytes = await saveDocx(doc.parsed, saveBlocks, {
-    section: ctx.sectionDirty && ctx.section ? ctx.section : undefined,
+    section:
+      (ctx.sections.length > 1
+        ? ctx.sections[ctx.sections.length - 1]?.settings
+        : ctx.section) ??
+      ctx.section ??
+      undefined,
     sectionStartType: ctx.trailingStartType ?? undefined,
     pgNumType: ctx.pgNumEdit ?? undefined,
     ...hfOptions,
@@ -1126,8 +1132,15 @@ async function saveOnce(
           }
         : prev,
     )
-    ctx.setSection(readSectionSettings(reparsed))
-    ctx.setSections(readSections(reparsed))
+    const reparsedSections = readSections(reparsed)
+    ctx.setSections(reparsedSections)
+    const activeIdx = Math.min(
+      ctx.activeSection ?? 0,
+      Math.max(0, reparsedSections.length - 1),
+    )
+    const resolvedSection =
+      reparsedSections[activeIdx]?.settings ?? readSectionSettings(reparsed)
+    ctx.setSection(resolvedSection)
     ctx.setSectionDirty(false)
     ctx.setPageColor(readPageColor(reparsed))
     ctx.setPageColorDirty(false)
